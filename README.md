@@ -1,1 +1,1 @@
-# Learn-Language-Academy
+# Language-Academy
