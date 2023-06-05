@@ -84,9 +84,6 @@ header nav .darkmode .fa-moon {
   }
 }
 
-#home .carousel-item {
-  height: 100vh;
-}
 #home .carousel-item video {
   width: 100%;
 }
@@ -104,9 +101,6 @@ header nav .darkmode .fa-moon {
   font-size: 20px;
 }
 @media only screen and (max-width: 767px) {
-  #home .carousel-item .carousel-caption {
-    top: 15%;
-  }
   #home .carousel-item .carousel-caption h1 {
     font-size: 40px;
   }
@@ -114,12 +108,15 @@ header nav .darkmode .fa-moon {
     font-size: 15px;
   }
 }
-@media only screen and (max-width: 556px) {
-  #home .carousel-item .carousel-caption {
-    height: 15vh;
-    top: 10%;
-  }
-  #home .carousel-item .carousel-caption h1 {
-    font-size: 20px;
+#home .herroBanner .homeNote {
+  padding: 50px 150px;
+  text-align: center;
+  color: rgb(73, 73, 73);
+  font-size: 20px;
+  font-family: "Sora", sans-serif;
+}
+@media only screen and (max-width: 992px) {
+  #home .herroBanner .homeNote {
+    padding: 30px 0;
   }
 }/*# sourceMappingURL=main.css.map */

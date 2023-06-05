@@ -1,6 +1,5 @@
 #home {
   .carousel-item {
-    height: 100vh;
     video {
       width: 100%;
     }
@@ -17,7 +16,6 @@
         font-size: 20px;
       }
       @media only screen and (max-width: 767px) {
-        top: 15%;
         h1 {
           font-size: 40px;
         }
@@ -25,13 +23,18 @@
           font-size: 15px;
         }
       }
-      @media only screen and (max-width: 556px) {
-        height: 15vh;
-        top: 10%;
-        h1 {
-          font-size: 20px;
-        }
-      }
     }
   }
+  .herroBanner{
+  .homeNote{
+    padding: 50px 150px;
+    text-align: center;
+    color: rgb(73, 73, 73);
+    font-size: 20px;
+    font-family: "Sora", sans-serif;
+    @media only screen and (max-width: 992px) {
+        padding: 30px 0;
+    }
+  }
+}
 }
