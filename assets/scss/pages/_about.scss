@@ -1,0 +1,33 @@
+#about {
+  background-color: $lightBlue;
+  .herroBanner {
+    .aboutNote {
+      padding: 60px 0;
+      font-family: "Sora", sans-serif;
+      h2 {
+        font-weight: bold;
+        color: darkgreen;
+        margin-bottom: 3vh;
+      }
+      p {
+        color: $darkGreen;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 5vh;
+      }
+      a {
+        color: white;
+        background-color: $darkGreen;
+        padding: 10px 30px;
+        border-radius: 20px;
+        transition: all 0.5s linear;
+        border: 1px solid $darkGreen;
+        font-family: "Montserrat", sans-serif;
+        &:hover {
+          color: $darkGreen;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
