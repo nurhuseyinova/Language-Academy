@@ -1,0 +1,37 @@
+#home {
+  .carousel-item {
+    height: 100vh;
+    video {
+      width: 100%;
+    }
+    .carousel-caption {
+      height: 20vh;
+      top: 20%;
+      color: white;
+      font-family: "Sora", sans-serif;
+      h1 {
+        font-size: 60px;
+        font-weight: 700;
+      }
+      h4 {
+        font-size: 20px;
+      }
+      @media only screen and (max-width: 767px) {
+        top: 15%;
+        h1 {
+          font-size: 40px;
+        }
+        h4 {
+          font-size: 15px;
+        }
+      }
+      @media only screen and (max-width: 556px) {
+        height: 15vh;
+        top: 10%;
+        h1 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

@@ -15,6 +15,12 @@ a {
   padding: 0 5%;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: white;
+}
 header nav {
   display: flex;
   align-items: center;
@@ -75,5 +81,45 @@ header nav .darkmode .fa-moon {
 @media only screen and (max-width: 992px) {
   header nav .darkmode {
     display: none;
+  }
+}
+
+#home .carousel-item {
+  height: 100vh;
+}
+#home .carousel-item video {
+  width: 100%;
+}
+#home .carousel-item .carousel-caption {
+  height: 20vh;
+  top: 20%;
+  color: white;
+  font-family: "Sora", sans-serif;
+}
+#home .carousel-item .carousel-caption h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+#home .carousel-item .carousel-caption h4 {
+  font-size: 20px;
+}
+@media only screen and (max-width: 767px) {
+  #home .carousel-item .carousel-caption {
+    top: 15%;
+  }
+  #home .carousel-item .carousel-caption h1 {
+    font-size: 40px;
+  }
+  #home .carousel-item .carousel-caption h4 {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 556px) {
+  #home .carousel-item .carousel-caption {
+    height: 15vh;
+    top: 10%;
+  }
+  #home .carousel-item .carousel-caption h1 {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=main.css.map */
