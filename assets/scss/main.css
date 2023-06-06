@@ -302,4 +302,78 @@ header nav .darkmode .fa-moon {
 #contact .contactPage .contactNote a:hover {
   color: rgb(27, 80, 36);
   background-color: transparent;
+}
+
+footer {
+  background-color: rgb(27, 80, 36);
+}
+footer .herroBanner .footerTop {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid coral;
+}
+footer .herroBanner .footerTop h4 {
+  color: rgb(253, 161, 128);
+  font-size: 30px;
+  position: relative;
+  margin-bottom: 20px;
+  font-family: "Sacramento", cursive;
+}
+footer .herroBanner .footerTop h4 span {
+  position: absolute;
+  left: 15px;
+}
+footer .herroBanner .footerTop nav {
+  margin: top;
+  display: flex;
+}
+footer .herroBanner .footerTop nav ul li a {
+  color: rgb(253, 161, 128);
+}
+@media only screen and (max-width: 767px) {
+  footer .herroBanner .footerTop {
+    flex-direction: column;
+  }
+  footer .herroBanner .footerTop h4 {
+    position: static !important;
+    text-align: center;
+  }
+  footer .herroBanner .footerTop h4 span {
+    position: static;
+  }
+  footer .herroBanner .footerTop nav {
+    flex-direction: column !important;
+  }
+  footer .herroBanner .footerTop nav ul {
+    text-align: center;
+  }
+}
+footer .herroBanner .footerBottum {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+}
+footer .herroBanner .footerBottum p {
+  color: rgb(253, 161, 128);
+}
+@media only screen and (max-width: 556px) {
+  footer .herroBanner .footerBottum p {
+    text-align: center;
+  }
+}
+footer .herroBanner .footerBottum ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+footer .herroBanner .footerBottum ul li a {
+  color: rgb(253, 161, 128);
+}
+@media only screen and (max-width: 767px) {
+  footer .herroBanner .footerBottum {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=main.css.map */

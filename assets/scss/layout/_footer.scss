@@ -1,0 +1,72 @@
+footer {
+  background-color: $darkGreen;
+  .herroBanner {
+    .footerTop {
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 2px solid coral;
+      h4 {
+        color: $coral;
+        font-size: 30px;
+        position: relative;
+        margin-bottom: 20px;
+        font-family: "Sacramento", cursive;
+        span {
+          position: absolute;
+          left: 15px;
+        }
+      }
+      nav {
+        margin: top;
+        display: flex;
+        ul {
+          li {
+            a {
+              color: $coral;
+            }
+          }
+        }
+      }
+      @media only screen and (max-width: 767px) {
+        flex-direction: column;
+        h4 {
+          position: static !important;
+          text-align: center;
+          span {
+            position: static;
+          }
+        }
+        nav {
+          flex-direction: column !important;
+          ul {
+            text-align: center;
+          }
+        }
+      }
+    }
+    .footerBottum {
+      @include display;
+      height: 10vh;
+      p {
+        color: $coral;
+        @media only screen and (max-width: 556px) {
+          text-align: center;
+        }
+      }
+      ul {
+        @include display;
+        gap: 10px;
+
+        li {
+          a {
+            color: $coral;
+          }
+        }
+      }
+      @media only screen and (max-width: 767px) {
+        flex-direction: column;
+      }
+    }
+  }
+}
