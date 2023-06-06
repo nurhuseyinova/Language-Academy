@@ -12,27 +12,37 @@ a {
 .herroBanner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 5%;
+}
+@media only screen and (max-width: 992px) {
+  .herroBanner {
+    padding: 0 5%;
+  }
 }
 
 header {
   position: fixed;
   width: 100%;
   z-index: 10;
-  background-color: white;
+  background-color: rgb(27, 80, 36);
 }
 header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 12vh;
 }
-header nav img {
-  width: 15%;
+header nav h4 {
+  color: #ffffff;
+  font-size: 20px;
+  position: relative;
+  bottom: 8px;
 }
-@media only screen and (max-width: 992px) {
-  header nav img {
-    width: 25%;
-  }
+header nav h4 span {
+  position: absolute;
+  left: 15px;
+}
+header nav h4:hover span {
+  color: rgb(253, 161, 128);
 }
 header nav .headItem1 {
   display: flex;
@@ -42,13 +52,13 @@ header nav .headItem1 {
   margin-bottom: 0px;
 }
 header nav .headItem1 li a {
-  color: black;
+  color: #ffffff;
   font-family: "Montserrat", sans-serif;
   border-bottom: 1px solid transparent;
 }
 header nav .headItem1 li a:hover {
-  border-color: gray;
-  color: gray;
+  border-color: rgb(253, 161, 128);
+  color: rgb(253, 161, 128);
 }
 @media only screen and (max-width: 992px) {
   header nav .headItem1 {

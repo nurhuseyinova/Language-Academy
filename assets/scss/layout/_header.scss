@@ -2,14 +2,21 @@ header {
     position: fixed;
     width: 100%;
     z-index: 10;
-    background-color: white;
-   
+    background-color: $darkGreen;   
   nav {
     @include display;
-    img {
-      width: 15%;
-      @media only screen and (max-width: 992px) {
-        width: 25%;
+    height: 12vh;
+    h4 {
+      color: $light;
+      font-size: 20px;
+      position: relative;
+      bottom: 8px;
+      span{      
+        position: absolute;
+        left:15px;
+      }
+      &:hover{
+        span{color: $coral}
       }
     }
     .headItem1 {
@@ -19,12 +26,12 @@ header {
 
       li {
         a {
-          color: black;
+          color: $light;
           font-family: "Montserrat", sans-serif;
           border-bottom: 1px solid transparent;
           &:hover {
-            border-color: gray;
-            color: gray;
+            border-color: $coral;
+            color: $coral;
           }
         }
       }
