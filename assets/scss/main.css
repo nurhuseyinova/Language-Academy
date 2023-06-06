@@ -223,4 +223,40 @@ header nav .darkmode .fa-moon {
 #language .row .col .item .itemImg .itemNote a:hover {
   color: #ffffff;
   background-color: rgb(27, 80, 36);
+}
+
+#contact {
+  background-image: url("../image/cta2-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#contact .contactPage {
+  padding: 60px 0;
+  background-color: rgba(173, 172, 235, 0.3);
+}
+#contact .contactPage .contactNote {
+  text-align: center;
+  color: rgb(27, 80, 36);
+}
+#contact .contactPage .contactNote p {
+  color: #ffffff;
+  font-size: 20px;
+}
+#contact .contactPage .contactNote i {
+  font-size: 30px;
+}
+#contact .contactPage .contactNote a {
+  color: #ffffff;
+  background-color: rgb(27, 80, 36);
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: 1px solid rgb(27, 80, 36);
+  transition: all 0.5s linear;
+  font-family: "Montserrat", sans-serif;
+}
+#contact .contactPage .contactNote a:hover {
+  color: rgb(27, 80, 36);
+  background-color: transparent;
 }/*# sourceMappingURL=main.css.map */
