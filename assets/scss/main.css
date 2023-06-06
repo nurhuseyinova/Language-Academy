@@ -151,4 +151,66 @@ header nav .darkmode .fa-moon {
 #about .herroBanner .aboutNote a:hover {
   color: rgb(27, 80, 36);
   background-color: transparent;
+}
+
+#language .herroBanner .languageNote {
+  padding-top: 50px;
+  text-align: center;
+  color: rgb(27, 80, 36);
+}
+#language .herroBanner .languageNote h3 {
+  font-family: "Sacramento", cursive;
+  font-weight: 500;
+  font-size: 30px;
+}
+#language .row {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+#language .row .col .item {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+#language .row .col .item .itemImg {
+  overflow: hidden;
+}
+#language .row .col .item .itemImg:hover .itemNote {
+  z-index: 2;
+  height: 40vh;
+}
+#language .row .col .item .itemImg:hover img {
+  scale: 1.1;
+}
+#language .row .col .item .itemImg img {
+  width: 100%;
+  height: 50vh;
+  transition: all 0.5s linear;
+}
+#language .row .col .item .itemImg .itemNote {
+  padding-top: 20px;
+  font-family: "Sora", sans-serif;
+  padding-bottom: 10px;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  height: 0;
+  background-color: rgba(14, 13, 13, 0.7);
+  text-align: center;
+  color: rgb(253, 161, 128);
+  transition: all 0.4s linear;
+}
+#language .row .col .item .itemImg .itemNote a {
+  color: rgb(27, 80, 36);
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgb(253, 161, 128);
+  transition: all 0.5s linear;
+  font-family: "Montserrat", sans-serif;
+}
+#language .row .col .item .itemImg .itemNote a:hover {
+  color: #ffffff;
+  background-color: rgb(27, 80, 36);
 }/*# sourceMappingURL=main.css.map */
