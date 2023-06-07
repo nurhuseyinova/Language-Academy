@@ -268,6 +268,39 @@ header nav .darkmode .fa-moon {
   color: rgb(27, 80, 36);
 }
 
+#achieveCount {
+  background-image: url("../image/bg_3 (1).jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#achieveCount .countItem {
+  background-color: rgba(30, 53, 95, 0.2);
+  padding: 100px 0;
+}
+#achieveCount .countItem .herroBanner .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 10px;
+  color: rgb(27, 80, 36);
+}
+#achieveCount .countItem .herroBanner .item i {
+  font-size: 60px;
+}
+#achieveCount .countItem .herroBanner .item .itemNote {
+  color: #ffffff;
+}
+@media only screen and (max-width: 556px) {
+  #achieveCount .countItem {
+    padding: 50px 0;
+  }
+  #achieveCount .countItem .item {
+    justify-content: flex-start !important;
+  }
+}
+
 #contact {
   background-image: url("../image/cta2-background.jpg");
   background-position: center;

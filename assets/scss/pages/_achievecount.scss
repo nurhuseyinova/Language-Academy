@@ -1,0 +1,30 @@
+#achieveCount {
+  background-image: url("../image/bg_3\ \(1\).jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .countItem {
+    background-color: rgba(30, 53, 95, 0.2);
+    padding: 100px 0;
+    .herroBanner {
+      .item {
+        @include display;
+        justify-content: center;
+        gap: 10px;
+        color: $darkGreen;
+        i {
+          font-size: 60px;
+        }
+        .itemNote {
+          color: $light;
+        }
+      }
+    }
+    @media only screen and (max-width: 556px) {
+      padding: 50px 0;
+      .item {
+        justify-content: flex-start !important;
+      }
+    }
+  }
+}
