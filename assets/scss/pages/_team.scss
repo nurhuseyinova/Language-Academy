@@ -1,0 +1,72 @@
+#teacher {
+  background-color: $lightBlue;
+  padding: 50px 0;
+  .herroBanner {
+    .teacherNote {
+      text-align: center;
+      color: $darkGreen;
+      font-family: "Montserrat", sans-serif;
+    }
+    .row {
+      padding-top: 50px;
+      @include display;
+      justify-content: center;
+      .col {
+        .item {
+          padding: 30px 20px;
+          border: 1px solid $darkGreen;
+          text-align: center;
+          .itemImg {
+            position: relative;
+            transition: all 0.5s linear;
+            img {
+              border: 2px solid $coral;
+              position: relative;
+              margin-top: -100px;
+              width: 150px;
+              height: 150px;
+              border-radius: 50%;
+            }
+            i {
+              position: absolute;
+              margin-top: -40px;
+              margin-left: -26%;
+              font-size: 30px;
+              color: $darkGreen;
+              z-index: -1;
+            }
+          }
+          .itemNote {
+            color: $darkGreen;
+            font-family: "Montserrat", sans-serif;
+            a {
+              color: $darkGreen;
+              background-color: transparent;
+              padding: 10px 25px;
+              border-radius: 20px;
+              border: 1px solid $darkGreen;
+              transition: all 0.5s linear;
+              font-family: "Montserrat", sans-serif;
+              margin-bottom: 10px;
+              &:hover {
+                color: $coral;
+                background-color: $darkGreen;
+              }
+            }
+          }
+        }
+        &:hover {
+          h3,
+          p {
+            color: $coral;
+          }
+          .itemImg {
+            i {
+              z-index: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
