@@ -368,6 +368,71 @@ header nav .darkmode .fa-moon {
   }
 }
 
+#comments {
+  background-image: url("../image/bgicomments.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+#comments .commentItem {
+  background-color: rgba(30, 87, 3, 0.404);
+  padding: 150px;
+}
+#comments .commentItem h1 {
+  color: #ffffff;
+  margin-bottom: 60px;
+  text-align: center;
+}
+#comments .commentItem .itemComment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
+}
+#comments .commentItem .itemComment .itemImg {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+#comments .commentItem .itemComment .itemImg img {
+  border-radius: 15px;
+  height: 40vh;
+  width: 300px;
+}
+#comments .commentItem .itemComment .itemImg nav {
+  background-color: rgba(15, 46, 15, 0.425);
+  position: absolute;
+  margin-top: -240px;
+  z-index: -1;
+  padding-top: 15px;
+  width: 0px;
+  height: 50vh;
+  transition: all 0.5s linear;
+}
+#comments .commentItem .itemComment .itemImg nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 15px;
+}
+#comments .commentItem .itemComment .itemImg nav ul li a {
+  color: rgb(27, 80, 36);
+  background-color: rgb(253, 161, 128);
+  border: 1px solid rgb(27, 80, 36);
+  border-radius: 50%;
+  padding: 6px 10px;
+}
+#comments .commentItem .itemComment .itemImg:hover nav {
+  z-index: 1 !important;
+  width: 70px;
+}
+#comments .commentItem .itemComment .commentNote1 {
+  color: rgb(27, 80, 36);
+  text-align: left;
+}
+
 #contact {
   background-image: url("../image/cta2-background.jpg");
   background-position: center;
