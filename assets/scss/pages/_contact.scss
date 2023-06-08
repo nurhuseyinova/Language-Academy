@@ -1,3 +1,4 @@
+////index.html! contact section!
 #contact {
   background-image: url("../image/cta2-background.jpg");
   background-position: center;
@@ -28,6 +29,66 @@
         &:hover {
           color: $darkGreen;
           background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+////contact.html!
+
+#contactPage {
+  background-color: white;
+  .contactItem {
+    background-image: url("../image/bg_1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .item1 {
+      background-color: rgba(17, 95, 17, 0.452);
+      padding: 200px 50px;
+      .herroBanner {
+        .item1Note {
+          font-family: "Montserrat", sans-serif;
+          color: $light;
+          text-align: center;
+          h1 {
+            font-weight: bold;
+          }
+          div {
+            a {
+              color: $light;
+            }
+          }
+        }
+      }
+    }
+  }
+  .item2 {
+    padding: 50px 0;
+    .herroBanner {
+      .row {@include display;
+        justify-content: center;
+
+        gap: 20px;
+        .col {
+          width:250px;
+          height: 25vh;
+          background-color: $lightBlue;
+          text-align: center;
+          padding: 5px;
+          color: $darkGreen;
+          h4{
+            margin-bottom: 3vh;
+          }
+          a{
+            color: $darkGreen;
+          }
+
+          @media only screen and (max-width: 992px) {
+           height: 20vh;
+          }
+
         }
       }
     }

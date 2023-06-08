@@ -469,6 +469,60 @@ header nav .darkmode .fa-moon {
   background-color: transparent;
 }
 
+#contactPage {
+  background-color: white;
+}
+#contactPage .contactItem {
+  background-image: url("../image/bg_1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#contactPage .contactItem .item1 {
+  background-color: rgba(17, 95, 17, 0.452);
+  padding: 200px 50px;
+}
+#contactPage .contactItem .item1 .herroBanner .item1Note {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+#contactPage .contactItem .item1 .herroBanner .item1Note h1 {
+  font-weight: bold;
+}
+#contactPage .contactItem .item1 .herroBanner .item1Note div a {
+  color: #ffffff;
+}
+#contactPage .item2 {
+  padding: 50px 0;
+}
+#contactPage .item2 .herroBanner .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
+}
+#contactPage .item2 .herroBanner .row .col {
+  width: 250px;
+  height: 25vh;
+  background-color: #e5e9ec;
+  text-align: center;
+  padding: 5px;
+  color: rgb(27, 80, 36);
+}
+#contactPage .item2 .herroBanner .row .col h4 {
+  margin-bottom: 3vh;
+}
+#contactPage .item2 .herroBanner .row .col a {
+  color: rgb(27, 80, 36);
+}
+@media only screen and (max-width: 992px) {
+  #contactPage .item2 .herroBanner .row .col {
+    height: 20vh;
+  }
+}
+
 footer {
   background-color: rgb(27, 80, 36);
 }
