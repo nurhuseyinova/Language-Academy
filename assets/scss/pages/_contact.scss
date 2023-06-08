@@ -67,26 +67,81 @@
   .item2 {
     padding: 50px 0;
     .herroBanner {
-      .row {@include display;
+      .row {
+        @include display;
         justify-content: center;
-
         gap: 20px;
         .col {
-          width:250px;
+          width: 250px;
           height: 25vh;
           background-color: $lightBlue;
           text-align: center;
           padding: 5px;
           color: $darkGreen;
-          h4{
+          h4 {
             margin-bottom: 3vh;
           }
-          a{
+          a {
             color: $darkGreen;
           }
-
           @media only screen and (max-width: 992px) {
-           height: 20vh;
+            height: 20vh;
+          }
+        }
+      }
+    }
+  }
+  .item3 {
+    padding: 50px 100px;
+    background-color: $lightBlue;
+    .herroBanner {
+      @include display;
+      justify-content: center;
+      gap: 30px;
+      .note {
+        color: $darkGreen;
+        margin-bottom: 20px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .formTag {
+          border: 1px dashed $darkGreen;
+          margin-bottom: 10px;
+          padding: 7px;
+        }
+        input {
+          border: gray;
+        }
+        select {
+          width: 400px;
+        }
+        textarea {
+          width: 400px;
+        }
+        button {
+          color: white;
+          background-color: $darkGreen;
+          padding: 10px 30px;
+          border-radius: 20px;
+          transition: all 0.5s linear;
+          border: 1px solid $darkGreen;
+          font-family: "Montserrat", sans-serif;
+          &:hover {
+            color: $darkGreen;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 767px) {
+    padding: 50px ;
+      .herroBanner{
+        flex-direction: column;
+        form{         
+          .formTag{
+            width: 300px;
           }
 
         }

@@ -522,6 +522,64 @@ header nav .darkmode .fa-moon {
     height: 20vh;
   }
 }
+#contactPage .item3 {
+  padding: 50px 100px;
+  background-color: #e5e9ec;
+}
+#contactPage .item3 .herroBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
+}
+#contactPage .item3 .herroBanner .note {
+  color: rgb(27, 80, 36);
+  margin-bottom: 20px;
+}
+#contactPage .item3 .herroBanner form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#contactPage .item3 .herroBanner form .formTag {
+  border: 1px dashed rgb(27, 80, 36);
+  margin-bottom: 10px;
+  padding: 7px;
+}
+#contactPage .item3 .herroBanner form input {
+  border: gray;
+}
+#contactPage .item3 .herroBanner form select {
+  width: 400px;
+}
+#contactPage .item3 .herroBanner form textarea {
+  width: 400px;
+}
+#contactPage .item3 .herroBanner form button {
+  color: white;
+  background-color: rgb(27, 80, 36);
+  padding: 10px 30px;
+  border-radius: 20px;
+  transition: all 0.5s linear;
+  border: 1px solid rgb(27, 80, 36);
+  font-family: "Montserrat", sans-serif;
+}
+#contactPage .item3 .herroBanner form button:hover {
+  color: rgb(27, 80, 36);
+  background-color: transparent;
+}
+@media only screen and (max-width: 767px) {
+  #contactPage .item3 {
+    padding: 50px;
+  }
+  #contactPage .item3 .herroBanner {
+    flex-direction: column;
+  }
+  #contactPage .item3 .herroBanner form .formTag {
+    width: 300px;
+  }
+}
 
 footer {
   background-color: rgb(27, 80, 36);
