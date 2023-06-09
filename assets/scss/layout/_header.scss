@@ -1,8 +1,9 @@
 header {
-    position: fixed;
+  position: fixed;
     width: 100%;
     z-index: 10;
-    background-color: $darkGreen;   
+  .herroBanner{
+    background-color: $darkGreen; 
   nav {
     @include display;
     height: 12vh;
@@ -62,4 +63,5 @@ header {
       }
     }
   }
+}
 }

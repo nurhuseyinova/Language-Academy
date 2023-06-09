@@ -1,40 +1,18 @@
 #home {
-  .carousel-item {
-    video {
-      width: 100%;
-    }
-    .carousel-caption {
-      height: 20vh;
-      top: 20%;
-      color: white;
-      font-family: "Sora", sans-serif;
-      h1 {
-        font-size: 60px;
-        font-weight: 700;
-      }
-      h4 {
-        font-size: 20px;
-      }
-      @media only screen and (max-width: 767px) {
-        h1 {
-          font-size: 40px;
-        }
-        h4 {
-          font-size: 15px;
+  .herroBanner {
+    padding: 250px 0;
+    background-image: url("../image/courses-14.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    .homeItem {
+      .item {
+        .itemNote {
+          text-align: center;
+          color: white;
         }
       }
     }
   }
-  .herroBanner{
-  .homeNote{
-    padding: 50px 150px;
-    text-align: center;
-    color: $darkGreen;
-    font-size: 20px;
-    font-family: "Sora", sans-serif;
-    @media only screen and (max-width: 992px) {
-        padding: 30px 0;
-    }
-  }
-}
 }

@@ -1,12 +1,12 @@
 #achieveCount {
-  background-image: url("../image/bg_3\ \(1\).jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  .countItem {
-    background-color: rgba(30, 53, 95, 0.2);
-    padding: 100px 0;
-    .herroBanner {
+  .herroBanner {
+    background-image: url("../image/bg_3\ \(1\).jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .countItem {
+      background-color: rgba(30, 53, 95, 0.2);
+      padding: 100px 0;
       .item {
         @include display;
         justify-content: center;

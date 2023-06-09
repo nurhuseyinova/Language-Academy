@@ -1,34 +1,36 @@
 ////index.html! contact section!
 #contact {
-  background-image: url("../image/cta2-background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  .contactPage {
-    padding: 60px 0;
-    background-color: rgba(173, 172, 235, 0.3);
-    .contactNote {
-      text-align: center;
-      color: $darkGreen;
-      p {
-        color: $light;
-        font-size: 20px;
-      }
-      i {
-        font-size: 30px;
-      }
-      a {
-        color: $light;
-        background-color: $darkGreen;
-        padding: 10px 25px;
-        border-radius: 20px;
-        border: 1px solid $darkGreen;
-        transition: all 0.5s linear;
-        font-family: "Montserrat", sans-serif;
-        &:hover {
-          color: $darkGreen;
-          background-color: transparent;
+  .herroBanner {
+    background-image: url("../image/cta2-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .contactPage {
+      padding: 60px 0;
+      background-color: rgba(173, 172, 235, 0.3);
+      .contactNote {
+        text-align: center;
+        color: $darkGreen;
+        p {
+          color: $light;
+          font-size: 20px;
+        }
+        i {
+          font-size: 30px;
+        }
+        a {
+          color: $light;
+          background-color: $darkGreen;
+          padding: 10px 25px;
+          border-radius: 20px;
+          border: 1px solid $darkGreen;
+          transition: all 0.5s linear;
+          font-family: "Montserrat", sans-serif;
+          &:hover {
+            color: $darkGreen;
+            background-color: transparent;
+          }
         }
       }
     }
@@ -136,14 +138,13 @@
       }
     }
     @media only screen and (max-width: 767px) {
-    padding: 50px ;
-      .herroBanner{
+      padding: 50px;
+      .herroBanner {
         flex-direction: column;
-        form{         
-          .formTag{
+        form {
+          .formTag {
             width: 300px;
           }
-
         }
       }
     }

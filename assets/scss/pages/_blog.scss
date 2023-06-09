@@ -1,45 +1,47 @@
 ////home page blog section!
 #blog {
-  background-color: $lightBlue;
-  padding-top: 50px;
-  h1 {
-    text-align: center;
-    color: $darkGreen;
-    text-shadow: 4px 4px 4px $darkGreen;
-  }
-  .swiper {
-    width: 100%;
-    padding: 50px 0;
-    .swiper-slide {
-      border-radius: 20px;
-      background-color: $light;
-      background-position: center;
-      background-size: cover;
-      width: 300px;
-      height: 470px;
-      .slideImg {
-        overflow: hidden;
-        border-radius: 10px;
-        img {
-          display: block;
-          width: 100%;
-          height: 250px;
-          transition: all 0.5s linear;
-        }
-      }
-      .slideNote {
-        padding: 7px;
-        text-align: center;
-        color: $darkGreen;
-      }
-      &:hover {
-        .note1 {
-          color: $coral;
-        }
+  .herroBanner {
+    background-color: $lightBlue;
+    padding-top: 50px;
+    h1 {
+      text-align: center;
+      color: $darkGreen;
+      text-shadow: 4px 4px 4px $darkGreen;
+    }
+    .swiper {
+      width: 100%;
+      padding: 50px 0;
+      .swiper-slide {
+        border-radius: 20px;
+        background-color: $light;
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 470px;
         .slideImg {
+          overflow: hidden;
+          border-radius: 10px;
           img {
-            scale: 1.2;
-            transform: rotate(10deg);
+            display: block;
+            width: 100%;
+            height: 250px;
+            transition: all 0.5s linear;
+          }
+        }
+        .slideNote {
+          padding: 7px;
+          text-align: center;
+          color: $darkGreen;
+        }
+        &:hover {
+          .note1 {
+            color: $coral;
+          }
+          .slideImg {
+            img {
+              scale: 1.2;
+              transform: rotate(10deg);
+            }
           }
         }
       }
@@ -92,7 +94,7 @@
       .item2Note {
         color: $darkGreen;
         line-height: 5vh;
-        padding: 50px 20px ;
+        padding: 50px 20px;
         .line {
           height: 5px;
           width: 70px;

@@ -1,65 +1,67 @@
 #comments {
-  background-image: url("../image/bgicomments.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  .commentItem {
-    background-color: rgba(30, 87, 3, 0.404);
-    padding: 150px;
-    h1 {
-      color: $light;
-      margin-bottom: 60px;
-      text-align: center;
-    }
-    .itemComment {
-      @include display;
-      justify-content: center;
-      gap: 20px;
-      .itemImg {
-        position: relative;
-        border-radius: 15px;
-        overflow: hidden;
-        img {
+  .herroBanner {
+    background-image: url("../image/bgicomments.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    .commentItem {
+      background-color: rgba(30, 87, 3, 0.404);
+      padding: 150px;
+      h1 {
+        color: $light;
+        margin-bottom: 60px;
+        text-align: center;
+      }
+      .itemComment {
+        @include display;
+        justify-content: center;
+        gap: 20px;
+        .itemImg {
+          position: relative;
           border-radius: 15px;
-          height: 40vh;
-          width: 300px;
-        }
-        nav {
-          background-color: rgba(15, 46, 15, 0.425);
-          position: absolute;
-          margin-top: -240px;
-          z-index: -1;
-          padding-top: 15px;
-          width: 0px;
-          height: 50vh;
-          transition: all 0.5s linear;
-          ul {
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            gap: 15px;
-            li {
-              a {
-                color: $darkGreen;
-                background-color: $coral;
-                border: 1px solid $darkGreen;
-                border-radius: 50%;
-                padding: 6px 10px;
+          overflow: hidden;
+          img {
+            border-radius: 15px;
+            height: 40vh;
+            width: 300px;
+          }
+          nav {
+            background-color: rgba(15, 46, 15, 0.425);
+            position: absolute;
+            margin-top: -240px;
+            z-index: -1;
+            padding-top: 15px;
+            width: 0px;
+            height: 50vh;
+            transition: all 0.5s linear;
+            ul {
+              display: flex;
+              flex-direction: column;
+              justify-content: start;
+              gap: 15px;
+              li {
+                a {
+                  color: $darkGreen;
+                  background-color: $coral;
+                  border: 1px solid $darkGreen;
+                  border-radius: 50%;
+                  padding: 6px 10px;
+                }
               }
             }
           }
-        }
-        &:hover {
-          nav {
-            z-index: 1 !important;
-            width: 70px;
+          &:hover {
+            nav {
+              z-index: 1 !important;
+              width: 70px;
+            }
           }
         }
-      }
-      .commentNote1 {
-        color: $darkGreen;
-        text-align: left;
+        .commentNote1 {
+          color: $darkGreen;
+          text-align: left;
+        }
       }
     }
   }

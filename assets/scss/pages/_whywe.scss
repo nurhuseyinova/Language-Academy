@@ -1,21 +1,21 @@
 #whywe {
-  background-color: $darkGreen;
-  padding: 60px 0;
   .herroBanner {
-    .note{
-        text-align: center;
-        color: $coral;
-        margin-bottom: 40px
+    padding: 60px 0;
+    background-color: $darkGreen;
+    .note {
+      text-align: center;
+      color: $coral;
+      margin-bottom: 40px;
     }
     .row {
-        @include display;
-        justify-content: center;
-        gap: 10px;
+      @include display;
+      justify-content: center;
+      gap: 10px;
       .col {
         background-color: $light;
         border-radius: 10px;
         padding: 10px;
-        width:350px;
+        width: 350px;
         height: 30vh;
         .itemNote {
           display: flex;
