@@ -259,6 +259,45 @@
         </div>
       </div>
     </div>
+    <div id="galery">
+      <h1>Galery</h1>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <div class="swiper mySwipergalery">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/image/galery1.jpg" alt="" />
+            <img src="./assets/image/galery2.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/image/galery4.jpg" alt="" />
+            <img src="./assets/image/galery3.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/image/image_1.jpg" alt="" />
+            <img src="./assets/image/galery6.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/image/galery9.jpg" alt="" />
+            <img src="./assets/image/galery8.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/image/galery5.jpg" alt="" />
+            <img src="./assets/image/galery11.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/image/galery14.jpg" alt="" />
+            <img src="./assets/image/galery20.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/image/galery16.jpg" alt="" />
+            <img src="./assets/image/galery19.jpg" alt="" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
     <div id="teacher">
       <div class="herroBanner">
         <div class="teacherNote">
@@ -583,6 +622,24 @@
         },
         pagination: {
           el: ".swiper-pagination",
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwipergalery", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
     </script>
