@@ -3,7 +3,7 @@ header {
     width: 100%;
     z-index: 10;
   .herroBanner{
-    background-color: $darkGreen; 
+    background-color: $mainColor; 
   nav {
     @include display;
     height: 12vh;

@@ -12,7 +12,6 @@ a {
 .herroBanner {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 5%;
 }
 
 header {
@@ -21,7 +20,7 @@ header {
   z-index: 10;
 }
 header .herroBanner {
-  background-color: rgb(156, 83, 190);
+  background-color: rgb(13, 54, 114);
 }
 header .herroBanner nav {
   display: flex;
@@ -102,7 +101,10 @@ header .herroBanner nav .darkmode .fa-moon {
 }
 #home .herroBanner .homeItem .item .itemNote {
   text-align: center;
-  color: white;
+  color: rgb(147, 147, 240);
+}
+#home .herroBanner .homeItem .item .itemNote h1 {
+  text-shadow: 2px 2px 2px #ffffff;
 }
 
 #about .herroBanner {
@@ -114,26 +116,26 @@ header .herroBanner nav .darkmode .fa-moon {
 }
 #about .herroBanner .aboutNote h2 {
   font-weight: bold;
-  color: darkgreen;
+  color: rgb(13, 54, 114);
   margin-bottom: 3vh;
 }
 #about .herroBanner .aboutNote p {
-  color: rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
   font-weight: 500;
   font-size: 15px;
   line-height: 5vh;
 }
 #about .herroBanner .aboutNote a {
   color: white;
-  background-color: rgb(156, 83, 190);
+  background-color: rgb(13, 54, 114);
   padding: 10px 30px;
   border-radius: 20px;
   transition: all 0.5s linear;
-  border: 1px solid rgb(156, 83, 190);
+  border: 1px solid rgb(13, 54, 114);
   font-family: "Montserrat", sans-serif;
 }
 #about .herroBanner .aboutNote a:hover {
-  color: rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
   background-color: transparent;
 }
 
@@ -143,8 +145,8 @@ header .herroBanner nav .darkmode .fa-moon {
 #language .herroBanner .languageNote {
   padding-top: 50px;
   text-align: center;
-  color: rgb(156, 83, 190);
-  text-shadow: 4px 4px 4px rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
+  text-shadow: 4px 4px 4px rgb(13, 54, 114);
 }
 #language .herroBanner .languageNote h1 {
   font-family: "Montserrat", sans-serif;
@@ -195,7 +197,7 @@ header .herroBanner nav .darkmode .fa-moon {
   transition: all 0.4s linear;
 }
 #language .row .col .item .itemImg .itemNote a {
-  color: rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
   font-size: 14px;
   padding: 10px 20px;
   border-radius: 20px;
@@ -205,17 +207,23 @@ header .herroBanner nav .darkmode .fa-moon {
 }
 #language .row .col .item .itemImg .itemNote a:hover {
   color: rgb(253, 161, 128);
-  background-color: rgb(156, 83, 190);
+  background-color: rgb(13, 54, 114);
 }
 
 #whywe .herroBanner {
   padding: 60px 0;
-  background-color: rgb(156, 83, 190);
+  background-color: rgb(196, 203, 247);
 }
 #whywe .herroBanner .note {
   text-align: center;
-  color: rgb(253, 161, 128);
+  color: #ffffff;
   margin-bottom: 40px;
+}
+#whywe .herroBanner .note h2 {
+  text-shadow: 1px 1px 2px #ffffff;
+}
+#whywe .herroBanner .note p {
+  font-size: 20px;
 }
 #whywe .herroBanner .row {
   display: flex;
@@ -235,7 +243,7 @@ header .herroBanner nav .darkmode .fa-moon {
   display: flex;
   align-items: center;
   gap: 5px;
-  color: rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
 }
 #whywe .herroBanner .row .col .itemNote i {
   padding: 5%;
@@ -243,12 +251,12 @@ header .herroBanner nav .darkmode .fa-moon {
   border: 4px solid #e5e9ec;
   width: 70px;
   height: 65px;
-  color: rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
   background-color: rgb(253, 161, 128);
   font-size: 25px;
 }
 #whywe .herroBanner .row .col p {
-  color: rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
 }
 
 #galery .herroBanner {
@@ -257,19 +265,19 @@ header .herroBanner nav .darkmode .fa-moon {
 }
 #galery .herroBanner h1 {
   text-align: center;
-  color: rgb(156, 83, 190);
-  text-shadow: 4px 4px 4px rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
+  text-shadow: 4px 4px 4px rgb(13, 54, 114);
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
 }
 #galery .herroBanner p {
   text-align: center;
-  color: rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
   margin-bottom: 20px;
   font-weight: bold;
   font-family: "Sacramento", cursive;
   font-size: 30px;
-  text-shadow: 4px 4px 4px rgb(156, 83, 190);
+  text-shadow: 4px 4px 4px rgb(13, 54, 114);
 }
 #galery .herroBanner .swiper {
   width: 100%;
@@ -289,7 +297,7 @@ header .herroBanner nav .darkmode .fa-moon {
 }
 #galery .herroBanner .swiper .swiper-slide img {
   display: block;
-  width: 100%;
+  width: 50%;
   height: 70vh;
   -o-object-fit: cover;
      object-fit: cover;
@@ -300,7 +308,7 @@ header .herroBanner nav .darkmode .fa-moon {
   }
 }
 #galery .herroBanner .swiper .pagination-button {
-  color: rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
 }
 
 #teacher .herroBanner {
@@ -309,7 +317,7 @@ header .herroBanner nav .darkmode .fa-moon {
 }
 #teacher .herroBanner .teacherNote {
   text-align: center;
-  color: rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
   font-family: "Montserrat", sans-serif;
 }
 #teacher .herroBanner .row {
@@ -321,7 +329,7 @@ header .herroBanner nav .darkmode .fa-moon {
 }
 #teacher .herroBanner .row .col .item {
   padding: 30px 20px;
-  border: 1px solid rgb(156, 83, 190);
+  border: 1px solid rgb(13, 54, 114);
   text-align: center;
 }
 #teacher .herroBanner .row .col .item .itemImg {
@@ -341,26 +349,26 @@ header .herroBanner nav .darkmode .fa-moon {
   margin-top: -40px;
   margin-left: -26%;
   font-size: 30px;
-  color: rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
   z-index: -1;
 }
 #teacher .herroBanner .row .col .item .itemNote {
-  color: rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
   font-family: "Montserrat", sans-serif;
 }
 #teacher .herroBanner .row .col .item .itemNote a {
-  color: rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
   background-color: transparent;
   padding: 10px 25px;
   border-radius: 20px;
-  border: 1px solid rgb(156, 83, 190);
+  border: 1px solid rgb(13, 54, 114);
   transition: all 0.5s linear;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 10px;
 }
 #teacher .herroBanner .row .col .item .itemNote a:hover {
   color: rgb(253, 161, 128);
-  background-color: rgb(156, 83, 190);
+  background-color: rgb(13, 54, 114);
 }
 #teacher .herroBanner .row .col:hover h3,
 #teacher .herroBanner .row .col:hover p {
@@ -410,7 +418,7 @@ header .herroBanner nav .darkmode .fa-moon {
   justify-content: space-between;
   justify-content: center;
   gap: 10px;
-  color: rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
 }
 #achieveCount .herroBanner .countItem .item i {
   font-size: 60px;
@@ -433,8 +441,8 @@ header .herroBanner nav .darkmode .fa-moon {
 }
 #blog .herroBanner h1 {
   text-align: center;
-  color: rgb(156, 83, 190);
-  text-shadow: 4px 4px 4px rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
+  text-shadow: 4px 4px 4px rgb(13, 54, 114);
 }
 #blog .herroBanner .swiper {
   width: 100%;
@@ -461,7 +469,7 @@ header .herroBanner nav .darkmode .fa-moon {
 #blog .herroBanner .swiper .swiper-slide .slideNote {
   padding: 7px;
   text-align: center;
-  color: rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
 }
 #blog .herroBanner .swiper .swiper-slide:hover .note1 {
   color: rgb(253, 161, 128);
@@ -478,7 +486,7 @@ header .herroBanner nav .darkmode .fa-moon {
   background-size: cover;
 }
 #blogPage .blogItem .item1 {
-  background-color: rgba(17, 95, 17, 0.452);
+  background-color: rgba(133, 143, 189, 0.308);
   padding: 200px 50px;
 }
 #blogPage .blogItem .item1 .herroBanner .item1Note {
@@ -512,14 +520,14 @@ header .herroBanner nav .darkmode .fa-moon {
   width: 50%;
 }
 #blogPage .blogItem2 .info .item2Note {
-  color: rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
   line-height: 5vh;
   padding: 50px 20px;
 }
 #blogPage .blogItem2 .info .item2Note .line {
   height: 5px;
   width: 70px;
-  background-color: rgb(156, 83, 190);
+  background-color: rgb(13, 54, 114);
   border-radius: 5px;
   margin-bottom: 30px;
 }
@@ -554,7 +562,7 @@ header .herroBanner nav .darkmode .fa-moon {
   width: 100%;
 }
 #comments .herroBanner .commentItem {
-  background-color: rgba(30, 87, 3, 0.404);
+  background-color: rgba(75, 130, 182, 0.404);
   padding: 150px;
 }
 #comments .herroBanner .commentItem h1 {
@@ -596,9 +604,9 @@ header .herroBanner nav .darkmode .fa-moon {
   gap: 15px;
 }
 #comments .herroBanner .commentItem .itemComment .itemImg nav ul li a {
-  color: rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
   background-color: rgb(253, 161, 128);
-  border: 1px solid rgb(156, 83, 190);
+  border: 1px solid rgb(13, 54, 114);
   border-radius: 50%;
   padding: 6px 10px;
 }
@@ -607,7 +615,7 @@ header .herroBanner nav .darkmode .fa-moon {
   width: 70px;
 }
 #comments .herroBanner .commentItem .itemComment .commentNote1 {
-  color: rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
   text-align: left;
 }
 
@@ -624,7 +632,7 @@ header .herroBanner nav .darkmode .fa-moon {
 }
 #contact .herroBanner .contactPage .contactNote {
   text-align: center;
-  color: rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
 }
 #contact .herroBanner .contactPage .contactNote p {
   color: #ffffff;
@@ -635,15 +643,15 @@ header .herroBanner nav .darkmode .fa-moon {
 }
 #contact .herroBanner .contactPage .contactNote a {
   color: #ffffff;
-  background-color: rgb(156, 83, 190);
+  background-color: rgb(13, 54, 114);
   padding: 10px 25px;
   border-radius: 20px;
-  border: 1px solid rgb(156, 83, 190);
+  border: 1px solid rgb(13, 54, 114);
   transition: all 0.5s linear;
   font-family: "Montserrat", sans-serif;
 }
 #contact .herroBanner .contactPage .contactNote a:hover {
-  color: rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
   background-color: transparent;
 }
 
@@ -657,7 +665,7 @@ header .herroBanner nav .darkmode .fa-moon {
   background-size: cover;
 }
 #contactPage .contactItem .item1 {
-  background-color: rgba(17, 95, 17, 0.452);
+  background-color: rgba(133, 143, 189, 0.308);
   padding: 200px 50px;
 }
 #contactPage .contactItem .item1 .herroBanner .item1Note {
@@ -687,13 +695,13 @@ header .herroBanner nav .darkmode .fa-moon {
   background-color: #e5e9ec;
   text-align: center;
   padding: 5px;
-  color: rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
 }
 #contactPage .item2 .herroBanner .row .col h4 {
   margin-bottom: 3vh;
 }
 #contactPage .item2 .herroBanner .row .col a {
-  color: rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
 }
 @media only screen and (max-width: 992px) {
   #contactPage .item2 .herroBanner .row .col {
@@ -712,7 +720,7 @@ header .herroBanner nav .darkmode .fa-moon {
   gap: 30px;
 }
 #contactPage .item3 .herroBanner .note {
-  color: rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
   margin-bottom: 20px;
 }
 #contactPage .item3 .herroBanner form {
@@ -721,7 +729,7 @@ header .herroBanner nav .darkmode .fa-moon {
   justify-content: center;
 }
 #contactPage .item3 .herroBanner form .formTag {
-  border: 1px dashed rgb(156, 83, 190);
+  border: 1px dashed rgb(13, 54, 114);
   margin-bottom: 10px;
   padding: 7px;
 }
@@ -736,15 +744,15 @@ header .herroBanner nav .darkmode .fa-moon {
 }
 #contactPage .item3 .herroBanner form button {
   color: white;
-  background-color: rgb(156, 83, 190);
+  background-color: rgb(13, 54, 114);
   padding: 10px 30px;
   border-radius: 20px;
   transition: all 0.5s linear;
-  border: 1px solid rgb(156, 83, 190);
+  border: 1px solid rgb(13, 54, 114);
   font-family: "Montserrat", sans-serif;
 }
 #contactPage .item3 .herroBanner form button:hover {
-  color: rgb(156, 83, 190);
+  color: rgb(13, 54, 114);
   background-color: transparent;
 }
 @media only screen and (max-width: 767px) {
@@ -760,7 +768,7 @@ header .herroBanner nav .darkmode .fa-moon {
 }
 
 footer .herroBanner {
-  background-color: rgb(156, 83, 190);
+  background-color: rgb(13, 54, 114);
 }
 footer .herroBanner .footerTop {
   padding-top: 20px;

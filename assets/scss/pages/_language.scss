@@ -4,8 +4,8 @@
     .languageNote {
       padding-top: 50px;
       text-align: center;
-      color: $darkGreen;
-      text-shadow: 4px 4px 4px $darkGreen;
+      color: $mainColor;
+      text-shadow: 4px 4px 4px $mainColor;
       h1 {
         font-family: "Montserrat", sans-serif;
         font-weight: bold;
@@ -57,7 +57,7 @@
             color: $coral;
             transition: all 0.4s linear;
             a {
-              color: $darkGreen;
+              color: $mainColor;
               font-size: 14px;
               padding: 10px 20px;
               border-radius: 20px;
@@ -66,7 +66,7 @@
               font-family: "Montserrat", sans-serif;
               &:hover {
                 color: $coral;
-                background-color: $darkGreen;
+                background-color: $mainColor;
               }
             }
           }

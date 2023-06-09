@@ -10,7 +10,10 @@
       .item {
         .itemNote {
           text-align: center;
-          color: white;
+          color: rgb(147, 147, 240);
+          h1{
+            text-shadow: 2px 2px 2px $light;
+          }
         }
       }
     }

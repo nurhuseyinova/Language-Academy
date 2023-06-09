@@ -6,25 +6,25 @@
       font-family: "Sora", sans-serif;
       h2 {
         font-weight: bold;
-        color: darkgreen;
+        color: $mainColor;
         margin-bottom: 3vh;
       }
       p {
-        color: $darkGreen;
+        color: $mainColor;
         font-weight: 500;
         font-size: 15px;
         line-height: 5vh;
       }
       a {
         color: white;
-        background-color: $darkGreen;
+        background-color: $mainColor;
         padding: 10px 30px;
         border-radius: 20px;
         transition: all 0.5s linear;
-        border: 1px solid $darkGreen;
+        border: 1px solid $mainColor;
         font-family: "Montserrat", sans-serif;
         &:hover {
-          color: $darkGreen;
+          color: $mainColor;
           background-color: transparent;
         }
       }

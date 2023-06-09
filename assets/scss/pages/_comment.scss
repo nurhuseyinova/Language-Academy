@@ -6,7 +6,7 @@
     background-size: cover;
     width: 100%;
     .commentItem {
-      background-color: rgba(30, 87, 3, 0.404);
+      background-color: rgba(75, 130, 182, 0.404);
       padding: 150px;
       h1 {
         color: $light;
@@ -42,9 +42,9 @@
               gap: 15px;
               li {
                 a {
-                  color: $darkGreen;
+                  color: $mainColor;
                   background-color: $coral;
-                  border: 1px solid $darkGreen;
+                  border: 1px solid $mainColor;
                   border-radius: 50%;
                   padding: 6px 10px;
                 }
@@ -59,7 +59,7 @@
           }
         }
         .commentNote1 {
-          color: $darkGreen;
+          color: $mainColor;
           text-align: left;
         }
       }

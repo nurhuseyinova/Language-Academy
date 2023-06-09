@@ -1,11 +1,17 @@
 #whywe {
   .herroBanner {
     padding: 60px 0;
-    background-color: $darkGreen;
+    background-color: rgb(196, 203, 247);
     .note {
       text-align: center;
-      color: $coral;
+      color: $light;
       margin-bottom: 40px;
+      h2{
+      text-shadow: 1px 1px 2px $light
+      }
+      p{
+        font-size: 20px
+      }
     }
     .row {
       @include display;
@@ -21,20 +27,20 @@
           display: flex;
           align-items: center;
           gap: 5px;
-          color: $darkGreen;
+          color: $mainColor;
           i {
             padding: 5%;
             border-radius: 50%;
             border: 4px solid $lightBlue;
             width: 70px;
             height: 65px;
-            color: $darkGreen;
+            color: $mainColor;
             background-color: $coral;
             font-size: 25px;
           }
         }
         p {
-          color: $darkGreen;
+          color: $mainColor;
         }
       }
     }

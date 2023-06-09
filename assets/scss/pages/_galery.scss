@@ -4,19 +4,19 @@
     background-color: $lightBlue;
     h1 {
       text-align: center;
-      color: $darkGreen;
-      text-shadow: 4px 4px 4px $darkGreen;
+      color: $mainColor;
+      text-shadow: 4px 4px 4px $mainColor;
       font-weight: bold;
       font-family: "Montserrat", sans-serif;
     }
     p {
       text-align: center;
-      color: $darkGreen;
+      color: $mainColor;
       margin-bottom: 20px;
       font-weight: bold;
       font-family: "Sacramento", cursive;
       font-size: 30px;
-      text-shadow: 4px 4px 4px $darkGreen;
+      text-shadow: 4px 4px 4px $mainColor;
     }
     .swiper {
       width: 100%;
@@ -34,7 +34,7 @@
         width: 500px;
         img {
           display: block;
-          width: 100%;
+          width: 50%;
           height: 70vh;
           object-fit: cover;
         }
@@ -43,7 +43,7 @@
         }
       }
       .pagination-button {
-        color: $darkGreen;
+        color: $mainColor;
       }
     }
   }

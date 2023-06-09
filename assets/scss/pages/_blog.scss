@@ -5,8 +5,8 @@
     padding-top: 50px;
     h1 {
       text-align: center;
-      color: $darkGreen;
-      text-shadow: 4px 4px 4px $darkGreen;
+      color: $mainColor;
+      text-shadow: 4px 4px 4px $mainColor;
     }
     .swiper {
       width: 100%;
@@ -31,7 +31,7 @@
         .slideNote {
           padding: 7px;
           text-align: center;
-          color: $darkGreen;
+          color: $mainColor;
         }
         &:hover {
           .note1 {
@@ -57,7 +57,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     .item1 {
-      background-color: rgba(17, 95, 17, 0.452);
+      background-color: rgba(133, 143, 189, 0.308);
       padding: 200px 50px;
       .herroBanner {
         .item1Note {
@@ -92,13 +92,13 @@
     .info {
       width: 50%;
       .item2Note {
-        color: $darkGreen;
+        color: $mainColor;
         line-height: 5vh;
         padding: 50px 20px;
         .line {
           height: 5px;
           width: 70px;
-          background-color: $darkGreen;
+          background-color: $mainColor;
           border-radius: 5px;
           margin-bottom: 30px;
         }

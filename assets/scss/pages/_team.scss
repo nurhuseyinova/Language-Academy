@@ -5,7 +5,7 @@
     padding: 50px 0;
     .teacherNote {
       text-align: center;
-      color: $darkGreen;
+      color: $mainColor;
       font-family: "Montserrat", sans-serif;
     }
     .row {
@@ -15,7 +15,7 @@
       .col {
         .item {
           padding: 30px 20px;
-          border: 1px solid $darkGreen;
+          border: 1px solid $mainColor;
           text-align: center;
           .itemImg {
             position: relative;
@@ -33,25 +33,25 @@
               margin-top: -40px;
               margin-left: -26%;
               font-size: 30px;
-              color: $darkGreen;
+              color: $mainColor;
               z-index: -1;
             }
           }
           .itemNote {
-            color: $darkGreen;
+            color: $mainColor;
             font-family: "Montserrat", sans-serif;
             a {
-              color: $darkGreen;
+              color: $mainColor;
               background-color: transparent;
               padding: 10px 25px;
               border-radius: 20px;
-              border: 1px solid $darkGreen;
+              border: 1px solid $mainColor;
               transition: all 0.5s linear;
               font-family: "Montserrat", sans-serif;
               margin-bottom: 10px;
               &:hover {
                 color: $coral;
-                background-color: $darkGreen;
+                background-color: $mainColor;
               }
             }
           }
