@@ -317,6 +317,14 @@ header nav .darkmode .fa-moon {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media only screen and (max-width: 767px) {
+  #galery .swiper .swiper-slide {
+    flex-direction: column;
+  }
+}
+#galery .swiper .pagination-button {
+  color: rgb(27, 80, 36);
+}
 
 #teacher {
   background-color: #e5e9ec;
