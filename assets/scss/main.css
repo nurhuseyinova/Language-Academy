@@ -393,6 +393,30 @@ header nav .darkmode .fa-moon {
   z-index: 1;
 }
 
+.teamPage .teamItem {
+  background-image: url("../image/galery4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.teamPage .teamItem .item1 {
+  background-color: rgba(78, 134, 78, 0.315);
+  padding: 200px 50px;
+}
+.teamPage .teamItem .item1 .item1Note {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+.teamPage .teamItem .item1 .item1Note h1 {
+  font-weight: bold;
+  text-shadow: 2px 2px #ffffff;
+}
+.teamPage .teamItem .item1 .item1Note div a {
+  color: #ffffff;
+}
+
 #achieveCount {
   background-image: url("../image/bg_3 (1).jpg");
   background-position: center;
