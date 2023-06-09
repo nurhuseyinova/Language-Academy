@@ -4,15 +4,21 @@
       padding-top: 50px;
       text-align: center;
       color: $darkGreen;
+      text-shadow: 4px 4px 4px $darkGreen;
+      h1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+      }
       h3 {
         font-family: "Sacramento", cursive;
         font-weight: 500;
         font-size: 30px;
+        font-weight: bold;
       }
     }
   }
   .row {
-    padding: 50px 0;
+    padding: 20px 0 50px 0;
     display: flex;
     justify-content: center;
     .col {
@@ -58,7 +64,7 @@
               transition: all 0.5s linear;
               font-family: "Montserrat", sans-serif;
               &:hover {
-                color: $light;
+                color: $coral;
                 background-color: $darkGreen;
               }
             }
