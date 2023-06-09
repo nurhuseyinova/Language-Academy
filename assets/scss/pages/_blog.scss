@@ -79,20 +79,21 @@
   .blogItem2 {
     @include display;
     justify-content: center;
-    gap: 20px;
+    // gap: 20px;
     width: 100%;
     .item {
-      width: 51%;
+      width: 50%;
       img {
         width: 100%;
+        height: 65vh;
       }
     }
     .info {
-      width: 49%;
+      width: 50%;
       .item2Note {
         color: $darkGreen;
         line-height: 5vh;
-        padding: 50px 10px;
+        padding: 50px 20px ;
         .line {
           height: 5px;
           width: 70px;
