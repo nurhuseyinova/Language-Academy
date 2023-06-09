@@ -1,3 +1,4 @@
+////home page blog section!
 #blog {
   background-color: $lightBlue;
   padding-top: 50px;
@@ -42,6 +43,84 @@
           }
         }
       }
+    }
+  }
+}
+////blog.html!    Blog page
+
+#blogPage {
+  .blogItem {
+    background-image: url("../image/bg_1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .item1 {
+      background-color: rgba(17, 95, 17, 0.452);
+      padding: 200px 50px;
+      .herroBanner {
+        .item1Note {
+          font-family: "Montserrat", sans-serif;
+          color: $light;
+          text-align: center;
+          h1 {
+            font-weight: bold;
+            text-shadow: 4px 4px 3px $light;
+            font-size: 60px;
+          }
+          div {
+            a {
+              color: $light;
+            }
+          }
+        }
+      }
+    }
+  }
+  .blogItem2 {
+    @include display;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    .item {
+      width: 51%;
+      img {
+        width: 100%;
+      }
+    }
+    .info {
+      width: 49%;
+      .item2Note {
+        color: $darkGreen;
+        line-height: 5vh;
+        padding: 50px 10px;
+        .line {
+          height: 5px;
+          width: 70px;
+          background-color: $darkGreen;
+          border-radius: 5px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
+      .product2 {
+        flex-direction: column-reverse;
+      }
+      .item {
+        width: 100%;
+      }
+      .info {
+        width: 100%;
+        .item2Note {
+          padding: 50px;
+        }
+      }
+    }
+  }
+  .product2 {
+    @media only screen and (max-width: 767px) {
+      flex-direction: column-reverse;
     }
   }
 }

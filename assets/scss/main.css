@@ -470,6 +470,81 @@ header nav .darkmode .fa-moon {
   transform: rotate(10deg);
 }
 
+#blogPage .blogItem {
+  background-image: url("../image/bg_1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#blogPage .blogItem .item1 {
+  background-color: rgba(17, 95, 17, 0.452);
+  padding: 200px 50px;
+}
+#blogPage .blogItem .item1 .herroBanner .item1Note {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+#blogPage .blogItem .item1 .herroBanner .item1Note h1 {
+  font-weight: bold;
+  text-shadow: 4px 4px 3px #ffffff;
+  font-size: 60px;
+}
+#blogPage .blogItem .item1 .herroBanner .item1Note div a {
+  color: #ffffff;
+}
+#blogPage .blogItem2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+#blogPage .blogItem2 .item {
+  width: 51%;
+}
+#blogPage .blogItem2 .item img {
+  width: 100%;
+}
+#blogPage .blogItem2 .info {
+  width: 49%;
+}
+#blogPage .blogItem2 .info .item2Note {
+  color: rgb(27, 80, 36);
+  line-height: 5vh;
+  padding: 50px 10px;
+}
+#blogPage .blogItem2 .info .item2Note .line {
+  height: 5px;
+  width: 70px;
+  background-color: rgb(27, 80, 36);
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 767px) {
+  #blogPage .blogItem2 {
+    flex-direction: column;
+  }
+  #blogPage .blogItem2 .product2 {
+    flex-direction: column-reverse;
+  }
+  #blogPage .blogItem2 .item {
+    width: 100%;
+  }
+  #blogPage .blogItem2 .info {
+    width: 100%;
+  }
+  #blogPage .blogItem2 .info .item2Note {
+    padding: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #blogPage .product2 {
+    flex-direction: column-reverse;
+  }
+}
+
 #comments {
   background-image: url("../image/bgicomments.jpg");
   background-position: center;
