@@ -1,68 +1,121 @@
 header {
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-  background-color: $bgHeader;
-  .herroBanner {
-    nav {
-      @include display;
-      height: 12vh;
-      h4 {
-        color: $dark;
-        font-size: 25px;
-        position: relative;
-        bottom: 8px;
-        font-weight: 700;
-        font-family: "Sacramento", cursive;
-        span {
-          position: absolute;
-          left: 15px;
-          color: $mainColor;
+  .headerTop {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: $bgHeader;
+    .herroBanner {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20vh;
+      nav {
+        @include display;
+        height: 12vh;
+
+        h4 {
+          color: $dark;
+          font-size: 25px;
+          position: relative;
+          bottom: 8px;
+          font-weight: 700;
+          font-family: "Sacramento", cursive;
+          span {
+            position: absolute;
+            left: 15px;
+            color: $mainColor;
+          }
+        }
+        .headItem1 {
+          @include display;
+          gap: 30px;
+          margin-bottom: 0px;
+
+          li {
+            a {
+              font-weight: 600;
+              text-transform: uppercase;
+              color: $dark;
+              font-family: "Montserrat", sans-serif;
+              border-bottom: 2px solid transparent;
+              &:hover {
+                border-color: $mainColor;
+                color: $mainColor;
+              }
+            }
+          }
+          @media only screen and (max-width: 992px) {
+            display: none;
+          }
+        }
+        .fa-bars {
+          color: black;
+          font-size: 20px;
+          display: none;
+          @media only screen and (max-width: 992px) {
+            display: block;
+          }
+        }
+        .darkmode {
+          @include display;
+          gap: 20px;
+          font-size: 20px;
+          .fa-sun {
+            color: rgb(248, 170, 24);
+          }
+          .fa-moon {
+            color: rgb(58, 58, 138);
+          }
+          @media only screen and (max-width: 992px) {
+            display: none;
+          }
         }
       }
-      .headItem1 {
-        @include display;
-        gap: 30px;
-        margin-bottom: 0px;
-
-        li {
-          a {
-            text-transform: uppercase;
-            color: $dark;
-            font-family: "Montserrat", sans-serif;
-            border-bottom: 1px solid transparent;
-            &:hover {
-              border-color: $coral;
-              color: $coral;
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    .show {
+      position: fixed;
+      width: 50%;
+      z-index: 9;
+      background-color: $bgHeader;
+      margin-top: 12vh;
+      .herroBanner {
+        nav {
+          line-height: 6vh;
+          height: 100vh;
+          padding: 30px 0;
+          ul {
+            li {
+              a {
+                text-transform: uppercase;
+                color: $dark;
+                font-family: "Montserrat", sans-serif;
+                border-bottom: 2px solid transparent;
+                font-weight: 600;
+                &:hover {
+                  border-color: $mainColor;
+                  color: $mainColor;
+                }
+              }
+            }
+            .darkmode {
+              @include display;
+              justify-content: start;
+              gap: 20px;
+              font-size: 20px;
+              .fa-sun {
+                color: rgb(248, 170, 24);
+              }
+              .fa-moon {
+                color: rgb(58, 58, 138);
+              }
             }
           }
         }
-        @media only screen and (max-width: 992px) {
-          display: none;
-        }
       }
-      .fa-bars {
-        color: black;
-        font-size: 20px;
-        display: none;
-        @media only screen and (max-width: 992px) {
-          display: block;
-        }
-      }
-      .darkmode {
-        @include display;
-        gap: 20px;
-        font-size: 20px;
-        .fa-sun {
-          color: rgb(248, 233, 24);
-        }
-        .fa-moon {
-          color: rgb(58, 58, 138);
-        }
-        @media only screen and (max-width: 992px) {
-          display: none;
-        }
-      }
+      // &.shovMenu{
+      //   display: block;
+      // }
     }
   }
 }

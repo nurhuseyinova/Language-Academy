@@ -23,19 +23,24 @@ body {
   background-color: #fdf6ea;
 }
 
-header {
+header .headerTop {
   position: fixed;
   width: 100%;
   z-index: 10;
   background-color: rgba(253, 246, 234, 0.8);
 }
-header .herroBanner nav {
+header .headerTop .herroBanner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20vh;
+}
+header .headerTop .herroBanner nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 12vh;
 }
-header .herroBanner nav h4 {
+header .headerTop .herroBanner nav h4 {
   color: #000000;
   font-size: 25px;
   position: relative;
@@ -43,59 +48,99 @@ header .herroBanner nav h4 {
   font-weight: 700;
   font-family: "Sacramento", cursive;
 }
-header .herroBanner nav h4 span {
+header .headerTop .herroBanner nav h4 span {
   position: absolute;
   left: 15px;
   color: #838c48;
 }
-header .herroBanner nav .headItem1 {
+header .headerTop .herroBanner nav .headItem1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 30px;
   margin-bottom: 0px;
 }
-header .herroBanner nav .headItem1 li a {
+header .headerTop .herroBanner nav .headItem1 li a {
+  font-weight: 600;
   text-transform: uppercase;
   color: #000000;
   font-family: "Montserrat", sans-serif;
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
 }
-header .herroBanner nav .headItem1 li a:hover {
-  border-color: rgb(253, 161, 128);
-  color: rgb(253, 161, 128);
+header .headerTop .herroBanner nav .headItem1 li a:hover {
+  border-color: #838c48;
+  color: #838c48;
 }
 @media only screen and (max-width: 992px) {
-  header .herroBanner nav .headItem1 {
+  header .headerTop .herroBanner nav .headItem1 {
     display: none;
   }
 }
-header .herroBanner nav .fa-bars {
+header .headerTop .herroBanner nav .fa-bars {
   color: black;
   font-size: 20px;
   display: none;
 }
 @media only screen and (max-width: 992px) {
-  header .herroBanner nav .fa-bars {
+  header .headerTop .herroBanner nav .fa-bars {
     display: block;
   }
 }
-header .herroBanner nav .darkmode {
+header .headerTop .herroBanner nav .darkmode {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
   font-size: 20px;
 }
-header .herroBanner nav .darkmode .fa-sun {
-  color: rgb(248, 233, 24);
+header .headerTop .herroBanner nav .darkmode .fa-sun {
+  color: rgb(248, 170, 24);
 }
-header .herroBanner nav .darkmode .fa-moon {
+header .headerTop .herroBanner nav .darkmode .fa-moon {
   color: rgb(58, 58, 138);
 }
 @media only screen and (max-width: 992px) {
-  header .herroBanner nav .darkmode {
+  header .headerTop .herroBanner nav .darkmode {
     display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  header .show {
+    position: fixed;
+    width: 50%;
+    z-index: 9;
+    background-color: rgba(253, 246, 234, 0.8);
+    margin-top: 12vh;
+  }
+  header .show .herroBanner nav {
+    line-height: 6vh;
+    height: 100vh;
+    padding: 30px 0;
+  }
+  header .show .herroBanner nav ul li a {
+    text-transform: uppercase;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    border-bottom: 2px solid transparent;
+    font-weight: 600;
+  }
+  header .show .herroBanner nav ul li a:hover {
+    border-color: #838c48;
+    color: #838c48;
+  }
+  header .show .herroBanner nav ul .darkmode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: start;
+    gap: 20px;
+    font-size: 20px;
+  }
+  header .show .herroBanner nav ul .darkmode .fa-sun {
+    color: rgb(248, 170, 24);
+  }
+  header .show .herroBanner nav ul .darkmode .fa-moon {
+    color: rgb(58, 58, 138);
   }
 }
 
