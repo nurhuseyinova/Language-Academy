@@ -92,6 +92,28 @@
           </div>
         </div>
       </div>
+      <div class="blogItem1">
+        <div class="swiper mySwiperSquare">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/image/academy-new-8.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image/academy-new-2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image/academy-new-1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image/academy-new-6.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image/academy-new-7.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
       <div class="blogItem2">
         <div class="item">
           <img src="./assets/image/image_3.jpg" alt="" />
@@ -315,6 +337,21 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiperSquare", {
+        effect: "cube",
+        grabCursor: true,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
     <script>
       var swiper = new Swiper(".mySwiper", {
         effect: "coverflow",

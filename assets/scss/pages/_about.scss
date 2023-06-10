@@ -15,16 +15,40 @@
         line-height: 5vh;
       }
       a {
-        color: white;
-        background-color: $mainColor;
+    font-family: "Montserrat", sans-serif;
+        background: $mainColor;
+        color: $light;
         padding: 10px 30px;
-        border-radius: 20px;
-        transition: all 0.5s linear;
-        border: 1px solid $mainColor;
-        font-family: "Montserrat", sans-serif;
+        border: none;
+        position: relative;
+        cursor: pointer;
+        transition: 400ms linear all;
+        outline: none;
         &:hover {
+          background: transparent;
           color: $mainColor;
-          background-color: transparent;
+        }
+        &:before,
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 2px;
+          width: 0;
+          background: $mainColor;
+          transition: 400ms linear all;
+        }
+        &:after {
+          right: inherit;
+          top: inherit;
+          left: 0;
+          bottom: 0;
+        }
+        &:hover:before,
+        &:hover:after {
+          width: 100%;
+          transition: 400ms linear all;
         }
       }
     }

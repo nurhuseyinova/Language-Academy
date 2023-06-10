@@ -131,17 +131,39 @@ header .herroBanner nav .darkmode .fa-moon {
   line-height: 5vh;
 }
 #about .herroBanner .aboutNote a {
-  color: white;
-  background-color: #838c48;
-  padding: 10px 30px;
-  border-radius: 20px;
-  transition: all 0.5s linear;
-  border: 1px solid #838c48;
   font-family: "Montserrat", sans-serif;
+  background: #838c48;
+  color: #ffffff;
+  padding: 10px 30px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition: 400ms linear all;
+  outline: none;
 }
 #about .herroBanner .aboutNote a:hover {
+  background: transparent;
   color: #838c48;
-  background-color: transparent;
+}
+#about .herroBanner .aboutNote a:before, #about .herroBanner .aboutNote a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #838c48;
+  transition: 400ms linear all;
+}
+#about .herroBanner .aboutNote a:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+#about .herroBanner .aboutNote a:hover:before, #about .herroBanner .aboutNote a:hover:after {
+  width: 100%;
+  transition: 400ms linear all;
 }
 
 #language .herroBanner .languageNote {
@@ -509,6 +531,24 @@ header .herroBanner nav .darkmode .fa-moon {
 #blogPage .blogItem .item1 .herroBanner .item1Note div a {
   color: #ffffff;
 }
+#blogPage .blogItem1 .swiper {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -130px;
+}
+#blogPage .blogItem1 .swiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+#blogPage .blogItem1 .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+}
 #blogPage .blogItem2 {
   display: flex;
   align-items: center;
@@ -653,17 +693,51 @@ header .herroBanner nav .darkmode .fa-moon {
   font-size: 30px;
 }
 #contact .contactPage .herroBanner .contactNote a {
-  color: #838c48;
-  background-color: transparent;
   padding: 10px 25px;
   border-radius: 20px;
-  border: 1px solid #838c48;
-  transition: all 0.5s linear;
   font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  overflow: hidden;
+  display: inline-block;
+  color: #ffffff;
+  background: none;
+  border: 1px solid #838c48;
+  cursor: pointer;
+  transform: translate3d(0, 0, 0);
+}
+#contact .contactPage .herroBanner .contactNote a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  height: 150%;
+  background: #838c48;
+  pointer-events: none;
+  transform: translate3d(0, 45px, 0);
+  transition: all 0.3s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+#contact .contactPage .herroBanner .contactNote a i {
+  font-style: normal;
+  line-height: 4.5rem;
+  display: inline-block;
+  height: 100%;
+  padding-left: 1px;
+  padding-right: 1px;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+#contact .contactPage .herroBanner .contactNote a i:hover {
+  transform: translate3d(0, -6px, 0);
 }
 #contact .contactPage .herroBanner .contactNote a:hover {
   color: #ffffff;
-  background-color: #838c48;
+}
+#contact .contactPage .herroBanner .contactNote a:hover:after {
+  transform: translate3d(0, 0, 0);
 }
 
 #contactPage .contactItem {
