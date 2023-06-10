@@ -10,17 +10,24 @@ a {
 }
 
 .herroBanner {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+@media only screen and (max-width: 992px) {
+  .herroBanner {
+    padding: 0 5%;
+  }
+}
+
+body {
+  background-color: #fdf6ea;
 }
 
 header {
   position: fixed;
   width: 100%;
   z-index: 10;
-}
-header .herroBanner {
-  background-color: rgb(13, 54, 114);
+  background-color: rgba(253, 246, 234, 0.8);
 }
 header .herroBanner nav {
   display: flex;
@@ -29,17 +36,17 @@ header .herroBanner nav {
   height: 12vh;
 }
 header .herroBanner nav h4 {
-  color: #ffffff;
-  font-size: 20px;
+  color: #000000;
+  font-size: 25px;
   position: relative;
   bottom: 8px;
+  font-weight: 700;
+  font-family: "Sacramento", cursive;
 }
 header .herroBanner nav h4 span {
   position: absolute;
   left: 15px;
-}
-header .herroBanner nav h4:hover span {
-  color: rgb(253, 161, 128);
+  color: #838c48;
 }
 header .herroBanner nav .headItem1 {
   display: flex;
@@ -49,7 +56,8 @@ header .herroBanner nav .headItem1 {
   margin-bottom: 0px;
 }
 header .herroBanner nav .headItem1 li a {
-  color: #ffffff;
+  text-transform: uppercase;
+  color: #000000;
   font-family: "Montserrat", sans-serif;
   border-bottom: 1px solid transparent;
 }
@@ -91,9 +99,9 @@ header .herroBanner nav .darkmode .fa-moon {
   }
 }
 
-#home .herroBanner {
-  padding: 250px 0;
-  background-image: url("../image/courses-14.jpg");
+#home {
+  padding: 300px 0;
+  background-image: url("../image/fullscreen-slider.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -101,52 +109,46 @@ header .herroBanner nav .darkmode .fa-moon {
 }
 #home .herroBanner .homeItem .item .itemNote {
   text-align: center;
-  color: rgb(147, 147, 240);
+  color: #838c48;
 }
 #home .herroBanner .homeItem .item .itemNote h1 {
   text-shadow: 2px 2px 2px #ffffff;
 }
 
-#about .herroBanner {
-  background-color: #e5e9ec;
-}
 #about .herroBanner .aboutNote {
   padding: 60px 0;
   font-family: "Sora", sans-serif;
 }
 #about .herroBanner .aboutNote h2 {
   font-weight: bold;
-  color: rgb(13, 54, 114);
+  color: #838c48;
   margin-bottom: 3vh;
 }
 #about .herroBanner .aboutNote p {
-  color: rgb(13, 54, 114);
+  color: #838c48;
   font-weight: 500;
   font-size: 15px;
   line-height: 5vh;
 }
 #about .herroBanner .aboutNote a {
   color: white;
-  background-color: rgb(13, 54, 114);
+  background-color: #838c48;
   padding: 10px 30px;
   border-radius: 20px;
   transition: all 0.5s linear;
-  border: 1px solid rgb(13, 54, 114);
+  border: 1px solid #838c48;
   font-family: "Montserrat", sans-serif;
 }
 #about .herroBanner .aboutNote a:hover {
-  color: rgb(13, 54, 114);
+  color: #838c48;
   background-color: transparent;
 }
 
-#language .herroBanner {
-  background-color: #e5e9ec;
-}
 #language .herroBanner .languageNote {
   padding-top: 50px;
   text-align: center;
-  color: rgb(13, 54, 114);
-  text-shadow: 4px 4px 4px rgb(13, 54, 114);
+  color: #838c48;
+  text-shadow: 4px 4px 4px #da853d;
 }
 #language .herroBanner .languageNote h1 {
   font-family: "Montserrat", sans-serif;
@@ -191,39 +193,36 @@ header .herroBanner nav .darkmode .fa-moon {
   z-index: -1;
   bottom: 0;
   height: 0;
-  background-color: rgba(14, 13, 13, 0.7);
+  background-color: rgba(131, 140, 72, 0.662745098);
   text-align: center;
-  color: rgb(253, 161, 128);
+  color: #ffffff;
   transition: all 0.4s linear;
 }
 #language .row .col .item .itemImg .itemNote a {
-  color: rgb(13, 54, 114);
+  color: #838c48;
   font-size: 14px;
   padding: 10px 20px;
   border-radius: 20px;
-  background-color: rgb(253, 161, 128);
+  background-color: #ffffff;
   transition: all 0.5s linear;
   font-family: "Montserrat", sans-serif;
 }
 #language .row .col .item .itemImg .itemNote a:hover {
-  color: rgb(253, 161, 128);
-  background-color: rgb(13, 54, 114);
+  color: #ffffff;
+  background-color: #838c48;
 }
 
-#whywe .herroBanner {
+#whywe {
   padding: 60px 0;
-  background-color: rgb(196, 203, 247);
 }
 #whywe .herroBanner .note {
   text-align: center;
-  color: #ffffff;
+  color: #838c48;
   margin-bottom: 40px;
-}
-#whywe .herroBanner .note h2 {
-  text-shadow: 1px 1px 2px #ffffff;
+  text-shadow: 2px 2px 3px #da853d;
 }
 #whywe .herroBanner .note p {
-  font-size: 20px;
+  font-size: 25px;
 }
 #whywe .herroBanner .row {
   display: flex;
@@ -243,7 +242,7 @@ header .herroBanner nav .darkmode .fa-moon {
   display: flex;
   align-items: center;
   gap: 5px;
-  color: rgb(13, 54, 114);
+  color: #838c48;
 }
 #whywe .herroBanner .row .col .itemNote i {
   padding: 5%;
@@ -251,39 +250,38 @@ header .herroBanner nav .darkmode .fa-moon {
   border: 4px solid #e5e9ec;
   width: 70px;
   height: 65px;
-  color: rgb(13, 54, 114);
+  color: #838c48;
   background-color: rgb(253, 161, 128);
   font-size: 25px;
 }
 #whywe .herroBanner .row .col p {
-  color: rgb(13, 54, 114);
+  color: #838c48;
 }
 
-#galery .herroBanner {
+#galery {
   padding-top: 40px;
-  background-color: #e5e9ec;
 }
-#galery .herroBanner h1 {
+#galery h1 {
   text-align: center;
-  color: rgb(13, 54, 114);
-  text-shadow: 4px 4px 4px rgb(13, 54, 114);
+  color: #838c48;
+  text-shadow: 4px 4px 4px #da853d;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
 }
-#galery .herroBanner p {
+#galery p {
   text-align: center;
-  color: rgb(13, 54, 114);
+  color: #838c48;
   margin-bottom: 20px;
   font-weight: bold;
   font-family: "Sacramento", cursive;
   font-size: 30px;
-  text-shadow: 4px 4px 4px rgb(13, 54, 114);
+  text-shadow: 4px 4px 4px #da853d;
 }
-#galery .herroBanner .swiper {
+#galery .swiper {
   width: 100%;
   height: 100%;
 }
-#galery .herroBanner .swiper .swiper-slide {
+#galery .swiper .swiper-slide {
   display: flex;
   text-align: center;
   font-size: 18px;
@@ -295,7 +293,7 @@ header .herroBanner nav .darkmode .fa-moon {
   background-size: cover;
   width: 500px;
 }
-#galery .herroBanner .swiper .swiper-slide img {
+#galery .swiper .swiper-slide img {
   display: block;
   width: 50%;
   height: 70vh;
@@ -303,22 +301,31 @@ header .herroBanner nav .darkmode .fa-moon {
      object-fit: cover;
 }
 @media only screen and (max-width: 767px) {
-  #galery .herroBanner .swiper .swiper-slide {
+  #galery .swiper .swiper-slide {
     flex-direction: column;
   }
+  #galery .swiper .swiper-slide img {
+    width: 100%;
+  }
 }
-#galery .herroBanner .swiper .pagination-button {
-  color: rgb(13, 54, 114);
+#galery .swiper .pagination-button {
+  color: #838c48;
 }
 
-#teacher .herroBanner {
-  background-color: #e5e9ec;
+#teacher {
   padding: 50px 0;
 }
 #teacher .herroBanner .teacherNote {
   text-align: center;
-  color: rgb(13, 54, 114);
+  color: #838c48;
   font-family: "Montserrat", sans-serif;
+}
+#teacher .herroBanner .teacherNote h1 {
+  text-shadow: 3px 3px 2px #da853d;
+  font-weight: bold;
+}
+#teacher .herroBanner .teacherNote p {
+  font-size: 20px;
 }
 #teacher .herroBanner .row {
   padding-top: 50px;
@@ -329,7 +336,7 @@ header .herroBanner nav .darkmode .fa-moon {
 }
 #teacher .herroBanner .row .col .item {
   padding: 30px 20px;
-  border: 1px solid rgb(13, 54, 114);
+  border: 1px solid #838c48;
   text-align: center;
 }
 #teacher .herroBanner .row .col .item .itemImg {
@@ -337,7 +344,7 @@ header .herroBanner nav .darkmode .fa-moon {
   transition: all 0.5s linear;
 }
 #teacher .herroBanner .row .col .item .itemImg img {
-  border: 2px solid rgb(253, 161, 128);
+  border: 2px solid #da853d;
   position: relative;
   margin-top: -100px;
   width: 150px;
@@ -349,30 +356,30 @@ header .herroBanner nav .darkmode .fa-moon {
   margin-top: -40px;
   margin-left: -26%;
   font-size: 30px;
-  color: rgb(13, 54, 114);
+  color: #838c48;
   z-index: -1;
 }
 #teacher .herroBanner .row .col .item .itemNote {
-  color: rgb(13, 54, 114);
+  color: #838c48;
   font-family: "Montserrat", sans-serif;
 }
 #teacher .herroBanner .row .col .item .itemNote a {
-  color: rgb(13, 54, 114);
+  color: #838c48;
   background-color: transparent;
   padding: 10px 25px;
   border-radius: 20px;
-  border: 1px solid rgb(13, 54, 114);
+  border: 1px solid #838c48;
   transition: all 0.5s linear;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 10px;
 }
 #teacher .herroBanner .row .col .item .itemNote a:hover {
-  color: rgb(253, 161, 128);
-  background-color: rgb(13, 54, 114);
+  color: #da853d;
+  background-color: #838c48;
 }
 #teacher .herroBanner .row .col:hover h3,
 #teacher .herroBanner .row .col:hover p {
-  color: rgb(253, 161, 128);
+  color: #da853d;
 }
 #teacher .herroBanner .row .col:hover .itemImg i {
   z-index: 1;
@@ -402,47 +409,47 @@ header .herroBanner nav .darkmode .fa-moon {
   color: #ffffff;
 }
 
-#achieveCount .herroBanner {
-  background-image: url("../image/bg_3 (1).jpg");
+#achieveCount {
+  background-image: url("../image/counterbox-bg-new-1.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#achieveCount .herroBanner .countItem {
-  background-color: rgba(30, 53, 95, 0.2);
+#achieveCount .countItem {
+  background-color: rgba(161, 125, 58, 0.2);
   padding: 100px 0;
 }
-#achieveCount .herroBanner .countItem .item {
+#achieveCount .countItem .herroBanner .item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   justify-content: center;
   gap: 10px;
-  color: rgb(13, 54, 114);
 }
-#achieveCount .herroBanner .countItem .item i {
+#achieveCount .countItem .herroBanner .item i {
+  color: #da853d;
   font-size: 60px;
 }
-#achieveCount .herroBanner .countItem .item .itemNote {
+#achieveCount .countItem .herroBanner .item .itemNote {
   color: #ffffff;
 }
 @media only screen and (max-width: 556px) {
-  #achieveCount .herroBanner {
+  #achieveCount .countItem {
     padding: 50px 0;
   }
-  #achieveCount .herroBanner .item {
+  #achieveCount .countItem .item {
     justify-content: flex-start !important;
   }
 }
 
-#blog .herroBanner {
-  background-color: #e5e9ec;
+#blog {
+  background-color: #f8e6c6;
   padding-top: 50px;
 }
 #blog .herroBanner h1 {
   text-align: center;
-  color: rgb(13, 54, 114);
-  text-shadow: 4px 4px 4px rgb(13, 54, 114);
+  color: #838c48;
+  text-shadow: 4px 4px 4px #da853d;
 }
 #blog .herroBanner .swiper {
   width: 100%;
@@ -469,10 +476,10 @@ header .herroBanner nav .darkmode .fa-moon {
 #blog .herroBanner .swiper .swiper-slide .slideNote {
   padding: 7px;
   text-align: center;
-  color: rgb(13, 54, 114);
+  color: #838c48;
 }
 #blog .herroBanner .swiper .swiper-slide:hover .note1 {
-  color: rgb(253, 161, 128);
+  color: #da853d;
 }
 #blog .herroBanner .swiper .swiper-slide:hover .slideImg img {
   scale: 1.2;
@@ -480,13 +487,13 @@ header .herroBanner nav .darkmode .fa-moon {
 }
 
 #blogPage .blogItem {
-  background-image: url("../image/bg_1.jpg");
+  background-image: url("../image/banner-courses-hub.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #blogPage .blogItem .item1 {
-  background-color: rgba(133, 143, 189, 0.308);
+  background-color: rgba(233, 193, 156, 0.384);
   padding: 200px 50px;
 }
 #blogPage .blogItem .item1 .herroBanner .item1Note {
@@ -520,14 +527,14 @@ header .herroBanner nav .darkmode .fa-moon {
   width: 50%;
 }
 #blogPage .blogItem2 .info .item2Note {
-  color: rgb(13, 54, 114);
+  color: #838c48;
   line-height: 5vh;
   padding: 50px 20px;
 }
 #blogPage .blogItem2 .info .item2Note .line {
   height: 5px;
   width: 70px;
-  background-color: rgb(13, 54, 114);
+  background-color: #838c48;
   border-radius: 5px;
   margin-bottom: 30px;
 }
@@ -554,40 +561,40 @@ header .herroBanner nav .darkmode .fa-moon {
   }
 }
 
-#comments .herroBanner {
+#comments {
   background-image: url("../image/bgicomments.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
 }
-#comments .herroBanner .commentItem {
+#comments .commentItem {
   background-color: rgba(75, 130, 182, 0.404);
   padding: 150px;
 }
-#comments .herroBanner .commentItem h1 {
+#comments .commentItem .herroBanner h1 {
   color: #ffffff;
   margin-bottom: 60px;
   text-align: center;
 }
-#comments .herroBanner .commentItem .itemComment {
+#comments .commentItem .herroBanner .itemComment {
   display: flex;
   align-items: center;
   justify-content: space-between;
   justify-content: center;
   gap: 20px;
 }
-#comments .herroBanner .commentItem .itemComment .itemImg {
+#comments .commentItem .herroBanner .itemComment .itemImg {
   position: relative;
   border-radius: 15px;
   overflow: hidden;
 }
-#comments .herroBanner .commentItem .itemComment .itemImg img {
+#comments .commentItem .herroBanner .itemComment .itemImg img {
   border-radius: 15px;
   height: 40vh;
   width: 300px;
 }
-#comments .herroBanner .commentItem .itemComment .itemImg nav {
+#comments .commentItem .herroBanner .itemComment .itemImg nav {
   background-color: rgba(15, 46, 15, 0.425);
   position: absolute;
   margin-top: -240px;
@@ -597,75 +604,75 @@ header .herroBanner nav .darkmode .fa-moon {
   height: 50vh;
   transition: all 0.5s linear;
 }
-#comments .herroBanner .commentItem .itemComment .itemImg nav ul {
+#comments .commentItem .herroBanner .itemComment .itemImg nav ul {
   display: flex;
   flex-direction: column;
   justify-content: start;
   gap: 15px;
 }
-#comments .herroBanner .commentItem .itemComment .itemImg nav ul li a {
-  color: rgb(13, 54, 114);
+#comments .commentItem .herroBanner .itemComment .itemImg nav ul li a {
+  color: #838c48;
   background-color: rgb(253, 161, 128);
-  border: 1px solid rgb(13, 54, 114);
+  border: 1px solid #838c48;
   border-radius: 50%;
   padding: 6px 10px;
 }
-#comments .herroBanner .commentItem .itemComment .itemImg:hover nav {
+#comments .commentItem .herroBanner .itemComment .itemImg:hover nav {
   z-index: 1 !important;
   width: 70px;
 }
-#comments .herroBanner .commentItem .itemComment .commentNote1 {
-  color: rgb(13, 54, 114);
+#comments .commentItem .herroBanner .itemComment .commentNote1 {
+  color: #838c48;
   text-align: left;
 }
 
-#contact .herroBanner {
+#contact {
   background-image: url("../image/cta2-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
-#contact .herroBanner .contactPage {
+#contact .contactPage {
   padding: 60px 0;
-  background-color: rgba(173, 172, 235, 0.3);
+  background-color: rgba(241, 174, 111, 0.3);
 }
-#contact .herroBanner .contactPage .contactNote {
+#contact .contactPage .herroBanner .contactNote {
   text-align: center;
-  color: rgb(13, 54, 114);
+  color: #838c48;
 }
-#contact .herroBanner .contactPage .contactNote p {
+#contact .contactPage .herroBanner .contactNote h2 {
+  text-shadow: 2px 2px 1px #ffffff;
+  font-weight: bold;
+}
+#contact .contactPage .herroBanner .contactNote p {
   color: #ffffff;
   font-size: 20px;
 }
-#contact .herroBanner .contactPage .contactNote i {
+#contact .contactPage .herroBanner .contactNote i {
   font-size: 30px;
 }
-#contact .herroBanner .contactPage .contactNote a {
-  color: #ffffff;
-  background-color: rgb(13, 54, 114);
+#contact .contactPage .herroBanner .contactNote a {
+  color: #838c48;
+  background-color: transparent;
   padding: 10px 25px;
   border-radius: 20px;
-  border: 1px solid rgb(13, 54, 114);
+  border: 1px solid #838c48;
   transition: all 0.5s linear;
   font-family: "Montserrat", sans-serif;
 }
-#contact .herroBanner .contactPage .contactNote a:hover {
-  color: rgb(13, 54, 114);
-  background-color: transparent;
+#contact .contactPage .herroBanner .contactNote a:hover {
+  color: #ffffff;
+  background-color: #838c48;
 }
 
-#contactPage {
-  background-color: white;
-}
 #contactPage .contactItem {
-  background-image: url("../image/bg_1.jpg");
+  background-image: url("../image/contactImg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #contactPage .contactItem .item1 {
-  background-color: rgba(133, 143, 189, 0.308);
   padding: 200px 50px;
 }
 #contactPage .contactItem .item1 .herroBanner .item1Note {
@@ -692,25 +699,34 @@ header .herroBanner nav .darkmode .fa-moon {
 #contactPage .item2 .herroBanner .row .col {
   width: 250px;
   height: 25vh;
-  background-color: #e5e9ec;
+  background-color: #f8e6c6;
   text-align: center;
-  padding: 5px;
-  color: rgb(13, 54, 114);
+  padding: 10px 5px;
+  color: #838c48;
+  transition: all 0.3s linear;
 }
 #contactPage .item2 .herroBanner .row .col h4 {
   margin-bottom: 3vh;
 }
 #contactPage .item2 .herroBanner .row .col a {
-  color: rgb(13, 54, 114);
+  color: #838c48;
 }
 @media only screen and (max-width: 992px) {
   #contactPage .item2 .herroBanner .row .col {
     height: 20vh;
   }
 }
+#contactPage .item2 .herroBanner .row .col:hover {
+  transform: translateY(-15px);
+  background-color: #da853d;
+  color: #f8e6c6;
+}
+#contactPage .item2 .herroBanner .row .col:hover a {
+  color: #f8e6c6;
+}
 #contactPage .item3 {
   padding: 50px 100px;
-  background-color: #e5e9ec;
+  background-color: #f8e6c6;
 }
 #contactPage .item3 .herroBanner {
   display: flex;
@@ -720,7 +736,7 @@ header .herroBanner nav .darkmode .fa-moon {
   gap: 30px;
 }
 #contactPage .item3 .herroBanner .note {
-  color: rgb(13, 54, 114);
+  color: #838c48;
   margin-bottom: 20px;
 }
 #contactPage .item3 .herroBanner form {
@@ -729,7 +745,7 @@ header .herroBanner nav .darkmode .fa-moon {
   justify-content: center;
 }
 #contactPage .item3 .herroBanner form .formTag {
-  border: 1px dashed rgb(13, 54, 114);
+  border: 1px dashed #838c48;
   margin-bottom: 10px;
   padding: 7px;
 }
@@ -744,15 +760,15 @@ header .herroBanner nav .darkmode .fa-moon {
 }
 #contactPage .item3 .herroBanner form button {
   color: white;
-  background-color: rgb(13, 54, 114);
+  background-color: #838c48;
   padding: 10px 30px;
   border-radius: 20px;
   transition: all 0.5s linear;
-  border: 1px solid rgb(13, 54, 114);
+  border: 1px solid #838c48;
   font-family: "Montserrat", sans-serif;
 }
 #contactPage .item3 .herroBanner form button:hover {
-  color: rgb(13, 54, 114);
+  color: #838c48;
   background-color: transparent;
 }
 @media only screen and (max-width: 767px) {
@@ -767,48 +783,87 @@ header .herroBanner nav .darkmode .fa-moon {
   }
 }
 
-footer .herroBanner {
-  background-color: rgb(13, 54, 114);
+footer {
+  background-color: #838c48;
 }
 footer .herroBanner .footerTop {
-  padding-top: 20px;
+  padding: 70px 0;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid coral;
+  border-bottom: 2px solid #000000;
+  row-gap: 5vh;
 }
-footer .herroBanner .footerTop h4 {
-  color: rgb(253, 161, 128);
-  font-size: 30px;
+footer .herroBanner .footerTop .topItem1 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7vh;
+}
+footer .herroBanner .footerTop .topItem1 h4 {
+  color: #000000;
+  font-size: 40px;
   position: relative;
-  margin-bottom: 20px;
   font-family: "Sacramento", cursive;
 }
-footer .herroBanner .footerTop h4 span {
+footer .herroBanner .footerTop .topItem1 h4 span {
   position: absolute;
   left: 15px;
+  color: #da853d;
 }
-footer .herroBanner .footerTop nav {
+footer .herroBanner .footerTop .topItem1 ul {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+footer .herroBanner .footerTop .topItem1 ul li a {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  color: #000000;
+}
+footer .herroBanner .footerTop .topItem1 ul li a:hover {
+  color: #da853d;
+}
+footer .herroBanner .footerTop .topItem1 ul li a i {
+  color: #da853d;
+  font-size: 22px;
+}
+footer .herroBanner .footerTop .topItem2 {
   margin: top;
   display: flex;
+  gap: 25px;
 }
-footer .herroBanner .footerTop nav ul li a {
-  color: rgb(253, 161, 128);
+footer .herroBanner .footerTop .topItem2 ul h4 {
+  color: #000000;
+}
+footer .herroBanner .footerTop .topItem2 ul li a {
+  font-size: 20px;
+  color: #000000;
+  border-bottom: 2px solid transparent;
+}
+footer .herroBanner .footerTop .topItem2 ul li a:hover {
+  color: #da853d;
+  border-color: #da853d;
 }
 @media only screen and (max-width: 767px) {
   footer .herroBanner .footerTop {
     flex-direction: column;
   }
-  footer .herroBanner .footerTop h4 {
-    position: static !important;
+  footer .herroBanner .footerTop .topItem1 {
     text-align: center;
+    row-gap: 0vh;
   }
-  footer .herroBanner .footerTop h4 span {
+  footer .herroBanner .footerTop .topItem1 h4 {
+    position: static !important;
+  }
+  footer .herroBanner .footerTop .topItem1 h4 span {
     position: static;
   }
-  footer .herroBanner .footerTop nav {
-    flex-direction: column !important;
+  footer .herroBanner .footerTop .topItem2 ul {
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+    text-align: center;
   }
-  footer .herroBanner .footerTop nav ul {
+  footer .herroBanner .footerTop .topItem2 ul li {
     text-align: center;
   }
 }
@@ -816,10 +871,14 @@ footer .herroBanner .footerBottum {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 10vh;
+  padding: 20px 0;
 }
 footer .herroBanner .footerBottum p {
-  color: rgb(253, 161, 128);
+  color: #000000;
+  font-size: 20px;
+}
+footer .herroBanner .footerBottum p:hover {
+  color: #da853d;
 }
 @media only screen and (max-width: 556px) {
   footer .herroBanner .footerBottum p {
@@ -830,10 +889,14 @@ footer .herroBanner .footerBottum ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
+  gap: 15px;
 }
 footer .herroBanner .footerBottum ul li a {
-  color: rgb(253, 161, 128);
+  font-size: 25px;
+  color: #000000;
+}
+footer .herroBanner .footerBottum ul li a:hover {
+  color: #da853d;
 }
 @media only screen and (max-width: 767px) {
   footer .herroBanner .footerBottum {

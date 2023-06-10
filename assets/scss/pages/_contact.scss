@@ -1,17 +1,21 @@
 ////index.html! contact section!
 #contact {
-  .herroBanner {
-    background-image: url("../image/cta2-background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    .contactPage {
-      padding: 60px 0;
-      background-color: rgba(173, 172, 235, 0.3);
+  background-image: url("../image/cta2-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  .contactPage {
+    padding: 60px 0;
+    background-color: rgba(241, 174, 111, 0.3);
+    .herroBanner {
       .contactNote {
         text-align: center;
         color: $mainColor;
+        h2 {
+          text-shadow: 2px 2px 1px $light;
+          font-weight: bold;
+        }
         p {
           color: $light;
           font-size: 20px;
@@ -20,16 +24,16 @@
           font-size: 30px;
         }
         a {
-          color: $light;
-          background-color: $mainColor;
+          color: $mainColor;
+          background-color: transparent;
           padding: 10px 25px;
           border-radius: 20px;
           border: 1px solid $mainColor;
           transition: all 0.5s linear;
           font-family: "Montserrat", sans-serif;
           &:hover {
-            color: $mainColor;
-            background-color: transparent;
+            color: $light;
+            background-color: $mainColor;
           }
         }
       }
@@ -40,14 +44,12 @@
 ////contact.html!
 
 #contactPage {
-  background-color: white;
   .contactItem {
-    background-image: url("../image/bg_1.jpg");
+    background-image: url("../image/contactImg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     .item1 {
-      background-color: rgba(133, 143, 189, 0.308);
       padding: 200px 50px;
       .herroBanner {
         .item1Note {
@@ -76,10 +78,11 @@
         .col {
           width: 250px;
           height: 25vh;
-          background-color: $lightBlue;
+          background-color: $lightCoral;
           text-align: center;
-          padding: 5px;
+          padding: 10px 5px;
           color: $mainColor;
+          transition: all 0.3s linear;
           h4 {
             margin-bottom: 3vh;
           }
@@ -89,13 +92,21 @@
           @media only screen and (max-width: 992px) {
             height: 20vh;
           }
+          &:hover {
+            transform: translateY(-15px);
+            background-color: $bg-orange;
+            color: $lightCoral;
+            a {
+              color: $lightCoral;
+            }
+          }
         }
       }
     }
   }
   .item3 {
     padding: 50px 100px;
-    background-color: $lightBlue;
+    background-color: $lightCoral;
     .herroBanner {
       @include display;
       justify-content: center;

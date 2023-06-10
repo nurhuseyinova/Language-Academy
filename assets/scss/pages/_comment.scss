@@ -1,13 +1,13 @@
 #comments {
-  .herroBanner {
-    background-image: url("../image/bgicomments.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    .commentItem {
-      background-color: rgba(75, 130, 182, 0.404);
-      padding: 150px;
+  background-image: url("../image/bgicomments.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  .commentItem {
+    background-color: rgba(75, 130, 182, 0.404);
+    padding: 150px;
+    .herroBanner {
       h1 {
         color: $light;
         margin-bottom: 60px;

@@ -1,17 +1,17 @@
 #home {
+  padding: 300px 0;
+  background-image: url("../image/fullscreen-slider.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
   .herroBanner {
-    padding: 250px 0;
-    background-image: url("../image/courses-14.jpg");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
     .homeItem {
       .item {
         .itemNote {
           text-align: center;
-          color: rgb(147, 147, 240);
-          h1{
+          color: $lightGreen;
+          h1 {
             text-shadow: 2px 2px 2px $light;
           }
         }

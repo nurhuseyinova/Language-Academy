@@ -1,18 +1,18 @@
 #achieveCount {
-  .herroBanner {
-    background-image: url("../image/bg_3\ \(1\).jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    .countItem {
-      background-color: rgba(30, 53, 95, 0.2);
-      padding: 100px 0;
+  background-image: url("../image/counterbox-bg-new-1.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .countItem {
+    background-color: rgba(161, 125, 58, 0.2);
+    padding: 100px 0;
+    .herroBanner {
       .item {
         @include display;
         justify-content: center;
         gap: 10px;
-        color: $mainColor;
         i {
+          color: #da853d;
           font-size: 60px;
         }
         .itemNote {

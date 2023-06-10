@@ -1,12 +1,12 @@
 ////home page blog section!
 #blog {
+  background-color: $lightCoral;
+  padding-top: 50px;
   .herroBanner {
-    background-color: $lightBlue;
-    padding-top: 50px;
     h1 {
       text-align: center;
       color: $mainColor;
-      text-shadow: 4px 4px 4px $mainColor;
+      text-shadow: 4px 4px 4px $textColor1;
     }
     .swiper {
       width: 100%;
@@ -35,7 +35,7 @@
         }
         &:hover {
           .note1 {
-            color: $coral;
+            color: $textColor1;
           }
           .slideImg {
             img {
@@ -52,12 +52,12 @@
 
 #blogPage {
   .blogItem {
-    background-image: url("../image/bg_1.jpg");
+    background-image: url("../image/banner-courses-hub.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     .item1 {
-      background-color: rgba(133, 143, 189, 0.308);
+      background-color: rgba(233, 193, 156, 0.384);
       padding: 200px 50px;
       .herroBanner {
         .item1Note {

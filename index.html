@@ -248,7 +248,6 @@
       </div>
     </div>
     <div id="galery">
-      <div class="herroBanner">
       <h1>Galery</h1>
       <p>Lorem ipsum dolor sit amet.</p>
       <div class="swiper mySwipergalery">
@@ -286,7 +285,6 @@
         <div class="swiper-button-prev pagination-button"></div>
         <div class="swiper-pagination"></div>
       </div>
-    </div>
   </div>
     <div id="teacher">
       <div class="herroBanner">
@@ -353,8 +351,8 @@
       </div>
     </div>
     <div id="achieveCount">
-      <div class="herroBanner">
       <div class="countItem">
+        <div class="herroBanner">
           <div class="row">
             <div class="col col-12 col-sm-6 col-lg-3 my-3 item">
               <i class="fa-solid fa-graduation-cap"></i>
@@ -491,8 +489,8 @@
       </div>
     </div>
     <div id="comments">
-      <div class="herroBanner">
       <div class="commentItem">
+      <div class="herroBanner">
         <h1>What our students say</h1>
         <div class="itemComment">
           <div class="itemImg">
@@ -525,8 +523,8 @@
       </div>
     </div>
     <div id="contact">
-      <div class="herroBanner">
       <div class="contactPage">
+        <div class="herroBanner">
           <div class="contactNote">
             <h2>Contact Us</h2>
             <p>If you want to be one step ahead, contact us!!</p>
@@ -539,31 +537,39 @@
     <footer>
       <div class="herroBanner">
         <div class="footerTop">
-          <h4>
-            Language <br />
-            <span>Academy</span>
-          </h4>
-          <nav>
-            <ul>
+          <nav class="topItem1">
+            <h4>
+              Language <br />
+              <span>Academy</span>
+            </h4>
+          <ul >
+            <li><a href="#"><i class="fa-solid fa-location-dot"></i>198 West 21th Street, Suite 721 Ganja 10016</a> </li>
+            <li><a href="tel:+994 077 777 77 77"><i class="fa-solid fa-phone"></i>+994 077 777 77 77</a> </li>
+            <li><a href="mailto:languageacademy@123.az"><i class="fa-solid fa-envelope"></i>languageacademy@123.az</a> </li>
+          </ul>
+        </nav>
+          <nav class="topItem2">
+            <ul><h4>Academy</h4>
               <li>
                 <a href="./index.html">Home</a>
+              </li>
+              <li>
+                <a href="./team.html">Team</a>
               </li>
               <li>
                 <a href="#">About us</a>
               </li>
               <li>
+                <a href="./contact.html">Contact</a>
+
+              </li>
+            </ul>
+            <ul><h4>Links</h4>
+              <li>
                 <a href="#">Achievements</a>
               </li>
               <li>
                 <a href="#">Comments</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <a href="./team.html">Team</a>
-              </li>
-              <li>
-                <a href="./contact.html">Contact</a>
               </li>
               <li>
                 <a href="#">Languages</a>
@@ -625,7 +631,7 @@
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
-          delay: 2500,
+          delay: 1000,
           disableOnInteraction: false,
         },
         pagination: {

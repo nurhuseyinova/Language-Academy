@@ -1,50 +1,50 @@
 #galery {
-  .herroBanner {
-    padding-top: 40px;
-    background-color: $lightBlue;
-    h1 {
+  padding-top: 40px;
+  h1 {
+    text-align: center;
+    color: $mainColor;
+    text-shadow: 4px 4px 4px $textColor1;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+  }
+  p {
+    text-align: center;
+    color: $mainColor;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: "Sacramento", cursive;
+    font-size: 30px;
+    text-shadow: 4px 4px 4px $textColor1;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+    .swiper-slide {
+      display: flex;
       text-align: center;
-      color: $mainColor;
-      text-shadow: 4px 4px 4px $mainColor;
-      font-weight: bold;
-      font-family: "Montserrat", sans-serif;
-    }
-    p {
-      text-align: center;
-      color: $mainColor;
-      margin-bottom: 20px;
-      font-weight: bold;
-      font-family: "Sacramento", cursive;
-      font-size: 30px;
-      text-shadow: 4px 4px 4px $mainColor;
-    }
-    .swiper {
-      width: 100%;
-      height: 100%;
-      .swiper-slide {
-        display: flex;
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-position: center;
-        background-size: cover;
-        width: 500px;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-position: center;
+      background-size: cover;
+      width: 500px;
+      img {
+        display: block;
+        width: 50%;
+        height: 70vh;
+        object-fit: cover;
+      }
+      @media only screen and (max-width: 767px) {
+        flex-direction: column;
         img {
-          display: block;
-          width: 50%;
-          height: 70vh;
-          object-fit: cover;
-        }
-        @media only screen and (max-width: 767px) {
-          flex-direction: column;
+          width: 100%;
         }
       }
-      .pagination-button {
-        color: $mainColor;
-      }
+    }
+    .pagination-button {
+      color: $mainColor;
     }
   }
 }

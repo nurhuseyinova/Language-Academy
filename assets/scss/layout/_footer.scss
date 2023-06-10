@@ -1,66 +1,115 @@
 footer {
+  background-color: $bgFooter;
   .herroBanner {
-    background-color: $mainColor;
     .footerTop {
-      padding-top: 20px;
+      padding: 70px 0;
       display: flex;
+      align-items: center;
       justify-content: space-between;
-      border-bottom: 2px solid coral;
-      h4 {
-        color: $coral;
-        font-size: 30px;
-        position: relative;
-        margin-bottom: 20px;
-        font-family: "Sacramento", cursive;
-        span {
-          position: absolute;
-          left: 15px;
-        }
-      }
-      nav {
-        margin: top;
+      border-bottom: 2px solid $dark;
+      row-gap: 5vh;
+      .topItem1 {
         display: flex;
+        flex-direction: column;
+        row-gap: 7vh;
+        h4 {
+          color: $dark;
+          font-size: 40px;
+          position: relative;
+          font-family: "Sacramento", cursive;
+          span {
+            position: absolute;
+            left: 15px;
+            color: $textColor1;
+          }
+        }
         ul {
+          padding-inline-start: 0;
           li {
             a {
-              color: $coral;
+              display: flex;
+              gap: 10px;
+              font-size: 20px;
+              color: $dark;
+              &:hover {
+                color: $textColor1;
+              }
+              i {
+                color: $bg-orange;
+                font-size: 22px;
+              }
+            }
+          }
+        }
+      }
+      .topItem2 {
+        margin: top;
+        display: flex;
+        gap: 25px;
+        ul {
+          h4 {
+            color: $dark;
+          }
+          li {
+            a {
+              font-size: 20px;
+              color: $dark;
+              border-bottom: 2px solid transparent;
+              &:hover {
+                color: $textColor1;
+                border-color: $textColor1;
+              }
             }
           }
         }
       }
       @media only screen and (max-width: 767px) {
         flex-direction: column;
-        h4 {
-          position: static !important;
+        .topItem1 {
           text-align: center;
-          span {
-            position: static;
+          row-gap: 0vh;
+          h4 {
+            position: static !important;
+            span {
+              position: static;
+            }
           }
         }
-        nav {
-          flex-direction: column !important;
+        .topItem2 {
           ul {
+            padding-inline-start: 0;
             text-align: center;
+            li {
+              text-align: center;
+            }
           }
         }
       }
     }
     .footerBottum {
       @include display;
-      height: 10vh;
+      padding: 20px 0;
       p {
-        color: $coral;
+        color: $dark;
+        font-size: 20px;
+        &:hover {
+          color: $textColor1;
+        }
         @media only screen and (max-width: 556px) {
           text-align: center;
         }
       }
       ul {
         @include display;
-        gap: 10px;
+        gap: 15px;
 
         li {
           a {
-            color: $coral;
+            font-size: 25px;
+            color: $dark;
+            &:hover {
+              color: $textColor1;
+            }
           }
         }
       }
