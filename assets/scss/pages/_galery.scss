@@ -111,7 +111,7 @@
     }
   }
   .galleryItem3 {
-    padding: 20px 0;
+    padding: 30px 0;
     .herroBanner {
       @include display;
       justify-content: center;
@@ -144,7 +144,7 @@
         }
       }
       .img1 {
-        background-image: url("../image/fullscreen-slider.jpg");
+        background-image: url("../image/galery1.jpg");
       }
       .img2 {
         background-image: url("../image/galery6.jpg");
@@ -162,10 +162,43 @@
         background-image: url("../image/book1.jpg");
       }
       .img7 {
-        background-image: url("../image/galery1.jpg");
+        background-image: url("../image/fullscreen-slider.jpg");
       }
       .img8 {
         background-image: url("../image/courses-14.jpg");
+      }
+    }
+  }
+  .galleryItem4 {
+    .swiper {
+      width: 100%;
+      height: 100%;
+      .swiper-slide {
+        display: flex;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+        background-size: cover;
+        width: 500px;
+        img {
+          display: block;
+          width: 50%;
+          height: 70vh;
+          object-fit: cover;
+        }
+        @media only screen and (max-width: 767px) {
+          flex-direction: column;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .pagination-button {
+        color: $mainColor;
       }
     }
   }
