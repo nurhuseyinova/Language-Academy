@@ -383,6 +383,28 @@ header .headerBottum {
   color: #838c48;
 }
 
+#galleryPage .galleryItem {
+  background-image: url("../image/book1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#galleryPage .galleryItem .item1 {
+  padding: 200px 50px;
+}
+#galleryPage .galleryItem .item1 .herroBanner .item1Note {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+#galleryPage .galleryItem .item1 .herroBanner .item1Note h1 {
+  font-weight: bold;
+  text-shadow: 3px 3px 3px #838c48;
+}
+#galleryPage .galleryItem .item1 .herroBanner .item1Note div a {
+  color: #ffffff;
+}
+
 #teacher {
   padding: 50px 0;
 }

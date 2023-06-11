@@ -1,3 +1,4 @@
+////Home page gallery section!
 #galery {
   padding-top: 40px;
   h1 {
@@ -45,6 +46,36 @@
     }
     .pagination-button {
       color: $mainColor;
+    }
+  }
+}
+
+////Galery Page!
+
+#galleryPage {
+  .galleryItem {
+    background-image: url("../image/book1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .item1 {
+      padding: 200px 50px;
+      .herroBanner {
+        .item1Note {
+          font-family: "Montserrat", sans-serif;
+          color: $light;
+          text-align: center;
+          h1 {
+            font-weight: bold;
+            text-shadow: 3px 3px 3px $mainColor;
+          }
+          div {
+            a {
+              color: $light;
+            }
+          }
+        }
+      }
     }
   }
 }
