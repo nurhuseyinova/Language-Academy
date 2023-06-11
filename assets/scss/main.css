@@ -104,6 +104,9 @@ header .headerTop .herroBanner nav .darkmode .fa-moon {
     display: none;
   }
 }
+header .headerBottum {
+  display: none;
+}
 @media only screen and (max-width: 992px) {
   header .show {
     position: fixed;
@@ -111,6 +114,7 @@ header .headerTop .herroBanner nav .darkmode .fa-moon {
     z-index: 9;
     background-color: rgba(253, 246, 234, 0.8);
     margin-top: 12vh;
+    display: block;
   }
   header .show .herroBanner nav {
     line-height: 6vh;
@@ -622,6 +626,10 @@ header .headerTop .herroBanner nav .darkmode .fa-moon {
   background-color: #838c48;
   border-radius: 5px;
   margin-bottom: 30px;
+}
+#blogPage .blogItem2 .info .item2Note h1 {
+  color: #da853d;
+  text-shadow: 3px 3px 3px #838c48;
 }
 @media only screen and (max-width: 767px) {
   #blogPage .blogItem2 {

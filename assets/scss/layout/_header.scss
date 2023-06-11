@@ -72,6 +72,9 @@ header {
       }
     }
   }
+  .headerBottum{
+    display: none;
+  }
   @media only screen and (max-width: 992px) {
     .show {
       position: fixed;
@@ -79,6 +82,7 @@ header {
       z-index: 9;
       background-color: $bgHeader;
       margin-top: 12vh;
+      display: block;
       .herroBanner {
         nav {
           line-height: 6vh;
@@ -113,9 +117,6 @@ header {
           }
         }
       }
-      // &.shovMenu{
-      //   display: block;
-      // }
     }
   }
 }

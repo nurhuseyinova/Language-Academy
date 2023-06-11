@@ -82,7 +82,7 @@
     .swiper {
       display: flex;
       width: 300px;
-      height:300px;
+      height: 300px;
       position: relative;
       left: 50%;
       top: 50%;
@@ -121,6 +121,10 @@
           background-color: $mainColor;
           border-radius: 5px;
           margin-bottom: 30px;
+        }
+        h1 {
+          color: $textColor1;
+          text-shadow: 3px 3px 3px $mainColor;
         }
       }
     }
