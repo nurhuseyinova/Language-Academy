@@ -939,13 +939,14 @@ header .headerBottum {
 }
 
 #contactPage .contactItem {
-  background-image: url("../image/contactImg.jpg");
+  background-image: url("../image/course-5-768x512.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #contactPage .contactItem .item1 {
-  padding: 200px 50px;
+  background-color: rgba(218, 134, 61, 0.0666666667);
+  padding: 220px 50px;
 }
 #contactPage .contactItem .item1 .herroBanner .item1Note {
   font-family: "Montserrat", sans-serif;
@@ -954,6 +955,7 @@ header .headerBottum {
 }
 #contactPage .contactItem .item1 .herroBanner .item1Note h1 {
   font-weight: bold;
+  text-shadow: 3px 3px 3px #da853d;
 }
 #contactPage .contactItem .item1 .herroBanner .item1Note div a {
   color: #ffffff;
@@ -966,35 +968,43 @@ header .headerBottum {
   align-items: center;
   justify-content: space-between;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  --bs-gutter-x: 0rem;
 }
 #contactPage .item2 .herroBanner .row .col {
-  width: 250px;
+  padding: 15px;
+}
+#contactPage .item2 .herroBanner .row .col .item2Note {
   height: 25vh;
   background-color: #f8e6c6;
   text-align: center;
-  padding: 10px 5px;
+  padding: 20px 5px;
   color: #838c48;
   transition: all 0.3s linear;
 }
-#contactPage .item2 .herroBanner .row .col h4 {
+#contactPage .item2 .herroBanner .row .col .item2Note h4 {
   margin-bottom: 3vh;
 }
-#contactPage .item2 .herroBanner .row .col a {
+#contactPage .item2 .herroBanner .row .col .item2Note a {
   color: #838c48;
 }
 @media only screen and (max-width: 992px) {
-  #contactPage .item2 .herroBanner .row .col {
+  #contactPage .item2 .herroBanner .row .col .item2Note {
     height: 20vh;
   }
 }
-#contactPage .item2 .herroBanner .row .col:hover {
+#contactPage .item2 .herroBanner .row .col .item2Note:hover {
   transform: translateY(-15px);
   background-color: #da853d;
   color: #f8e6c6;
 }
-#contactPage .item2 .herroBanner .row .col:hover a {
+#contactPage .item2 .herroBanner .row .col .item2Note:hover a {
   color: #f8e6c6;
+}
+@media only screen and (max-width: 556px) {
+  #contactPage .item2 .herroBanner .row .col {
+    padding: 10px 25px;
+  }
 }
 #contactPage .item3 {
   padding: 50px 100px;
@@ -1010,11 +1020,12 @@ header .headerBottum {
 #contactPage .item3 .herroBanner .note {
   color: #838c48;
   margin-bottom: 20px;
+  text-align: center;
 }
 #contactPage .item3 .herroBanner form {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
 }
 #contactPage .item3 .herroBanner form .formTag {
   border: 1px dashed #838c48;
@@ -1023,6 +1034,7 @@ header .headerBottum {
 }
 #contactPage .item3 .herroBanner form input {
   border: gray;
+  width: 200px;
 }
 #contactPage .item3 .herroBanner form select {
   width: 400px;
@@ -1043,15 +1055,24 @@ header .headerBottum {
   color: #838c48;
   background-color: transparent;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
   #contactPage .item3 {
-    padding: 50px;
+    padding: 50px 0;
   }
   #contactPage .item3 .herroBanner {
     flex-direction: column;
   }
+  #contactPage .item3 .herroBanner form div {
+    display: flex;
+    flex-direction: column;
+  }
   #contactPage .item3 .herroBanner form .formTag {
-    width: 300px;
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 556px) {
+  #contactPage .item3 .herroBanner form .formTag {
+    width: 290px;
   }
 }
 
@@ -1074,11 +1095,10 @@ footer .herroBanner .footerTop .topItem1 {
 footer .herroBanner .footerTop .topItem1 h4 {
   color: #000000;
   font-size: 40px;
-  position: relative;
   font-family: "Sacramento", cursive;
 }
 footer .herroBanner .footerTop .topItem1 h4 span {
-  position: absolute;
+  position: relative;
   left: 15px;
   color: #da853d;
 }
@@ -1123,12 +1143,6 @@ footer .herroBanner .footerTop .topItem2 ul li a:hover {
   footer .herroBanner .footerTop .topItem1 {
     text-align: center;
     row-gap: 0vh;
-  }
-  footer .herroBanner .footerTop .topItem1 h4 {
-    position: static !important;
-  }
-  footer .herroBanner .footerTop .topItem1 h4 span {
-    position: static;
   }
   footer .herroBanner .footerTop .topItem2 ul {
     -webkit-padding-start: 0;

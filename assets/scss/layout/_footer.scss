@@ -15,10 +15,9 @@ footer {
         h4 {
           color: $dark;
           font-size: 40px;
-          position: relative;
           font-family: "Sacramento", cursive;
           span {
-            position: absolute;
+            position: relative;
             left: 15px;
             color: $textColor1;
           }
@@ -68,12 +67,6 @@ footer {
         .topItem1 {
           text-align: center;
           row-gap: 0vh;
-          h4 {
-            position: static !important;
-            span {
-              position: static;
-            }
-          }
         }
         .topItem2 {
           ul {

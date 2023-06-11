@@ -79,12 +79,13 @@
 
 #contactPage {
   .contactItem {
-    background-image: url("../image/contactImg.jpg");
+    background-image: url("../image/course-5-768x512.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     .item1 {
-      padding: 200px 50px;
+      background-color: #da863d11;
+      padding: 220px 50px;
       .herroBanner {
         .item1Note {
           font-family: "Montserrat", sans-serif;
@@ -92,6 +93,7 @@
           text-align: center;
           h1 {
             font-weight: bold;
+            text-shadow: 3px 3px 3px $textColor1;
           }
           div {
             a {
@@ -108,31 +110,37 @@
       .row {
         @include display;
         justify-content: center;
-        gap: 20px;
+        align-items: center;
+        --bs-gutter-x: 0rem;
         .col {
-          width: 250px;
-          height: 25vh;
-          background-color: $lightCoral;
-          text-align: center;
-          padding: 10px 5px;
-          color: $mainColor;
-          transition: all 0.3s linear;
-          h4 {
-            margin-bottom: 3vh;
-          }
-          a {
+          padding: 15px;
+          .item2Note {
+            height: 25vh;
+            background-color: $lightCoral;
+            text-align: center;
+            padding: 20px 5px;
             color: $mainColor;
-          }
-          @media only screen and (max-width: 992px) {
-            height: 20vh;
-          }
-          &:hover {
-            transform: translateY(-15px);
-            background-color: $bg-orange;
-            color: $lightCoral;
-            a {
-              color: $lightCoral;
+            transition: all 0.3s linear;
+            h4 {
+              margin-bottom: 3vh;
             }
+            a {
+              color: $mainColor;
+            }
+            @media only screen and (max-width: 992px) {
+              height: 20vh;
+            }
+            &:hover {
+              transform: translateY(-15px);
+              background-color: $bg-orange;
+              color: $lightCoral;
+              a {
+                color: $lightCoral;
+              }
+            }
+          }
+          @media only screen and (max-width: 556px) {
+            padding: 10px 25px;
           }
         }
       }
@@ -148,11 +156,12 @@
       .note {
         color: $mainColor;
         margin-bottom: 20px;
+        text-align: center;
       }
       form {
         display: flex;
-        flex-direction: column;
         justify-content: center;
+        flex-direction: column;
         .formTag {
           border: 1px dashed $mainColor;
           margin-bottom: 10px;
@@ -160,6 +169,7 @@
         }
         input {
           border: gray;
+          width: 200px;
         }
         select {
           width: 400px;
@@ -182,13 +192,27 @@
         }
       }
     }
-    @media only screen and (max-width: 767px) {
-      padding: 50px;
+    @media only screen and (max-width: 992px) {
+      padding: 50px 0;
       .herroBanner {
         flex-direction: column;
         form {
+          div {
+            display: flex;
+            flex-direction: column;
+          }
           .formTag {
-            width: 300px;
+            width: 500px;
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width: 556px) {
+      .herroBanner {
+        form {
+          .formTag {
+            width: 290px;
           }
         }
       }
