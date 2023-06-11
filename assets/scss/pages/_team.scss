@@ -197,7 +197,7 @@
         width: 100%;
         padding: 50px 0;
         .swiper-slide {
-          background-color: $light;
+          background-color: $lightCoral;
           background-position: center;
           background-size: cover;
           width: 300px;
@@ -205,7 +205,7 @@
           .slideImg {
             overflow: hidden;
             position: relative;
-            transition: all 1s linear;
+            transition: all 0.5s linear;
             img {
               display: block;
               width: 100%;
@@ -218,7 +218,7 @@
               justify-content: center;
               gap: 5px;
               background-color: #da863d80;
-              transition: all 1s linear;
+              transition: all 0.5s linear;
               opacity: 0;
               left: 0;
               bottom: -55px;
