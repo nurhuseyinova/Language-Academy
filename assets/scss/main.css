@@ -388,6 +388,7 @@ header .headerBottum {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 #galleryPage .galleryItem .item1 {
   padding: 200px 50px;
@@ -428,6 +429,69 @@ header .headerBottum {
 #galleryPage .galleryItem2 .swiper .swiper-slide:hover .slideImg img {
   scale: 1.2;
   transform: rotate(10deg);
+}
+#galleryPage .galleryItem3 {
+  padding: 20px 0;
+}
+#galleryPage .galleryItem3 .herroBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+#galleryPage .galleryItem3 .herroBanner .item3Img {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 440px;
+  border-radius: 20px;
+}
+#galleryPage .galleryItem3 .herroBanner .item3Img .item {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  transition: all 0.6s linear;
+}
+#galleryPage .galleryItem3 .herroBanner .item3Img:hover .item {
+  background-color: rgba(131, 140, 72, 0.7960784314);
+  transform: rotateY(180deg);
+}
+@media only screen and (max-width: 996px) {
+  #galleryPage .galleryItem3 .herroBanner .item3Img {
+    width: 330px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #galleryPage .galleryItem3 .herroBanner .item3Img {
+    width: 550px;
+  }
+}
+#galleryPage .galleryItem3 .herroBanner .img1 {
+  background-image: url("../image/fullscreen-slider.jpg");
+}
+#galleryPage .galleryItem3 .herroBanner .img2 {
+  background-image: url("../image/galery6.jpg");
+}
+#galleryPage .galleryItem3 .herroBanner .img3 {
+  background-image: url("../image/galery2.jpg");
+}
+#galleryPage .galleryItem3 .herroBanner .img4 {
+  background-image: url("../image/course-20-400x300.jpg");
+}
+#galleryPage .galleryItem3 .herroBanner .img5 {
+  background-image: url("../image/galery4.jpg");
+}
+#galleryPage .galleryItem3 .herroBanner .img6 {
+  background-image: url("../image/book1.jpg");
+}
+#galleryPage .galleryItem3 .herroBanner .img7 {
+  background-image: url("../image/galery1.jpg");
+}
+#galleryPage .galleryItem3 .herroBanner .img8 {
+  background-image: url("../image/courses-14.jpg");
 }
 
 #teacher {
