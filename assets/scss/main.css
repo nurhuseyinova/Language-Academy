@@ -569,9 +569,9 @@ header .headerBottum {
 }
 #teacher .herroBanner .row .col .item .itemImg i {
   position: absolute;
-  margin-top: -40px;
-  margin-left: -26%;
-  font-size: 30px;
+  margin-top: -5px;
+  margin-left: -27%;
+  font-size: 35px;
   color: #838c48;
   z-index: -1;
 }
@@ -609,8 +609,8 @@ header .headerBottum {
   width: 100%;
 }
 .teamPage .teamItem .item1 {
-  background-color: rgba(78, 134, 78, 0.315);
-  padding: 200px 50px;
+  background-color: rgba(218, 134, 61, 0.1647058824);
+  padding: 250px 50px;
 }
 .teamPage .teamItem .item1 .item1Note {
   font-family: "Montserrat", sans-serif;
@@ -619,10 +619,84 @@ header .headerBottum {
 }
 .teamPage .teamItem .item1 .item1Note h1 {
   font-weight: bold;
-  text-shadow: 2px 2px #ffffff;
+  text-shadow: 3px 3px 2px #ffffff;
 }
 .teamPage .teamItem .item1 .item1Note div a {
   color: #ffffff;
+}
+.teamPage .teamItem2 {
+  padding: 50px 0;
+}
+.teamPage .teamItem2 .teamItem2Note {
+  text-align: center;
+}
+.teamPage .teamItem2 .teamItem2Note h1 {
+  color: #838c48;
+  text-shadow: 2px 2px 2px #da853d;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.teamPage .teamItem2 .line {
+  width: 100%;
+  height: 2px;
+  background-color: #da853d;
+}
+.teamPage .teamItem2 .row {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+}
+.teamPage .teamItem2 .row .col .item {
+  padding: 30px 20px;
+  border: 1px solid #838c48;
+  text-align: center;
+}
+.teamPage .teamItem2 .row .col .item .itemImg {
+  position: relative;
+  transition: all 0.5s linear;
+}
+.teamPage .teamItem2 .row .col .item .itemImg img {
+  border: 2px solid #da853d;
+  position: relative;
+  margin-top: -100px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.teamPage .teamItem2 .row .col .item .itemImg i {
+  position: absolute;
+  margin-top: -5px;
+  margin-left: -27%;
+  font-size: 35px;
+  color: #838c48;
+  z-index: -1;
+}
+.teamPage .teamItem2 .row .col .item .itemNote {
+  color: #838c48;
+  font-family: "Montserrat", sans-serif;
+}
+.teamPage .teamItem2 .row .col .item .itemNote a {
+  color: #838c48;
+  background-color: transparent;
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: 1px solid #838c48;
+  transition: all 0.5s linear;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
+}
+.teamPage .teamItem2 .row .col .item .itemNote a:hover {
+  color: #da853d;
+  background-color: #838c48;
+}
+.teamPage .teamItem2 .row .col:hover h3,
+.teamPage .teamItem2 .row .col:hover p {
+  color: #da853d;
+}
+.teamPage .teamItem2 .row .col:hover .itemImg i {
+  z-index: 1;
 }
 
 #achieveCount {
