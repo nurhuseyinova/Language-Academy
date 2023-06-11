@@ -78,4 +78,35 @@
       }
     }
   }
+  .galleryItem2 {
+    .swiper {
+      width: 100%;
+      padding: 50px 0;
+      .swiper-slide {
+        border-radius: 20px;
+        background-color: $light;
+        background-position: center;
+        background-size: cover;
+        width: 350px;
+        .slideImg {
+          overflow: hidden;
+          border-radius: 10px;
+          img {
+            display: block;
+            width: 100%;
+            height: 350px;
+            transition: all 0.5s linear;
+          }
+        }
+        &:hover {
+          .slideImg {
+            img {
+              scale: 1.2;
+              transform: rotate(10deg);
+            }
+          }
+        }
+      }
+    }
+  }
 }

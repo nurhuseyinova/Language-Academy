@@ -114,6 +114,60 @@
           </div>
         </div>
       </div>
+      <div class="galleryItem2">
+        <div class="herroBanner">
+          <div class="swiper mySwiperGallery2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slideImg">
+                  <img src="./assets/image/image_4.jpg" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slideImg">
+                  <img src="./assets/image/galery11.jpg" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slideImg">
+                  <img src="./assets/image/image-accordion-2.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slideImg">
+                  <img src="./assets/image/fullscreen-slider.jpg" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slideImg">
+                  <img src="./assets/image/courses-14.jpg" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slideImg">
+                  <img src="./assets/image/course-20-400x300.jpg" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slideImg">
+                  <img src="./assets/image/course-15-400x300.jpg" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slideImg">
+                  <img src="./assets/image/academy-new-8.jpg" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slideImg">
+                  <img src="./assets/image/academy-new-7.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer>
@@ -204,6 +258,24 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiperGallery2", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
     <script>
       var swiper = new Swiper(".mySwipergalery", {
         spaceBetween: 30,
