@@ -13,11 +13,11 @@ header {
         height: 12vh;
 
         h4 {
-          color: $dark;
-          font-size: 25px;
+          color: $light;
+          font-size: 26px;
           position: relative;
-          bottom: 8px;
-          font-weight: 700;
+          bottom: 10px;
+          font-weight: 400;
           font-family: "Sacramento", cursive;
           span {
             position: absolute;
@@ -32,9 +32,9 @@ header {
 
           li {
             a {
-              font-weight: 600;
+              font-weight: 00;
               text-transform: uppercase;
-              color: $dark;
+              color: $light;
               font-family: "Montserrat", sans-serif;
               border-bottom: 2px solid transparent;
               &:hover {
@@ -72,7 +72,7 @@ header {
       }
     }
   }
-  .headerBottum{
+  .headerBottum {
     display: none;
   }
   @media only screen and (max-width: 992px) {

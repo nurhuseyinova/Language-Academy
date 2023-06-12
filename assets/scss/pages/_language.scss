@@ -1,10 +1,10 @@
 #language {
+  background-color: $darkBlue2;
   .herroBanner {
     .languageNote {
-      padding-top: 50px;
+      padding-top: 60px;
       text-align: center;
-      color: $mainColor;
-      text-shadow: 4px 4px 4px $textColor1;
+      color: $light;
       h1 {
         font-family: "Montserrat", sans-serif;
         font-weight: bold;
@@ -13,7 +13,6 @@
         font-family: "Sacramento", cursive;
         font-weight: 500;
         font-size: 30px;
-        font-weight: bold;
       }
     }
   }
@@ -26,13 +25,16 @@
         position: relative;
         z-index: 1;
         overflow: hidden;
+
         .itemImg {
           overflow: hidden;
+          .itemNote {
+            padding-top: 70px;
+          }
           &:hover {
             .itemNote {
               z-index: 2;
-
-              height: 40vh;
+              height: 50vh;
             }
             img {
               scale: (1.1);
@@ -44,19 +46,19 @@
             transition: all 0.5s linear;
           }
           .itemNote {
-            padding-top: 20px;
+            // padding: 50px 5px;
             font-family: "Sora", sans-serif;
-            padding-bottom: 10px;
+            // padding-bottom: 10px;
             position: absolute;
             z-index: -1;
             bottom: 0;
             height: 0;
-            background-color: #838c48a9;
+            background-color: rgba(8, 12, 65, 0.5);
             text-align: center;
             color: $light;
             transition: all 0.4s linear;
             a {
-              color: $mainColor;
+              color: $textColor2;
               font-size: 14px;
               padding: 10px 20px;
               border-radius: 20px;

@@ -19,15 +19,11 @@ a {
   }
 }
 
-body {
-  background-color: #fdf6ea;
-}
-
 header .headerTop {
   position: fixed;
   width: 100%;
   z-index: 10;
-  background-color: rgba(253, 246, 234, 0.8);
+  background-color: rgba(6, 8, 32, 0.521);
 }
 header .headerTop .herroBanner {
   display: flex;
@@ -41,17 +37,17 @@ header .headerTop .herroBanner nav {
   height: 12vh;
 }
 header .headerTop .herroBanner nav h4 {
-  color: #000000;
-  font-size: 25px;
+  color: #ffffff;
+  font-size: 26px;
   position: relative;
-  bottom: 8px;
-  font-weight: 700;
+  bottom: 10px;
+  font-weight: 400;
   font-family: "Sacramento", cursive;
 }
 header .headerTop .herroBanner nav h4 span {
   position: absolute;
   left: 15px;
-  color: #838c48;
+  color: #da853d;
 }
 header .headerTop .herroBanner nav .headItem1 {
   display: flex;
@@ -61,15 +57,15 @@ header .headerTop .herroBanner nav .headItem1 {
   margin-bottom: 0px;
 }
 header .headerTop .herroBanner nav .headItem1 li a {
-  font-weight: 600;
+  font-weight: 0;
   text-transform: uppercase;
-  color: #000000;
+  color: #ffffff;
   font-family: "Montserrat", sans-serif;
   border-bottom: 2px solid transparent;
 }
 header .headerTop .herroBanner nav .headItem1 li a:hover {
-  border-color: #838c48;
-  color: #838c48;
+  border-color: #da853d;
+  color: #da853d;
 }
 @media only screen and (max-width: 992px) {
   header .headerTop .herroBanner nav .headItem1 {
@@ -112,7 +108,7 @@ header .headerBottum {
     position: fixed;
     width: 50%;
     z-index: 9;
-    background-color: rgba(253, 246, 234, 0.8);
+    background-color: rgba(6, 8, 32, 0.521);
     margin-top: 12vh;
     display: block;
   }
@@ -129,8 +125,8 @@ header .headerBottum {
     font-weight: 600;
   }
   header .show .herroBanner nav ul li a:hover {
-    border-color: #838c48;
-    color: #838c48;
+    border-color: #da853d;
+    color: #da853d;
   }
   header .show .herroBanner nav ul .darkmode {
     display: flex;
@@ -149,39 +145,45 @@ header .headerBottum {
 }
 
 #home {
-  padding: 300px 0;
   background-image: url("../image/fullscreen-slider.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
 }
-#home .herroBanner .homeItem .item .itemNote {
-  text-align: center;
-  color: #838c48;
+#home .homeItem {
+  background-color: rgba(3, 3, 34, 0.438);
+  padding: 300px 0;
 }
-#home .herroBanner .homeItem .item .itemNote h1 {
-  text-shadow: 2px 2px 2px #ffffff;
+#home .homeItem .herroBanner .item .itemNote {
+  text-align: center;
+  color: #ffffff;
+}
+#home .homeItem .herroBanner .item .itemNote h1 {
+  font-size: 60px;
 }
 
+#about {
+  background-color: #0d1128;
+}
 #about .herroBanner .aboutNote {
   padding: 60px 0;
   font-family: "Sora", sans-serif;
 }
 #about .herroBanner .aboutNote h2 {
   font-weight: bold;
-  color: #838c48;
+  color: #da853d;
   margin-bottom: 3vh;
 }
 #about .herroBanner .aboutNote p {
-  color: #838c48;
+  color: #da853d;
   font-weight: 500;
   font-size: 15px;
   line-height: 5vh;
 }
 #about .herroBanner .aboutNote a {
   font-family: "Montserrat", sans-serif;
-  background: #838c48;
+  background: #da853d;
   color: #ffffff;
   padding: 10px 30px;
   border: none;
@@ -192,7 +194,7 @@ header .headerBottum {
 }
 #about .herroBanner .aboutNote a:hover {
   background: transparent;
-  color: #838c48;
+  color: #da853d;
 }
 #about .herroBanner .aboutNote a:before, #about .herroBanner .aboutNote a:after {
   content: "";
@@ -201,7 +203,7 @@ header .headerBottum {
   right: 0;
   height: 2px;
   width: 0;
-  background: #838c48;
+  background: #da853d;
   transition: 400ms linear all;
 }
 #about .herroBanner .aboutNote a:after {
@@ -215,11 +217,13 @@ header .headerBottum {
   transition: 400ms linear all;
 }
 
+#language {
+  background-color: #121736;
+}
 #language .herroBanner .languageNote {
-  padding-top: 50px;
+  padding-top: 60px;
   text-align: center;
-  color: #838c48;
-  text-shadow: 4px 4px 4px #da853d;
+  color: #ffffff;
 }
 #language .herroBanner .languageNote h1 {
   font-family: "Montserrat", sans-serif;
@@ -229,7 +233,6 @@ header .headerBottum {
   font-family: "Sacramento", cursive;
   font-weight: 500;
   font-size: 30px;
-  font-weight: bold;
 }
 #language .row {
   padding: 20px 0 50px 0;
@@ -244,9 +247,12 @@ header .headerBottum {
 #language .row .col .item .itemImg {
   overflow: hidden;
 }
+#language .row .col .item .itemImg .itemNote {
+  padding-top: 70px;
+}
 #language .row .col .item .itemImg:hover .itemNote {
   z-index: 2;
-  height: 40vh;
+  height: 50vh;
 }
 #language .row .col .item .itemImg:hover img {
   scale: 1.1;
@@ -257,20 +263,18 @@ header .headerBottum {
   transition: all 0.5s linear;
 }
 #language .row .col .item .itemImg .itemNote {
-  padding-top: 20px;
   font-family: "Sora", sans-serif;
-  padding-bottom: 10px;
   position: absolute;
   z-index: -1;
   bottom: 0;
   height: 0;
-  background-color: rgba(131, 140, 72, 0.662745098);
+  background-color: rgba(8, 12, 65, 0.5);
   text-align: center;
   color: #ffffff;
   transition: all 0.4s linear;
 }
 #language .row .col .item .itemImg .itemNote a {
-  color: #838c48;
+  color: #0d1128;
   font-size: 14px;
   padding: 10px 20px;
   border-radius: 20px;
@@ -280,17 +284,17 @@ header .headerBottum {
 }
 #language .row .col .item .itemImg .itemNote a:hover {
   color: #ffffff;
-  background-color: #838c48;
+  background-color: #da853d;
 }
 
 #whywe {
+  background-color: #ffffff;
   padding: 60px 0;
 }
 #whywe .herroBanner .note {
   text-align: center;
-  color: #838c48;
+  color: #da853d;
   margin-bottom: 40px;
-  text-shadow: 2px 2px 3px #da853d;
 }
 #whywe .herroBanner .note p {
   font-size: 25px;
@@ -303,7 +307,7 @@ header .headerBottum {
   gap: 10px;
 }
 #whywe .herroBanner .row .col {
-  background-color: #ffffff;
+  background-color: #010b4d;
   border-radius: 10px;
   padding: 10px;
   width: 350px;
@@ -313,40 +317,38 @@ header .headerBottum {
   display: flex;
   align-items: center;
   gap: 5px;
-  color: #838c48;
+  color: #ffffff;
 }
 #whywe .herroBanner .row .col .itemNote i {
   padding: 5%;
   border-radius: 50%;
-  border: 4px solid #e5e9ec;
+  border: 2px solid #e5e9ec;
   width: 70px;
   height: 65px;
-  color: #838c48;
-  background-color: rgb(253, 161, 128);
+  color: rgb(247, 94, 6);
+  background-color: #ffffff;
   font-size: 25px;
 }
 #whywe .herroBanner .row .col p {
-  color: #838c48;
+  color: #da853d;
 }
 
 #galery {
   padding-top: 40px;
+  background-color: #0d1128;
 }
 #galery h1 {
   text-align: center;
-  color: #838c48;
-  text-shadow: 4px 4px 4px #da853d;
+  color: #da853d;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
 }
 #galery p {
   text-align: center;
-  color: #838c48;
+  color: #ffffff;
   margin-bottom: 20px;
-  font-weight: bold;
   font-family: "Sacramento", cursive;
   font-size: 30px;
-  text-shadow: 4px 4px 4px #da853d;
 }
 #galery .swiper {
   width: 100%;
@@ -380,7 +382,7 @@ header .headerBottum {
   }
 }
 #galery .swiper .pagination-button {
-  color: #838c48;
+  color: #da853d;
 }
 
 #galleryPage .galleryItem {
@@ -400,10 +402,13 @@ header .headerBottum {
 }
 #galleryPage .galleryItem .item1 .herroBanner .item1Note h1 {
   font-weight: bold;
-  text-shadow: 3px 3px 3px #838c48;
+  text-shadow: 3px 3px 3px #da853d;
 }
 #galleryPage .galleryItem .item1 .herroBanner .item1Note div a {
   color: #ffffff;
+}
+#galleryPage .galleryItem2 {
+  background-color: #0d1128;
 }
 #galleryPage .galleryItem2 .swiper {
   width: 100%;
@@ -456,7 +461,7 @@ header .headerBottum {
   transition: all 0.6s linear;
 }
 #galleryPage .galleryItem3 .herroBanner .item3Img:hover .item {
-  background-color: rgba(131, 140, 72, 0.7960784314);
+  background-color: rgba(1, 11, 77, 0.3960784314);
   transform: rotateY(180deg);
 }
 @media only screen and (max-width: 996px) {
@@ -525,19 +530,20 @@ header .headerBottum {
   }
 }
 #galleryPage .galleryItem4 .swiper .pagination-button {
-  color: #838c48;
+  color: #da853d;
 }
 
 #teacher {
+  background-color: #0d1128;
   padding: 50px 0;
 }
 #teacher .herroBanner .teacherNote {
   text-align: center;
-  color: #838c48;
+  color: #da853d;
   font-family: "Montserrat", sans-serif;
 }
 #teacher .herroBanner .teacherNote h1 {
-  text-shadow: 3px 3px 2px #da853d;
+  color: #ffffff;
   font-weight: bold;
 }
 #teacher .herroBanner .teacherNote p {
@@ -552,7 +558,7 @@ header .headerBottum {
 }
 #teacher .herroBanner .row .col .item {
   padding: 30px 20px;
-  border: 1px solid #838c48;
+  border: 1px solid #da853d;
   text-align: center;
 }
 #teacher .herroBanner .row .col .item .itemImg {
@@ -572,26 +578,29 @@ header .headerBottum {
   margin-top: -5px;
   margin-left: -27%;
   font-size: 35px;
-  color: #838c48;
+  color: #da853d;
   z-index: -1;
 }
 #teacher .herroBanner .row .col .item .itemNote {
-  color: #838c48;
+  color: #da853d;
   font-family: "Montserrat", sans-serif;
 }
+#teacher .herroBanner .row .col .item .itemNote h3 {
+  color: #ffffff;
+}
 #teacher .herroBanner .row .col .item .itemNote a {
-  color: #838c48;
+  color: #da853d;
   background-color: transparent;
   padding: 10px 25px;
   border-radius: 20px;
-  border: 1px solid #838c48;
+  border: 1px solid #da853d;
   transition: all 0.5s linear;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 10px;
 }
 #teacher .herroBanner .row .col .item .itemNote a:hover {
-  color: #da853d;
-  background-color: #838c48;
+  color: #02011d;
+  background-color: #da853d;
 }
 #teacher .herroBanner .row .col:hover h3,
 #teacher .herroBanner .row .col:hover p {
@@ -619,22 +628,21 @@ header .headerBottum {
 }
 .teamPage .teamItem .item1 .item1Note h1 {
   font-weight: bold;
-  text-shadow: 3px 3px 2px #ffffff;
+  text-shadow: 3px 3px 2px #0d1128;
 }
 .teamPage .teamItem .item1 .item1Note div a {
   color: #ffffff;
 }
 .teamPage .teamItem2 {
   padding: 50px 0;
+  background-color: #0d1128;
 }
 .teamPage .teamItem2 .teamItem2Note {
   text-align: center;
 }
 .teamPage .teamItem2 .teamItem2Note h1 {
-  color: #838c48;
-  text-shadow: 2px 2px 2px #da853d;
+  color: #da853d;
   margin-bottom: 20px;
-  font-weight: bold;
 }
 .teamPage .teamItem2 .line {
   width: 100%;
@@ -650,7 +658,7 @@ header .headerBottum {
 }
 .teamPage .teamItem2 .row .col .item {
   padding: 30px 20px;
-  border: 1px solid #838c48;
+  border: 1px solid #da853d;
   text-align: center;
 }
 .teamPage .teamItem2 .row .col .item .itemImg {
@@ -670,46 +678,53 @@ header .headerBottum {
   margin-top: -5px;
   margin-left: -27%;
   font-size: 35px;
-  color: #838c48;
+  color: #da853d;
   z-index: -1;
 }
 .teamPage .teamItem2 .row .col .item .itemNote {
-  color: #838c48;
+  color: #da853d;
   font-family: "Montserrat", sans-serif;
 }
+.teamPage .teamItem2 .row .col .item .itemNote h3 {
+  color: #ffffff;
+}
 .teamPage .teamItem2 .row .col .item .itemNote a {
-  color: #838c48;
+  color: #da853d;
   background-color: transparent;
   padding: 10px 25px;
   border-radius: 20px;
-  border: 1px solid #838c48;
+  border: 1px solid #da853d;
   transition: all 0.5s linear;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 10px;
 }
 .teamPage .teamItem2 .row .col .item .itemNote a:hover {
-  color: #da853d;
-  background-color: #838c48;
+  color: #0d1128;
+  background-color: #da853d;
 }
-.teamPage .teamItem2 .row .col:hover h3,
-.teamPage .teamItem2 .row .col:hover p {
+.teamPage .teamItem2 .row .col:hover h3 {
   color: #da853d;
+}
+.teamPage .teamItem2 .row .col:hover p {
+  color: #ffffff;
 }
 .teamPage .teamItem2 .row .col:hover .itemImg i {
   z-index: 1;
 }
+.teamPage .teamItem3 {
+  padding: 50px 0;
+}
 .teamPage .teamItem3 .herroBanner h1 {
   color: #da853d;
   text-align: center;
-  text-shadow: 2px 2px #838c48;
-  font-weight: bold;
+  text-shadow: 1px 1px #da853d;
 }
 .teamPage .teamItem3 .herroBanner .swiper {
   width: 100%;
   padding: 50px 0;
 }
 .teamPage .teamItem3 .herroBanner .swiper .swiper-slide {
-  background-color: #f8e6c6;
+  background-color: #0d1128;
   background-position: center;
   background-size: cover;
   width: 300px;
@@ -744,7 +759,7 @@ header .headerBottum {
   height: 15vh;
 }
 .teamPage .teamItem3 .herroBanner .swiper .swiper-slide .slideImg ul li a {
-  color: #e7710a;
+  color: #da853d;
   font-size: 30px;
 }
 .teamPage .teamItem3 .herroBanner .swiper .swiper-slide .slideImg ul li a:hover {
@@ -753,13 +768,13 @@ header .headerBottum {
 .teamPage .teamItem3 .herroBanner .swiper .swiper-slide .slideNote {
   padding: 7px;
   text-align: center;
-  color: #838c48;
-}
-.teamPage .teamItem3 .herroBanner .swiper .swiper-slide .slideNote h4 {
   color: #da853d;
 }
+.teamPage .teamItem3 .herroBanner .swiper .swiper-slide .slideNote h4 {
+  color: #ffffff;
+}
 .teamPage .teamItem3 .herroBanner .swiper .swiper-slide:hover span {
-  color: #ca5f01;
+  color: #ffffff;
 }
 .teamPage .teamItem3 .herroBanner .swiper .swiper-slide:hover .slideImg ul {
   opacity: 1;
@@ -774,7 +789,7 @@ header .headerBottum {
   background-size: cover;
 }
 #achieveCount .countItem {
-  background-color: rgba(161, 125, 58, 0.2);
+  background-color: rgba(14, 12, 36, 0.637);
   padding: 100px 0;
 }
 #achieveCount .countItem .herroBanner .item {
@@ -801,20 +816,18 @@ header .headerBottum {
 }
 
 #blog {
-  background-color: #f8e6c6;
+  background-color: #02011d;
   padding-top: 50px;
 }
 #blog .herroBanner h1 {
   text-align: center;
-  color: #838c48;
-  text-shadow: 4px 4px 4px #da853d;
+  color: #ffffff;
 }
 #blog .herroBanner .swiper {
   width: 100%;
   padding: 50px 0;
 }
 #blog .herroBanner .swiper .swiper-slide {
-  border-radius: 20px;
   background-color: #ffffff;
   background-position: center;
   background-size: cover;
@@ -823,7 +836,6 @@ header .headerBottum {
 }
 #blog .herroBanner .swiper .swiper-slide .slideImg {
   overflow: hidden;
-  border-radius: 10px;
 }
 #blog .herroBanner .swiper .swiper-slide .slideImg img {
   display: block;
@@ -834,7 +846,7 @@ header .headerBottum {
 #blog .herroBanner .swiper .swiper-slide .slideNote {
   padding: 7px;
   text-align: center;
-  color: #838c48;
+  color: #da853d;
 }
 #blog .herroBanner .swiper .swiper-slide:hover .note1 {
   color: #da853d;
@@ -903,20 +915,20 @@ header .headerBottum {
   width: 50%;
 }
 #blogPage .blogItem2 .info .item2Note {
-  color: #838c48;
+  color: #da853d;
   line-height: 5vh;
   padding: 50px 20px;
 }
 #blogPage .blogItem2 .info .item2Note .line {
   height: 5px;
   width: 70px;
-  background-color: #838c48;
+  background-color: #da853d;
   border-radius: 5px;
   margin-bottom: 30px;
 }
 #blogPage .blogItem2 .info .item2Note h1 {
   color: #da853d;
-  text-shadow: 3px 3px 3px #838c48;
+  text-shadow: 3px 3px 3px #da853d;
 }
 @media only screen and (max-width: 767px) {
   #blogPage .blogItem2 {
@@ -945,7 +957,7 @@ header .headerBottum {
   padding: 50px 0;
 }
 #news h1 {
-  color: #838c48;
+  color: #da853d;
   text-shadow: 3px 3px 3px #da853d;
   text-align: center;
   margin-bottom: 30px;
@@ -974,14 +986,13 @@ header .headerBottum {
   color: #da853d;
 }
 #news .herroBanner .newsItem2 .accordion {
-  border: 1px solid #838c48;
+  border: 1px solid #da853d;
 }
 #news .herroBanner .newsItem2 .accordion h5 {
   color: #da853d;
-  text-shadow: 1px 1px #838c48;
 }
 #news .herroBanner .newsItem2 .accordion p {
-  color: #838c48;
+  color: #da853d;
   font-size: 20px;
 }
 @media only screen and (max-width: 767px) {
@@ -1046,9 +1057,9 @@ header .headerBottum {
   gap: 15px;
 }
 #comments .commentItem .herroBanner .itemComment .itemImg nav ul li a {
-  color: #838c48;
+  color: #da853d;
   background-color: rgb(253, 161, 128);
-  border: 1px solid #838c48;
+  border: 1px solid #da853d;
   border-radius: 50%;
   padding: 6px 10px;
 }
@@ -1057,7 +1068,7 @@ header .headerBottum {
   width: 70px;
 }
 #comments .commentItem .herroBanner .itemComment .commentNote1 {
-  color: #838c48;
+  color: #da853d;
   text-align: left;
 }
 
@@ -1070,15 +1081,11 @@ header .headerBottum {
 }
 #contact .contactPage {
   padding: 60px 0;
-  background-color: rgba(241, 174, 111, 0.3);
+  background-color: rgba(7, 7, 41, 0.411);
 }
 #contact .contactPage .herroBanner .contactNote {
   text-align: center;
-  color: #838c48;
-}
-#contact .contactPage .herroBanner .contactNote h2 {
-  text-shadow: 2px 2px 1px #ffffff;
-  font-weight: bold;
+  color: #da853d;
 }
 #contact .contactPage .herroBanner .contactNote p {
   color: #ffffff;
@@ -1097,7 +1104,7 @@ header .headerBottum {
   display: inline-block;
   color: #ffffff;
   background: none;
-  border: 1px solid #838c48;
+  border: 1px solid #da853d;
   cursor: pointer;
   transform: translate3d(0, 0, 0);
 }
@@ -1111,7 +1118,7 @@ header .headerBottum {
   left: 0;
   z-index: -1;
   height: 150%;
-  background: #838c48;
+  background: #da853d;
   pointer-events: none;
   transform: translate3d(0, 45px, 0);
   transition: all 0.3s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -1152,13 +1159,14 @@ header .headerBottum {
 }
 #contactPage .contactItem .item1 .herroBanner .item1Note h1 {
   font-weight: bold;
-  text-shadow: 3px 3px 3px #da853d;
+  text-shadow: 3px 3px 3px #0d1128;
 }
 #contactPage .contactItem .item1 .herroBanner .item1Note div a {
   color: #ffffff;
 }
 #contactPage .item2 {
   padding: 50px 0;
+  background-color: #0d1128;
 }
 #contactPage .item2 .herroBanner .row {
   display: flex;
@@ -1176,14 +1184,14 @@ header .headerBottum {
   background-color: #f8e6c6;
   text-align: center;
   padding: 20px 5px;
-  color: #838c48;
+  color: #da853d;
   transition: all 0.3s linear;
 }
 #contactPage .item2 .herroBanner .row .col .item2Note h4 {
   margin-bottom: 3vh;
 }
 #contactPage .item2 .herroBanner .row .col .item2Note a {
-  color: #838c48;
+  color: #da853d;
 }
 @media only screen and (max-width: 992px) {
   #contactPage .item2 .herroBanner .row .col .item2Note {
@@ -1205,7 +1213,7 @@ header .headerBottum {
 }
 #contactPage .item3 {
   padding: 50px 100px;
-  background-color: #f8e6c6;
+  background-color: rgb(205, 217, 219);
 }
 #contactPage .item3 .herroBanner {
   display: flex;
@@ -1215,7 +1223,7 @@ header .headerBottum {
   gap: 30px;
 }
 #contactPage .item3 .herroBanner .note {
-  color: #838c48;
+  color: #da853d;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -1225,7 +1233,7 @@ header .headerBottum {
   flex-direction: column;
 }
 #contactPage .item3 .herroBanner form .formTag {
-  border: 1px dashed #838c48;
+  border: 1px dashed #da853d;
   margin-bottom: 10px;
   padding: 7px;
 }
@@ -1241,15 +1249,15 @@ header .headerBottum {
 }
 #contactPage .item3 .herroBanner form button {
   color: white;
-  background-color: #838c48;
+  background-color: #da853d;
   padding: 10px 30px;
   border-radius: 20px;
   transition: all 0.5s linear;
-  border: 1px solid #838c48;
+  border: 1px solid #da853d;
   font-family: "Montserrat", sans-serif;
 }
 #contactPage .item3 .herroBanner form button:hover {
-  color: #838c48;
+  color: #da853d;
   background-color: transparent;
 }
 @media only screen and (max-width: 992px) {
@@ -1274,14 +1282,14 @@ header .headerBottum {
 }
 
 footer {
-  background-color: #838c48;
+  background-color: #0d1128;
 }
 footer .herroBanner .footerTop {
   padding: 70px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #da853d;
   row-gap: 5vh;
 }
 footer .herroBanner .footerTop .topItem1 {
@@ -1290,7 +1298,7 @@ footer .herroBanner .footerTop .topItem1 {
   row-gap: 7vh;
 }
 footer .herroBanner .footerTop .topItem1 h4 {
-  color: #000000;
+  color: rgb(6, 6, 141);
   font-size: 40px;
   font-family: "Sacramento", cursive;
 }
@@ -1307,13 +1315,13 @@ footer .herroBanner .footerTop .topItem1 ul li a {
   display: flex;
   gap: 10px;
   font-size: 20px;
-  color: #000000;
+  color: #da853d;
 }
 footer .herroBanner .footerTop .topItem1 ul li a:hover {
-  color: #da853d;
+  color: #ffffff;
 }
 footer .herroBanner .footerTop .topItem1 ul li a i {
-  color: #da853d;
+  color: rgb(1, 1, 138);
   font-size: 22px;
 }
 footer .herroBanner .footerTop .topItem2 {
@@ -1322,16 +1330,14 @@ footer .herroBanner .footerTop .topItem2 {
   gap: 25px;
 }
 footer .herroBanner .footerTop .topItem2 ul h4 {
-  color: #000000;
+  color: #da853d;
 }
 footer .herroBanner .footerTop .topItem2 ul li a {
   font-size: 20px;
-  color: #000000;
-  border-bottom: 2px solid transparent;
+  color: #da853d;
 }
 footer .herroBanner .footerTop .topItem2 ul li a:hover {
-  color: #da853d;
-  border-color: #da853d;
+  color: #ffffff;
 }
 @media only screen and (max-width: 767px) {
   footer .herroBanner .footerTop {
@@ -1357,11 +1363,8 @@ footer .herroBanner .footerBottum {
   padding: 20px 0;
 }
 footer .herroBanner .footerBottum p {
-  color: #000000;
-  font-size: 20px;
-}
-footer .herroBanner .footerBottum p:hover {
   color: #da853d;
+  font-size: 20px;
 }
 @media only screen and (max-width: 556px) {
   footer .herroBanner .footerBottum p {
@@ -1376,10 +1379,10 @@ footer .herroBanner .footerBottum ul {
 }
 footer .herroBanner .footerBottum ul li a {
   font-size: 25px;
-  color: #000000;
+  color: #da853d;
 }
 footer .herroBanner .footerBottum ul li a:hover {
-  color: #da853d;
+  color: #ffffff;
 }
 @media only screen and (max-width: 767px) {
   footer .herroBanner .footerBottum {

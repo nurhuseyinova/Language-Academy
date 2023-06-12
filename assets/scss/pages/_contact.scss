@@ -7,15 +7,12 @@
   background-attachment: fixed;
   .contactPage {
     padding: 60px 0;
-    background-color: rgba(241, 174, 111, 0.3);
+    background-color: rgba(7, 7, 41, 0.411);
     .herroBanner {
       .contactNote {
         text-align: center;
         color: $mainColor;
-        h2 {
-          text-shadow: 2px 2px 1px $light;
-          font-weight: bold;
-        }
+
         p {
           color: $light;
           font-size: 20px;
@@ -93,7 +90,7 @@
           text-align: center;
           h1 {
             font-weight: bold;
-            text-shadow: 3px 3px 3px $textColor1;
+            text-shadow: 3px 3px 3px $darkBlue;
           }
           div {
             a {
@@ -106,6 +103,7 @@
   }
   .item2 {
     padding: 50px 0;
+    background-color: $darkBlue;
     .herroBanner {
       .row {
         @include display;
@@ -148,7 +146,7 @@
   }
   .item3 {
     padding: 50px 100px;
-    background-color: $lightCoral;
+    background-color: rgb(205, 217, 219);
     .herroBanner {
       @include display;
       justify-content: center;

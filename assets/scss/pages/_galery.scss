@@ -1,21 +1,19 @@
 ////Home page gallery section!
 #galery {
   padding-top: 40px;
+  background-color: $darkBlue;
   h1 {
     text-align: center;
     color: $mainColor;
-    text-shadow: 4px 4px 4px $textColor1;
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
   }
   p {
     text-align: center;
-    color: $mainColor;
+    color: $light;
     margin-bottom: 20px;
-    font-weight: bold;
     font-family: "Sacramento", cursive;
     font-size: 30px;
-    text-shadow: 4px 4px 4px $textColor1;
   }
   .swiper {
     width: 100%;
@@ -80,6 +78,7 @@
     }
   }
   .galleryItem2 {
+    background-color: $darkBlue;
     .swiper {
       width: 100%;
       padding: 50px 0;
@@ -132,7 +131,7 @@
         }
         &:hover {
           .item {
-            background-color: #838c48cb;
+            background-color: #010b4d65;
             transform: rotateY(180deg);
           }
         }

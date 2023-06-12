@@ -1,5 +1,6 @@
 ////Home page News section!
 #news {
+  // background-color: ;
   padding: 50px 0;
   h1 {
     color: $mainColor;
@@ -30,7 +31,6 @@
         border: 1px solid $mainColor;
         h5 {
           color: $textColor1;
-          text-shadow: 1px 1px $mainColor;
         }
         p {
           color: $mainColor;

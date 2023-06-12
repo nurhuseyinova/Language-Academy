@@ -1,4 +1,5 @@
 #about {
+  background-color: #0d1128;
   .herroBanner {
     .aboutNote {
       padding: 60px 0;
@@ -15,7 +16,7 @@
         line-height: 5vh;
       }
       a {
-    font-family: "Montserrat", sans-serif;
+        font-family: "Montserrat", sans-serif;
         background: $mainColor;
         color: $light;
         padding: 10px 30px;

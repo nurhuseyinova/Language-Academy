@@ -1,5 +1,6 @@
 ////Home page teacher section!
 #teacher {
+  background-color: $darkBlue;
   padding: 50px 0;
   .herroBanner {
     .teacherNote {
@@ -7,7 +8,7 @@
       color: $mainColor;
       font-family: "Montserrat", sans-serif;
       h1 {
-        text-shadow: 3px 3px 2px $textColor1;
+        color: $light;
         font-weight: bold;
       }
       p {
@@ -46,6 +47,9 @@
           .itemNote {
             color: $mainColor;
             font-family: "Montserrat", sans-serif;
+            h3 {
+              color: $light;
+            }
             a {
               color: $mainColor;
               background-color: transparent;
@@ -56,7 +60,7 @@
               font-family: "Montserrat", sans-serif;
               margin-bottom: 10px;
               &:hover {
-                color: $textColor1;
+                color: #02011d;
                 background-color: $mainColor;
               }
             }
@@ -96,7 +100,7 @@
         text-align: center;
         h1 {
           font-weight: bold;
-          text-shadow: 3px 3px 2px $light;
+          text-shadow: 3px 3px 2px $darkBlue;
         }
         div {
           a {
@@ -108,13 +112,12 @@
   }
   .teamItem2 {
     padding: 50px 0;
+    background-color: $darkBlue;
     .teamItem2Note {
       text-align: center;
       h1 {
         color: $mainColor;
-        text-shadow: 2px 2px 2px $textColor1;
         margin-bottom: 20px;
-        font-weight: bold;
       }
     }
     .line {
@@ -155,6 +158,9 @@
           .itemNote {
             color: $mainColor;
             font-family: "Montserrat", sans-serif;
+            h3 {
+              color: $light;
+            }
             a {
               color: $mainColor;
               background-color: transparent;
@@ -165,16 +171,18 @@
               font-family: "Montserrat", sans-serif;
               margin-bottom: 10px;
               &:hover {
-                color: $textColor1;
+                color: $textColor2;
                 background-color: $mainColor;
               }
             }
           }
         }
         &:hover {
-          h3,
-          p {
+          h3 {
             color: $textColor1;
+          }
+          p {
+            color: $light;
           }
           .itemImg {
             i {
@@ -186,18 +194,18 @@
     }
   }
   .teamItem3 {
+    padding: 50px 0;
     .herroBanner {
-    h1{
-      color: $textColor1;
-      text-align: center;
-      text-shadow: 2px 2px  $mainColor;
-      font-weight: bold;
-    }
+      h1 {
+        color: $textColor1;
+        text-align: center;
+        text-shadow: 1px 1px $mainColor;
+      }
       .swiper {
         width: 100%;
         padding: 50px 0;
         .swiper-slide {
-          background-color: $lightCoral;
+          background-color: $darkBlue;
           background-position: center;
           background-size: cover;
           width: 300px;
@@ -227,7 +235,7 @@
               height: 15vh;
               li {
                 a {
-                  color: #e7710a;
+                  color: $textColor1;
                   font-size: 30px;
                   &:hover {
                     color: #2c5c2f;
@@ -241,12 +249,12 @@
             text-align: center;
             color: $mainColor;
             h4 {
-              color: $textColor1;
+              color: $light;
             }
           }
           &:hover {
             span {
-              color: #ca5f01;
+              color: $light;
             }
             .slideImg {
               ul {

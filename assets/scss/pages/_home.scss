@@ -1,18 +1,19 @@
 #home {
-  padding: 300px 0;
   background-image: url("../image/fullscreen-slider.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  .herroBanner {
-    .homeItem {
+  .homeItem {
+    background-color: rgba(3, 3, 34, 0.438);
+    padding: 300px 0;
+    .herroBanner {
       .item {
         .itemNote {
           text-align: center;
-          color: $lightGreen;
+          color: $light;
           h1 {
-            text-shadow: 2px 2px 2px $light;
+            font-size: 60px;
           }
         }
       }

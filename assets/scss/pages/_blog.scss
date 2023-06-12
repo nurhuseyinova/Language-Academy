@@ -1,18 +1,16 @@
 ////home page blog section!
 #blog {
-  background-color: $lightCoral;
+  background-color: #02011d;
   padding-top: 50px;
   .herroBanner {
     h1 {
       text-align: center;
-      color: $mainColor;
-      text-shadow: 4px 4px 4px $textColor1;
+      color: $light;
     }
     .swiper {
       width: 100%;
       padding: 50px 0;
       .swiper-slide {
-        border-radius: 20px;
         background-color: $light;
         background-position: center;
         background-size: cover;
@@ -20,7 +18,6 @@
         height: 470px;
         .slideImg {
           overflow: hidden;
-          border-radius: 10px;
           img {
             display: block;
             width: 100%;
