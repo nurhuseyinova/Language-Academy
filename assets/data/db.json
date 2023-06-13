@@ -1,16 +1,6 @@
 {
   "teachers": [
     {
-      "id": "1",
-      "photo": "../assets/image/teachers12.jpg",
-      "firstName": "Jesica",
-      "lastName": "Huseyinova",
-      "email": "jesica@gmail.com",
-      "subject": "Russian",
-      "information": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nam!",
-      "experience": "2"
-    },
-    {
       "id": "2",
       "photo": "./assets/image/teachers11.jpg",
       "firstName": "Nadya",
