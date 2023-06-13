@@ -1,12 +1,12 @@
-let ENGLISH_URL = `http://localhost:8080/english`;
-let englishData = document.querySelector("#englishData");
+let RUSSIAN_URL = `http://localhost:8080/russian`;
+let russianData = document.querySelector("#russianData");
 
-async function getEnglishData() {
-  englishData.innerHTML += "";
-  let res = await axios(ENGLISH_URL);
+async function getRussianData() {
+    russianData.innerHTML += "";
+  let res = await axios(RUSSIAN_URL);
   let data = await res.data;
   data.forEach((info) => {
-    englishData.innerHTML += `
+    russianData.innerHTML += `
                 <tr>
                   <td>${info.id}</td>
                   <td>${info.firstName} ${info.lastName}</td>
@@ -14,10 +14,10 @@ async function getEnglishData() {
                   <td>${info.phone}</td>
                   <td>${info.subject} language</td>
                   <td>
-                    <button class="delete" onclick=deleteBtnEnglish("${info.id}") >
+                    <button class="delete" onclick=deleteBtnRussian("${info.id}") >
                       <i class="fa-solid fa-trash"></i>
                     </button>
-                    <button class="edit" onclick=editBtnEnglish("${info.id}")>
+                    <button class="edit" onclick=editBtnRussian("${info.id}")>
                       <i class="fa-solid fa-pen-to-square"></i>
                     </button>
                   </td>
@@ -25,9 +25,9 @@ async function getEnglishData() {
         `;
   });
 }
-getEnglishData();
+getRussianData();
 
-async function deleteBtnEnglish(id, btn) {
-  await axios.delete(`${ENGLISH_URL}/${id}`);
+async function deleteBtnRussian(id, btn) {
+  await axios.delete(`${RUSSIAN_URL}/${id}`);
   btn.closest("tr").remove();
 }

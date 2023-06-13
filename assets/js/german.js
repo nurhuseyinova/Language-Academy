@@ -1,7 +1,7 @@
 let GERMAN_URL = `http://localhost:8080/german`;
 let germanData = document.querySelector("#germanData");
 
-async function getFrenchhData() {
+async function getGermanData() {
   germanData.innerHTML += "";
   let res = await axios(GERMAN_URL);
   let data = await res.data;
@@ -14,10 +14,10 @@ async function getFrenchhData() {
                   <td>${info.phone}</td>
                   <td>${info.subject} language</td>
                   <td>
-                    <button class="delete" onclick=deleteBtn("${info.id}") >
+                    <button class="delete" onclick=deleteBtnGerman("${info.id}") >
                       <i class="fa-solid fa-trash"></i>
                     </button>
-                    <button class="edit" onclick=editBtn("${info.id}")>
+                    <button class="edit" onclick=editBtnGerman("${info.id}")>
                       <i class="fa-solid fa-pen-to-square"></i>
                     </button>
                   </td>
@@ -25,9 +25,9 @@ async function getFrenchhData() {
         `;
   });
 }
-getFrenchhData();
+getGermanData();
 
-async function deleteBtn(id, btn) {
+async function deleteBtnGerman(id, btn) {
   await axios.delete(`${GERMAN_URL}/${id}`);
   btn.closest("tr").remove();
 }
