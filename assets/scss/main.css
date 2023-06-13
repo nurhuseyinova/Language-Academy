@@ -23,7 +23,6 @@ header .headerTop {
   position: fixed;
   width: 100%;
   z-index: 10;
-  background-color: rgba(6, 8, 32, 0.521);
 }
 header .headerTop .herroBanner {
   display: flex;
@@ -73,7 +72,7 @@ header .headerTop .herroBanner nav .headItem1 li a:hover {
   }
 }
 header .headerTop .herroBanner nav .fa-bars {
-  color: black;
+  color: #ffffff;
   font-size: 20px;
   display: none;
 }
@@ -107,15 +106,27 @@ header .headerBottum {
   header .show {
     position: fixed;
     width: 50%;
-    z-index: 9;
-    background-color: rgba(6, 8, 32, 0.521);
-    margin-top: 12vh;
+    z-index: 11;
+    background-color: #ffffff;
     display: block;
   }
   header .show .herroBanner nav {
     line-height: 6vh;
     height: 100vh;
     padding: 30px 0;
+  }
+  header .show .herroBanner nav h4 {
+    color: #000000;
+    font-size: 26px;
+    position: relative;
+    bottom: 10px;
+    font-weight: 400;
+    font-family: "Sacramento", cursive;
+  }
+  header .show .herroBanner nav h4 span {
+    position: absolute;
+    left: 15px;
+    color: #da853d;
   }
   header .show .herroBanner nav ul li a {
     text-transform: uppercase;
@@ -1279,6 +1290,148 @@ header .headerBottum {
   #contactPage .item3 .herroBanner form .formTag {
     width: 290px;
   }
+}
+
+#admin .row .menu {
+  background-color: #0d1128;
+  padding-top: 30px;
+  padding-bottom: 200px;
+}
+#admin .row .menu .adminMenu {
+  text-align: center;
+}
+#admin .row .menu .adminMenu img {
+  width: 80px;
+  height: 90px;
+  border-radius: 50%;
+}
+#admin .row .menu .adminMenu h3 {
+  color: #ffffff;
+}
+#admin .row .menu .adminMenu .icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+#admin .row .menu .adminMenu .icon li a {
+  font-size: 20px;
+  color: #da853d;
+}
+#admin .row .menu nav {
+  padding-top: 30px;
+}
+#admin .row .menu nav a {
+  color: #ffffff;
+}
+#admin .row .menu nav a::after {
+  content: "";
+  height: 3px;
+  display: block;
+  width: 30px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+#admin .row .menu nav a:hover {
+  color: #da853d;
+}
+#admin .row .menu nav a:hover::after {
+  background-color: #da853d;
+}
+#admin .row .info {
+  padding-bottom: 40px;
+}
+#admin .row .info .mainPage {
+  padding-top: 60px;
+}
+#admin .row .info .mainPage .infoMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#admin .row .info .mainPage .infoMenu h4 {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  width: 200px;
+  background-color: #0d1128;
+  transition: all 0.3s linear;
+}
+#admin .row .info .mainPage .infoMenu h4 a {
+  color: #da853d;
+}
+#admin .row .info .mainPage .infoMenu h4:hover {
+  transform: translateY(-15px);
+}
+#admin .row .info .mainPage .infoMenu h4:hover a {
+  color: #ffffff;
+}
+#admin .row .info h1 {
+  color: #0d1128;
+  text-align: center;
+  padding: 40px 0;
+}
+#admin .row .info table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#admin .row .info table thead tr th {
+  color: white;
+  background-color: rgb(13, 13, 85);
+  text-align: center;
+  border: 1px solid gray;
+  padding: 10px;
+  font-weight: 600;
+}
+#admin .row .info table tbody tr td {
+  background-color: #0d1128;
+  text-align: center;
+  border: 1px solid gray;
+  color: white;
+  padding: 10px;
+}
+#admin .row .info table tbody tr td img {
+  width: 60px;
+}
+#admin .row .info table tbody tr td button {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+#admin .row .info table tbody tr td .delete {
+  color: red;
+}
+#admin .row .info table tbody tr td .edit {
+  color: blue;
+}
+#admin .row .info #users {
+  display: none;
+}
+#admin .row .info #teachers {
+  display: none;
+}
+#admin .row .info #comment {
+  display: none;
+}
+#admin .row .info #english {
+  display: none;
+}
+#admin .row .info #russian {
+  display: none;
+}
+#admin .row .info #alman {
+  display: none;
+}
+#admin .row .info #french {
+  display: none;
 }
 
 footer {

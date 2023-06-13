@@ -3,7 +3,6 @@ header {
     position: fixed;
     width: 100%;
     z-index: 10;
-    background-color: $bgHeader;
     .herroBanner {
       display: flex;
       flex-direction: column;
@@ -48,7 +47,7 @@ header {
           }
         }
         .fa-bars {
-          color: black;
+          color: $light;
           font-size: 20px;
           display: none;
           @media only screen and (max-width: 992px) {
@@ -79,15 +78,27 @@ header {
     .show {
       position: fixed;
       width: 50%;
-      z-index: 9;
-      background-color: $bgHeader;
-      margin-top: 12vh;
+      z-index: 11;
+      background-color: $light;
       display: block;
       .herroBanner {
         nav {
           line-height: 6vh;
           height: 100vh;
           padding: 30px 0;
+          h4 {
+            color: $dark;
+            font-size: 26px;
+            position: relative;
+            bottom: 10px;
+            font-weight: 400;
+            font-family: "Sacramento", cursive;
+            span {
+              position: absolute;
+              left: 15px;
+              color: $mainColor;
+            }
+          }
           ul {
             li {
               a {

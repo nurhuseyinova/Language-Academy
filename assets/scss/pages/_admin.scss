@@ -1,0 +1,149 @@
+#admin {
+  .row {
+    .menu {
+      background-color: $darkBlue;
+      padding-top: 30px;
+      padding-bottom: 200px;
+      .adminMenu {
+        text-align: center;
+        img {
+          width: 80px;
+          height: 90px;
+          border-radius: 50%;
+        }
+        h3 {
+          color: $light;
+        }
+        .icon {
+          @include display;
+          justify-content: center;
+          gap: 20px;
+          padding-inline-start: 0;
+          li {
+            a {
+              font-size: 20px;
+              color: $textColor1;
+            }
+          }
+        }
+      }
+      nav {
+        padding-top: 30px;
+        a {
+          color: $light;
+          &::after {
+            content: "";
+            height: 3px;
+            display: block;
+            width: 30px;
+            background-color: transparent;
+            border-radius: 10px;
+          }
+          &:hover {
+            color: $textColor1;
+            &::after {
+              background-color: $textColor1;
+            }
+          }
+        }
+      }
+    }
+    .info {
+      padding-bottom: 40px;
+      .mainPage {
+          padding-top: 60px;
+        .infoMenu {
+          @include display;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 20px;
+          h4 {
+            height: 20vh;
+            @include display;
+            justify-content: center;
+            width: 200px;
+            background-color: $darkBlue;
+            transition: all 0.3s linear;
+            a {
+              color: $textColor1;
+            }
+            &:hover{
+                transform: translateY(-15px);
+                a{
+                    color: $light;
+                }
+            }
+          }
+        }
+      }
+      h1 {
+        color: $textColor2;
+        text-align: center;
+        padding: 40px 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        thead {
+          tr {
+            th {
+              color: white;
+              background-color: rgb(13, 13, 85);
+              text-align: center;
+              border: 1px solid gray;
+              padding: 10px;
+              font-weight: 600;
+            }
+          }
+        }
+        tbody {
+          tr {
+            td {
+              background-color: $darkBlue;
+              text-align: center;
+              border: 1px solid gray;
+              color: white;
+              padding: 10px;
+              img {
+                width: 60px;
+              }
+
+              button {
+                border: none;
+                background-color: transparent;
+                font-size: 20px;
+              }
+              .delete {
+                color: red;
+              }
+              .edit {
+                color: blue;
+              }
+            }
+          }
+        }
+      }
+      #users {
+        display: none;
+      }
+      #teachers {
+        display: none;
+      }
+      #comment {
+        display: none;
+      }
+      #english {
+        display: none;
+      }
+      #russian {
+        display: none;
+      }
+      #alman {
+        display: none;
+      }
+      #french {
+        display: none;
+      }
+    }
+  }
+}
