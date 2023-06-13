@@ -1,4 +1,5 @@
 let headerTop = document.querySelector(".headerTop");
+let goTop = document.querySelector(".goTop");
 let showMenu = document.querySelector(".headerBottum");
 let menu = document.querySelector(".fa-bars");
 menu.addEventListener("click", function () {
@@ -12,3 +13,8 @@ if (document.body.scrollTop > 30 || document.documentElement.scrollTop >30) {
 
 }
 });
+goTop.addEventListener('click', () => {
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
+    goTop.style. scrollBehavior= "smooth";
+})

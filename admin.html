@@ -76,15 +76,15 @@
         </div>
         <div class="col col-9 info">
           <div class="mainPage">
-            <h1>Welcom Admin</h1>
+            <h1>Welcome Admin</h1>
             <div class="infoMenu">
-              <h4><a href="#" class="usersInfo">Users</a></h4>
-              <h4><a href="#" class="teacherInfo">Teachers</a></h4>
-              <h4><a href="#" class="commentInfo">Comment</a></h4>
-              <h4><a href="#" class="englishInfo">English</a></h4>
-              <h4><a href="#" class="russianInfo">Russian</a></h4>
-              <h4><a href="#" class="almanInfo">Alman</a></h4>
-              <h4><a href="#" class="frenchInfo">French</a></h4>
+              <h4 class="usersInfo"><a href="#">Users</a></h4>
+              <h4 class="teacherInfo"><a href="#">Teachers</a></h4>
+              <h4 class="commentInfo"><a href="#">Comment</a></h4>
+              <h4 class="englishInfo"><a href="#">English</a></h4>
+              <h4 class="russianInfo"><a href="#">Russian</a></h4>
+              <h4 class="almanInfo"><a href="#">Alman</a></h4>
+              <h4 class="frenchInfo"><a href="#">French</a></h4>
             </div>
           </div>
           <div id="users">
@@ -134,8 +134,8 @@
                   <th>Action</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
+              <tbody id="teachersData">
+                <!-- <tr>
                   <td>1</td>
                   <td><img src="./assets/image/teacher2.jpg" alt="" /></td>
                   <td>Nurlana Huseyinova</td>
@@ -154,7 +154,7 @@
                       <i class="fa-solid fa-pen-to-square"></i>
                     </button>
                   </td>
-                </tr>
+                </tr> -->
               </tbody>
             </table>
           </div>
@@ -335,6 +335,13 @@
       integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/teachers.js"></script>
     <script src="./assets/js/admin.js"></script>
   </body>
 </html>

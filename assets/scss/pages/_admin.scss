@@ -51,7 +51,7 @@
     .info {
       padding-bottom: 40px;
       .mainPage {
-          padding-top: 60px;
+        padding-top: 60px;
         .infoMenu {
           @include display;
           justify-content: center;
@@ -67,11 +67,11 @@
             a {
               color: $textColor1;
             }
-            &:hover{
-                transform: translateY(-15px);
-                a{
-                    color: $light;
-                }
+            &:hover {
+              transform: translateY(-15px);
+              a {
+                color: $light;
+              }
             }
           }
         }
@@ -87,10 +87,10 @@
         thead {
           tr {
             th {
-              color: white;
+              color: $textColor1;
               background-color: rgb(13, 13, 85);
               text-align: center;
-              border: 1px solid gray;
+              border: 1px solid $textColor1;
               padding: 10px;
               font-weight: 600;
             }
@@ -101,11 +101,12 @@
             td {
               background-color: $darkBlue;
               text-align: center;
-              border: 1px solid gray;
+              border: 1px solid $textColor1;
               color: white;
               padding: 10px;
               img {
                 width: 60px;
+                height: 60px;
               }
 
               button {

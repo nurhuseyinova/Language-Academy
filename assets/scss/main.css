@@ -19,6 +19,10 @@ a {
   }
 }
 
+header {
+  position: fixed;
+  z-index: 7;
+}
 header .headerTop {
   position: fixed;
   width: 100%;
@@ -1384,22 +1388,23 @@ header .headerBottum {
   border-collapse: collapse;
 }
 #admin .row .info table thead tr th {
-  color: white;
+  color: #da853d;
   background-color: rgb(13, 13, 85);
   text-align: center;
-  border: 1px solid gray;
+  border: 1px solid #da853d;
   padding: 10px;
   font-weight: 600;
 }
 #admin .row .info table tbody tr td {
   background-color: #0d1128;
   text-align: center;
-  border: 1px solid gray;
+  border: 1px solid #da853d;
   color: white;
   padding: 10px;
 }
 #admin .row .info table tbody tr td img {
   width: 60px;
+  height: 60px;
 }
 #admin .row .info table tbody tr td button {
   border: none;
@@ -1514,6 +1519,8 @@ footer .herroBanner .footerBottum {
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
 }
 footer .herroBanner .footerBottum p {
   color: #da853d;
@@ -1524,11 +1531,22 @@ footer .herroBanner .footerBottum p {
     text-align: center;
   }
 }
+footer .herroBanner .footerBottum button {
+  text-align: end;
+  border: none;
+  padding: 5px 20px;
+  background-color: #da853d;
+  color: #0d1128;
+  margin: 10px 0;
+  font-size: 20px;
+}
 footer .herroBanner .footerBottum ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 15px;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
 }
 footer .herroBanner .footerBottum ul li a {
   font-size: 25px;

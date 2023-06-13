@@ -1,0 +1,44 @@
+{
+  "teachers": [
+    {
+      "id": "1",
+      "photo": "../assets/image/teachers12.jpg",
+      "firstName": "Jesica",
+      "lastName": "Huseyinova",
+      "email": "jesica@gmail.com",
+      "subject": "Russian",
+      "information": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nam!",
+      "experience": "2"
+    },
+    {
+      "id": "2",
+      "photo": "./assets/image/teachers11.jpg",
+      "firstName": "Nadya",
+      "lastName": "Huseyinova",
+      "email": "nadya@gmail.com",
+      "subject": "French",
+      "information": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nam!",
+      "experience": "9"
+    },
+    {
+      "id": "3",
+      "photo": "./assets/image/teachers17.jpg",
+      "firstName": "Jony",
+      "lastName": "Delphi",
+      "email": "jony@gmail.com",
+      "subject": "Alman",
+      "information": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nam!",
+      "experience": "7"
+    },
+    {
+      "id": "5",
+      "photo": "./assets/image/teachers19.jpg",
+      "firstName": "James",
+      "lastName": "Dep",
+      "email": "james@gmail.com",
+      "subject": "Alman",
+      "information": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nam!r",
+      "experience": "14"
+    }
+  ]
+}

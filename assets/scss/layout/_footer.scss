@@ -80,6 +80,7 @@ footer {
     .footerBottum {
       @include display;
       padding: 20px 0;
+      padding-inline-start: 0;
       p {
         color: $footerText;
         font-size: 20px;
@@ -87,9 +88,19 @@ footer {
           text-align: center;
         }
       }
+      button{
+        text-align: end;
+        border: none;
+        padding: 5px 20px;
+        background-color: $textColor1;
+        color: $textColor2;
+        margin: 10px 0;  
+        font-size: 20px    
+      }
       ul {
         @include display;
         gap: 15px;
+        padding-inline-start: 0;
 
         li {
           a {
