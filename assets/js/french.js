@@ -1,12 +1,12 @@
-let ENGLISH_URL = `http://localhost:8080/english`;
-let englishData = document.querySelector("#englishData");
+let FRENCH_URL = `http://localhost:8080/french`;
+let frenchData = document.querySelector("#frenchData");
 
-async function getEnglishData() {
-  englishData.innerHTML += "";
-  let res = await axios(ENGLISH_URL);
+async function getFrenchhData() {
+    frenchData.innerHTML += "";
+  let res = await axios(FRENCH_URL);
   let data = await res.data;
   data.forEach((info) => {
-    englishData.innerHTML += `
+    frenchData.innerHTML += `
                 <tr>
                   <td>${info.id}</td>
                   <td>${info.firstName} ${info.lastName}</td>
@@ -25,9 +25,9 @@ async function getEnglishData() {
         `;
   });
 }
-getEnglishData();
+getFrenchhData();
 
 async function deleteBtn(id, btn) {
-  await axios.delete(`${ENGLISH_URL}/${id}`);
+  await axios.delete(`${FRENCH_URL}/${id}`);
   btn.closest("tr").remove();
 }
