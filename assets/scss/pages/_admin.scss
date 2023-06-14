@@ -156,6 +156,14 @@
                 width: 250px;
               }
             }
+            .phoneNumber{
+              width: 500px;
+              display: flex;
+              column-gap: 2px;
+              select{
+                width: 100px !important;
+              }
+            }
             .emailExperience {
               width: 500px;
               display: flex;
@@ -219,13 +227,13 @@
         display: none;
       }
       #teachers {
-        display: block;
+        display: none;
       }
       #comment {
         display: none;
       }
       #english {
-        display: none;
+        display: block;
       }
       #russian {
         display: none;

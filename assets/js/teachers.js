@@ -61,22 +61,33 @@ teachersForm.addEventListener("submit", async function (e) {
     information: teachersInformation.value,
     experience: teachersExperience.value,
   };
-  if (editStatus) {
-    await axios.patch(`${TEACHERS_URL}/${editId}`, obj);
-    getTeachersData();
-    teachersSubmit.innerHTML = "Submit";
-    formHead.innerHTML = "Add Teachers";
-    teachersFirstName.innerHTML = "";
-    teachersLastName.innerHTML = "";
-    teachersEmail.innerHTML = "";
-    teachersSubject.innerHTML = "";
-    teachersInformation.innerHTML = "";
-    teachersExperience.innerHTML = "";
-    editStatus = false;
-  } else {
-    await axios.post(`${TEACHERS_URL}`, obj);
-    getTeachersData();
-    console.log(obj);
+  if (
+    teachersFirstName.value &&
+    teachersLastName.value &&
+    teachersEmail.value &&
+    teachersSubject.value &&
+    teachersInformation.value &&
+    teachersExperience.value
+  ) {
+    if (editStatus) {
+      await axios.patch(`${TEACHERS_URL}/${editId}`, obj);
+      getTeachersData();
+      teachersSubmit.innerHTML = "Submit";
+      formHead.innerHTML = "Add Teachers";
+      teachersFirstName.innerHTML = "";
+      teachersLastName.innerHTML = "";
+      teachersEmail.innerHTML = "";
+      teachersSubject.innerHTML = "";
+      teachersInformation.innerHTML = "";
+      teachersExperience.innerHTML = "";
+      editStatus = false;
+    } else {
+      await axios.post(`${TEACHERS_URL}`, obj);
+      getTeachersData();
+      console.log(obj);
+    }
+  }else{
+    alert("The form is not completed!")
   }
 });
 
