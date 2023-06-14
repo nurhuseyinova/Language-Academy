@@ -2,7 +2,7 @@ let GERMAN_URL = `http://localhost:8080/german`;
 let germanData = document.querySelector("#germanData");
 
 async function getGermanData() {
-  germanData.innerHTML += "";
+  germanData.innerHTML = "";
   let res = await axios(GERMAN_URL);
   let data = await res.data;
   data.forEach((info) => {

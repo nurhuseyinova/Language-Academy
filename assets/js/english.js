@@ -2,7 +2,7 @@ let ENGLISH_URL = `http://localhost:8080/english`;
 let englishData = document.querySelector("#englishData");
 
 async function getEnglishData() {
-  englishData.innerHTML += "";
+  englishData.innerHTML = "";
   let res = await axios(ENGLISH_URL);
   let data = await res.data;
   data.forEach((info) => {

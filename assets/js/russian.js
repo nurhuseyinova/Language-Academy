@@ -2,7 +2,7 @@ let RUSSIAN_URL = `http://localhost:8080/russian`;
 let russianData = document.querySelector("#russianData");
 
 async function getRussianData() {
-    russianData.innerHTML += "";
+    russianData.innerHTML = "";
   let res = await axios(RUSSIAN_URL);
   let data = await res.data;
   data.forEach((info) => {

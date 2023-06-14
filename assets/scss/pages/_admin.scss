@@ -1,5 +1,6 @@
 #admin {
   .row {
+    --bs-gutter-x: 0rem;
     .menu {
       background-color: $darkBlue;
       padding-top: 30px;
@@ -8,10 +9,10 @@
         text-align: center;
         img {
           width: 80px;
-          height: 90px;
+          height: 85px;
           border-radius: 50%;
         }
-        h3 {
+        h4 {
           color: $light;
         }
         .icon {
@@ -124,11 +125,101 @@
           }
         }
       }
+      .formItem {
+        padding-top: 50px;
+        .herroBanner {
+          @include display;
+          justify-content: center;
+
+          form {
+            @include display;
+            justify-content: center;
+            flex-direction: column;
+            width: 400px;
+            .formTags {
+              width: 500px;
+              padding: 10px;
+              margin-top: 2px;
+              border: 1px solid $textColor1;
+              background-color: $darkBlue;
+              color: $textColor1;
+              &::placeholder {
+                color: $textColor1;
+              }
+            }
+            .fullName {
+              display: flex;
+              column-gap: 2px;
+              width: 500px;
+              input {
+                text-transform: capitalize;
+                width: 250px;
+              }
+            }
+            .emailExperience {
+              width: 500px;
+              display: flex;
+              column-gap: 2px;
+            }
+
+            select {
+              color: $textColor1;
+              option {
+                color: $textColor1;
+              }
+            }
+            input::file-selector-button {
+              background-color: $textColor1;
+              color: $textColor2;
+            }
+            textarea {
+              height: 20vh;
+            }
+            .submit {
+              font-family: "Montserrat", sans-serif;
+              background: $textColor1 !important;
+              color: $textColor2;
+              padding: 10px 30px;
+              border: none;
+              position: relative;
+              cursor: pointer;
+              transition: 400ms linear all;
+              outline: none;
+              &:hover {
+                background: #f77300 !important;
+                color: $textColor2;
+              }
+              &:before,
+              &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 2px;
+                width: 0;
+                background: $textColor2;
+                transition: 400ms linear all;
+              }
+              &:after {
+                right: inherit;
+                top: inherit;
+                left: 0;
+                bottom: 0;
+              }
+              &:hover:before,
+              &:hover:after {
+                width: 100%;
+                transition: 400ms linear all;
+              }
+            }
+          }
+        }
+      }
       #users {
         display: none;
       }
       #teachers {
-        display: none;
+        display: block;
       }
       #comment {
         display: none;

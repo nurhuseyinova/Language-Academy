@@ -1,7 +1,7 @@
 {
   "teachers": [
     {
-      "id": "2",
+      "id": 2,
       "photo": "./assets/image/teachers11.jpg",
       "firstName": "Nadya",
       "lastName": "Huseyinova",
@@ -11,7 +11,7 @@
       "experience": "9"
     },
     {
-      "id": "3",
+      "id": 3,
       "photo": "./assets/image/teachers17.jpg",
       "firstName": "Jony",
       "lastName": "Delphi",
@@ -21,14 +21,24 @@
       "experience": "7"
     },
     {
-      "id": "5",
-      "photo": "./assets/image/teachers19.jpg",
+      "id": 4,
+      "photo": "../assets/image/teachers19.jpg",
       "firstName": "James",
       "lastName": "Dep",
       "email": "james@gmail.com",
       "subject": "Alman",
       "information": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nam!r",
       "experience": "14"
+    },
+    {
+      "photo": "../image/academy-new-8.jpg ",
+      "firstName": "Harlan",
+      "lastName": "Richmond",
+      "email": "zefebyg@mailinator.com",
+      "subject": "English",
+      "information": "Rerum in sed obcaeca",
+      "experience": "7",
+      "id": 5
     }
   ]
 }
