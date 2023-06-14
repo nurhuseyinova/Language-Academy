@@ -1540,7 +1540,7 @@ header .headerBottum {
   display: none;
 }
 #admin .row .info #german {
-  display: block;
+  display: none;
 }
 #admin .row .info #french {
   display: none;
