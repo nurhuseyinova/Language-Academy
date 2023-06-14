@@ -29,26 +29,6 @@
       "subject": "Alman",
       "information": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nam!r",
       "experience": "14"
-    },
-    {
-      "photo": "../image/academy-new-8.jpg ",
-      "firstName": "Harlan",
-      "lastName": "Richmond",
-      "email": "zefebyg@mailinator.com",
-      "subject": "English",
-      "information": "Rerum in sed obcaeca",
-      "experience": "7",
-      "id": 5
-    },
-    {
-      "photo": "../image/undefined ",
-      "firstName": "Abbot",
-      "lastName": "Fletcher",
-      "email": "muracola@mailinator.com",
-      "subject": "English",
-      "information": "Atque non quos accus",
-      "experience": "22",
-      "id": 6
     }
   ]
 }

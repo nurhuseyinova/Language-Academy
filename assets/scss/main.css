@@ -1534,10 +1534,10 @@ header .headerBottum {
   display: none;
 }
 #admin .row .info #english {
-  display: block;
+  display: none;
 }
 #admin .row .info #russian {
-  display: none;
+  display: block;
 }
 #admin .row .info #german {
   display: none;

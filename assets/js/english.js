@@ -58,6 +58,7 @@ englishForm.addEventListener("submit", async function (e) {
     englishFirstName.value &&
     englishLastName.value &&
     englishEmail.value &&
+    englishSubject&&
     studentsPhoneStart.value &&
     studentsPhoneEnd.value
   ) {
