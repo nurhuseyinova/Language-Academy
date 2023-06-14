@@ -1537,10 +1537,10 @@ header .headerBottum {
   display: none;
 }
 #admin .row .info #russian {
-  display: block;
+  display: none;
 }
 #admin .row .info #german {
-  display: none;
+  display: block;
 }
 #admin .row .info #french {
   display: none;
