@@ -1,66 +1,61 @@
 #comments {
-  background-image: url("../image/bgicomments.jpg");
+  background-image: url("../image/graduates.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   .commentItem {
-    background-color: rgba(75, 130, 182, 0.404);
-    padding: 150px;
-    .herroBanner {
-      h1 {
-        color: $light;
-        margin-bottom: 60px;
-        text-align: center;
-      }
-      .itemComment {
+    background-color: rgba(19, 45, 68, 0.788);
+    padding: 60px 0;
+    h1{
+      text-align: center;
+      color: $textColor1;
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+      .swiper-wrapper {
         @include display;
         justify-content: center;
-        gap: 20px;
-        .itemImg {
-          position: relative;
-          border-radius: 15px;
-          overflow: hidden;
-          img {
-            border-radius: 15px;
-            height: 40vh;
-            width: 300px;
-          }
-          nav {
-            background-color: rgba(15, 46, 15, 0.425);
-            position: absolute;
-            margin-top: -240px;
-            z-index: -1;
-            padding-top: 15px;
-            width: 0px;
-            height: 50vh;
-            transition: all 0.5s linear;
-            ul {
-              display: flex;
-              flex-direction: column;
+        height: 75vh;
+        .swiper-slide {
+          text-align: center;
+          // font-size: 18px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .item {display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            .commentNote {
+              @include display;
+              justify-content: center;
+
+              background-color: $textColor1;
+              color: $light;
+              // padding:50px 10px;
+              border-radius: 10px;
+              width: 300px;
+              height: 200px;
+            }
+            .itemImg {
+              @include display;
               justify-content: start;
-              gap: 15px;
-              li {
-                a {
-                  color: $mainColor;
-                  background-color: $coral;
-                  border: 1px solid $mainColor;
-                  border-radius: 50%;
-                  padding: 6px 10px;
-                }
+              // width: 100px;
+              gap: 20px;
+              img {
+                display: block;
+                width: 90px;
+                height: 90px;
+                object-fit: cover;
+                border-radius: 50%;
+              }
+              .imgNote {
+                padding-inline-start: 0;
+                color: $textColor1;
               }
             }
           }
-          &:hover {
-            nav {
-              z-index: 1 !important;
-              width: 70px;
-            }
-          }
-        }
-        .commentNote1 {
-          color: $mainColor;
-          text-align: left;
         }
       }
     }

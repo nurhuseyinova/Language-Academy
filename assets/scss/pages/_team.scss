@@ -1,43 +1,50 @@
 ////Home page teacher section!
 #teacher {
-  background-color: $darkBlue;
-  padding: 50px 0;
+  background-color: #f3f3f3;
   .herroBanner {
+    padding: 60px 0;
     .teacherNote {
       text-align: center;
       color: $mainColor;
       font-family: "Montserrat", sans-serif;
       h1 {
-        color: $light;
+        color: $textColor1;
         font-weight: bold;
       }
       p {
         font-size: 20px;
+        color: gray;
       }
     }
     .row {
-      padding-top: 50px;
+      --bs-gutter-x: 0rem;
+      padding-top: 40px;
       @include display;
       justify-content: center;
       .col {
+        padding: 0 10px;
         .item {
-          padding: 30px 20px;
-          border: 1px solid $mainColor;
+          background-color: white;
+
+          padding: 50px 20px;
+          border: 1px solid white;
           text-align: center;
+          border-bottom: 2px solid transparent;
+
           .itemImg {
             position: relative;
             transition: all 0.5s linear;
             img {
-              border: 2px solid $textColor1;
+              border: 2px solid white;
               position: relative;
-              margin-top: -100px;
+              margin-top: -120px;
               width: 150px;
               height: 150px;
               border-radius: 50%;
             }
             i {
               position: absolute;
-              margin-top: -5px;
+              margin-top: -10px;
               margin-left: -27%;
               font-size: 35px;
               color: $mainColor;
@@ -48,11 +55,17 @@
             color: $mainColor;
             font-family: "Montserrat", sans-serif;
             h3 {
-              color: $light;
+              font-weight: 600;
+            }
+            h5 {
+              color: gray;
+            }
+            p {
+              color: gray;
             }
             a {
-              color: $mainColor;
-              background-color: transparent;
+              color: $textColor2;
+              background-color: $mainColor;
               padding: 10px 25px;
               border-radius: 20px;
               border: 1px solid $mainColor;
@@ -60,8 +73,8 @@
               font-family: "Montserrat", sans-serif;
               margin-bottom: 10px;
               &:hover {
-                color: #02011d;
-                background-color: $mainColor;
+                color: $mainColor;
+                background-color: transparent;
               }
             }
           }
@@ -75,6 +88,9 @@
             i {
               z-index: 1;
             }
+          }
+          .item {
+            border-bottom-color: $textColor1;
           }
         }
       }
@@ -112,7 +128,7 @@
   }
   .teamItem2 {
     padding: 50px 0;
-    background-color: $darkBlue;
+    background-color: $light;
     .teamItem2Note {
       text-align: center;
       h1 {
@@ -132,6 +148,7 @@
       justify-content: center;
       .col {
         .item {
+          background-color: #f3f3f3;
           padding: 30px 20px;
           border: 1px solid $mainColor;
           text-align: center;

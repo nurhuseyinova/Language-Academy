@@ -1,8 +1,15 @@
 #about {
-  background-color: #0d1128;
+  background-color: $light;
+  // height: 100vh;
   .herroBanner {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    padding: 50px 0;
     .aboutNote {
-      padding: 60px 0;
+      padding-top: 40px;
+      width: 50%;
       font-family: "Sora", sans-serif;
       h2 {
         font-weight: bold;
@@ -10,7 +17,7 @@
         margin-bottom: 3vh;
       }
       p {
-        color: $mainColor;
+        color: gray;
         font-weight: 500;
         font-size: 15px;
         line-height: 5vh;
@@ -52,6 +59,48 @@
           transition: 400ms linear all;
         }
       }
+    }
+    .aboutImg {
+      height: 70vh;
+      width: 50%;
+      .img {
+        width: 100%;
+        height: 100%;
+        background-position: start;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .img1 {
+        background-image: url("../image/team2.jpg");
+      }
+      .img2 {
+        display: none;
+        background-image: url("../image/galery11.jpg");
+      }
+    @media only screen and (max-width: 776px) {
+        .img2 {
+          display: block;
+        background-position: center;
+
+        }
+        .img1 {
+          display: none;
+        }
+      
+
+    }
+    }
+
+    @media only screen and (max-width: 992px) {
+      flex-direction: column;
+      .aboutNote {
+        width: 100%;
+        padding: 40px 5%;
+      }
+      .aboutImg {
+        width: 100%;
+      }
+     
     }
   }
 }

@@ -4,7 +4,7 @@ let frenchForm = document.querySelector("#frenchForm");
 let frenchFirstName = document.querySelector("#frenchFirstName");
 let frenchLastName = document.querySelector("#frenchLastName");
 let frenchEmail = document.querySelector("#frenchEmail");
-let germanSubject = document.querySelector("#germanSubject");
+let frenchSubject = document.querySelector("#frenchSubject");
 let frenchPhoneStart = document.querySelector("#frenchPhoneStart");
 let frenchPhoneEnd = document.querySelector("#frenchPhoneEnd");
 let frenchSubmit = document.querySelector("#frenchSubmit");
@@ -51,14 +51,14 @@ frenchForm.addEventListener("submit", async function (e) {
     firstName: frenchFirstName.value,
     lastName: frenchLastName.value,
     email: frenchEmail.value,
-    subject: germanSubject.value || "French",
+    subject: frenchSubject.value || "French",
     phone: ` ${frenchPhoneStart.value} ${frenchPhoneEnd.value}`,
   };
   if (
     frenchFirstName.value &&
     frenchLastName.value &&
     frenchEmail.value &&
-    germanSubject &&
+    frenchSubject &&
     frenchPhoneEnd.value
   ) {
     if (editStatus5) {
@@ -69,7 +69,7 @@ frenchForm.addEventListener("submit", async function (e) {
       frenchFirstName.innerHTML = "";
       frenchLastName.innerHTML = "";
       frenchEmail.innerHTML = "";
-      germanSubject.innerHTML = "";
+      frenchSubject.innerHTML = "";
       editStatus5 = false;
     } else {
       await axios.post(`${FRENCH_URL}`, obj);
@@ -90,7 +90,7 @@ async function editBtnFrench(id) {
   frenchFirstName.value = data.firstName;
   frenchLastName.value = data.lastName;
   frenchEmail.value = data.email;
-  germanSubject.value = data.subject;
+  frenchSubject.value = data.subject;
   frenchPhoneEnd.value = data.phone;
   // console.log(editId5);
   frenchSubmit.innerHTML = "Edit";

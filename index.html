@@ -49,17 +49,19 @@
                   >
                     About Us
                   </a>
-                  <ul class="dropdown-menu bg-success">
+                  <ul class="dropdown-menu ">
                     <li>
-                      <a class="dropdown-item bg-success" href="#"
+                      <a class="dropdown-item " href="#"
+                        >About Us</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item " href="#"
                         >Our Achievements</a
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item bg-success" href="#">Comments</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item bg-success" href="./galery.html"
+                      <a class="dropdown-item" href="./galery.html"
                         >Gallery</a
                       >
                     </li>
@@ -108,15 +110,32 @@
 
     <div id="home">
       <div class="homeItem">
-      <div class="herroBanner">
-        <div class="item">
-            <div class="itemNote">
-              <h1>Language Academy</h1>
-              <h4>The best language academy in Azerbaijan</h4>            
+        <div class="swiper mySwiperHome">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide1">
+                <div class="itemNote">
+                  <h1>Language Academy</h1>
+                  <h4>Language Academy is one of the most prestigious academies in
+                    Azerbaijan</h4>            
+                </div>
             </div>
+            <div class="swiper-slide slide2">
+                <div class="itemNote">
+                  <h1>Language Academy</h1>
+                  <h4>Language Academy is one of the most prestigious academies in
+                    Azerbaijan</h4>            
+            </div>
+            </div>
+            <div class="swiper-slide slide3">
+                <div class="itemNote">
+                  <h1>Language Academy</h1>
+                  <h4>Language Academy is one of the most prestigious academies in
+                    Azerbaijan</h4>            
+            </div>
+            </div>            
+          </div>
         </div>
         </div>
-      </div>
     </div>
     </div>
     <div id="about">
@@ -134,6 +153,10 @@
           </p>
           <br />
           <a href="#">Learn More</a>
+        </div>
+        <div class="aboutImg">
+          <div class="img img1"></div>
+          <div class="img img2"></div>
         </div>
       </div>
     </div>
@@ -296,7 +319,7 @@
             <img src="./assets/image/galery6.jpg" alt="" />
           </div>
           <div class="swiper-slide">
-            <img src="./assets/image/galery9.jpg" alt="" />
+            <img src="./assets/image/chair.jpg" alt="" />
             <img src="./assets/image/galery8.jpg" alt="" />
           </div>
           <div class="swiper-slide">
@@ -314,7 +337,6 @@
         </div>
         <div class="swiper-button-next pagination-button"></div>
         <div class="swiper-button-prev pagination-button"></div>
-        <div class="swiper-pagination"></div>
       </div>
   </div>
     <div id="teacher">
@@ -384,33 +406,33 @@
     <div id="achieveCount">
       <div class="countItem">
         <div class="herroBanner">
-          <div class="row">
+          <div class="row counter">
             <div class="col col-12 col-sm-6 col-lg-3 my-3 item">
               <i class="fa-solid fa-graduation-cap"></i>
               <div class="itemNote">
-                <h2>3000</h2>
+                <span class="scroll-counter" data-counter-time="3000">1530</span>
                 <h5>Graduates</h5>
               </div>
             </div>
             <div class="col col-12 col-sm-6 col-lg-3 my-3 item">
               <i class="fa-regular fa-calendar-days"></i>
               <div class="itemNote">
-                <h2>50</h2>
+                <span class="scroll-counter" data-counter-time="3000">150</span>
                 <h5>Schedule</h5>
               </div>
             </div>
             <div class="col col-12 col-sm-6 col-lg-3 my-3 item">
               <i class="fa-solid fa-user-tie"></i>
               <div class="itemNote">
-                <h2>25</h2>
+                <span class="scroll-counter" data-counter-time="3000">45</span>
                 <h5>Teachers</h5>
               </div>
             </div>
             <div class="col col-12 col-sm-6 col-lg-3 my-3 item">
               <i class="fa-solid fa-book"></i>
               <div class="itemNote">
-                <h2>5300</h2>
-                <h5>Books</h5>
+                <span class="scroll-counter" data-counter-time="3000">2100</span>
+                 <h5>Books</h5>
               </div>
             </div>
           </div>
@@ -421,7 +443,7 @@
       <div class="herroBanner">
         <h1>Our Blog</h1>
         <div class="line"></div>
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiperBlog">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="slideImg">
@@ -429,11 +451,11 @@
               </div>
               <div class="slideNote">
                 <h4>Lorem ipsum dolor sit.</h4>
-                <p class="note1">
+                <p >
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Exercitationem, velit?
                 </p>
-                <p><i class="fa-regular fa-clock"></i> Mart 03, 2023</p>
+                <p class="note1"><i class="fa-regular fa-clock"></i> Mart 03, 2023</p>
               </div>
             </div>
             <div class="swiper-slide">
@@ -442,11 +464,11 @@
               </div>
               <div class="slideNote">
                 <h4>Lorem ipsum dolor sit.</h4>
-                <p class="note1">
+                <p >
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Exercitationem, velit?
                 </p>
-                <p><i class="fa-regular fa-clock"></i> Mart 03, 2023</p>
+                <p class="note1"><i class="fa-regular fa-clock"></i> Mart 03, 2023</p>
               </div>
             </div>
             <div class="swiper-slide">
@@ -455,11 +477,11 @@
               </div>
               <div class="slideNote">
                 <h4>Lorem ipsum dolor sit.</h4>
-                <p class="note1">
+                <p>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Exercitationem, velit?
                 </p>
-                <p><i class="fa-regular fa-clock"></i> Mart 03, 2023</p>
+                <p class="note1"><i class="fa-regular fa-clock"></i> Mart 03, 2023</p>
               </div>
             </div>
             <div class="swiper-slide">
@@ -468,11 +490,11 @@
               </div>
               <div class="slideNote">
                 <h4>Lorem ipsum dolor sit.</h4>
-                <p class="note1">
+                <p >
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Exercitationem, velit?
                 </p>
-                <p><i class="fa-regular fa-clock"></i> Mart 03, 2023</p>
+                <p class="note1"><i class="fa-regular fa-clock"></i> Mart 03, 2023</p>
               </div>
             </div>
             <div class="swiper-slide">
@@ -481,11 +503,11 @@
               </div>
               <div class="slideNote">
                 <h4>Lorem ipsum dolor sit.</h4>
-                <p class="note1">
+                <p >
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Exercitationem, velit?
                 </p>
-                <p><i class="fa-regular fa-clock"></i> Mart 03, 2023</p>
+                <p class="note1"><i class="fa-regular fa-clock"></i> Mart 03, 2023</p>
               </div>
             </div>
             <div class="swiper-slide">
@@ -494,7 +516,7 @@
               </div>
               <div class="slideNote">
                 <h4>Lorem ipsum dolor sit.</h4>
-                <p class="note1">
+                <p >
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Exercitationem, velit?
                 </p>
@@ -530,7 +552,7 @@
           <div class="accordion accordion-flush " id="accordionFlushExample">
             <div class="accordion-item border-warning">
               <h2 class="accordion-header ">
-                <button class="accordion-button collapsed bg-danger-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                   <h5>Lorem, ipsum dolor.</h5>
                 </button>
               </h2>
@@ -554,7 +576,7 @@
             </div>
             <div class="accordion-item border-warning">
               <h2 class="accordion-header">
-                <button class="accordion-button collapsed bg-danger-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                   <h5>Lorem, ipsum dolor.</h5>
                 </button>
               </h2>
@@ -578,7 +600,7 @@
             </div>
             <div class="accordion-item border-warning">
               <h2 class="accordion-header">
-                <button class="accordion-button collapsed bg-danger-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
                   <h5>Lorem, ipsum dolor.</h5>
                 </button>
               </h2>
@@ -597,36 +619,168 @@
     <div id="comments">
       <div class="commentItem">
       <div class="herroBanner">
-        <h1>What our students say</h1>
-        <div class="itemComment">
-          <div class="itemImg">
-            <img src="./assets/image/teacher2.jpg" alt="" />
-            <nav>
-              <ul>
-                <li>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-regular fa-envelope"></i></a>
-                </li>
-              </ul>
-            </nav>
+        <h1>What Graduates Say?</h1>
+        <div class="swiper mySwiperComment">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+            <div class="item">
+              <div class="commentNote">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis aut harum possimus aspernatur consequatur laudantium.</p>
+              </div>
+              <div class="itemImg">
+                <img src="./assets/image/teachers21.jpg" alt="">
+                <div class="imgNote">
+                  <h3>Name:</h3>
+                  <p>Subject:</p>
+                </div>
+              </div>
+              
+
+            </div>
+            
           </div>
-          <div class="commentNote1">
-            <h3>Jesica May</h3>
-            <p>English</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              corrupti quaerat eius magni quod molestiae, at sequi nisi libero
-              aut?
-            </p>
+            <div class="swiper-slide">
+            <div class="item">
+              <div class="commentNote">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis aut harum possimus aspernatur consequatur laudantium.</p>
+              </div>
+              <div class="itemImg">
+                <img src="./assets/image/teachers21.jpg" alt="">
+                <div class="imgNote">
+                  <h3>Name:</h3>
+                  <p>Subject:</p>
+                </div>
+              </div>
+              
+
+            </div>
+            
           </div>
+            <div class="swiper-slide">
+            <div class="item">
+              <div class="commentNote">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis aut harum possimus aspernatur consequatur laudantium.</p>
+              </div>
+              <div class="itemImg">
+                <img src="./assets/image/teachers21.jpg" alt="">
+                <div class="imgNote">
+                  <h3>Name:</h3>
+                  <p>Subject:</p>
+                </div>
+              </div>
+              
+
+            </div>
+            
           </div>
+            <div class="swiper-slide">
+            <div class="item">
+              <div class="commentNote">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis aut harum possimus aspernatur consequatur laudantium.</p>
+              </div>
+              <div class="itemImg">
+                <img src="./assets/image/teachers21.jpg" alt="">
+                <div class="imgNote">
+                  <h3>Name:</h3>
+                  <p>Subject:</p>
+                </div>
+              </div>
+              
+
+            </div>
+            
           </div>
+            <div class="swiper-slide">
+            <div class="item">
+              <div class="commentNote">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis aut harum possimus aspernatur consequatur laudantium.</p>
+              </div>
+              <div class="itemImg">
+                <img src="./assets/image/teachers21.jpg" alt="">
+                <div class="imgNote">
+                  <h3>Name:</h3>
+                  <p>Subject:</p>
+                </div>
+              </div>
+              
+
+            </div>
+            
+          </div>
+            <div class="swiper-slide">
+            <div class="item">
+              <div class="commentNote">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis aut harum possimus aspernatur consequatur laudantium.</p>
+              </div>
+              <div class="itemImg">
+                <img src="./assets/image/teachers21.jpg" alt="">
+                <div class="imgNote">
+                  <h3>Name:</h3>
+                  <p>Subject:</p>
+                </div>
+              </div>
+              
+
+            </div>
+            
+          </div>
+            <div class="swiper-slide">
+            <div class="item">
+              <div class="commentNote">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis aut harum possimus aspernatur consequatur laudantium.</p>
+              </div>
+              <div class="itemImg">
+                <img src="./assets/image/teachers21.jpg" alt="">
+                <div class="imgNote">
+                  <h3>Name:</h3>
+                  <p>Subject:</p>
+                </div>
+              </div>
+              
+
+            </div>
+            
+          </div>
+            <div class="swiper-slide">
+            <div class="item">
+              <div class="commentNote">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis aut harum possimus aspernatur consequatur laudantium.</p>
+              </div>
+              <div class="itemImg">
+                <img src="./assets/image/teachers21.jpg" alt="">
+                <div class="imgNote">
+                  <h3>Name:</h3>
+                  <p>Subject:</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+            <div class="swiper-slide">
+            <div class="item">
+              <div class="commentNote">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis aut harum possimus aspernatur consequatur laudantium.</p>
+              </div>
+              <div class="itemImg">
+                <img src="./assets/image/teachers21.jpg" alt="">
+                <div class="imgNote">
+                  <h3>Name:</h3>
+                  <p>Subject:</p>
+                </div>
+              </div>
+              
+
+            </div>
+            
+          </div>
+
+          
+          
+        </div>
+        <div class="swiper-pagination pagination"></div>
       </div>
+      </div>
+    </div>
     </div>
     <div id="contact">
       <div class="contactPage">
@@ -643,18 +797,13 @@
     <footer>
       <div class="herroBanner">
         <div class="footerTop">
+          <h4 class="logo">
+            Language <br />
+            <span>Academy</span>
+          </h4>
+          
           <nav class="topItem1">
-            <h4>
-              Language <br />
-              <span>Academy</span>
-            </h4>
-          <ul >
-            <li><a href="#"><i class="fa-solid fa-location-dot"></i>198 West 21th Street, Suite 721 Ganja 10016</a> </li>
-            <li><a href="tel:+994 077 777 77 77"><i class="fa-solid fa-phone"></i>+994 077 777 77 77</a> </li>
-            <li><a href="mailto:languageacademy@123.az"><i class="fa-solid fa-envelope"></i>languageacademy@123.az</a> </li>
-          </ul>
-        </nav>
-          <nav class="topItem2">
+           
             <ul><h4>Academy</h4>
               <li>
                 <a href="./index.html">Home</a>
@@ -675,7 +824,7 @@
                 <a href="#">Achievements</a>
               </li>
               <li>
-                <a href="#">Comments</a>
+                <a href="./galery.html">Gallery</a>
               </li>
               <li>
                 <a href="#">Languages</a>
@@ -685,6 +834,16 @@
               </li>
             </ul>
           </nav>
+          <nav class="topItem2">
+           
+          <ul >
+            <h4>Contact</h4>
+            <li><a href="#"><i class="fa-solid fa-location-dot"></i>198 West 21th Street, Suite 721 Ganja 10016</a> </li>
+            <li><a href="tel:+994 077 777 77 77"><i class="fa-solid fa-phone"></i>+994 077 777 77 77</a> </li>
+            <li><a href="mailto:languageacademy@123.az"><i class="fa-solid fa-envelope"></i>languageacademy@123.az</a> </li>
+            <li><a href="#"><i class="fa-regular fa-clock"></i> Daily: 10:00 Am - 5:00 Pm Monday & Holiday: Closed</a> </li>
+          </ul>
+        </nav>
         </div>
 
         <div class="footerBottum">
@@ -716,7 +875,23 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      let homeSwiper = new Swiper(".mySwiperHome", {
+        spaceBetween: 30,
+        effect: "fade",
+        centeredSlides: true,
+        autoplay:{
+          delay:2500,
+          disableOnInteraction:false,
+
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <script>
+      let blogSwiper = new Swiper(".mySwiperBlog", {
         effect: "coverflow",
         grabCursor: true,
         centeredSlides: true,
@@ -734,11 +909,11 @@
       });
     </script>
     <script>
-      var swiper = new Swiper(".mySwipergalery", {
+      let gallerySwiper = new Swiper(".mySwipergalery", {
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
-          delay: 1000,
+          delay: 1500,
           disableOnInteraction: false,
         },
         pagination: {
@@ -748,6 +923,22 @@
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+     <script>
+      let commentSwiper = new Swiper(".mySwiperComment", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay:{
+          delay:1000,
+          disableOnInteraction:false,
+
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
         },
       });
     </script>

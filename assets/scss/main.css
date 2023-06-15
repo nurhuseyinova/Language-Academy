@@ -50,7 +50,7 @@ header .headerTop .herroBanner nav h4 {
 header .headerTop .herroBanner nav h4 span {
   position: absolute;
   left: 15px;
-  color: #da853d;
+  color: #000000;
 }
 header .headerTop .herroBanner nav .headItem1 {
   display: flex;
@@ -58,6 +58,14 @@ header .headerTop .herroBanner nav .headItem1 {
   justify-content: space-between;
   gap: 30px;
   margin-bottom: 0px;
+}
+header .headerTop .herroBanner nav .headItem1 .dropdown-menu {
+  background-color: #ffb606;
+  border-radius: 0px;
+  border: 1px solid #ffffff;
+}
+header .headerTop .herroBanner nav .headItem1 .dropdown-menu .dropdown-item {
+  background-color: #ffb606;
 }
 header .headerTop .herroBanner nav .headItem1 li a {
   font-weight: 0;
@@ -67,8 +75,8 @@ header .headerTop .herroBanner nav .headItem1 li a {
   border-bottom: 2px solid transparent;
 }
 header .headerTop .herroBanner nav .headItem1 li a:hover {
-  border-color: #da853d;
-  color: #da853d;
+  border-color: #000000;
+  color: #000000;
 }
 @media only screen and (max-width: 992px) {
   header .headerTop .herroBanner nav .headItem1 {
@@ -124,13 +132,14 @@ header .headerBottum {
     font-size: 26px;
     position: relative;
     bottom: 10px;
-    font-weight: 400;
+    font-weight: 600;
     font-family: "Sacramento", cursive;
+    margin-bottom: 40px;
   }
   header .show .herroBanner nav h4 span {
     position: absolute;
     left: 15px;
-    color: #da853d;
+    color: #ffb606;
   }
   header .show .herroBanner nav ul li a {
     text-transform: uppercase;
@@ -140,8 +149,8 @@ header .headerBottum {
     font-weight: 600;
   }
   header .show .herroBanner nav ul li a:hover {
-    border-color: #da853d;
-    color: #da853d;
+    border-color: #ffb606;
+    color: #ffb606;
   }
   header .show .herroBanner nav ul .darkmode {
     display: flex;
@@ -159,46 +168,81 @@ header .headerBottum {
   }
 }
 
-#home {
-  background-image: url("../image/fullscreen-slider.jpg");
+#home .homeItem .swiper {
+  height: 100vh;
+  width: 100%;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+}
+#home .homeItem .swiper .slide1 {
+  background-image: url("../image/fullscreen-slider.jpg");
+}
+#home .homeItem .swiper .slide2 {
+  background-image: url("../image/techcamp_banner.jpg");
+}
+#home .homeItem .swiper .slide3 {
+  background-image: url("../image/team1.jpg");
+}
+#home .homeItem .swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+}
+#home .homeItem .swiper .swiper-slide img {
+  display: block;
   width: 100%;
+  height: 100%;
 }
-#home .homeItem {
-  background-color: rgba(3, 3, 34, 0.438);
-  padding: 300px 0;
-}
-#home .homeItem .herroBanner .item .itemNote {
+#home .homeItem .swiper .swiper-slide .itemNote {
   text-align: center;
   color: #ffffff;
 }
-#home .homeItem .herroBanner .item .itemNote h1 {
-  font-size: 60px;
+#home .homeItem .swiper .swiper-slide .itemNote h1 {
+  font-size: 70px;
+}
+@media only screen and (max-width: 767px) {
+  #home .homeItem .swiper .swiper-slide .itemNote h1 {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 556px) {
+  #home .homeItem .swiper .swiper-slide .itemNote h1 {
+    font-size: 40px;
+  }
 }
 
 #about {
-  background-color: #0d1128;
+  background-color: #ffffff;
+}
+#about .herroBanner {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  padding: 50px 0;
 }
 #about .herroBanner .aboutNote {
-  padding: 60px 0;
+  padding-top: 40px;
+  width: 50%;
   font-family: "Sora", sans-serif;
 }
 #about .herroBanner .aboutNote h2 {
   font-weight: bold;
-  color: #da853d;
+  color: #ffb606;
   margin-bottom: 3vh;
 }
 #about .herroBanner .aboutNote p {
-  color: #da853d;
+  color: gray;
   font-weight: 500;
   font-size: 15px;
   line-height: 5vh;
 }
 #about .herroBanner .aboutNote a {
   font-family: "Montserrat", sans-serif;
-  background: #da853d;
+  background: #ffb606;
   color: #ffffff;
   padding: 10px 30px;
   border: none;
@@ -209,7 +253,7 @@ header .headerBottum {
 }
 #about .herroBanner .aboutNote a:hover {
   background: transparent;
-  color: #da853d;
+  color: #ffb606;
 }
 #about .herroBanner .aboutNote a:before, #about .herroBanner .aboutNote a:after {
   content: "";
@@ -218,7 +262,7 @@ header .headerBottum {
   right: 0;
   height: 2px;
   width: 0;
-  background: #da853d;
+  background: #ffb606;
   transition: 400ms linear all;
 }
 #about .herroBanner .aboutNote a:after {
@@ -231,9 +275,48 @@ header .headerBottum {
   width: 100%;
   transition: 400ms linear all;
 }
+#about .herroBanner .aboutImg {
+  height: 70vh;
+  width: 50%;
+}
+#about .herroBanner .aboutImg .img {
+  width: 100%;
+  height: 100%;
+  background-position: start;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#about .herroBanner .aboutImg .img1 {
+  background-image: url("../image/team2.jpg");
+}
+#about .herroBanner .aboutImg .img2 {
+  display: none;
+  background-image: url("../image/galery11.jpg");
+}
+@media only screen and (max-width: 776px) {
+  #about .herroBanner .aboutImg .img2 {
+    display: block;
+    background-position: center;
+  }
+  #about .herroBanner .aboutImg .img1 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #about .herroBanner {
+    flex-direction: column;
+  }
+  #about .herroBanner .aboutNote {
+    width: 100%;
+    padding: 40px 5%;
+  }
+  #about .herroBanner .aboutImg {
+    width: 100%;
+  }
+}
 
 #language {
-  background-color: #121736;
+  background-color: #ffb606;
 }
 #language .herroBanner .languageNote {
   padding-top: 60px;
@@ -299,16 +382,16 @@ header .headerBottum {
 }
 #language .row .col .item .itemImg .itemNote a:hover {
   color: #ffffff;
-  background-color: #da853d;
+  background-color: #ffb606;
 }
 
 #whywe {
-  background-color: #ffffff;
+  background-color: #f3f3f3;
   padding: 60px 0;
 }
 #whywe .herroBanner .note {
   text-align: center;
-  color: #da853d;
+  color: #ffb606;
   margin-bottom: 40px;
 }
 #whywe .herroBanner .note p {
@@ -322,7 +405,7 @@ header .headerBottum {
   gap: 10px;
 }
 #whywe .herroBanner .row .col {
-  background-color: #010b4d;
+  background-color: #ffffff;
   border-radius: 10px;
   padding: 10px;
   width: 350px;
@@ -332,35 +415,36 @@ header .headerBottum {
   display: flex;
   align-items: center;
   gap: 5px;
-  color: #ffffff;
+  color: rgb(46, 46, 48);
 }
 #whywe .herroBanner .row .col .itemNote i {
-  padding: 5%;
+  padding-top: 5%;
+  padding-left: 5%;
   border-radius: 50%;
   border: 2px solid #e5e9ec;
   width: 70px;
   height: 65px;
-  color: rgb(247, 94, 6);
+  color: #ffb606;
   background-color: #ffffff;
-  font-size: 25px;
+  font-size: 30px;
 }
 #whywe .herroBanner .row .col p {
-  color: #da853d;
+  color: gray;
 }
 
 #galery {
   padding-top: 40px;
-  background-color: #0d1128;
+  background-color: #f3f3f3;
 }
 #galery h1 {
   text-align: center;
-  color: #da853d;
+  color: #ffb606;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
 }
 #galery p {
   text-align: center;
-  color: #ffffff;
+  color: gray;
   margin-bottom: 20px;
   font-family: "Sacramento", cursive;
   font-size: 30px;
@@ -397,7 +481,8 @@ header .headerBottum {
   }
 }
 #galery .swiper .pagination-button {
-  color: #da853d;
+  color: #ffb606;
+  font-size: 10px !important;
 }
 
 #galleryPage .galleryItem {
@@ -417,13 +502,13 @@ header .headerBottum {
 }
 #galleryPage .galleryItem .item1 .herroBanner .item1Note h1 {
   font-weight: bold;
-  text-shadow: 3px 3px 3px #da853d;
+  text-shadow: 3px 3px 3px #ffb606;
 }
 #galleryPage .galleryItem .item1 .herroBanner .item1Note div a {
   color: #ffffff;
 }
 #galleryPage .galleryItem2 {
-  background-color: #0d1128;
+  background-color: #f3f3f3;
 }
 #galleryPage .galleryItem2 .swiper {
   width: 100%;
@@ -451,9 +536,25 @@ header .headerBottum {
   transform: rotate(10deg);
 }
 #galleryPage .galleryItem3 {
+  background-image: url("../image/library.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+#galleryPage .galleryItem3 .item3 {
+  background-color: rgba(7, 7, 7, 0.712);
   padding: 30px 0;
 }
-#galleryPage .galleryItem3 .herroBanner {
+#galleryPage .galleryItem3 .item3 .item3Note {
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 0;
+}
+#galleryPage .galleryItem3 .item3 .item3Note h1 {
+  font-size: 60px;
+}
+#galleryPage .galleryItem3 .item3 .herroBanner {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -461,57 +562,60 @@ header .headerBottum {
   flex-wrap: wrap;
   gap: 30px;
 }
-#galleryPage .galleryItem3 .herroBanner .item3Img {
+#galleryPage .galleryItem3 .item3 .herroBanner .item3Img {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
-  width: 440px;
+  width: 300px;
   border-radius: 20px;
 }
-#galleryPage .galleryItem3 .herroBanner .item3Img .item {
+#galleryPage .galleryItem3 .item3 .herroBanner .item3Img .item {
   width: 100%;
   height: 100%;
   border-radius: 20px;
   transition: all 0.6s linear;
 }
-#galleryPage .galleryItem3 .herroBanner .item3Img:hover .item {
+#galleryPage .galleryItem3 .item3 .herroBanner .item3Img:hover .item {
   background-color: rgba(1, 11, 77, 0.3960784314);
   transform: rotateY(180deg);
 }
 @media only screen and (max-width: 996px) {
-  #galleryPage .galleryItem3 .herroBanner .item3Img {
+  #galleryPage .galleryItem3 .item3 .herroBanner .item3Img {
     width: 330px;
   }
 }
 @media only screen and (max-width: 767px) {
-  #galleryPage .galleryItem3 .herroBanner .item3Img {
+  #galleryPage .galleryItem3 .item3 .herroBanner .item3Img {
     width: 550px;
   }
 }
-#galleryPage .galleryItem3 .herroBanner .img1 {
+#galleryPage .galleryItem3 .item3 .herroBanner .img1 {
   background-image: url("../image/galery1.jpg");
 }
-#galleryPage .galleryItem3 .herroBanner .img2 {
+#galleryPage .galleryItem3 .item3 .herroBanner .img2 {
   background-image: url("../image/galery6.jpg");
 }
-#galleryPage .galleryItem3 .herroBanner .img3 {
+#galleryPage .galleryItem3 .item3 .herroBanner .img3 {
   background-image: url("../image/galery2.jpg");
 }
-#galleryPage .galleryItem3 .herroBanner .img4 {
-  background-image: url("../image/course-20-400x300.jpg");
+#galleryPage .galleryItem3 .item3 .herroBanner .img4 {
+  background-image: url("../image/library3.jpg");
 }
-#galleryPage .galleryItem3 .herroBanner .img5 {
-  background-image: url("../image/galery4.jpg");
+#galleryPage .galleryItem3 .item3 .herroBanner .img5 {
+  background-image: url("../image/bg_1.jpg");
 }
-#galleryPage .galleryItem3 .herroBanner .img6 {
+#galleryPage .galleryItem3 .item3 .herroBanner .img6 {
   background-image: url("../image/book1.jpg");
 }
-#galleryPage .galleryItem3 .herroBanner .img7 {
-  background-image: url("../image/fullscreen-slider.jpg");
+#galleryPage .galleryItem3 .item3 .herroBanner .img7 {
+  background-image: url("../image/cta2-background.jpg");
 }
-#galleryPage .galleryItem3 .herroBanner .img8 {
-  background-image: url("../image/courses-14.jpg");
+#galleryPage .galleryItem3 .item3 .herroBanner .img8 {
+  background-image: url("../image/library4.jpg");
+}
+#galleryPage .galleryItem3 .item3 .herroBanner .img9 {
+  background-image: url("../image/library2.jpg");
 }
 #galleryPage .galleryItem4 .swiper {
   width: 100%;
@@ -544,85 +648,100 @@ header .headerBottum {
     width: 100%;
   }
 }
-#galleryPage .galleryItem4 .swiper .pagination-button {
-  color: #da853d;
-}
 
 #teacher {
-  background-color: #0d1128;
-  padding: 50px 0;
+  background-color: #f3f3f3;
+}
+#teacher .herroBanner {
+  padding: 60px 0;
 }
 #teacher .herroBanner .teacherNote {
   text-align: center;
-  color: #da853d;
+  color: #ffb606;
   font-family: "Montserrat", sans-serif;
 }
 #teacher .herroBanner .teacherNote h1 {
-  color: #ffffff;
+  color: #ffb606;
   font-weight: bold;
 }
 #teacher .herroBanner .teacherNote p {
   font-size: 20px;
+  color: gray;
 }
 #teacher .herroBanner .row {
-  padding-top: 50px;
+  --bs-gutter-x: 0rem;
+  padding-top: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   justify-content: center;
 }
+#teacher .herroBanner .row .col {
+  padding: 0 10px;
+}
 #teacher .herroBanner .row .col .item {
-  padding: 30px 20px;
-  border: 1px solid #da853d;
+  background-color: white;
+  padding: 50px 20px;
+  border: 1px solid white;
   text-align: center;
+  border-bottom: 2px solid transparent;
 }
 #teacher .herroBanner .row .col .item .itemImg {
   position: relative;
   transition: all 0.5s linear;
 }
 #teacher .herroBanner .row .col .item .itemImg img {
-  border: 2px solid #da853d;
+  border: 2px solid white;
   position: relative;
-  margin-top: -100px;
+  margin-top: -120px;
   width: 150px;
   height: 150px;
   border-radius: 50%;
 }
 #teacher .herroBanner .row .col .item .itemImg i {
   position: absolute;
-  margin-top: -5px;
+  margin-top: -10px;
   margin-left: -27%;
   font-size: 35px;
-  color: #da853d;
+  color: #ffb606;
   z-index: -1;
 }
 #teacher .herroBanner .row .col .item .itemNote {
-  color: #da853d;
+  color: #ffb606;
   font-family: "Montserrat", sans-serif;
 }
 #teacher .herroBanner .row .col .item .itemNote h3 {
-  color: #ffffff;
+  font-weight: 600;
+}
+#teacher .herroBanner .row .col .item .itemNote h5 {
+  color: gray;
+}
+#teacher .herroBanner .row .col .item .itemNote p {
+  color: gray;
 }
 #teacher .herroBanner .row .col .item .itemNote a {
-  color: #da853d;
-  background-color: transparent;
+  color: #0d1128;
+  background-color: #ffb606;
   padding: 10px 25px;
   border-radius: 20px;
-  border: 1px solid #da853d;
+  border: 1px solid #ffb606;
   transition: all 0.5s linear;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 10px;
 }
 #teacher .herroBanner .row .col .item .itemNote a:hover {
-  color: #02011d;
-  background-color: #da853d;
+  color: #ffb606;
+  background-color: transparent;
 }
 #teacher .herroBanner .row .col:hover h3,
 #teacher .herroBanner .row .col:hover p {
-  color: #da853d;
+  color: #ffb606;
 }
 #teacher .herroBanner .row .col:hover .itemImg i {
   z-index: 1;
+}
+#teacher .herroBanner .row .col:hover .item {
+  border-bottom-color: #ffb606;
 }
 
 .teamPage .teamItem {
@@ -650,19 +769,19 @@ header .headerBottum {
 }
 .teamPage .teamItem2 {
   padding: 50px 0;
-  background-color: #0d1128;
+  background-color: #ffffff;
 }
 .teamPage .teamItem2 .teamItem2Note {
   text-align: center;
 }
 .teamPage .teamItem2 .teamItem2Note h1 {
-  color: #da853d;
+  color: #ffb606;
   margin-bottom: 20px;
 }
 .teamPage .teamItem2 .line {
   width: 100%;
   height: 2px;
-  background-color: #da853d;
+  background-color: #ffb606;
 }
 .teamPage .teamItem2 .row {
   padding-top: 50px;
@@ -672,8 +791,9 @@ header .headerBottum {
   justify-content: center;
 }
 .teamPage .teamItem2 .row .col .item {
+  background-color: #f3f3f3;
   padding: 30px 20px;
-  border: 1px solid #da853d;
+  border: 1px solid #ffb606;
   text-align: center;
 }
 .teamPage .teamItem2 .row .col .item .itemImg {
@@ -681,7 +801,7 @@ header .headerBottum {
   transition: all 0.5s linear;
 }
 .teamPage .teamItem2 .row .col .item .itemImg img {
-  border: 2px solid #da853d;
+  border: 2px solid #ffb606;
   position: relative;
   margin-top: -100px;
   width: 150px;
@@ -693,32 +813,32 @@ header .headerBottum {
   margin-top: -5px;
   margin-left: -27%;
   font-size: 35px;
-  color: #da853d;
+  color: #ffb606;
   z-index: -1;
 }
 .teamPage .teamItem2 .row .col .item .itemNote {
-  color: #da853d;
+  color: #ffb606;
   font-family: "Montserrat", sans-serif;
 }
 .teamPage .teamItem2 .row .col .item .itemNote h3 {
   color: #ffffff;
 }
 .teamPage .teamItem2 .row .col .item .itemNote a {
-  color: #da853d;
+  color: #ffb606;
   background-color: transparent;
   padding: 10px 25px;
   border-radius: 20px;
-  border: 1px solid #da853d;
+  border: 1px solid #ffb606;
   transition: all 0.5s linear;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 10px;
 }
 .teamPage .teamItem2 .row .col .item .itemNote a:hover {
   color: #0d1128;
-  background-color: #da853d;
+  background-color: #ffb606;
 }
 .teamPage .teamItem2 .row .col:hover h3 {
-  color: #da853d;
+  color: #ffb606;
 }
 .teamPage .teamItem2 .row .col:hover p {
   color: #ffffff;
@@ -730,9 +850,9 @@ header .headerBottum {
   padding: 50px 0;
 }
 .teamPage .teamItem3 .herroBanner h1 {
-  color: #da853d;
+  color: #ffb606;
   text-align: center;
-  text-shadow: 1px 1px #da853d;
+  text-shadow: 1px 1px #ffb606;
 }
 .teamPage .teamItem3 .herroBanner .swiper {
   width: 100%;
@@ -774,7 +894,7 @@ header .headerBottum {
   height: 15vh;
 }
 .teamPage .teamItem3 .herroBanner .swiper .swiper-slide .slideImg ul li a {
-  color: #da853d;
+  color: #ffb606;
   font-size: 30px;
 }
 .teamPage .teamItem3 .herroBanner .swiper .swiper-slide .slideImg ul li a:hover {
@@ -783,7 +903,7 @@ header .headerBottum {
 .teamPage .teamItem3 .herroBanner .swiper .swiper-slide .slideNote {
   padding: 7px;
   text-align: center;
-  color: #da853d;
+  color: #ffb606;
 }
 .teamPage .teamItem3 .herroBanner .swiper .swiper-slide .slideNote h4 {
   color: #ffffff;
@@ -804,50 +924,58 @@ header .headerBottum {
   background-size: cover;
 }
 #achieveCount .countItem {
-  background-color: rgba(14, 12, 36, 0.637);
+  background-color: rgba(71, 57, 17, 0.336);
   padding: 100px 0;
 }
-#achieveCount .countItem .herroBanner .item {
+#achieveCount .countItem .herroBanner .row {
+  --bs-gutter-x:0rem;
+}
+#achieveCount .countItem .herroBanner .row .item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
 }
-#achieveCount .countItem .herroBanner .item i {
+#achieveCount .countItem .herroBanner .row .item i {
   color: #da853d;
   font-size: 60px;
 }
-#achieveCount .countItem .herroBanner .item .itemNote {
+#achieveCount .countItem .herroBanner .row .item .itemNote {
   color: #ffffff;
 }
+#achieveCount .countItem .herroBanner .row .item .itemNote span {
+  font-size: 40px;
+  font-weight: 600;
+}
 @media only screen and (max-width: 556px) {
-  #achieveCount .countItem {
+  #achieveCount .countItem .herroBanner .row {
     padding: 50px 0;
   }
-  #achieveCount .countItem .item {
+  #achieveCount .countItem .herroBanner .row .item {
     justify-content: flex-start !important;
   }
 }
 
 #blog {
-  background-color: #02011d;
+  background-color: #f3f3f3;
   padding-top: 50px;
 }
 #blog .herroBanner h1 {
   text-align: center;
-  color: #ffffff;
+  color: #ffb606;
 }
 #blog .herroBanner .swiper {
   width: 100%;
   padding: 50px 0;
 }
 #blog .herroBanner .swiper .swiper-slide {
-  background-color: #ffffff;
+  background-color: white;
   background-position: center;
   background-size: cover;
   width: 300px;
   height: 470px;
+  border-bottom: 2px solid #ffb606;
 }
 #blog .herroBanner .swiper .swiper-slide .slideImg {
   overflow: hidden;
@@ -861,10 +989,13 @@ header .headerBottum {
 #blog .herroBanner .swiper .swiper-slide .slideNote {
   padding: 7px;
   text-align: center;
-  color: #da853d;
+  color: rgb(102, 100, 100);
+}
+#blog .herroBanner .swiper .swiper-slide .slideNote h4 {
+  color: #ffb606;
 }
 #blog .herroBanner .swiper .swiper-slide:hover .note1 {
-  color: #da853d;
+  color: #ffb606;
 }
 #blog .herroBanner .swiper .swiper-slide:hover .slideImg img {
   scale: 1.2;
@@ -894,24 +1025,6 @@ header .headerBottum {
 #blogPage .blogItem .item1 .herroBanner .item1Note div a {
   color: #ffffff;
 }
-#blogPage .blogItem1 .swiper {
-  display: flex;
-  width: 300px;
-  height: 300px;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  margin-left: -150px;
-  margin-top: -130px;
-}
-#blogPage .blogItem1 .swiper .swiper-slide {
-  background-position: center;
-  background-size: cover;
-}
-#blogPage .blogItem1 .swiper .swiper-slide img {
-  display: block;
-  width: 100%;
-}
 #blogPage .blogItem2 {
   display: flex;
   align-items: center;
@@ -930,20 +1043,23 @@ header .headerBottum {
   width: 50%;
 }
 #blogPage .blogItem2 .info .item2Note {
-  color: #da853d;
+  color: gray;
   line-height: 5vh;
   padding: 50px 20px;
 }
 #blogPage .blogItem2 .info .item2Note .line {
   height: 5px;
   width: 70px;
-  background-color: #da853d;
+  background-color: #ffb606;
   border-radius: 5px;
   margin-bottom: 30px;
 }
 #blogPage .blogItem2 .info .item2Note h1 {
-  color: #da853d;
-  text-shadow: 3px 3px 3px #da853d;
+  color: #ffb606;
+  text-shadow: 2px 2px 2px #ffb606;
+}
+#blogPage .blogItem2 .info .item2Note h5 {
+  color: #ffb606;
 }
 @media only screen and (max-width: 767px) {
   #blogPage .blogItem2 {
@@ -972,8 +1088,7 @@ header .headerBottum {
   padding: 50px 0;
 }
 #news h1 {
-  color: #da853d;
-  text-shadow: 3px 3px 3px #da853d;
+  color: #ffb606;
   text-align: center;
   margin-bottom: 30px;
   font-weight: bold;
@@ -987,28 +1102,32 @@ header .headerBottum {
   width: 100%;
 }
 #news .herroBanner .newsItem1 {
+  height: 70vh;
   width: 50%;
 }
 #news .herroBanner .newsItem1 img {
   width: 100%;
-  height: 72vh;
+  height: 100%;
   border-radius: 8px;
 }
 #news .herroBanner .newsItem2 {
   width: 50%;
 }
 #news .herroBanner .newsItem2 h2 {
-  color: #da853d;
+  color: gray;
 }
 #news .herroBanner .newsItem2 .accordion {
-  border: 1px solid #da853d;
+  height: 100%;
 }
 #news .herroBanner .newsItem2 .accordion h5 {
-  color: #da853d;
+  color: #ffb606;
 }
 #news .herroBanner .newsItem2 .accordion p {
-  color: #da853d;
+  color: gray;
   font-size: 20px;
+}
+#news .herroBanner .newsItem2 .accordion .accordion-button {
+  background-color: #f3f3f3;
 }
 @media only screen and (max-width: 767px) {
   #news .herroBanner {
@@ -1023,68 +1142,72 @@ header .headerBottum {
 }
 
 #comments {
-  background-image: url("../image/bgicomments.jpg");
+  background-image: url("../image/graduates.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
 }
 #comments .commentItem {
-  background-color: rgba(75, 130, 182, 0.404);
-  padding: 150px;
+  background-color: rgba(19, 45, 68, 0.788);
+  padding: 60px 0;
 }
-#comments .commentItem .herroBanner h1 {
-  color: #ffffff;
-  margin-bottom: 60px;
+#comments .commentItem h1 {
   text-align: center;
+  color: #ffb606;
 }
-#comments .commentItem .herroBanner .itemComment {
+#comments .commentItem .swiper {
+  width: 100%;
+  height: 100%;
+}
+#comments .commentItem .swiper .swiper-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   justify-content: center;
-  gap: 20px;
+  height: 75vh;
 }
-#comments .commentItem .herroBanner .itemComment .itemImg {
-  position: relative;
-  border-radius: 15px;
-  overflow: hidden;
+#comments .commentItem .swiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#comments .commentItem .herroBanner .itemComment .itemImg img {
-  border-radius: 15px;
-  height: 40vh;
-  width: 300px;
-}
-#comments .commentItem .herroBanner .itemComment .itemImg nav {
-  background-color: rgba(15, 46, 15, 0.425);
-  position: absolute;
-  margin-top: -240px;
-  z-index: -1;
-  padding-top: 15px;
-  width: 0px;
-  height: 50vh;
-  transition: all 0.5s linear;
-}
-#comments .commentItem .herroBanner .itemComment .itemImg nav ul {
+#comments .commentItem .swiper .swiper-wrapper .swiper-slide .item {
   display: flex;
   flex-direction: column;
+  row-gap: 30px;
+}
+#comments .commentItem .swiper .swiper-wrapper .swiper-slide .item .commentNote {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  background-color: #ffb606;
+  color: #ffffff;
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+}
+#comments .commentItem .swiper .swiper-wrapper .swiper-slide .item .itemImg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   justify-content: start;
-  gap: 15px;
+  gap: 20px;
 }
-#comments .commentItem .herroBanner .itemComment .itemImg nav ul li a {
-  color: #da853d;
-  background-color: rgb(253, 161, 128);
-  border: 1px solid #da853d;
+#comments .commentItem .swiper .swiper-wrapper .swiper-slide .item .itemImg img {
+  display: block;
+  width: 90px;
+  height: 90px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
-  padding: 6px 10px;
 }
-#comments .commentItem .herroBanner .itemComment .itemImg:hover nav {
-  z-index: 1 !important;
-  width: 70px;
-}
-#comments .commentItem .herroBanner .itemComment .commentNote1 {
-  color: #da853d;
-  text-align: left;
+#comments .commentItem .swiper .swiper-wrapper .swiper-slide .item .itemImg .imgNote {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  color: #ffb606;
 }
 
 #contact {
@@ -1095,12 +1218,12 @@ header .headerBottum {
   background-attachment: fixed;
 }
 #contact .contactPage {
-  padding: 60px 0;
-  background-color: rgba(7, 7, 41, 0.411);
+  padding: 80px 0;
+  background-color: rgba(224, 194, 163, 0.199);
 }
 #contact .contactPage .herroBanner .contactNote {
   text-align: center;
-  color: #da853d;
+  color: #ffb606;
 }
 #contact .contactPage .herroBanner .contactNote p {
   color: #ffffff;
@@ -1119,7 +1242,7 @@ header .headerBottum {
   display: inline-block;
   color: #ffffff;
   background: none;
-  border: 1px solid #da853d;
+  border: 1px solid #ffb606;
   cursor: pointer;
   transform: translate3d(0, 0, 0);
 }
@@ -1133,7 +1256,7 @@ header .headerBottum {
   left: 0;
   z-index: -1;
   height: 150%;
-  background: #da853d;
+  background: #ffb606;
   pointer-events: none;
   transform: translate3d(0, 45px, 0);
   transition: all 0.3s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -1181,7 +1304,7 @@ header .headerBottum {
 }
 #contactPage .item2 {
   padding: 50px 0;
-  background-color: #0d1128;
+  background-color: #f3f3f3;
 }
 #contactPage .item2 .herroBanner .row {
   display: flex;
@@ -1196,22 +1319,17 @@ header .headerBottum {
 }
 #contactPage .item2 .herroBanner .row .col .item2Note {
   height: 25vh;
-  background-color: #f8e6c6;
+  background-color: #ffffff;
   text-align: center;
   padding: 20px 5px;
-  color: #da853d;
+  color: #ffb606;
   transition: all 0.3s linear;
 }
 #contactPage .item2 .herroBanner .row .col .item2Note h4 {
   margin-bottom: 3vh;
 }
 #contactPage .item2 .herroBanner .row .col .item2Note a {
-  color: #da853d;
-}
-@media only screen and (max-width: 992px) {
-  #contactPage .item2 .herroBanner .row .col .item2Note {
-    height: 20vh;
-  }
+  color: #ffb606;
 }
 #contactPage .item2 .herroBanner .row .col .item2Note:hover {
   transform: translateY(-15px);
@@ -1221,14 +1339,22 @@ header .headerBottum {
 #contactPage .item2 .herroBanner .row .col .item2Note:hover a {
   color: #f8e6c6;
 }
+@media only screen and (max-width: 992px) {
+  #contactPage .item2 .herroBanner .row .col .item2Note {
+    height: 20vh;
+  }
+}
 @media only screen and (max-width: 556px) {
   #contactPage .item2 .herroBanner .row .col {
     padding: 10px 25px;
   }
+  #contactPage .item2 .herroBanner .row .col .item2Note {
+    height: 15vh;
+  }
 }
 #contactPage .item3 {
   padding: 50px 100px;
-  background-color: rgb(205, 217, 219);
+  background-color: #f3f3f3;
 }
 #contactPage .item3 .herroBanner {
   display: flex;
@@ -1238,7 +1364,7 @@ header .headerBottum {
   gap: 30px;
 }
 #contactPage .item3 .herroBanner .note {
-  color: #da853d;
+  color: #ffb606;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -1248,7 +1374,7 @@ header .headerBottum {
   flex-direction: column;
 }
 #contactPage .item3 .herroBanner form .formTag {
-  border: 1px dashed #da853d;
+  border: 1px dashed #ffb606;
   margin-bottom: 10px;
   padding: 7px;
 }
@@ -1264,15 +1390,15 @@ header .headerBottum {
 }
 #contactPage .item3 .herroBanner form button {
   color: white;
-  background-color: #da853d;
+  background-color: #ffb606;
   padding: 10px 30px;
   border-radius: 20px;
   transition: all 0.5s linear;
-  border: 1px solid #da853d;
+  border: 1px solid #ffb606;
   font-family: "Montserrat", sans-serif;
 }
 #contactPage .item3 .herroBanner form button:hover {
-  color: #da853d;
+  color: #ffb606;
   background-color: transparent;
 }
 @media only screen and (max-width: 992px) {
@@ -1295,12 +1421,18 @@ header .headerBottum {
     width: 290px;
   }
 }
+#contactPage .map {
+  height: 90vh;
+}
 
+#admin {
+  background-color: #f3f3f3;
+}
 #admin .row {
   --bs-gutter-x: 0rem;
 }
 #admin .row .menu {
-  background-color: #0d1128;
+  background-color: #ffb606;
   padding-top: 30px;
   padding-bottom: 200px;
 }
@@ -1313,7 +1445,7 @@ header .headerBottum {
   border-radius: 50%;
 }
 #admin .row .menu .adminMenu h4 {
-  color: #ffffff;
+  color: #0d1128;
 }
 #admin .row .menu .adminMenu .icon {
   display: flex;
@@ -1326,13 +1458,16 @@ header .headerBottum {
 }
 #admin .row .menu .adminMenu .icon li a {
   font-size: 20px;
-  color: #da853d;
+  color: #0d1128;
+}
+#admin .row .menu .adminMenu .icon li a:hover {
+  color: #ffffff;
 }
 #admin .row .menu nav {
   padding-top: 30px;
 }
 #admin .row .menu nav a {
-  color: #ffffff;
+  color: #0d1128;
 }
 #admin .row .menu nav a::after {
   content: "";
@@ -1343,10 +1478,10 @@ header .headerBottum {
   border-radius: 10px;
 }
 #admin .row .menu nav a:hover {
-  color: #da853d;
+  color: #ffffff;
 }
 #admin .row .menu nav a:hover::after {
-  background-color: #da853d;
+  background-color: #ffffff;
 }
 #admin .row .info {
   padding-bottom: 40px;
@@ -1369,11 +1504,12 @@ header .headerBottum {
   justify-content: space-between;
   justify-content: center;
   width: 200px;
-  background-color: #0d1128;
-  transition: all 0.3s linear;
+  background-color: #ffb606;
+  transition: all 0.4s linear;
 }
 #admin .row .info .mainPage .infoMenu h4 a {
-  color: #da853d;
+  color: #000000;
+  transition: all 0.2s linear;
 }
 #admin .row .info .mainPage .infoMenu h4:hover {
   transform: translateY(-15px);
@@ -1391,17 +1527,17 @@ header .headerBottum {
   border-collapse: collapse;
 }
 #admin .row .info table thead tr th {
-  color: #da853d;
-  background-color: rgb(13, 13, 85);
+  color: #ffffff;
+  background-color: #ffb606;
   text-align: center;
-  border: 1px solid #da853d;
+  border: 1px solid #ffffff;
   padding: 10px;
   font-weight: 600;
 }
 #admin .row .info table tbody tr td {
-  background-color: #0d1128;
+  background-color: #da853d;
   text-align: center;
-  border: 1px solid #da853d;
+  border: 1px solid #ffffff;
   color: white;
   padding: 10px;
 }
@@ -1418,7 +1554,7 @@ header .headerBottum {
   color: red;
 }
 #admin .row .info table tbody tr td .edit {
-  color: blue;
+  color: rgb(12, 12, 104);
 }
 #admin .row .info .formItem {
   padding-top: 50px;
@@ -1440,21 +1576,21 @@ header .headerBottum {
 #admin .row .info .formItem .herroBanner form .formTags {
   width: 500px;
   padding: 10px;
-  margin-top: 2px;
-  border: 1px solid #da853d;
-  background-color: #0d1128;
-  color: #da853d;
+  margin-top: 1px;
+  border: 1px solid #ffb606;
+  background-color: #ffb606;
+  color: #0d1128;
 }
 #admin .row .info .formItem .herroBanner form .formTags::-moz-placeholder {
-  color: #da853d;
+  color: #0d1128;
 }
 #admin .row .info .formItem .herroBanner form .formTags::placeholder {
-  color: #da853d;
+  color: #0d1128;
 }
 #admin .row .info .formItem .herroBanner form .fullName {
   display: flex;
-  -moz-column-gap: 2px;
-       column-gap: 2px;
+  -moz-column-gap: 1px;
+       column-gap: 1px;
   width: 500px;
 }
 #admin .row .info .formItem .herroBanner form .fullName input {
@@ -1477,22 +1613,22 @@ header .headerBottum {
        column-gap: 2px;
 }
 #admin .row .info .formItem .herroBanner form select {
-  color: #da853d;
+  color: #0d1128;
 }
 #admin .row .info .formItem .herroBanner form select option {
-  color: #da853d;
+  color: #0d1128;
 }
 #admin .row .info .formItem .herroBanner form input::file-selector-button {
-  background-color: #da853d;
-  color: #0d1128;
+  background-color: #0d1128;
+  color: #ffb606;
 }
 #admin .row .info .formItem .herroBanner form textarea {
   height: 20vh;
 }
 #admin .row .info .formItem .herroBanner form .submit {
   font-family: "Montserrat", sans-serif;
-  background: #da853d !important;
-  color: #0d1128;
+  background: #0d1128 !important;
+  color: #ffb606;
   padding: 10px 30px;
   border: none;
   position: relative;
@@ -1501,7 +1637,7 @@ header .headerBottum {
   outline: none;
 }
 #admin .row .info .formItem .herroBanner form .submit:hover {
-  background: #f77300 !important;
+  background: #ffb606 !important;
   color: #0d1128;
 }
 #admin .row .info .formItem .herroBanner form .submit:before, #admin .row .info .formItem .herroBanner form .submit:after {
@@ -1547,77 +1683,80 @@ header .headerBottum {
 }
 
 footer {
-  background-color: #0d1128;
+  background-color: black;
 }
 footer .herroBanner .footerTop {
-  padding: 70px 0;
+  padding: 120px 0;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid #da853d;
   row-gap: 5vh;
 }
-footer .herroBanner .footerTop .topItem1 {
-  display: flex;
-  flex-direction: column;
-  row-gap: 7vh;
-}
-footer .herroBanner .footerTop .topItem1 h4 {
+footer .herroBanner .footerTop .logo {
   color: rgb(6, 6, 141);
   font-size: 40px;
   font-family: "Sacramento", cursive;
 }
-footer .herroBanner .footerTop .topItem1 h4 span {
+footer .herroBanner .footerTop .logo span {
   position: relative;
   left: 15px;
   color: #da853d;
 }
-footer .herroBanner .footerTop .topItem1 ul {
+footer .herroBanner .footerTop .topItem2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7vh;
+}
+footer .herroBanner .footerTop .topItem2 ul {
   -webkit-padding-start: 0;
           padding-inline-start: 0;
-}
-footer .herroBanner .footerTop .topItem1 ul li a {
-  display: flex;
-  gap: 10px;
-  font-size: 20px;
-  color: #da853d;
-}
-footer .herroBanner .footerTop .topItem1 ul li a:hover {
-  color: #ffffff;
-}
-footer .herroBanner .footerTop .topItem1 ul li a i {
-  color: rgb(1, 1, 138);
-  font-size: 22px;
-}
-footer .herroBanner .footerTop .topItem2 {
-  margin: top;
-  display: flex;
-  gap: 25px;
 }
 footer .herroBanner .footerTop .topItem2 ul h4 {
   color: #da853d;
 }
 footer .herroBanner .footerTop .topItem2 ul li a {
+  display: flex;
+  gap: 10px;
   font-size: 20px;
   color: #da853d;
 }
 footer .herroBanner .footerTop .topItem2 ul li a:hover {
   color: #ffffff;
 }
-@media only screen and (max-width: 767px) {
+footer .herroBanner .footerTop .topItem2 ul li a i {
+  color: rgb(1, 1, 138);
+  font-size: 22px;
+}
+footer .herroBanner .footerTop .topItem1 {
+  margin: top;
+  display: flex;
+  gap: 25px;
+}
+footer .herroBanner .footerTop .topItem1 ul h4 {
+  color: #da853d;
+}
+footer .herroBanner .footerTop .topItem1 ul li a {
+  font-size: 20px;
+  color: #da853d;
+}
+footer .herroBanner .footerTop .topItem1 ul li a:hover {
+  color: #ffffff;
+}
+@media only screen and (max-width: 992px) {
   footer .herroBanner .footerTop {
+    align-items: center;
     flex-direction: column;
   }
-  footer .herroBanner .footerTop .topItem1 {
+  footer .herroBanner .footerTop .topItem2 {
     text-align: center;
     row-gap: 0vh;
   }
-  footer .herroBanner .footerTop .topItem2 ul {
+  footer .herroBanner .footerTop .topItem1 ul {
     -webkit-padding-start: 0;
             padding-inline-start: 0;
     text-align: center;
   }
-  footer .herroBanner .footerTop .topItem2 ul li {
+  footer .herroBanner .footerTop .topItem1 ul li {
     text-align: center;
   }
 }
@@ -1662,7 +1801,7 @@ footer .herroBanner .footerBottum ul li a {
 footer .herroBanner .footerBottum ul li a:hover {
   color: #ffffff;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
   footer .herroBanner .footerBottum {
     flex-direction: column;
   }

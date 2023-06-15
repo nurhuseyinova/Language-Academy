@@ -23,13 +23,22 @@ header {
           span {
             position: absolute;
             left: 15px;
-            color: $mainColor;
+            color: $dark;
           }
         }
         .headItem1 {
           @include display;
           gap: 30px;
           margin-bottom: 0px;
+          .dropdown-menu {
+            background-color: $textColor1;
+            border-radius: 0px;
+            border: 1px solid $light;
+            .dropdown-item{
+              background-color: $textColor1;
+
+            }
+          }
 
           li {
             a {
@@ -39,9 +48,11 @@ header {
               font-family: "Montserrat", sans-serif;
               border-bottom: 2px solid transparent;
               &:hover {
-                border-color: $mainColor;
-                color: $mainColor;
+                border-color: $dark;
+                color: $dark;
               }
+              
+
             }
           }
           @media only screen and (max-width: 992px) {
@@ -93,8 +104,9 @@ header {
             font-size: 26px;
             position: relative;
             bottom: 10px;
-            font-weight: 400;
+            font-weight: 600;
             font-family: "Sacramento", cursive;
+            margin-bottom: 40px;
             span {
               position: absolute;
               left: 15px;

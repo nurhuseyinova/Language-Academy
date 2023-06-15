@@ -1,21 +1,22 @@
 ////home page blog section!
 #blog {
-  background-color: #02011d;
+  background-color: #f3f3f3;
   padding-top: 50px;
   .herroBanner {
     h1 {
       text-align: center;
-      color: $light;
+      color: $textColor1;
     }
     .swiper {
       width: 100%;
       padding: 50px 0;
       .swiper-slide {
-        background-color: $light;
+        background-color: white;
         background-position: center;
         background-size: cover;
         width: 300px;
         height: 470px;
+        border-bottom: 2px solid $textColor1;
         .slideImg {
           overflow: hidden;
           img {
@@ -28,7 +29,10 @@
         .slideNote {
           padding: 7px;
           text-align: center;
-          color: $mainColor;
+          color: rgb(102, 100, 100);
+          h4{
+            color: $textColor1;
+          }
         }
         &:hover {
           .note1 {
@@ -75,26 +79,6 @@
       }
     }
   }
-  .blogItem1 {
-    .swiper {
-      display: flex;
-      width: 300px;
-      height: 300px;
-      position: relative;
-      left: 50%;
-      top: 50%;
-      margin-left: -150px;
-      margin-top: -130px;
-      .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        img {
-          display: block;
-          width: 100%;
-        }
-      }
-    }
-  }
   .blogItem2 {
     @include display;
     justify-content: center;
@@ -109,7 +93,7 @@
     .info {
       width: 50%;
       .item2Note {
-        color: $mainColor;
+        color: gray;
         line-height: 5vh;
         padding: 50px 20px;
         .line {
@@ -121,7 +105,10 @@
         }
         h1 {
           color: $textColor1;
-          text-shadow: 3px 3px 3px $mainColor;
+          text-shadow: 2px 2px 2px $mainColor;
+        }
+        h5{
+          color:$textColor1;
         }
       }
     }

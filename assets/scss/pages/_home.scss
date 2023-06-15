@@ -1,19 +1,43 @@
 #home {
-  background-image: url("../image/fullscreen-slider.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
   .homeItem {
-    background-color: rgba(3, 3, 34, 0.438);
-    padding: 300px 0;
-    .herroBanner {
-      .item {
+    .swiper {
+      height: 100vh;
+      width: 100%;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .slide1 {
+        background-image: url("../image/fullscreen-slider.jpg");
+      }
+      .slide2 {
+        background-image: url("../image/techcamp_banner.jpg");
+      }
+      .slide3 {
+        background-image: url("../image/team1.jpg");
+      }
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+        background-size: cover;
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
         .itemNote {
           text-align: center;
           color: $light;
           h1 {
-            font-size: 60px;
+            font-size: 70px;
+            @media only screen and (max-width: 767px) {
+              font-size: 50px;
+            }
+            @media only screen and (max-width: 556px) {
+              font-size: 40px;
+            }
           }
         }
       }

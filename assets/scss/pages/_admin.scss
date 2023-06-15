@@ -1,8 +1,9 @@
 #admin {
+  background-color: #f3f3f3;
   .row {
     --bs-gutter-x: 0rem;
     .menu {
-      background-color: $darkBlue;
+      background-color: $mainColor;
       padding-top: 30px;
       padding-bottom: 200px;
       .adminMenu {
@@ -13,7 +14,7 @@
           border-radius: 50%;
         }
         h4 {
-          color: $light;
+          color: $textColor2;
         }
         .icon {
           @include display;
@@ -23,15 +24,19 @@
           li {
             a {
               font-size: 20px;
-              color: $textColor1;
+              color: $textColor2;
+              &:hover{
+                color: $light;
+              }
             }
           }
+          
         }
       }
       nav {
         padding-top: 30px;
         a {
-          color: $light;
+          color: $textColor2;
           &::after {
             content: "";
             height: 3px;
@@ -41,9 +46,9 @@
             border-radius: 10px;
           }
           &:hover {
-            color: $textColor1;
+            color: $light;
             &::after {
-              background-color: $textColor1;
+              background-color: $light;
             }
           }
         }
@@ -63,10 +68,12 @@
             @include display;
             justify-content: center;
             width: 200px;
-            background-color: $darkBlue;
-            transition: all 0.3s linear;
+            background-color: $mainColor;
+            transition: all 0.4s linear;
             a {
-              color: $textColor1;
+              color: $dark;
+            transition: all 0.2s linear;
+
             }
             &:hover {
               transform: translateY(-15px);
@@ -88,10 +95,10 @@
         thead {
           tr {
             th {
-              color: $textColor1;
-              background-color: rgb(13, 13, 85);
+              color: $light;
+              background-color: $mainColor;
               text-align: center;
-              border: 1px solid $textColor1;
+              border: 1px solid $light;
               padding: 10px;
               font-weight: 600;
             }
@@ -100,9 +107,9 @@
         tbody {
           tr {
             td {
-              background-color: $darkBlue;
+              background-color: $colorOrange;
               text-align: center;
-              border: 1px solid $textColor1;
+              border: 1px solid $light;
               color: white;
               padding: 10px;
               img {
@@ -119,7 +126,7 @@
                 color: red;
               }
               .edit {
-                color: blue;
+                color: rgb(12, 12, 104);
               }
             }
           }
@@ -139,17 +146,17 @@
             .formTags {
               width: 500px;
               padding: 10px;
-              margin-top: 2px;
+              margin-top: 1px;
               border: 1px solid $textColor1;
-              background-color: $darkBlue;
-              color: $textColor1;
+              background-color: $mainColor;
+              color: $textColor2;
               &::placeholder {
-                color: $textColor1;
+                color: $textColor2;
               }
             }
             .fullName {
               display: flex;
-              column-gap: 2px;
+              column-gap: 1px;
               width: 500px;
               input {
                 text-transform: capitalize;
@@ -171,22 +178,22 @@
             }
 
             select {
-              color: $textColor1;
+              color: $textColor2;
               option {
-                color: $textColor1;
+                color: $textColor2;
               }
             }
             input::file-selector-button {
-              background-color: $textColor1;
-              color: $textColor2;
+              background-color: $darkBlue;
+              color: $textColor1;
             }
             textarea {
               height: 20vh;
             }
             .submit {
               font-family: "Montserrat", sans-serif;
-              background: $textColor1 !important;
-              color: $textColor2;
+              background: $textColor2 !important;
+              color: $textColor1;
               padding: 10px 30px;
               border: none;
               position: relative;
@@ -194,7 +201,7 @@
               transition: 400ms linear all;
               outline: none;
               &:hover {
-                background: #f77300 !important;
+                background: $textColor1 !important;
                 color: $textColor2;
               }
               &:before,

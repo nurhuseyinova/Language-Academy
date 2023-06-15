@@ -231,11 +231,11 @@
           </div>
         </div>
       </div>
-      <div class="teamItem3">        
+      <div class="teamItem3">
         <div class="herroBanner">
-        <h1>Experience</h1>
+          <h1>Experience</h1>
           <div class="line"></div>
-          <div class="swiper mySwiperBlog">
+          <div class="swiper mySwiperTeam">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="slideImg">
@@ -336,31 +336,12 @@
     <footer>
       <div class="herroBanner">
         <div class="footerTop">
+          <h4 class="logo">
+            Language <br />
+            <span>Academy</span>
+          </h4>
+
           <nav class="topItem1">
-            <h4>
-              Language <br />
-              <span>Academy</span>
-            </h4>
-            <ul>
-              <li>
-                <a href="#"
-                  ><i class="fa-solid fa-location-dot"></i>198 West 21th Street,
-                  Suite 721 Ganja 10016</a
-                >
-              </li>
-              <li>
-                <a href="tel:+994 077 777 77 77"
-                  ><i class="fa-solid fa-phone"></i>+994 077 777 77 77</a
-                >
-              </li>
-              <li>
-                <a href="mailto:languageacademy@123.az"
-                  ><i class="fa-solid fa-envelope"></i>languageacademy@123.az</a
-                >
-              </li>
-            </ul>
-          </nav>
-          <nav class="topItem2">
             <ul>
               <h4>Academy</h4>
               <li>
@@ -382,13 +363,40 @@
                 <a href="#">Achievements</a>
               </li>
               <li>
-                <a href="#">Comments</a>
+                <a href="./galery.html">Gallery</a>
               </li>
               <li>
                 <a href="#">Languages</a>
               </li>
               <li>
                 <a href="./blog.html">Blog</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="topItem2">
+            <ul>
+              <h4>Contact</h4>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-location-dot"></i>198 West 21th Street,
+                  Suite 721 Ganja 10016</a
+                >
+              </li>
+              <li>
+                <a href="tel:+994 077 777 77 77"
+                  ><i class="fa-solid fa-phone"></i>+994 077 777 77 77</a
+                >
+              </li>
+              <li>
+                <a href="mailto:languageacademy@123.az"
+                  ><i class="fa-solid fa-envelope"></i>languageacademy@123.az</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-regular fa-clock"></i> Daily: 10:00 Am - 5:00 Pm
+                  Monday & Holiday: Closed</a
+                >
               </li>
             </ul>
           </nav>
@@ -399,6 +407,7 @@
             Copyright © 2023 <i class="fa-regular fa-heart"></i> Language
             Academy
           </p>
+          <button class="goTop"><i class="fa-solid fa-turn-up"></i></button>
           <ul>
             <li>
               <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -419,9 +428,10 @@
         </div>
       </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiperBlog", {
+      let teamPageSwiper = new Swiper(".mySwiperTeam", {
         effect: "coverflow",
         grabCursor: true,
         centeredSlides: true,

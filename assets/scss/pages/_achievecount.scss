@@ -4,26 +4,33 @@
   background-repeat: no-repeat;
   background-size: cover;
   .countItem {
-    background-color: rgba(14, 12, 36, 0.637);
+    background-color: rgba(71, 57, 17, 0.336);
     padding: 100px 0;
     .herroBanner {
-      .item {
-        @include display;
-        justify-content: center;
-        gap: 10px;
-        i {
-          color: #da853d;
-          font-size: 60px;
+      .row {
+        --bs-gutter-x:0rem;
+        .item {
+          @include display;
+          justify-content: center;
+          gap: 15px;
+          i {
+            color: $bg-orange;
+            font-size: 60px;
+          }
+          .itemNote {
+            color: $light;
+            span{
+              font-size: 40px;
+              font-weight: 600;
+            }
+          }
         }
-        .itemNote {
-          color: $light;
-        }
-      }
-    }
-    @media only screen and (max-width: 556px) {
-      padding: 50px 0;
-      .item {
-        justify-content: flex-start !important;
+      
+      @media only screen and (max-width: 556px) {
+        padding: 50px 0;
+        .item {
+          justify-content: flex-start !important;
+        }}
       }
     }
   }
