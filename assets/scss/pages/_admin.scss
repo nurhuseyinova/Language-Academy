@@ -228,6 +228,35 @@
           }
         }
       }
+      #message {
+        h1 {
+          color: $textColor1;
+          text-align: center;
+          padding: 50px 0;
+        }
+        .accordion-button {
+          color: $light;
+          background-color: rgb(9, 80, 138);
+        }
+        .accordionNote {
+          .accordion-body {
+            h6 {
+              color: $textColor1;
+            }
+            h5 {
+              color: gray;
+            }
+            p {
+              color: gray;
+            }
+            button {
+              color: red;
+              border: none;
+              background-color: transparent;
+            }
+          }
+        }
+      }
       #users {
         display: none;
       }
@@ -247,6 +276,9 @@
         display: none;
       }
       #french {
+        display: none;
+      }
+      #message {
         display: none;
       }
     }

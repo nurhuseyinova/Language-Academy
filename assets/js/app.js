@@ -67,19 +67,5 @@ goTop.addEventListener("click", () => {
 });
 
 
-////Home section slider
-let home = new Swiper(".mySwiperHome", {
-    spaceBetween: 30,
-    effect: "fade",
-    centeredSlides: true,
-    autoplay:{
-      delay:2500,
-      disableOnInteraction:false,
 
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
   

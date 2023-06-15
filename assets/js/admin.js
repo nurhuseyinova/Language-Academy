@@ -5,6 +5,7 @@ let englishInfo = document.querySelectorAll(".englishInfo");
 let russianInfo = document.querySelectorAll(".russianInfo");
 let germanInfo = document.querySelectorAll(".germanInfo");
 let frenchInfo = document.querySelectorAll(".frenchInfo");
+let messageInfo = document.querySelectorAll(".messageInfo");
 let mainPage = document.querySelector(".mainPage");
 let usersPage = document.querySelector("#users");
 let teachersPage = document.querySelector("#teachers");
@@ -13,6 +14,7 @@ let englishPage = document.querySelector("#english");
 let russianPage = document.querySelector("#russian");
 let germanPage = document.querySelector("#german");
 let frenchPage = document.querySelector("#french");
+let messagePage = document.querySelector("#message");
 
 usersInfo.forEach((el) =>
   el.addEventListener("click", function () {
@@ -96,5 +98,18 @@ frenchInfo.forEach((el) =>
     russianPage.style.display = "none";
     germanPage.style.display = "none";
     frenchPage.style.display = "block";
+  })
+);
+messageInfo.forEach((el) =>
+  el.addEventListener("click", function () {
+    mainPage.style.display = "none";
+    usersPage.style.display = "none";
+    teachersPage.style.display = "none";
+    commentPage.style.display = "none";
+    englishPage.style.display = "none";
+    russianPage.style.display = "none";
+    germanPage.style.display = "none";
+    frenchPage.style.display = "none";
+    messagePage.style.display = "block";
   })
 );

@@ -1400,9 +1400,14 @@ header .headerBottum {
   margin-bottom: 10px;
   padding: 7px;
 }
-#contactPage .item3 .herroBanner form input {
+#contactPage .item3 .herroBanner form div {
+  width: 400px;
+}
+#contactPage .item3 .herroBanner form div input {
   border: gray;
-  width: 200px;
+}
+#contactPage .item3 .herroBanner form .email {
+  width: 400px;
 }
 #contactPage .item3 .herroBanner form select {
   width: 400px;
@@ -1682,6 +1687,29 @@ header .headerBottum {
   width: 100%;
   transition: 400ms linear all;
 }
+#admin .row .info #message h1 {
+  color: #ffb606;
+  text-align: center;
+  padding: 50px 0;
+}
+#admin .row .info #message .accordion-button {
+  color: #ffffff;
+  background-color: rgb(9, 80, 138);
+}
+#admin .row .info #message .accordionNote .accordion-body h6 {
+  color: #ffb606;
+}
+#admin .row .info #message .accordionNote .accordion-body h5 {
+  color: gray;
+}
+#admin .row .info #message .accordionNote .accordion-body p {
+  color: gray;
+}
+#admin .row .info #message .accordionNote .accordion-body button {
+  color: red;
+  border: none;
+  background-color: transparent;
+}
 #admin .row .info #users {
   display: none;
 }
@@ -1701,6 +1729,9 @@ header .headerBottum {
   display: none;
 }
 #admin .row .info #french {
+  display: none;
+}
+#admin .row .info #message {
   display: none;
 }
 

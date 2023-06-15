@@ -156,22 +156,28 @@
               <span>write to us!</span>
             </h3>
           </div>
-          <form action="">
+          <form action="" id="messageForm">
             <div>
               <input
                 class="formTag"
-                id="name"
+                id="messageFirstName"
                 type="text"
-                placeholder="Your Name"
+                placeholder="First Name"
               />
               <input
                 class="formTag"
-                id="email"
-                type="email"
-                placeholder="Your Email"
+                id="messageLastName"
+                type="text"
+                placeholder="Last Name"
               />
             </div>
-            <select class="formTag" name="" id="subject">
+            <input
+            class="formTag email"
+            id="messageEmail"
+            type="email"
+            placeholder="Your Email"
+          />
+            <select class="formTag" name="" id="messageSubject">
               <option value="" disabled>Subject</option>
               <option value="English">English</option>
               <option value="Russian">Russian</option>
@@ -181,13 +187,13 @@
             <textarea
               class="formTag"
               name=""
-              id="message"
+              id="messageQusetion"
               cols="30"
               rows="10"
               placeholder="Your Message"
             ></textarea
             ><br />
-            <button type="submit">Send Message</button>
+            <button id="messageSubmit" type="submit">Send Message</button>
           </form>
         </div>
       </div>
@@ -330,6 +336,13 @@
       integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
       crossorigin="anonymous"
     ></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+    integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+    <script src="./assets/js/message.js"></script>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>
