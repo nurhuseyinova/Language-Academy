@@ -77,18 +77,15 @@
         display: none;
         background-image: url("../image/galery11.jpg");
       }
-    @media only screen and (max-width: 776px) {
+      @media only screen and (max-width: 776px) {
         .img2 {
           display: block;
-        background-position: center;
-
+          background-position: center;
         }
         .img1 {
           display: none;
         }
-      
-
-    }
+      }
     }
 
     @media only screen and (max-width: 992px) {
@@ -100,7 +97,6 @@
       .aboutImg {
         width: 100%;
       }
-     
     }
   }
 }

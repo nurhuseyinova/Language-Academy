@@ -14,7 +14,7 @@
     gap: 30px;
     width: 100%;
     .newsItem1 {
-      height:70vh ;
+      height: 70vh;
       width: 50%;
       img {
         width: 100%;
@@ -30,15 +30,14 @@
       .accordion {
         height: 100%;
         h5 {
-          color:$textColor1;
+          color: $textColor1;
         }
         p {
           color: gray;
           font-size: 20px;
         }
-        .accordion-button{
+        .accordion-button {
           background-color: $lightGray;
-
         }
       }
     }

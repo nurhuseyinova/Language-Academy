@@ -379,10 +379,32 @@ header .headerBottum {
   background-color: #ffffff;
   transition: all 0.5s linear;
   font-family: "Montserrat", sans-serif;
+  background: none;
+  border: 1px solid #ffb606;
+  border-bottom-width: 4px;
+  font: inherit;
+  letter-spacing: inherit;
+  margin: 1em;
+  padding: 10px 20px;
+  color: #ffffff;
+  border-radius: 20px;
+  text-transform: inherit;
+  width: 30%;
+  transition: color 1s;
 }
 #language .row .col .item .itemImg .itemNote a:hover {
   color: #ffffff;
   background-color: #ffb606;
+}
+#language .row .col .item .itemImg .itemNote a:hover {
+  animation: halftone 1s forwards;
+  background: radial-gradient(circle, #ffb606 0.2em, transparent 0.25em) 0 0/1.25em 1.25em, radial-gradient(circle, #ffb606 0.2em, transparent 0.25em) 6.25em 6.25em/1.25em 1.25em;
+  color: #0d1128;
+}
+@keyframes halftone {
+  100% {
+    background-size: 2.375em 2.375em, 0.1em 0.1em;
+  }
 }
 
 #whywe {
@@ -928,7 +950,7 @@ header .headerBottum {
   padding: 100px 0;
 }
 #achieveCount .countItem .herroBanner .row {
-  --bs-gutter-x:0rem;
+  --bs-gutter-x: 0rem;
 }
 #achieveCount .countItem .herroBanner .row .item {
   display: flex;

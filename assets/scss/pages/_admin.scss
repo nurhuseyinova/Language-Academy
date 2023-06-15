@@ -25,12 +25,11 @@
             a {
               font-size: 20px;
               color: $textColor2;
-              &:hover{
+              &:hover {
                 color: $light;
               }
             }
           }
-          
         }
       }
       nav {
@@ -72,8 +71,7 @@
             transition: all 0.4s linear;
             a {
               color: $dark;
-            transition: all 0.2s linear;
-
+              transition: all 0.2s linear;
             }
             &:hover {
               transform: translateY(-15px);
@@ -163,11 +161,11 @@
                 width: 250px;
               }
             }
-            .phoneNumber{
+            .phoneNumber {
               width: 500px;
               display: flex;
               column-gap: 2px;
-              select{
+              select {
                 width: 100px !important;
               }
             }

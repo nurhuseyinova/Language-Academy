@@ -7,7 +7,7 @@
   .commentItem {
     background-color: rgba(19, 45, 68, 0.788);
     padding: 60px 0;
-    h1{
+    h1 {
       text-align: center;
       color: $textColor1;
     }
@@ -20,11 +20,11 @@
         height: 75vh;
         .swiper-slide {
           text-align: center;
-          // font-size: 18px;
           display: flex;
           justify-content: center;
           align-items: center;
-          .item {display: flex;
+          .item {
+            display: flex;
             flex-direction: column;
             row-gap: 30px;
             .commentNote {
@@ -33,7 +33,6 @@
 
               background-color: $textColor1;
               color: $light;
-              // padding:50px 10px;
               border-radius: 10px;
               width: 300px;
               height: 200px;
@@ -41,7 +40,6 @@
             .itemImg {
               @include display;
               justify-content: start;
-              // width: 100px;
               gap: 20px;
               img {
                 display: block;

@@ -25,7 +25,6 @@
         position: relative;
         z-index: 1;
         overflow: hidden;
-
         .itemImg {
           overflow: hidden;
           .itemNote {
@@ -46,9 +45,7 @@
             transition: all 0.5s linear;
           }
           .itemNote {
-            // padding: 50px 5px;
             font-family: "Sora", sans-serif;
-            // padding-bottom: 10px;
             position: absolute;
             z-index: -1;
             bottom: 0;
@@ -68,6 +65,46 @@
               &:hover {
                 color: $light;
                 background-color: $mainColor;
+              }
+
+              background: none;
+              border: 1px solid $textColor1;
+              border-bottom-width: 4px;
+              font: inherit;
+              letter-spacing: inherit;
+              margin: 1em;
+              padding: 10px 20px;
+              color: $light;
+              border-radius: 20px;
+
+              text-transform: inherit;
+              width: 30%;
+              transition: color 1s;
+
+              &:hover {
+                -webkit-animation: halftone 1s forwards;
+                animation: halftone 1s forwards;
+                background: radial-gradient(
+                      circle,
+                      $textColor1 0.2em,
+                      transparent 0.25em
+                    )
+                    0 0/1.25em 1.25em,
+                  radial-gradient(circle, $textColor1 0.2em, transparent 0.25em)
+                    6.25em 6.25em/1.25em 1.25em;
+                color: $textColor2;
+              }
+            }
+
+            @-webkit-keyframes halftone {
+              100% {
+                background-size: 2.375em 2.375em, 0.1em 0.1em;
+              }
+            }
+
+            @keyframes halftone {
+              100% {
+                background-size: 2.375em 2.375em, 0.1em 0.1em;
               }
             }
           }
