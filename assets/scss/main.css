@@ -1809,45 +1809,55 @@ header .headerBottum {
 }
 
 .signUp {
-  padding: 150px 0 100px;
+  padding: 120px 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.signUp .herroBanner {
+.signUp form {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 50px;
+  background-color: #f3f3f3;
 }
-.signUp .herroBanner h1 {
+.signUp form h1 {
   color: black;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
-.signUp .herroBanner form {
-  gap: 10px;
-}
-.signUp .herroBanner form label {
+.signUp form label {
   color: black;
   font-weight: 600;
   font-size: 20px;
 }
-.signUp .herroBanner form input {
-  border: 1px solid rgb(56, 56, 56);
+.signUp form input {
+  border: 1px solid white;
   width: 400px;
-  text-indent: 5px;
+  text-indent: 7px;
   padding: 7px 0;
   outline: #f4f5f9;
 }
-.signUp .herroBanner form input::-moz-placeholder {
+.signUp form input::-moz-placeholder {
   color: black;
 }
-.signUp .herroBanner form input::placeholder {
+.signUp form input::placeholder {
   color: black;
 }
-.signUp .herroBanner form button {
+.signUp form button {
   border: none;
   background-color: #ffb606;
   padding: 10px 30px;
   border-radius: 10px;
+}
+@media only screen and (max-width: 556px) {
+  .signUp form {
+    width: 100%;
+  }
+  .signUp form input {
+    width: 300px;
+  }
 }
 
 #admin {

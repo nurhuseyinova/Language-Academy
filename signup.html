@@ -106,17 +106,19 @@
     </header>
 
     <div class="signUp">
-      <div class="herroBanner">
+      <form action="" id="signInForm">
         <h1>Sign Up</h1>
-        <form action="" id="signInForm">
+        <div>
           <label for="signUsername">Username</label><br />
           <input
             id="signUsername"
             type="text"
             placeholder="Enter Username..."
-          /><br />
+          />
+          <!-- <br /> -->
           <p>We'll never share you username anyone else</p>
-
+        </div>
+        <div>
           <label for="signEmail">Email</label><br />
           <input
             id="signEmail"
@@ -124,16 +126,18 @@
             placeholder="Enter Email..."
           /><br />
           <p>We'll never share you email anyone else</p>
-
+        </div>
+        <div>
           <label for="signPassword">Password</label><br />
           <input
             id="signPassword"
             type="text"
             placeholder="Enter Password..."
-          /><br /><br />
-          <button type="signIn">Sign in</button>
-        </form>
-      </div>
+          />
+        </div>
+        <br />
+        <button type="signUp">Sign up</button>
+      </form>
     </div>
 
     <footer>
