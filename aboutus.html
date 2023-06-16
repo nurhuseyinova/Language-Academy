@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Sacramento&display=swap"
       rel="stylesheet"
@@ -108,7 +109,7 @@
       <div class="aboutHead">
         <div class="aboutHeadSection">
           <div class="herroBanner">
-            <div class="item1Note">
+            <div data-aos="fade-right" class="item1Note">
               <h1>About Us</h1>
               <div>
                 <a href="./index.html"
@@ -126,11 +127,26 @@
         <div class="aboutItem1">
           <div class="item1Img">
             <div class="images">
-              <img class="img1" src="./assets/image/england4.jpg" alt="" />
-              <img class="img2" src="./assets/image/england8.jpg" alt="" />
-              <img class="img3" src="./assets/image/england3.jpg" alt="" />
+              <img
+                data-aos="slide-right"
+                class="img1"
+                src="./assets/image/england4.jpg"
+                alt=""
+              />
+              <img
+                data-aos="fade-up-right"
+                class="img2"
+                src="./assets/image/england8.jpg"
+                alt=""
+              />
+              <img
+                data-aos="fade-up"
+                class="img3"
+                src="./assets/image/england3.jpg"
+                alt=""
+              />
             </div>
-            <div class="mainImg">
+            <div data-aos="zoom-in-up" class="mainImg">
               <div class="main1Note">
                 <h1>England</h1>
                 <p>
@@ -143,14 +159,29 @@
             </div>
           </div>
           <div class="item1Images2">
-            <img class="img5" src="./assets/image/england6.jpg" alt="" />
-            <img class="img6" src="./assets/image/england7.jpg" alt="" />
-            <img class="img7" src="./assets/image/england9.jpg" alt="" />
+            <img
+              data-aos="slide-left"
+              class="img5"
+              src="./assets/image/england6.jpg"
+              alt=""
+            />
+            <img
+              data-aos="fade-up-left"
+              class="img6"
+              src="./assets/image/england7.jpg"
+              alt=""
+            />
+            <img
+              data-aos="fade-up"
+              class="img7"
+              src="./assets/image/england9.jpg"
+              alt=""
+            />
           </div>
         </div>
         <div class="aboutItem2">
           <div class="item2Section">
-            <div class="item2Note">
+            <div data-aos="slide-left" class="item2Note">
               <h1>Germany</h1>
               <h2>Lorem ipsum dolor sit amet.</h2>
               <p>
@@ -162,22 +193,62 @@
               </p>
             </div>
             <div class="item2Img">
-              <img class="item2Img1" src="./assets/image/germany8.jpg" alt="" />
-              <img class="item2Img2" src="./assets/image/germany7.jpg" alt="" />
-              <img class="item2Img3" src="./assets/image/germany3.jpg" alt="" />
-              <img class="item2Img4" src="./assets/image/germany8.jpg" alt="" />
+              <img
+                data-aos="zoom-out-up"
+                class="item2Img1"
+                src="./assets/image/germany8.jpg"
+                alt=""
+              />
+              <img
+                data-aos="zoom-in-up"
+                class="item2Img2"
+                src="./assets/image/germany7.jpg"
+                alt=""
+              />
+              <img
+                data-aos="fade-up"
+                class="item2Img3"
+                src="./assets/image/germany3.jpg"
+                alt=""
+              />
+              <img
+                data-aos="zoom-out-left"
+                class="item2Img4"
+                src="./assets/image/germany8.jpg"
+                alt=""
+              />
             </div>
           </div>
         </div>
         <div class="aboutItem3">
           <div class="item3Section">
             <div class="item3Img">
-              <img class="item3Img1" src="./assets/image/rusia6.jpg" alt="" />
-              <img class="item3Img2" src="./assets/image/rusia7.jpg" alt="" />
-              <img class="item3Img3" src="./assets/image/rusia4.jpg" alt="" />
-              <img class="item3Img4" src="./assets/image/rusia8.jpg" alt="" />
+              <img
+                data-aos="zoom-in-up"
+                class="item3Img1"
+                src="./assets/image/rusia6.jpg"
+                alt=""
+              />
+              <img
+                data-aos="zoom-out-up"
+                class="item3Img2"
+                src="./assets/image/rusia7.jpg"
+                alt=""
+              />
+              <img
+                data-aos="fade-down"
+                class="item3Img3"
+                src="./assets/image/rusia4.jpg"
+                alt=""
+              />
+              <img
+                data-aos="zoom-out-right"
+                class="item3Img4"
+                src="./assets/image/rusia8.jpg"
+                alt=""
+              />
             </div>
-            <div class="item3Note">
+            <div data-aos="slide-right" class="item3Note">
               <h1>Russian</h1>
               <h2>Lorem ipsum dolor sit amet.</h2>
               <p>
@@ -192,10 +263,10 @@
         </div>
         <div class="aboutItem4">
           <div class="item4Section">
-            <div class="item4Img">
+            <div data-aos="fade-left" class="item4Img">
               <img src="./assets/image/fransa4.jpg" alt="" />
             </div>
-            <div class="item4Note">
+            <div data-aos="zoom-in-up" class="item4Note">
               <h1>French</h1>
               <h5>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -205,7 +276,7 @@
                 tenetur esse!
               </h5>
             </div>
-            <div class="item4Img2">
+            <div data-aos="fade-right" class="item4Img2">
               <img src="./assets/image/fransa6.jpg" alt="" />
             </div>
           </div>
@@ -308,6 +379,12 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+      });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
