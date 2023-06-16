@@ -315,6 +315,28 @@ header .headerBottum {
   }
 }
 
+#aboutUsPage .aboutHead {
+  background-image: url("../image/fransa8.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+#aboutUsPage .aboutHead .aboutHeadSection {
+  padding: 200px 0;
+}
+#aboutUsPage .aboutHead .aboutHeadSection .item1Note {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+#aboutUsPage .aboutHead .aboutHeadSection .item1Note h1 {
+  font-weight: bold;
+  font-size: 60px;
+}
+#aboutUsPage .aboutHead .aboutHeadSection .item1Note div a {
+  color: #ffffff;
+}
 #aboutUsPage .herroBanner .aboutItem1 {
   padding: 50px 0;
   width: 100%;

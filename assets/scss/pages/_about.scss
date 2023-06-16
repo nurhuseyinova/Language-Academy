@@ -102,6 +102,30 @@
 }
 ////About Us Page   about.html
 #aboutUsPage {
+  .aboutHead {
+    background-image: url("../image/fransa8.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    .aboutHeadSection {
+      padding: 200px 0;
+      .item1Note {
+        font-family: "Montserrat", sans-serif;
+        color: $light;
+        text-align: center;
+        h1 {
+          font-weight: bold;
+          font-size: 60px;
+        }
+        div {
+          a {
+            color: $light;
+          }
+        }
+      }
+    }
+  }
   .herroBanner {
     .aboutItem1 {
       padding: 50px 0;
