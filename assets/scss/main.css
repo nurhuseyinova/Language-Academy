@@ -471,14 +471,6 @@ header .headerBottum {
     display: none;
   }
 }
-#aboutUsPage .herroBanner .aboutItem2 h1 {
-  color: gray;
-  text-align: center;
-}
-#aboutUsPage .herroBanner .aboutItem2 h5 {
-  color: #ffb606;
-  text-align: center;
-}
 #aboutUsPage .herroBanner .aboutItem2 .item2Section {
   padding: 40px 0 70px;
   display: flex;
@@ -486,10 +478,11 @@ header .headerBottum {
   gap: 20px;
 }
 #aboutUsPage .herroBanner .aboutItem2 .item2Section .item2Note {
+  color: gray;
   padding: 10px;
 }
-#aboutUsPage .herroBanner .aboutItem2 .item2Section .item2Note p {
-  color: gray;
+#aboutUsPage .herroBanner .aboutItem2 .item2Section .item2Note h1 {
+  color: #ffb606;
 }
 #aboutUsPage .herroBanner .aboutItem2 .item2Section .item2Img {
   display: flex;
@@ -535,6 +528,67 @@ header .headerBottum {
     display: none;
   }
   #aboutUsPage .herroBanner .aboutItem2 .item2Section .item2Img .item2Img4 {
+    display: block;
+    width: 100%;
+    height: 60vh;
+  }
+}
+#aboutUsPage .herroBanner .aboutItem3 .item3Section {
+  padding: 40px 0 70px;
+  display: flex;
+  align-items: center;
+}
+#aboutUsPage .herroBanner .aboutItem3 .item3Section .item3Note {
+  padding: 10px;
+  color: gray;
+}
+#aboutUsPage .herroBanner .aboutItem3 .item3Section .item3Note h1 {
+  color: #ffb606;
+}
+#aboutUsPage .herroBanner .aboutItem3 .item3Section .item3Img {
+  display: flex;
+}
+#aboutUsPage .herroBanner .aboutItem3 .item3Section .item3Img img {
+  width: 320px;
+  height: 70vh;
+}
+#aboutUsPage .herroBanner .aboutItem3 .item3Section .item3Img .item3Img1 {
+  position: relative;
+  z-index: 1;
+}
+#aboutUsPage .herroBanner .aboutItem3 .item3Section .item3Img .item3Img2 {
+  position: relative;
+  top: 30px;
+  right: 80px;
+  z-index: 2;
+}
+#aboutUsPage .herroBanner .aboutItem3 .item3Section .item3Img .item3Img3 {
+  display: none;
+}
+#aboutUsPage .herroBanner .aboutItem3 .item3Section .item3Img .item3Img4 {
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  #aboutUsPage .herroBanner .aboutItem3 .item3Section {
+    flex-direction: column;
+  }
+  #aboutUsPage .herroBanner .aboutItem3 .item3Section .item3Img .item3Img1 {
+    display: none;
+  }
+  #aboutUsPage .herroBanner .aboutItem3 .item3Section .item3Img .item3Img2 {
+    display: none;
+  }
+  #aboutUsPage .herroBanner .aboutItem3 .item3Section .item3Img .item3Img3 {
+    display: block;
+    width: 100%;
+    height: 60vh;
+  }
+}
+@media only screen and (max-width: 992px) and (max-width: 767px) {
+  #aboutUsPage .herroBanner .aboutItem3 .item3Section .item3Img .item3Img3 {
+    display: none;
+  }
+  #aboutUsPage .herroBanner .aboutItem3 .item3Section .item3Img .item3Img4 {
     display: block;
     width: 100%;
     height: 60vh;
