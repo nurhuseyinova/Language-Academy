@@ -1760,7 +1760,7 @@ header .headerBottum {
   width: 400px;
 }
 #contactPage .item3 .herroBanner form div input {
-  border: gray;
+  outline: #f4f5f9;
 }
 #contactPage .item3 .herroBanner form .email {
   width: 400px;
@@ -1806,6 +1806,48 @@ header .headerBottum {
 }
 #contactPage .map {
   height: 90vh;
+}
+
+.signUp {
+  padding: 150px 0 100px;
+}
+.signUp .herroBanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.signUp .herroBanner h1 {
+  color: black;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.signUp .herroBanner form {
+  gap: 10px;
+}
+.signUp .herroBanner form label {
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+}
+.signUp .herroBanner form input {
+  border: 1px solid rgb(56, 56, 56);
+  width: 400px;
+  text-indent: 5px;
+  padding: 7px 0;
+  outline: #f4f5f9;
+}
+.signUp .herroBanner form input::-moz-placeholder {
+  color: black;
+}
+.signUp .herroBanner form input::placeholder {
+  color: black;
+}
+.signUp .herroBanner form button {
+  border: none;
+  background-color: #ffb606;
+  padding: 10px 30px;
+  border-radius: 10px;
 }
 
 #admin {
@@ -2186,15 +2228,6 @@ footer .herroBanner .footerBottum p {
     text-align: center;
   }
 }
-footer .herroBanner .footerBottum button {
-  text-align: end;
-  border: none;
-  padding: 5px 20px;
-  background-color: #da853d;
-  color: #0d1128;
-  margin: 10px 0;
-  font-size: 20px;
-}
 footer .herroBanner .footerBottum ul {
   display: flex;
   align-items: center;
@@ -2214,4 +2247,13 @@ footer .herroBanner .footerBottum ul li a:hover {
   footer .herroBanner .footerBottum {
     flex-direction: column;
   }
+}
+
+.goTop {
+  padding: 10px 14px;
+  position: fixed;
+  z-index: 3;
+  bottom: 10px;
+  right: 15px;
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */

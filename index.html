@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Sacramento&display=swap"
       rel="stylesheet"
@@ -113,14 +114,14 @@
         <div class="swiper mySwiperHome">
           <div class="swiper-wrapper">
             <div class="swiper-slide slide1">
-                <div class="itemNote">
+                <div data-aos="slide-left" class="itemNote">
                   <h1>Language Academy</h1>
                   <h4>Language Academy is one of the most prestigious academies in
                     Azerbaijan</h4>            
                 </div>
             </div>
-            <div class="swiper-slide slide2">
-                <div class="itemNote">
+            <div  class="swiper-slide slide2">
+                <div   class="itemNote">
                   <h1>Language Academy</h1>
                   <h4>Language Academy is one of the most prestigious academies in
                     Azerbaijan</h4>            
@@ -823,7 +824,6 @@
             Copyright © 2023 <i class="fa-regular fa-heart"></i> Language
             Academy
           </p>
-    <button class="goTop"><i class="fa-solid fa-turn-up"></i></button> 
           <ul>
             <li>
               <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -844,8 +844,15 @@
         </div>
       </div>
     </footer>
+    <button class="btn btn-warning goTop" ><i class="fa-solid fa-chevron-up"></i></button>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:2000}
+      );
+    </script>
     <script>
       let homeSwiper = new Swiper(".mySwiperHome", {
         spaceBetween: 30,

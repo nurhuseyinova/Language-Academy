@@ -67,5 +67,14 @@ goTop.addEventListener("click", () => {
 });
 
 
+window.addEventListener("scroll", scrolFunction ) 
+
+function scrolFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 20) {
+    goTop.style.display = "block";
+  } else {
+    goTop.style.display = "none";
+  }
+}
 
   

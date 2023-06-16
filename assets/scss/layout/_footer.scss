@@ -92,15 +92,6 @@ footer {
           text-align: center;
         }
       }
-      button{
-        text-align: end;
-        border: none;
-        padding: 5px 20px;
-        background-color: $footerText;
-        color: $textColor2;
-        margin: 10px 0;  
-        font-size: 20px    
-      }
       ul {
         @include display;
         gap: 15px;
@@ -121,4 +112,13 @@ footer {
       }
     }
   }
+}
+.goTop{
+  padding: 10px 14px;
+  position: fixed;
+   z-index: 3; 
+   bottom: 10px;
+   right: 15px;
+   border-radius: 50%;
+
 }
