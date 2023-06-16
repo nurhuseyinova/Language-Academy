@@ -20,7 +20,6 @@ async function getGermanData() {
   copyArr4.forEach((info) => {
     germanData.innerHTML += `
                 <tr>
-                  <td>${info.id}</td>
                   <td>${info.firstName} ${info.lastName}</td>
                   <td>${info.email}</td>
                   <td>${info.phone}</td>

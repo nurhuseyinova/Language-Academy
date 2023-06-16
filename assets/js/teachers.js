@@ -22,7 +22,6 @@ async function getTeachersData() {
   copyArr.forEach((teacher) => {
     teachersData.innerHTML += `
                 <tr>
-                  <td>${teacher.id}</td>
                   <td><img src="${teacher.photo}" alt="" /></td>
                   <td>${teacher.firstName} ${teacher.lastName}</td>
                   <td>${teacher.email}</td>

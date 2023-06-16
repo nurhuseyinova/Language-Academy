@@ -315,6 +315,163 @@ header .headerBottum {
   }
 }
 
+#aboutUsPage .herroBanner .aboutItem1 {
+  padding: 50px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#aboutUsPage .herroBanner .aboutItem1 .item1Img {
+  width: 70%;
+  display: flex;
+}
+#aboutUsPage .herroBanner .aboutItem1 .item1Img .images {
+  display: flex;
+  flex-direction: column;
+}
+#aboutUsPage .herroBanner .aboutItem1 .item1Img .images .img1 {
+  position: relative;
+  left: 140px;
+  height: 20vh;
+  border-radius: 50%;
+  width: 50%;
+}
+#aboutUsPage .herroBanner .aboutItem1 .item1Img .images .img2 {
+  position: relative;
+  left: 30px;
+  height: 30vh;
+  border-radius: 50%;
+  width: 75%;
+}
+#aboutUsPage .herroBanner .aboutItem1 .item1Img .images .img3 {
+  position: relative;
+  top: 10px;
+  left: 90px;
+  height: 30vh;
+  border-radius: 50%;
+  width: 75%;
+}
+@media only screen and (max-width: 992px) {
+  #aboutUsPage .herroBanner .aboutItem1 .item1Img .images {
+    display: none !important;
+  }
+}
+#aboutUsPage .herroBanner .aboutItem1 .item1Img .img4 {
+  border-radius: 50%;
+  height: 80vh;
+  width: 100%;
+}
+#aboutUsPage .herroBanner .aboutItem1 .item1Img .mainImg {
+  background-image: url("../image/englend1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#aboutUsPage .herroBanner .aboutItem1 .item1Img .mainImg .main1Note {
+  text-align: center;
+  color: #ffffff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media only screen and (max-width: 992px) {
+  #aboutUsPage .herroBanner .aboutItem1 .item1Img .mainImg {
+    height: 65vh;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #aboutUsPage .herroBanner .aboutItem1 .item1Img .mainImg {
+    height: 40vh;
+  }
+}
+@media only screen and (max-width: 556px) {
+  #aboutUsPage .herroBanner .aboutItem1 .item1Img .mainImg {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 556px) {
+  #aboutUsPage .herroBanner .aboutItem1 .item1Img {
+    width: 100%;
+  }
+}
+#aboutUsPage .herroBanner .aboutItem1 .item1Images2 {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  width: 30%;
+}
+#aboutUsPage .herroBanner .aboutItem1 .item1Images2 .img5 {
+  width: 40%;
+  height: 20vh;
+  border-radius: 50%;
+  position: relative;
+  right: 130px;
+}
+#aboutUsPage .herroBanner .aboutItem1 .item1Images2 .img6 {
+  width: 60%;
+  height: 30vh;
+  border-radius: 50%;
+  position: relative;
+  bottom: 10px;
+  right: 40px;
+}
+#aboutUsPage .herroBanner .aboutItem1 .item1Images2 .img7 {
+  width: 60%;
+  height: 30vh;
+  border-radius: 50%;
+  position: relative;
+  right: 100px;
+}
+@media only screen and (max-width: 992px) {
+  #aboutUsPage .herroBanner .aboutItem1 .item1Images2 .img5 {
+    width: 75%;
+    right: 100px;
+  }
+  #aboutUsPage .herroBanner .aboutItem1 .item1Images2 .img6 {
+    width: 120%;
+    right: 0px;
+  }
+  #aboutUsPage .herroBanner .aboutItem1 .item1Images2 .img7 {
+    width: 120%;
+    right: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #aboutUsPage .herroBanner .aboutItem1 .item1Images2 .img5 {
+    width: 70%;
+    right: 70px;
+    height: 10vh;
+    bottom: 10px;
+  }
+  #aboutUsPage .herroBanner .aboutItem1 .item1Images2 .img6 {
+    width: 120%;
+    right: 10px;
+    height: 18vh;
+  }
+  #aboutUsPage .herroBanner .aboutItem1 .item1Images2 .img7 {
+    width: 120%;
+    right: 30px;
+    height: 18vh;
+  }
+}
+@media only screen and (max-width: 556px) {
+  #aboutUsPage .herroBanner .aboutItem1 .item1Images2 {
+    display: none;
+  }
+}
+
 #language {
   background-color: #ffb606;
 }

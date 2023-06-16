@@ -1,6 +1,6 @@
+////Home Page About section
 #about {
   background-color: $light;
-  // height: 100vh;
   .herroBanner {
     display: flex;
     justify-content: center;
@@ -96,6 +96,159 @@
       }
       .aboutImg {
         width: 100%;
+      }
+    }
+  }
+}
+////About Us Page   about.html
+#aboutUsPage {
+  .herroBanner {
+    .aboutItem1 {
+      padding: 50px 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+
+      .item1Img {
+        width: 70%;
+        display: flex;
+        .images {
+          display: flex;
+          flex-direction: column;
+          .img1 {
+            position: relative;
+            left: 140px;
+            height: 20vh;
+            border-radius: 50%;
+            width: 50%;
+          }
+          .img2 {
+            position: relative;
+            left: 30px;
+            height: 30vh;
+            border-radius: 50%;
+            width: 75%;
+          }
+          .img3 {
+            position: relative;
+            top: 10px;
+            left: 90px;
+            height: 30vh;
+            border-radius: 50%;
+            width: 75%;
+          }
+          @media only screen and (max-width: 992px) {
+            display: none !important;
+          }
+        }
+        .img4 {
+          border-radius: 50%;
+          height: 80vh;
+          width: 100%;
+        }
+        .mainImg {
+          background-image: url("../image/englend1.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 50%;
+          height: 80vh;
+
+          width: 100%;
+          display: flex;
+          align-items: center;
+          .main1Note {
+            text-align: center;
+            color: $light;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+          }
+          @media only screen and (max-width: 992px) {
+            height: 65vh;
+          }
+          @media only screen and (max-width: 767px) {
+            height: 40vh;
+          }
+          @media only screen and (max-width: 556px) {
+            width: 100%;
+          }
+        }
+        @media only screen and (max-width: 556px) {
+          width: 100%;
+        }
+      }
+      .item1Images2 {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        width: 30%;
+        .img5 {
+          width: 40%;
+          height: 20vh;
+          border-radius: 50%;
+          position: relative;
+          right: 130px;
+        }
+        .img6 {
+          width: 60%;
+          height: 30vh;
+          border-radius: 50%;
+          position: relative;
+          bottom: 10px;
+          right: 40px;
+        }
+        .img7 {
+          width: 60%;
+          height: 30vh;
+          border-radius: 50%;
+          position: relative;
+          right: 100px;
+        }
+
+        @media only screen and (max-width: 992px) {
+          .img5 {
+            width: 75%;
+            right: 100px;
+          }
+          .img6 {
+            width: 120%;
+            right: 0px;
+          }
+          .img7 {
+            width: 120%;
+            right: 50px;
+          }
+        }
+
+        @media only screen and (max-width: 767px) {
+          .img5 {
+            width: 70%;
+            right: 70px;
+            height: 10vh;
+            bottom: 10px;
+          }
+          .img6 {
+            width: 120%;
+            right: 10px;
+            height: 18vh;
+          }
+          .img7 {
+            width: 120%;
+            right: 30px;
+            height: 18vh;
+          }
+        }
+        @media only screen and (max-width: 556px) {
+          display: none;
+        }
       }
     }
   }

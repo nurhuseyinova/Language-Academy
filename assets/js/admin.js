@@ -26,6 +26,7 @@ usersInfo.forEach((el) =>
     russianPage.style.display = "none";
     germanPage.style.display = "none";
     frenchPage.style.display = "none";
+    messagePage.style.display = "none";
   })
 );
 teacherInfo.forEach((el) =>
@@ -38,6 +39,7 @@ teacherInfo.forEach((el) =>
     russianPage.style.display = "none";
     germanPage.style.display = "none";
     frenchPage.style.display = "none";
+    messagePage.style.display = "none";
   })
 );
 commentInfo.forEach((el) =>
@@ -50,6 +52,7 @@ commentInfo.forEach((el) =>
     russianPage.style.display = "none";
     germanPage.style.display = "none";
     frenchPage.style.display = "none";
+    messagePage.style.display = "none";
   })
 );
 englishInfo.forEach((el) =>
@@ -62,6 +65,7 @@ englishInfo.forEach((el) =>
     russianPage.style.display = "none";
     germanPage.style.display = "none";
     frenchPage.style.display = "none";
+    messagePage.style.display = "none";
   })
 );
 russianInfo.forEach((el) =>
@@ -74,6 +78,7 @@ russianInfo.forEach((el) =>
     russianPage.style.display = "block";
     germanPage.style.display = "none";
     frenchPage.style.display = "none";
+    messagePage.style.display = "none";
   })
 );
 germanInfo.forEach((el) =>
@@ -86,6 +91,7 @@ germanInfo.forEach((el) =>
     russianPage.style.display = "none";
     germanPage.style.display = "block";
     frenchPage.style.display = "none";
+    messagePage.style.display = "none";
   })
 );
 frenchInfo.forEach((el) =>
@@ -98,6 +104,7 @@ frenchInfo.forEach((el) =>
     russianPage.style.display = "none";
     germanPage.style.display = "none";
     frenchPage.style.display = "block";
+    messagePage.style.display = "none";
   })
 );
 messageInfo.forEach((el) =>

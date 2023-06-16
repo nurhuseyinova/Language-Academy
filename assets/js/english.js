@@ -21,7 +21,6 @@ async function getEnglishData() {
   copyArr2.forEach((info) => {
     englishData.innerHTML += `
                 <tr>
-                  <td>${info.id}</td>
                   <td>${info.firstName} ${info.lastName}</td>
                   <td>${info.email}</td>
                   <td>${info.phone}</td>
