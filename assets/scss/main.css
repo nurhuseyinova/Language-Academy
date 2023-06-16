@@ -1860,6 +1860,59 @@ header .headerBottum {
   }
 }
 
+.login {
+  padding: 150px 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+  background-color: #f3f3f3;
+}
+.login form h1 {
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.login form label {
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+}
+.login form input {
+  border: 1px solid white;
+  width: 400px;
+  text-indent: 7px;
+  padding: 7px 0;
+  outline: #f4f5f9;
+}
+.login form input::-moz-placeholder {
+  color: black;
+}
+.login form input::placeholder {
+  color: black;
+}
+.login form button {
+  border: none;
+  background-color: #ffb606;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 556px) {
+  .login form {
+    width: 100%;
+  }
+  .login form input {
+    width: 300px;
+  }
+}
+
 #admin {
   background-color: #f3f3f3;
 }
