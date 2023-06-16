@@ -475,7 +475,6 @@ header .headerBottum {
   padding: 40px 0 70px;
   display: flex;
   align-items: center;
-  gap: 20px;
 }
 #aboutUsPage .herroBanner .aboutItem2 .item2Section .item2Note {
   color: gray;
@@ -494,11 +493,11 @@ header .headerBottum {
 #aboutUsPage .herroBanner .aboutItem2 .item2Section .item2Img .item2Img1 {
   position: relative;
   top: 30px;
+  right: -70px;
   z-index: 3;
 }
 #aboutUsPage .herroBanner .aboutItem2 .item2Section .item2Img .item2Img2 {
   position: relative;
-  right: 70px;
   z-index: 2;
 }
 #aboutUsPage .herroBanner .aboutItem2 .item2Section .item2Img .item2Img3 {
@@ -592,6 +591,61 @@ header .headerBottum {
     display: block;
     width: 100%;
     height: 60vh;
+  }
+}
+#aboutUsPage .herroBanner .aboutItem4 {
+  width: 100%;
+  padding: 70px 0;
+}
+#aboutUsPage .herroBanner .aboutItem4 .item4Section {
+  width: 100%;
+  display: flex;
+}
+#aboutUsPage .herroBanner .aboutItem4 .item4Section .item4Note {
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url("../image/fransa5.jpg");
+  width: 100%;
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+#aboutUsPage .herroBanner .aboutItem4 .item4Section .item4Img {
+  position: relative;
+  top: 50px;
+  right: -50px;
+}
+#aboutUsPage .herroBanner .aboutItem4 .item4Section .item4Img img {
+  width: 300px;
+  height: 40vh;
+  border-radius: 50px;
+  transform: rotate(20deg);
+}
+@media only screen and (max-width: 992px) {
+  #aboutUsPage .herroBanner .aboutItem4 .item4Section .item4Img {
+    display: none;
+  }
+}
+#aboutUsPage .herroBanner .aboutItem4 .item4Section .item4Img2 {
+  position: relative;
+  top: 50px;
+  left: -50px;
+}
+#aboutUsPage .herroBanner .aboutItem4 .item4Section .item4Img2 img {
+  width: 300px;
+  height: 40vh;
+  border-radius: 50px;
+  transform: rotate(-20deg);
+}
+@media only screen and (max-width: 992px) {
+  #aboutUsPage .herroBanner .aboutItem4 .item4Section .item4Img2 {
+    display: none;
   }
 }
 

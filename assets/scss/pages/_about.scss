@@ -256,7 +256,6 @@
         padding: 40px 0 70px;
         display: flex;
         align-items: center;
-        gap: 20px;
         .item2Note {
           color: gray;
           padding: 10px;
@@ -273,11 +272,12 @@
           .item2Img1 {
             position: relative;
             top: 30px;
+            right: -70px;
+
             z-index: 3;
           }
           .item2Img2 {
             position: relative;
-            right: 70px;
             z-index: 2;
           }
           .item2Img3 {
@@ -326,8 +326,6 @@
           h1 {
             color: $textColor1;
           }
-          
-          
         }
         .item3Img {
           display: flex;
@@ -366,7 +364,7 @@
               width: 100%;
               height: 60vh;
             }
-            @media only screen and (max-width:767px) {
+            @media only screen and (max-width: 767px) {
               .item3Img3 {
                 display: none;
               }
@@ -376,6 +374,57 @@
                 height: 60vh;
               }
             }
+          }
+        }
+      }
+    }
+    .aboutItem4 {
+      width: 100%;
+      padding: 70px 0;
+      .item4Section {
+        width: 100%;
+        display: flex;
+        .item4Note {
+          z-index: 4;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+          background-image: url("../image/fransa5.jpg");
+          width: 100%;
+          height: 60vh;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 10px;
+        }
+        .item4Img {
+          position: relative;
+          top: 50px;
+          right: -50px;
+          img {
+            width: 300px;
+            height: 40vh;
+            border-radius: 50px;
+            transform: rotate(20deg);
+          }
+          @media only screen and (max-width: 992px) {
+            display: none;
+          }
+        }
+        .item4Img2 {
+          position: relative;
+          top: 50px;
+          left: -50px;
+          img {
+            width: 300px;
+            height: 40vh;
+            border-radius: 50px;
+            transform: rotate(-20deg);
+          }
+          @media only screen and (max-width: 992px) {
+            display: none;
           }
         }
       }
