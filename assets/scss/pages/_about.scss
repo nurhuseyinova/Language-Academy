@@ -251,5 +251,76 @@
         }
       }
     }
+    .aboutItem2 {
+      h1{
+        color: gray;
+        text-align: center;
+      }
+      h5{
+        color: $textColor1;
+        text-align: center;
+      }
+      .item2Section {
+        padding: 40px 0 70px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .item2Note {
+          padding: 10px;
+          p {
+            color: gray;
+          }
+        }
+        .item2Img {
+          display: flex;
+          img {
+            width: 320px;
+            height: 70vh;
+          }
+          .item2Img1 {
+            position: relative;
+            top: 30px;
+            z-index: 3;
+          }
+          .item2Img2 {
+            position: relative;
+            right: 70px;
+            z-index: 2;
+          }
+          .item2Img3 {
+            display: none;
+          }
+          .item2Img4 {
+            display: none;
+          }
+        }
+        @media only screen and (max-width: 992px) {
+          flex-direction: column-reverse;
+          .item2Img {
+            .item2Img1 {
+              display: none;
+            }
+            .item2Img2 {
+              display: none;
+            }
+            .item2Img3 {
+              display: block;
+              width: 100%;
+              height: 60vh;
+            }
+            @media only screen and (max-width: 556px) {
+              .item2Img3 {
+                display: none;
+              }
+              .item2Img4 {
+                display: block;
+                width: 100%;
+                height: 60vh;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

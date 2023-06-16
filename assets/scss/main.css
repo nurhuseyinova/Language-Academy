@@ -471,6 +471,75 @@ header .headerBottum {
     display: none;
   }
 }
+#aboutUsPage .herroBanner .aboutItem2 h1 {
+  color: gray;
+  text-align: center;
+}
+#aboutUsPage .herroBanner .aboutItem2 h5 {
+  color: #ffb606;
+  text-align: center;
+}
+#aboutUsPage .herroBanner .aboutItem2 .item2Section {
+  padding: 40px 0 70px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#aboutUsPage .herroBanner .aboutItem2 .item2Section .item2Note {
+  padding: 10px;
+}
+#aboutUsPage .herroBanner .aboutItem2 .item2Section .item2Note p {
+  color: gray;
+}
+#aboutUsPage .herroBanner .aboutItem2 .item2Section .item2Img {
+  display: flex;
+}
+#aboutUsPage .herroBanner .aboutItem2 .item2Section .item2Img img {
+  width: 320px;
+  height: 70vh;
+}
+#aboutUsPage .herroBanner .aboutItem2 .item2Section .item2Img .item2Img1 {
+  position: relative;
+  top: 30px;
+  z-index: 3;
+}
+#aboutUsPage .herroBanner .aboutItem2 .item2Section .item2Img .item2Img2 {
+  position: relative;
+  right: 70px;
+  z-index: 2;
+}
+#aboutUsPage .herroBanner .aboutItem2 .item2Section .item2Img .item2Img3 {
+  display: none;
+}
+#aboutUsPage .herroBanner .aboutItem2 .item2Section .item2Img .item2Img4 {
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  #aboutUsPage .herroBanner .aboutItem2 .item2Section {
+    flex-direction: column-reverse;
+  }
+  #aboutUsPage .herroBanner .aboutItem2 .item2Section .item2Img .item2Img1 {
+    display: none;
+  }
+  #aboutUsPage .herroBanner .aboutItem2 .item2Section .item2Img .item2Img2 {
+    display: none;
+  }
+  #aboutUsPage .herroBanner .aboutItem2 .item2Section .item2Img .item2Img3 {
+    display: block;
+    width: 100%;
+    height: 60vh;
+  }
+}
+@media only screen and (max-width: 992px) and (max-width: 556px) {
+  #aboutUsPage .herroBanner .aboutItem2 .item2Section .item2Img .item2Img3 {
+    display: none;
+  }
+  #aboutUsPage .herroBanner .aboutItem2 .item2Section .item2Img .item2Img4 {
+    display: block;
+    width: 100%;
+    height: 60vh;
+  }
+}
 
 #language {
   background-color: #ffb606;
