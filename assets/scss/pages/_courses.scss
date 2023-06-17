@@ -1,0 +1,90 @@
+#courses {
+  .coursesItem1 {
+    background-image: url("../image/library5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 220px 50px;
+    .herroBanner {
+      .item1Note {
+        font-family: "Montserrat", sans-serif;
+        color: $light;
+        text-align: center;
+        h1 {
+          font-size: 50px;
+          font-weight: bold;
+        }
+        div {
+          a {
+            color: $light;
+          }
+        }
+      }
+    }
+  }
+  .coursesItem2 {
+    display: flex;
+    width: 100%;
+
+    .item2Note {
+      width: 50%;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .note {
+      h4 {
+        font-size: 40px;
+      }
+      p {
+        color: gray;
+        font-size: 20px;
+      }
+      a {
+        font-family: "Montserrat", sans-serif;
+        background: $mainColor;
+        color: $light;
+        padding: 10px 30px;
+        border: none;
+        position: relative;
+        cursor: pointer;
+        transition: 400ms linear all;
+        outline: none;
+        &:hover {
+          background: transparent;
+          color: $mainColor;
+        }
+        &:before,
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 2px;
+          width: 0;
+          background: $mainColor;
+          transition: 400ms linear all;
+        }
+        &:after {
+          right: inherit;
+          top: inherit;
+          left: 0;
+          bottom: 0;
+        }
+        &:hover:before,
+        &:hover:after {
+          width: 100%;
+          transition: 400ms linear all;
+        }
+      }
+    }
+    .item2Img {
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1621,6 +1621,86 @@ header .headerBottum {
   color: #ffb606;
 }
 
+#courses .coursesItem1 {
+  background-image: url("../image/library5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 220px 50px;
+}
+#courses .coursesItem1 .herroBanner .item1Note {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+#courses .coursesItem1 .herroBanner .item1Note h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+#courses .coursesItem1 .herroBanner .item1Note div a {
+  color: #ffffff;
+}
+#courses .coursesItem2 {
+  display: flex;
+  width: 100%;
+}
+#courses .coursesItem2 .item2Note {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#courses .coursesItem2 .note h4 {
+  font-size: 40px;
+}
+#courses .coursesItem2 .note p {
+  color: gray;
+  font-size: 20px;
+}
+#courses .coursesItem2 .note a {
+  font-family: "Montserrat", sans-serif;
+  background: #ffb606;
+  color: #ffffff;
+  padding: 10px 30px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition: 400ms linear all;
+  outline: none;
+}
+#courses .coursesItem2 .note a:hover {
+  background: transparent;
+  color: #ffb606;
+}
+#courses .coursesItem2 .note a:before, #courses .coursesItem2 .note a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #ffb606;
+  transition: 400ms linear all;
+}
+#courses .coursesItem2 .note a:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+#courses .coursesItem2 .note a:hover:before, #courses .coursesItem2 .note a:hover:after {
+  width: 100%;
+  transition: 400ms linear all;
+}
+#courses .coursesItem2 .item2Img {
+  width: 50%;
+}
+#courses .coursesItem2 .item2Img img {
+  width: 100%;
+}
+
 #contact {
   background-image: url("../image/book3.jpg");
   background-position: center;
