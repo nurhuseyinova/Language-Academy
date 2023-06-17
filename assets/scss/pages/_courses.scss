@@ -4,7 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 220px 50px;
+    padding: 220px 0;
     .herroBanner {
       .item1Note {
         font-family: "Montserrat", sans-serif;
@@ -13,6 +13,9 @@
         h1 {
           font-size: 50px;
           font-weight: bold;
+          @media only screen and (max-width: 556px) {
+            font-size: 40px;
+          }
         }
         div {
           a {
@@ -85,6 +88,24 @@
       img {
         width: 100%;
       }
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    .coursesItem2 {
+      flex-direction: column;
+      .item2Note {
+        width: 100%;
+        padding: 100px 30px;
+      }
+      .item2Img {
+        width: 100%;
+      }
+    }
+    .coursesSection2 {
+      flex-direction: column-reverse;
+    }
+    .coursesSection4 {
+      flex-direction: column-reverse;
     }
   }
 }
