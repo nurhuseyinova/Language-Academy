@@ -1657,14 +1657,14 @@ header .headerBottum {
   justify-content: center;
   flex-direction: column;
 }
-#courses .coursesItem2 .note h4 {
+#courses .coursesItem2 .item2Note .note h4 {
   font-size: 40px;
 }
-#courses .coursesItem2 .note p {
+#courses .coursesItem2 .item2Note .note p {
   color: gray;
   font-size: 20px;
 }
-#courses .coursesItem2 .note a {
+#courses .coursesItem2 .item2Note .note a {
   font-family: "Montserrat", sans-serif;
   background: #ffb606;
   color: #ffffff;
@@ -1675,11 +1675,11 @@ header .headerBottum {
   transition: 400ms linear all;
   outline: none;
 }
-#courses .coursesItem2 .note a:hover {
+#courses .coursesItem2 .item2Note .note a:hover {
   background: transparent;
   color: #ffb606;
 }
-#courses .coursesItem2 .note a:before, #courses .coursesItem2 .note a:after {
+#courses .coursesItem2 .item2Note .note a:before, #courses .coursesItem2 .item2Note .note a:after {
   content: "";
   position: absolute;
   top: 0;
@@ -1689,13 +1689,13 @@ header .headerBottum {
   background: #ffb606;
   transition: 400ms linear all;
 }
-#courses .coursesItem2 .note a:after {
+#courses .coursesItem2 .item2Note .note a:after {
   right: inherit;
   top: inherit;
   left: 0;
   bottom: 0;
 }
-#courses .coursesItem2 .note a:hover:before, #courses .coursesItem2 .note a:hover:after {
+#courses .coursesItem2 .item2Note .note a:hover:before, #courses .coursesItem2 .item2Note .note a:hover:after {
   width: 100%;
   transition: 400ms linear all;
 }
@@ -1722,6 +1722,62 @@ header .headerBottum {
   #courses .coursesSection4 {
     flex-direction: column-reverse;
   }
+}
+
+.coursesItem3 {
+  padding: 50px 0;
+}
+.coursesItem3 .herroBanner h1 {
+  color: #ffb606;
+  text-align: center;
+  font-size: 40px;
+}
+.coursesItem3 .herroBanner p {
+  color: gray;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.coursesItem3 .herroBanner .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --bs-gutter-x: 0rem;
+}
+.coursesItem3 .herroBanner .row .col {
+  width: 350px;
+  padding: 10px;
+}
+.coursesItem3 .herroBanner .row .col .achievmentCard {
+  height: 350px;
+  border-radius: 20px;
+  border: 1px solid gray;
+  position: relative;
+}
+.coursesItem3 .herroBanner .row .col .achievmentCard .logo {
+  color: white;
+  background-color: #000000;
+  padding: 7px 10px;
+  width: 45px;
+  font-family: "Dancing Script", cursive;
+  rotate: 90deg;
+  position: absolute;
+  left: 270px;
+  bottom: 280px;
+  z-index: 6;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.coursesItem3 .herroBanner .row .col .achievmentCard img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  z-index: 4;
+}
+.coursesItem3 .herroBanner .row .col .achievmentCard .cardNote {
+  position: absolute;
+  padding: 10px 20px 0px;
+  bottom: 5px;
 }
 
 #contact {

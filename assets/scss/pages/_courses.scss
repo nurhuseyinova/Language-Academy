@@ -36,50 +36,50 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-    }
-    .note {
-      h4 {
-        font-size: 40px;
-      }
-      p {
-        color: gray;
-        font-size: 20px;
-      }
-      a {
-        font-family: "Montserrat", sans-serif;
-        background: $mainColor;
-        color: $light;
-        padding: 10px 30px;
-        border: none;
-        position: relative;
-        cursor: pointer;
-        transition: 400ms linear all;
-        outline: none;
-        &:hover {
-          background: transparent;
-          color: $mainColor;
+      .note {
+        h4 {
+          font-size: 40px;
         }
-        &:before,
-        &:after {
-          content: "";
-          position: absolute;
-          top: 0;
-          right: 0;
-          height: 2px;
-          width: 0;
+        p {
+          color: gray;
+          font-size: 20px;
+        }
+        a {
+          font-family: "Montserrat", sans-serif;
           background: $mainColor;
+          color: $light;
+          padding: 10px 30px;
+          border: none;
+          position: relative;
+          cursor: pointer;
           transition: 400ms linear all;
-        }
-        &:after {
-          right: inherit;
-          top: inherit;
-          left: 0;
-          bottom: 0;
-        }
-        &:hover:before,
-        &:hover:after {
-          width: 100%;
-          transition: 400ms linear all;
+          outline: none;
+          &:hover {
+            background: transparent;
+            color: $mainColor;
+          }
+          &:before,
+          &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 2px;
+            width: 0;
+            background: $mainColor;
+            transition: 400ms linear all;
+          }
+          &:after {
+            right: inherit;
+            top: inherit;
+            left: 0;
+            bottom: 0;
+          }
+          &:hover:before,
+          &:hover:after {
+            width: 100%;
+            transition: 400ms linear all;
+          }
         }
       }
     }
@@ -106,6 +106,64 @@
     }
     .coursesSection4 {
       flex-direction: column-reverse;
+    }
+  }
+}
+
+.coursesItem3 {
+  padding: 50px 0;
+  .herroBanner {
+    h1 {
+      color: $textColor1;
+      text-align: center;
+      font-size: 40px;
+    }
+    p {
+      color: gray;
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      --bs-gutter-x: 0rem;
+      .col {
+        width: 350px;
+        padding: 10px;
+        .achievmentCard {
+          height: 350px;
+          border-radius: 20px;
+          border: 1px solid gray;
+          position: relative;
+          .logo {
+            color: white;
+            background-color: $dark;
+            padding: 7px 10px;
+            width: 45px;
+            font-family: "Dancing Script", cursive;
+            rotate: (90deg);
+            position: absolute;
+            left: 270px;
+            bottom: 280px;
+            z-index: 6;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            z-index: 4;
+          }
+          .cardNote {
+            position: absolute;
+            padding: 10px 20px 0px;
+            bottom: 5px;
+          }
+        }
+      }
     }
   }
 }
