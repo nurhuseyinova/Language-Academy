@@ -106,7 +106,7 @@
     </header>
 
     <div class="signUp">
-      <form action="" id="signInForm">
+      <form action="" id="signUpForm">
         <h1>Sign Up</h1>
         <div>
           <label for="signUsername">Username</label><br />
@@ -129,13 +129,16 @@
         <div>
           <label for="signPassword">Password</label><br />
           <input
+          minlength="8"
+          maxlength="15"
             id="signPassword"
             type="password"
             placeholder="Enter Password..."
           />
         </div>
         <br />
-        <button type="signUp">Sign up</button>
+        <button type="submit" id="signUp" disabled>Sign up</button>
+      <p>Do you already have an account? <a href="./login.html">Login</a></p>
       </form>
     </div>
 
@@ -246,6 +249,7 @@
       integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/js/signup.js"></script>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>
