@@ -25,19 +25,19 @@
     .newsItem2 {
       width: 50%;
       h2 {
-        color: gray;
+        color: black;
       }
       .accordion {
         height: 100%;
         h5 {
-          color: $textColor1;
+          color:white;
         }
         p {
           color: gray;
           font-size: 20px;
         }
         .accordion-button {
-          background-color: $lightGray;
+          background-color: rgb(80, 76, 76);
         }
       }
     }

@@ -34,9 +34,8 @@ header {
             background-color: $textColor1;
             border-radius: 0px;
             border: 1px solid $light;
-            .dropdown-item{
+            .dropdown-item {
               background-color: $textColor1;
-
             }
           }
 
@@ -51,8 +50,6 @@ header {
                 border-color: $dark;
                 color: $dark;
               }
-              
-
             }
           }
           @media only screen and (max-width: 992px) {
@@ -67,7 +64,7 @@ header {
             display: block;
           }
         }
-        .darkmode {
+        .darkModeSignLogin {
           @include display;
           gap: 20px;
           font-size: 20px;
@@ -75,7 +72,29 @@ header {
             color: rgb(248, 170, 24);
           }
           .fa-moon {
+            display:none;
             color: rgb(58, 58, 138);
+          }
+          .loginSignup {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 0;
+            color:$light;
+            p{
+              font-size: 35px;
+            }
+            a {
+              text-align: center;
+              border:2px solid black;
+              padding: 5px 0;
+              width: 80px;
+              height:50px;
+              color: $light;
+              &:hover {
+                color: $dark;
+              }
+            }
           }
           @media only screen and (max-width: 992px) {
             display: none;
@@ -127,16 +146,40 @@ header {
                 }
               }
             }
-            .darkmode {
-              @include display;
-              justify-content: start;
+            .darkModeSignLogin {
+              display:flex;
+              // @include display;
+              // justify-content: start;
+              flex-direction: column;
               gap: 20px;
               font-size: 20px;
               .fa-sun {
                 color: rgb(248, 170, 24);
               }
               .fa-moon {
+                display: none;
                 color: rgb(58, 58, 138);
+              }
+              .loginSignup {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 0;
+                color:$dark;
+                p{
+                  font-size: 35px;
+                }
+                a {
+                  text-align: center;
+                  border:2px solid black;
+                  padding: 5px 0;
+                  width: 80px;
+                  height:50px;
+                  color: $dark;
+                  &:hover {
+                    color: $textColor1;
+                  }
+                }
               }
             }
           }

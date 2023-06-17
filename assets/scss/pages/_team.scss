@@ -36,19 +36,10 @@
             transition: all 0.5s linear;
             img {
               border: 2px solid white;
-              position: relative;
               margin-top: -120px;
               width: 150px;
               height: 150px;
               border-radius: 50%;
-            }
-            i {
-              position: absolute;
-              margin-top: -10px;
-              margin-left: -27%;
-              font-size: 35px;
-              color: $mainColor;
-              z-index: -1;
             }
           }
           .itemNote {
