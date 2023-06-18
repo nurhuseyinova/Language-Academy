@@ -2,7 +2,7 @@
   "teachers": [
     {
       "id": "ww",
-      "photo": "./assets/image/teachers11.jpg",
+      "photo": "../assets/image/teachers11.jpg",
       "firstName": "Nadya",
       "lastName": "Huseyinova",
       "email": "nadya@gmail.com",
@@ -12,7 +12,7 @@
     },
     {
       "id": "jjff",
-      "photo": "./assets/image/teachers17.jpg",
+      "photo": "../assets/image/teachers17.jpg",
       "firstName": "Jony",
       "lastName": "Delphi",
       "email": "jony@gmail.com",
@@ -31,7 +31,7 @@
       "experience": "14"
     },
     {
-      "photo": "./assets/image/teachers18.jpg ",
+      "photo": "../assets/image/teachers18.jpg ",
       "firstName": "Hayes",
       "lastName": "Skinner",
       "email": "mesah@mailinator.com",
@@ -43,7 +43,7 @@
   ],
   "achievements": [
     {
-      "photo": "./assets/image/teachers10.jpg ",
+      "photo": "../assets/image/teachers10.jpg ",
       "firstName": "Whoopi",
       "lastName": "Bradshaw",
       "result": "9",
@@ -51,7 +51,7 @@
       "id": 1
     },
     {
-      "photo": "./assets/image/teachers16.jpg ",
+      "photo": "../assets/image/teachers16.jpg ",
       "firstName": "Amir",
       "lastName": "Graves",
       "result": "9",
@@ -59,7 +59,7 @@
       "id": 2
     },
     {
-      "photo": "./assets/image/teacher7.jpg ",
+      "photo": "../assets/image/teacher7.jpg ",
       "firstName": "Carla",
       "lastName": "Sweet",
       "result": "7",
@@ -67,7 +67,7 @@
       "id": 3
     },
     {
-      "photo": "./assets/image/teachers12.jpg ",
+      "photo": "../assets/image/teachers12.jpg ",
       "firstName": "Ashton",
       "lastName": "Daniel",
       "result": "9",
@@ -75,7 +75,7 @@
       "id": 5
     },
     {
-      "photo": "./assets/image/teachers15.jpg ",
+      "photo": "../assets/image/teachers15.jpg ",
       "firstName": "Baker",
       "lastName": "Davidson",
       "result": "7",
@@ -83,7 +83,7 @@
       "id": 6
     },
     {
-      "photo": "./assets/image/academy-new-7.jpg ",
+      "photo": "../assets/image/academy-new-7.jpg ",
       "firstName": "Kamal",
       "lastName": "Blevins",
       "result": "8",
@@ -91,7 +91,7 @@
       "id": 7
     },
     {
-      "photo": "./assets/image/teachers13.jpg ",
+      "photo": "../assets/image/teachers13.jpg ",
       "firstName": "Nasim",
       "lastName": "Dodson",
       "result": "10",

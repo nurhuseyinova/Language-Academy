@@ -46,7 +46,7 @@ async function deleteAchieveBtn(id, btn) {
 achievementsForm.addEventListener("submit", async function (e) {
   e.preventDefault();
   let obj = {
-    photo: `./assets/image/${achievementsPhoto.value.split("\\")[2]} `,
+    photo: `../assets/image/${achievementsPhoto.value.split("\\")[2]} `,
     firstName: achievementsFirstName.value,
     lastName: achievementsLastName.value,
     result: achievementsResult.value,

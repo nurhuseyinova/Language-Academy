@@ -2604,9 +2604,6 @@ header .headerBottum {
 #admin .row .info #message {
   display: none;
 }
-#admin .row .info #achievements {
-  display: none;
-}
 
 footer {
   background-color: black;
