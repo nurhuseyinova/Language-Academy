@@ -1753,10 +1753,12 @@ header .headerBottum {
   border-radius: 20px;
   border: 1px solid gray;
   position: relative;
+  transition: all 0.5s linear;
+  overflow: hidden;
 }
 .coursesItem3 .herroBanner .row .col .achievmentCard .logo {
   color: white;
-  background-color: #000000;
+  background-color: #ffb606;
   padding: 7px 10px;
   width: 45px;
   font-family: "Dancing Script", cursive;
@@ -1773,11 +1775,24 @@ header .headerBottum {
   height: 100%;
   border-radius: 20px;
   z-index: 4;
+  transition: all 0.5s linear;
 }
 .coursesItem3 .herroBanner .row .col .achievmentCard .cardNote {
   position: absolute;
   padding: 10px 20px 0px;
   bottom: 5px;
+  color: #ffffff;
+}
+.coursesItem3 .herroBanner .row .col .achievmentCard .cardNote .note {
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 2px 5px;
+}
+.coursesItem3 .herroBanner .row .col .achievmentCard .cardNote .note1 {
+  background-color: #ffb606;
+}
+.coursesItem3 .herroBanner .row .col .achievmentCard:hover img {
+  transform: scale(1.2);
 }
 
 #contact {

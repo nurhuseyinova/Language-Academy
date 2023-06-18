@@ -137,9 +137,11 @@
           border-radius: 20px;
           border: 1px solid gray;
           position: relative;
+          transition: all 0.5s linear;
+          overflow: hidden;
           .logo {
             color: white;
-            background-color: $dark;
+            background-color: $textColor1;
             padding: 7px 10px;
             width: 45px;
             font-family: "Dancing Script", cursive;
@@ -156,11 +158,26 @@
             height: 100%;
             border-radius: 20px;
             z-index: 4;
+            transition: all 0.5s linear;
           }
           .cardNote {
             position: absolute;
             padding: 10px 20px 0px;
             bottom: 5px;
+            color: $light;
+            .note {
+              border-top-right-radius: 10px;
+              border-bottom-left-radius: 10px;
+              padding: 2px 5px;
+            }
+            .note1 {
+              background-color: $textColor1;
+            }
+          }
+          &:hover {
+            img {
+              transform: scale(1.2);
+            }
           }
         }
       }

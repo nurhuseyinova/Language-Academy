@@ -81,6 +81,22 @@
       "result": "7",
       "subject": "Russian",
       "id": 6
+    },
+    {
+      "photo": "./assets/image/academy-new-7.jpg ",
+      "firstName": "Kamal",
+      "lastName": "Blevins",
+      "result": "8",
+      "subject": "German",
+      "id": 7
+    },
+    {
+      "photo": "./assets/image/teachers13.jpg ",
+      "firstName": "Nasim",
+      "lastName": "Dodson",
+      "result": "10",
+      "subject": "German",
+      "id": 8
     }
   ]
 }
