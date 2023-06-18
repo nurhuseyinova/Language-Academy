@@ -119,8 +119,8 @@
   }
   .teamItem2 {
     padding: 50px 0;
-    background-color: $light;
-    .teamItem2Note {
+    background-color: $lightGray;
+    .teamItem2Note {     
       text-align: center;
       h1 {
         color: $mainColor;
@@ -139,9 +139,8 @@
       justify-content: center;
       .col {
         .item {
-          background-color: #f3f3f3;
+          background-color:$light;
           padding: 30px 20px;
-          border: 1px solid $mainColor;
           text-align: center;
           .itemImg {
             position: relative;
@@ -154,20 +153,12 @@
               height: 150px;
               border-radius: 50%;
             }
-            i {
-              position: absolute;
-              margin-top: -5px;
-              margin-left: -27%;
-              font-size: 35px;
-              color: $mainColor;
-              z-index: -1;
-            }
           }
           .itemNote {
-            color: $mainColor;
+            color: gray;
             font-family: "Montserrat", sans-serif;
             h3 {
-              color: $light;
+              color: $dark;
             }
             a {
               color: $mainColor;
@@ -189,8 +180,8 @@
           h3 {
             color: $textColor1;
           }
-          p {
-            color: $light;
+          h5 {
+            color: $textColor1;
           }
           .itemImg {
             i {

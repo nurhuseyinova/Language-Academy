@@ -15,7 +15,7 @@ async function getAchieveData() {
           <div class="cardNote">
               <h5 class="note">Result:${graduate.result}</h5>
               <h6 class="note d-flex">Language: ${graduate.subject}</h5>
-              <h5 class="note note1">${graduate.lastName} ${graduate.lastName}</h6>
+              <h5 class="note note1">${graduate.firstName} ${graduate.lastName}</h6>
 
           </div> 
       </div>

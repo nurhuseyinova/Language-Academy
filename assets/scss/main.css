@@ -1180,7 +1180,7 @@ header .headerBottum {
 }
 .teamPage .teamItem2 {
   padding: 50px 0;
-  background-color: #ffffff;
+  background-color: #f3f3f3;
 }
 .teamPage .teamItem2 .teamItem2Note {
   text-align: center;
@@ -1202,9 +1202,8 @@ header .headerBottum {
   justify-content: center;
 }
 .teamPage .teamItem2 .row .col .item {
-  background-color: #f3f3f3;
+  background-color: #ffffff;
   padding: 30px 20px;
-  border: 1px solid #ffb606;
   text-align: center;
 }
 .teamPage .teamItem2 .row .col .item .itemImg {
@@ -1219,20 +1218,12 @@ header .headerBottum {
   height: 150px;
   border-radius: 50%;
 }
-.teamPage .teamItem2 .row .col .item .itemImg i {
-  position: absolute;
-  margin-top: -5px;
-  margin-left: -27%;
-  font-size: 35px;
-  color: #ffb606;
-  z-index: -1;
-}
 .teamPage .teamItem2 .row .col .item .itemNote {
-  color: #ffb606;
+  color: gray;
   font-family: "Montserrat", sans-serif;
 }
 .teamPage .teamItem2 .row .col .item .itemNote h3 {
-  color: #ffffff;
+  color: #000000;
 }
 .teamPage .teamItem2 .row .col .item .itemNote a {
   color: #ffb606;
@@ -1251,8 +1242,8 @@ header .headerBottum {
 .teamPage .teamItem2 .row .col:hover h3 {
   color: #ffb606;
 }
-.teamPage .teamItem2 .row .col:hover p {
-  color: #ffffff;
+.teamPage .teamItem2 .row .col:hover h5 {
+  color: #ffb606;
 }
 .teamPage .teamItem2 .row .col:hover .itemImg i {
   z-index: 1;
