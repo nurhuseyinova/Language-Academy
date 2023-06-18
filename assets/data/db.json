@@ -33,28 +33,44 @@
   ],
   "achievements": [
     {
-      "id": "wwvvvqq",
-      "photo": "./assets/image/teachers11.jpg",
-      "firstName": "Nadya",
-      "lastName": "Huseyinova",
+      "photo": "./assets/image/teachers10.jpg ",
+      "firstName": "Whoopi",
+      "lastName": "Bradshaw",
+      "result": "9",
       "subject": "French",
-      "result": "9"
+      "id": 1
     },
     {
-      "id": "wwaaqq",
-      "photo": "./assets/image/teachers11.jpg",
-      "firstName": "Nadya",
-      "lastName": "Huseyinova",
-      "subject": "French",
-      "result": "9"
+      "photo": "./assets/image/teachers16.jpg ",
+      "firstName": "Amir",
+      "lastName": "Graves",
+      "result": "9",
+      "subject": "German",
+      "id": 2
     },
     {
-      "id": "wwllq",
-      "photo": "./assets/image/teachers11.jpg",
-      "firstName": "Nadya",
-      "lastName": "Huseyinova",
-      "subject": "French",
-      "result": "9"
+      "photo": "./assets/image/teacher7.jpg ",
+      "firstName": "Carla",
+      "lastName": "Sweet",
+      "result": "7",
+      "subject": "German",
+      "id": 3
+    },
+    {
+      "photo": "./assets/image/teacher7.jpg ",
+      "firstName": "Olympia",
+      "lastName": "Guerra",
+      "result": "10",
+      "subject": "English",
+      "id": 4
+    },
+    {
+      "photo": "./assets/image/teachers20.jpg ",
+      "firstName": "Ashton",
+      "lastName": "Daniel",
+      "result": "9",
+      "subject": "English",
+      "id": 5
     }
   ]
 }

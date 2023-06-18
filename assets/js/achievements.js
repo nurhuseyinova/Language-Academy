@@ -22,7 +22,7 @@ async function getAchievementsData() {
                 <tr>
                   <td><img src="${student.photo}" alt="" /></td>
                   <td>${student.firstName} ${student.lastName}</td>
-                  <td>${student.subject} student</td>
+                  <td>${student.subject} language</td>
                   <td>${student.result}</td>
                  <td>
                     <button class="delete" onclick=deleteAchieveBtn("${student.id}") >
@@ -42,3 +42,27 @@ async function deleteAchieveBtn(id, btn) {
   await axios.delete(`${ACHIEVEMENTS_URL}/${id}`);
   btn.closest("tr").remove();
 }
+
+achievementsForm.addEventListener("submit", async function (e) {
+  e.preventDefault();
+  let obj = {
+    photo: `./assets/image/${achievementsPhoto.value.split("\\")[2]} `,
+    firstName: achievementsFirstName.value,
+    lastName: achievementsLastName.value,
+    result: achievementsResult.value,
+    subject: achievementsSubject.value,
+  };
+  if (
+    achievementsFirstName.value &&
+    achievementsLastName.value &&
+    achievementsResult.value &&
+    achievementsSubject.value &&
+    achievementsPhoto.value
+  ) {
+    await axios.post(`${ACHIEVEMENTS_URL}`, obj);
+    getAchievementsData();
+    console.log(obj);
+  } else {
+    alert("The form is not completed!");
+  }
+});
