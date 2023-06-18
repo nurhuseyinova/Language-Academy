@@ -59,7 +59,7 @@
     background-size: cover;
     .item1 {
       background-color: rgba(233, 193, 156, 0.384);
-      padding: 200px 50px;
+      padding: 240px 50px;
       .herroBanner {
         .item1Note {
           font-family: "Montserrat", sans-serif;
@@ -80,6 +80,7 @@
     }
   }
   .blogItem2 {
+    overflow:hidden;
     @include display;
     justify-content: center;
     width: 100%;

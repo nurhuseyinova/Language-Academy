@@ -15,7 +15,7 @@ async function getTeacherData() {
       </div>
       <div class="itemNote">
         <h3>${teacher.firstName} ${teacher.lastName}</h3>
-        <h5>${teacher.subject}</h5>
+        <h5>${teacher.subject} teacher</h5>
         <p>
         ${teacher.information.slice(0,50)}...
         </p>

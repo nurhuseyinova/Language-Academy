@@ -260,6 +260,7 @@ header .headerBottum {
   background-color: #ffffff;
 }
 #about .herroBanner {
+  overflow: hidden;
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -378,6 +379,9 @@ header .headerBottum {
 }
 #aboutUsPage .aboutHead .aboutHeadSection .item1Note div a {
   color: #ffffff;
+}
+#aboutUsPage .herroBanner {
+  overflow: hidden;
 }
 #aboutUsPage .herroBanner .aboutItem1 {
   padding: 50px 0;
@@ -1098,6 +1102,7 @@ header .headerBottum {
 }
 #teacher .herroBanner .row .col {
   padding: 0 10px;
+  transition: all 0.3s linear;
 }
 #teacher .herroBanner .row .col .item {
   background-color: white;
@@ -1122,7 +1127,7 @@ header .headerBottum {
   font-family: "Montserrat", sans-serif;
 }
 #teacher .herroBanner .row .col .item .itemNote h3 {
-  font-weight: 600;
+  font-weight: 500;
 }
 #teacher .herroBanner .row .col .item .itemNote h5 {
   color: gray;
@@ -1143,6 +1148,9 @@ header .headerBottum {
 #teacher .herroBanner .row .col .item .itemNote a:hover {
   color: #ffb606;
   background-color: transparent;
+}
+#teacher .herroBanner .row .col:hover {
+  transform: translateY(-10px);
 }
 #teacher .herroBanner .row .col:hover h3,
 #teacher .herroBanner .row .col:hover p {
@@ -1412,7 +1420,7 @@ header .headerBottum {
 }
 #blogPage .blogItem .item1 {
   background-color: rgba(233, 193, 156, 0.384);
-  padding: 200px 50px;
+  padding: 240px 50px;
 }
 #blogPage .blogItem .item1 .herroBanner .item1Note {
   font-family: "Montserrat", sans-serif;
@@ -1428,6 +1436,7 @@ header .headerBottum {
   color: #ffffff;
 }
 #blogPage .blogItem2 {
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1637,10 +1646,14 @@ header .headerBottum {
   color: #ffffff;
 }
 #courses .coursesItem2 {
-  display: flex;
   width: 100%;
 }
-#courses .coursesItem2 .item2Note {
+#courses .coursesItem2 .coursesSection {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+}
+#courses .coursesItem2 .coursesSection .item2Note {
   width: 50%;
   padding: 30px;
   display: flex;
@@ -1648,14 +1661,14 @@ header .headerBottum {
   justify-content: center;
   flex-direction: column;
 }
-#courses .coursesItem2 .item2Note .note h4 {
+#courses .coursesItem2 .coursesSection .item2Note .note h4 {
   font-size: 40px;
 }
-#courses .coursesItem2 .item2Note .note p {
+#courses .coursesItem2 .coursesSection .item2Note .note p {
   color: gray;
   font-size: 20px;
 }
-#courses .coursesItem2 .item2Note .note a {
+#courses .coursesItem2 .coursesSection .item2Note .note button {
   font-family: "Montserrat", sans-serif;
   background: #ffb606;
   color: #ffffff;
@@ -1666,11 +1679,11 @@ header .headerBottum {
   transition: 400ms linear all;
   outline: none;
 }
-#courses .coursesItem2 .item2Note .note a:hover {
+#courses .coursesItem2 .coursesSection .item2Note .note button:hover {
   background: transparent;
   color: #ffb606;
 }
-#courses .coursesItem2 .item2Note .note a:before, #courses .coursesItem2 .item2Note .note a:after {
+#courses .coursesItem2 .coursesSection .item2Note .note button:before, #courses .coursesItem2 .coursesSection .item2Note .note button:after {
   content: "";
   position: absolute;
   top: 0;
@@ -1680,37 +1693,37 @@ header .headerBottum {
   background: #ffb606;
   transition: 400ms linear all;
 }
-#courses .coursesItem2 .item2Note .note a:after {
+#courses .coursesItem2 .coursesSection .item2Note .note button:after {
   right: inherit;
   top: inherit;
   left: 0;
   bottom: 0;
 }
-#courses .coursesItem2 .item2Note .note a:hover:before, #courses .coursesItem2 .item2Note .note a:hover:after {
+#courses .coursesItem2 .coursesSection .item2Note .note button:hover:before, #courses .coursesItem2 .coursesSection .item2Note .note button:hover:after {
   width: 100%;
   transition: 400ms linear all;
 }
-#courses .coursesItem2 .item2Img {
+#courses .coursesItem2 .coursesSection .item2Img {
   width: 50%;
 }
-#courses .coursesItem2 .item2Img img {
+#courses .coursesItem2 .coursesSection .item2Img img {
   width: 100%;
 }
 @media only screen and (max-width: 992px) {
-  #courses .coursesItem2 {
+  #courses .coursesItem2 .coursesSection {
     flex-direction: column;
   }
-  #courses .coursesItem2 .item2Note {
+  #courses .coursesItem2 .coursesSection .item2Note {
     width: 100%;
     padding: 100px 30px;
   }
-  #courses .coursesItem2 .item2Img {
+  #courses .coursesItem2 .coursesSection .item2Img {
     width: 100%;
   }
-  #courses .coursesSection2 {
+  #courses .coursesItem2 .coursesSection2 {
     flex-direction: column-reverse;
   }
-  #courses .coursesSection4 {
+  #courses .coursesItem2 .coursesSection4 {
     flex-direction: column-reverse;
   }
 }
@@ -1784,6 +1797,166 @@ header .headerBottum {
 }
 .coursesItem3 .herroBanner .row .col .achievmentCard:hover img {
   transform: scale(1.2);
+}
+
+.formItem {
+  padding-top: 50px;
+}
+.formItem .herroBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+}
+.formItem .herroBanner form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
+}
+.formItem .herroBanner form .formTags {
+  width: 500px;
+  padding: 10px;
+  margin-top: 1px;
+  border: 1px solid #000000;
+  background-color: #000000;
+  color: #ffb606;
+  outline: #f4f5f9;
+}
+.formItem .herroBanner form .formTags::-moz-placeholder {
+  color: #ffb606;
+}
+.formItem .herroBanner form .formTags::placeholder {
+  color: #ffb606;
+}
+@media only screen and (max-width: 767px) {
+  .formItem .herroBanner form .formTags {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 556px) {
+  .formItem .herroBanner form .formTags {
+    width: 250px;
+  }
+}
+.formItem .herroBanner form .fullName {
+  display: flex;
+  -moz-column-gap: 1px;
+       column-gap: 1px;
+  width: 500px;
+}
+.formItem .herroBanner form .fullName input {
+  text-transform: capitalize;
+  width: 250px;
+}
+@media only screen and (max-width: 767px) {
+  .formItem .herroBanner form .fullName {
+    flex-direction: column;
+    width: 400px;
+  }
+  .formItem .herroBanner form .fullName input {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 556px) {
+  .formItem .herroBanner form .fullName {
+    width: 250px;
+  }
+  .formItem .herroBanner form .fullName input {
+    width: 250px;
+  }
+}
+.formItem .herroBanner form input::file-selector-button {
+  background-color: #ffb606;
+  color: #000000;
+}
+.formItem .herroBanner form textarea {
+  height: 20vh;
+}
+.formItem .herroBanner form .submit {
+  background: #ffb606 !important;
+  padding: 10px 0px;
+  transition: 500ms linear all;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+  display: inline-block;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  transform: translate3d(0, 0, 0);
+}
+.formItem .herroBanner form .submit:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  height: 150%;
+  background: #0d1128;
+  pointer-events: none;
+  transform: translate3d(0, 45px, 0);
+  transition: all 0.3s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.formItem .herroBanner form .submit i {
+  font-style: normal;
+  line-height: 4.5rem;
+  display: inline-block;
+  height: 100%;
+  padding-left: 1px;
+  padding-right: 1px;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.formItem .herroBanner form .submit i:hover {
+  transform: translate3d(0, -6px, 0);
+}
+.formItem .herroBanner form .submit:hover {
+  color: #ffffff;
+}
+.formItem .herroBanner form .submit:hover:after {
+  transform: translate3d(0, 0, 0);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Modal Content */
+}
+.modal .modal-content {
+  background-color: rgba(241, 159, 6, 0.692);
+  margin: auto;
+  padding: 40px;
+  border: 1px solid #888;
+  width: 80%;
+  /* The Close Button */
+}
+.modal .modal-content h2 {
+  color: white;
+}
+.modal .modal-content .close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.modal .modal-content .close:hover, .modal .modal-content .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 #contact {
