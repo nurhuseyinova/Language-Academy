@@ -2288,6 +2288,7 @@ header .headerBottum {
   border: 1px solid #ffb606;
   background-color: #ffb606;
   color: #0d1128;
+  outline: #f4f5f9;
 }
 #admin .row .info .formItem .herroBanner form .formTags::-moz-placeholder {
   color: #0d1128;

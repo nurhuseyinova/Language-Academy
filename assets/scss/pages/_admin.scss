@@ -148,6 +148,7 @@
               border: 1px solid $textColor1;
               background-color: $mainColor;
               color: $textColor2;
+              outline:#f4f5f9;
               &::placeholder {
                 color: $textColor2;
               }
