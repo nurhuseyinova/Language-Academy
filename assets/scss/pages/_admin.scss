@@ -83,7 +83,7 @@
         }
       }
       h1 {
-        color: $textColor2;
+        color: $textColor1;
         text-align: center;
         padding: 40px 0;
       }
@@ -94,9 +94,9 @@
           tr {
             th {
               color: $light;
-              background-color: $mainColor;
+              background-color: $dark;
               text-align: center;
-              border: 1px solid $light;
+              border: 1px solid rgb(39, 37, 37);
               padding: 10px;
               font-weight: 600;
             }
@@ -105,13 +105,13 @@
         tbody {
           tr {
             td {
-              background-color: $colorOrange;
+              background-color: rgb(29, 28, 28);
               text-align: center;
-              border: 1px solid $light;
+              border: 1px solid rgb(39, 37, 37);
               color: white;
               padding: 10px;
               img {
-                width: 60px;
+                width: 80px;
                 height: 60px;
               }
 
@@ -124,7 +124,7 @@
                 color: red;
               }
               .edit {
-                color: rgb(12, 12, 104);
+                color: blue;
               }
             }
           }
@@ -145,12 +145,12 @@
               width: 500px;
               padding: 10px;
               margin-top: 1px;
-              border: 1px solid $textColor1;
-              background-color: $mainColor;
-              color: $textColor2;
-              outline:#f4f5f9;
+              border: 1px solid $dark;
+              background-color: $dark;
+              color: $textColor1;
+              outline: #f4f5f9;
               &::placeholder {
-                color: $textColor2;
+                color: $textColor1;
               }
             }
             .fullName {
@@ -177,53 +177,63 @@
             }
 
             select {
-              color: $textColor2;
+              color: $textColor1;
               option {
-                color: $textColor2;
+                color: $textColor1;
               }
             }
             input::file-selector-button {
-              background-color: $darkBlue;
-              color: $textColor1;
+              background-color: $textColor1;
+              color: $dark;
             }
             textarea {
               height: 20vh;
             }
             .submit {
-              font-family: "Montserrat", sans-serif;
-              background: $textColor2 !important;
-              color: $textColor1;
-              padding: 10px 30px;
-              border: none;
-              position: relative;
-              cursor: pointer;
-              transition: 400ms linear all;
+              background: $textColor1 !important;
+              padding: 10px 0px;
+              transition: 500ms linear all;
               outline: none;
-              &:hover {
-                background: $textColor1 !important;
-                color: $textColor2;
-              }
-              &:before,
+              font-family: "Montserrat", sans-serif;
+              text-transform: uppercase;
+              overflow: hidden;
+              display: inline-block;
+              color: $light;
+              cursor: pointer;
+              border: none;
+              transform: translate3d(0, 0, 0);
               &:after {
                 content: "";
+                display: block;
                 position: absolute;
                 top: 0;
                 right: 0;
-                height: 2px;
-                width: 0;
-                background: $textColor2;
-                transition: 400ms linear all;
-              }
-              &:after {
-                right: inherit;
-                top: inherit;
-                left: 0;
                 bottom: 0;
+                left: 0;
+                z-index: -1;
+                height: 150%;
+                background: $textColor2;
+                pointer-events: none;
+                transform: translate3d(0, 45px, 0);
+                transition: all 0.3s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955);
               }
-              &:hover:before,
-              &:hover:after {
-                width: 100%;
-                transition: 400ms linear all;
+              i {
+                font-style: normal;
+                line-height: 4.5rem;
+                display: inline-block;
+                height: 100%;
+                padding-left: 1px;
+                padding-right: 1px;
+                transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+                &:hover {
+                  transform: translate3d(0, -6px, 0);
+                }
+              }
+              &:hover {
+                color: $light;
+                &:after {
+                  transform: translate3d(0, 0, 0);
+                }
               }
             }
           }
@@ -280,6 +290,9 @@
         display: none;
       }
       #message {
+        display: none;
+      }
+      #achievements {
         display: none;
       }
     }

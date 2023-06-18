@@ -2226,7 +2226,7 @@ header .headerBottum {
   color: #ffffff;
 }
 #admin .row .info h1 {
-  color: #0d1128;
+  color: #ffb606;
   text-align: center;
   padding: 40px 0;
 }
@@ -2236,21 +2236,21 @@ header .headerBottum {
 }
 #admin .row .info table thead tr th {
   color: #ffffff;
-  background-color: #ffb606;
+  background-color: #000000;
   text-align: center;
-  border: 1px solid #ffffff;
+  border: 1px solid rgb(39, 37, 37);
   padding: 10px;
   font-weight: 600;
 }
 #admin .row .info table tbody tr td {
-  background-color: #da853d;
+  background-color: rgb(29, 28, 28);
   text-align: center;
-  border: 1px solid #ffffff;
+  border: 1px solid rgb(39, 37, 37);
   color: white;
   padding: 10px;
 }
 #admin .row .info table tbody tr td img {
-  width: 60px;
+  width: 80px;
   height: 60px;
 }
 #admin .row .info table tbody tr td button {
@@ -2262,7 +2262,7 @@ header .headerBottum {
   color: red;
 }
 #admin .row .info table tbody tr td .edit {
-  color: rgb(12, 12, 104);
+  color: blue;
 }
 #admin .row .info .formItem {
   padding-top: 50px;
@@ -2285,16 +2285,16 @@ header .headerBottum {
   width: 500px;
   padding: 10px;
   margin-top: 1px;
-  border: 1px solid #ffb606;
-  background-color: #ffb606;
-  color: #0d1128;
+  border: 1px solid #000000;
+  background-color: #000000;
+  color: #ffb606;
   outline: #f4f5f9;
 }
 #admin .row .info .formItem .herroBanner form .formTags::-moz-placeholder {
-  color: #0d1128;
+  color: #ffb606;
 }
 #admin .row .info .formItem .herroBanner form .formTags::placeholder {
-  color: #0d1128;
+  color: #ffb606;
 }
 #admin .row .info .formItem .herroBanner form .fullName {
   display: flex;
@@ -2322,52 +2322,64 @@ header .headerBottum {
        column-gap: 2px;
 }
 #admin .row .info .formItem .herroBanner form select {
-  color: #0d1128;
+  color: #ffb606;
 }
 #admin .row .info .formItem .herroBanner form select option {
-  color: #0d1128;
+  color: #ffb606;
 }
 #admin .row .info .formItem .herroBanner form input::file-selector-button {
-  background-color: #0d1128;
-  color: #ffb606;
+  background-color: #ffb606;
+  color: #000000;
 }
 #admin .row .info .formItem .herroBanner form textarea {
   height: 20vh;
 }
 #admin .row .info .formItem .herroBanner form .submit {
-  font-family: "Montserrat", sans-serif;
-  background: #0d1128 !important;
-  color: #ffb606;
-  padding: 10px 30px;
-  border: none;
-  position: relative;
-  cursor: pointer;
-  transition: 400ms linear all;
-  outline: none;
-}
-#admin .row .info .formItem .herroBanner form .submit:hover {
   background: #ffb606 !important;
-  color: #0d1128;
+  padding: 10px 0px;
+  transition: 500ms linear all;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+  display: inline-block;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  transform: translate3d(0, 0, 0);
 }
-#admin .row .info .formItem .herroBanner form .submit:before, #admin .row .info .formItem .herroBanner form .submit:after {
+#admin .row .info .formItem .herroBanner form .submit:after {
   content: "";
+  display: block;
   position: absolute;
   top: 0;
   right: 0;
-  height: 2px;
-  width: 0;
-  background: #0d1128;
-  transition: 400ms linear all;
-}
-#admin .row .info .formItem .herroBanner form .submit:after {
-  right: inherit;
-  top: inherit;
-  left: 0;
   bottom: 0;
+  left: 0;
+  z-index: -1;
+  height: 150%;
+  background: #0d1128;
+  pointer-events: none;
+  transform: translate3d(0, 45px, 0);
+  transition: all 0.3s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
-#admin .row .info .formItem .herroBanner form .submit:hover:before, #admin .row .info .formItem .herroBanner form .submit:hover:after {
-  width: 100%;
-  transition: 400ms linear all;
+#admin .row .info .formItem .herroBanner form .submit i {
+  font-style: normal;
+  line-height: 4.5rem;
+  display: inline-block;
+  height: 100%;
+  padding-left: 1px;
+  padding-right: 1px;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+#admin .row .info .formItem .herroBanner form .submit i:hover {
+  transform: translate3d(0, -6px, 0);
+}
+#admin .row .info .formItem .herroBanner form .submit:hover {
+  color: #ffffff;
+}
+#admin .row .info .formItem .herroBanner form .submit:hover:after {
+  transform: translate3d(0, 0, 0);
 }
 #admin .row .info #message h1 {
   color: #ffb606;
@@ -2414,6 +2426,9 @@ header .headerBottum {
   display: none;
 }
 #admin .row .info #message {
+  display: none;
+}
+#admin .row .info #achievements {
   display: none;
 }
 

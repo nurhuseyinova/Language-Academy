@@ -58,11 +58,38 @@ achievementsForm.addEventListener("submit", async function (e) {
     achievementsResult.value &&
     achievementsSubject.value &&
     achievementsPhoto.value
-  ) {
-    await axios.post(`${ACHIEVEMENTS_URL}`, obj);
-    getAchievementsData();
-    console.log(obj);
-  } else {
+  )
+    if (achieveEditStatus) {
+      await axios.patch(`${ACHIEVEMENTS_URL}/${achieveEditId}`, obj);
+      getAchievementsData();
+      achievementsSubmit.innerHTML = "Submit";
+      achievmentsFormHead.innerHTML = "Add Achievements";
+      achievementsFirstName.innerHTML = "";
+      achievementsLastName.innerHTML = "";
+      achievementsResult.innerHTML = "";
+      achievementsSubject.innerHTML = "";
+      achieveEditStatus = false;
+    } else {
+      await axios.post(`${ACHIEVEMENTS_URL}`, obj);
+      getAchievementsData();
+      console.log(obj);
+    }
+  else {
     alert("The form is not completed!");
   }
 });
+
+async function editAchieveBtn(id) {
+  achieveEditId = id;
+  achieveEditStatus = true;
+  achieveCopyArr.find((el) => el.id == achieveEditId);
+  let res = await axios(`${ACHIEVEMENTS_URL}/${id}`);
+  let data = await res.data;
+  achievementsFirstName.value = data.firstName;
+  achievementsLastName.value = data.lastName;
+  achievementsResult.value = data.result;
+  achievementsSubject.value = data.subject;
+  console.log(achieveEditId);
+  achievementsSubmit.innerHTML = "Edit";
+  achievmentsFormHead.innerHTML = "Edit Achievements";
+}

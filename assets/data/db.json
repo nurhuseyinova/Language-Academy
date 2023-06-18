@@ -29,6 +29,16 @@
       "subject": "Alman",
       "information": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nam!r",
       "experience": "14"
+    },
+    {
+      "photo": "./assets/image/teachers18.jpg ",
+      "firstName": "Hayes",
+      "lastName": "Skinner",
+      "email": "mesah@mailinator.com",
+      "subject": "French",
+      "information": "Soluta autem aut nis",
+      "experience": "23",
+      "id": "hxUjGFE"
     }
   ],
   "achievements": [
@@ -57,20 +67,20 @@
       "id": 3
     },
     {
-      "photo": "./assets/image/teacher7.jpg ",
-      "firstName": "Olympia",
-      "lastName": "Guerra",
-      "result": "10",
-      "subject": "English",
-      "id": 4
-    },
-    {
-      "photo": "./assets/image/teachers20.jpg ",
+      "photo": "./assets/image/teachers12.jpg ",
       "firstName": "Ashton",
       "lastName": "Daniel",
       "result": "9",
       "subject": "English",
       "id": 5
+    },
+    {
+      "photo": "./assets/image/teachers15.jpg ",
+      "firstName": "Baker",
+      "lastName": "Davidson",
+      "result": "7",
+      "subject": "Russian",
+      "id": 6
     }
   ]
 }
