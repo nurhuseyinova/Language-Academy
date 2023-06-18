@@ -6,6 +6,7 @@ let russianInfo = document.querySelectorAll(".russianInfo");
 let germanInfo = document.querySelectorAll(".germanInfo");
 let frenchInfo = document.querySelectorAll(".frenchInfo");
 let messageInfo = document.querySelectorAll(".messageInfo");
+let achievementsInfo = document.querySelectorAll(".achievementsInfo");
 let mainPage = document.querySelector(".mainPage");
 let usersPage = document.querySelector("#users");
 let teachersPage = document.querySelector("#teachers");
@@ -15,6 +16,7 @@ let russianPage = document.querySelector("#russian");
 let germanPage = document.querySelector("#german");
 let frenchPage = document.querySelector("#french");
 let messagePage = document.querySelector("#message");
+let achievementsPage = document.querySelector("#achievements");
 
 usersInfo.forEach((el) =>
   el.addEventListener("click", function () {
@@ -27,6 +29,7 @@ usersInfo.forEach((el) =>
     germanPage.style.display = "none";
     frenchPage.style.display = "none";
     messagePage.style.display = "none";
+    achievementsPage.style.display = "none";
   })
 );
 teacherInfo.forEach((el) =>
@@ -40,6 +43,7 @@ teacherInfo.forEach((el) =>
     germanPage.style.display = "none";
     frenchPage.style.display = "none";
     messagePage.style.display = "none";
+    achievementsPage.style.display = "none";
   })
 );
 commentInfo.forEach((el) =>
@@ -53,6 +57,7 @@ commentInfo.forEach((el) =>
     germanPage.style.display = "none";
     frenchPage.style.display = "none";
     messagePage.style.display = "none";
+    achievementsPage.style.display = "none";
   })
 );
 englishInfo.forEach((el) =>
@@ -66,6 +71,7 @@ englishInfo.forEach((el) =>
     germanPage.style.display = "none";
     frenchPage.style.display = "none";
     messagePage.style.display = "none";
+    achievementsPage.style.display = "none";
   })
 );
 russianInfo.forEach((el) =>
@@ -79,6 +85,7 @@ russianInfo.forEach((el) =>
     germanPage.style.display = "none";
     frenchPage.style.display = "none";
     messagePage.style.display = "none";
+    achievementsPage.style.display = "none";
   })
 );
 germanInfo.forEach((el) =>
@@ -92,6 +99,7 @@ germanInfo.forEach((el) =>
     germanPage.style.display = "block";
     frenchPage.style.display = "none";
     messagePage.style.display = "none";
+    achievementsPage.style.display = "none";
   })
 );
 frenchInfo.forEach((el) =>
@@ -105,6 +113,7 @@ frenchInfo.forEach((el) =>
     germanPage.style.display = "none";
     frenchPage.style.display = "block";
     messagePage.style.display = "none";
+    achievementsPage.style.display = "none";
   })
 );
 messageInfo.forEach((el) =>
@@ -118,5 +127,20 @@ messageInfo.forEach((el) =>
     germanPage.style.display = "none";
     frenchPage.style.display = "none";
     messagePage.style.display = "block";
+    achievementsPage.style.display = "none";
+  })
+);
+achievementsInfo.forEach((el) =>
+  el.addEventListener("click", function () {
+    mainPage.style.display = "none";
+    usersPage.style.display = "none";
+    teachersPage.style.display = "none";
+    commentPage.style.display = "none";
+    englishPage.style.display = "none";
+    russianPage.style.display = "none";
+    germanPage.style.display = "none";
+    frenchPage.style.display = "none";
+    messagePage.style.display = "none";
+    achievementsPage.style.display = "block";
   })
 );
