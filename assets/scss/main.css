@@ -2583,9 +2583,6 @@ header .headerBottum {
   border: none;
   background-color: transparent;
 }
-#admin .row .info #users {
-  display: none;
-}
 #admin .row .info #teachers {
   display: none;
 }
