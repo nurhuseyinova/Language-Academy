@@ -33,14 +33,6 @@
   ],
   "achievements": [
     {
-      "id": "wwqq",
-      "photo": "./assets/image/teachers11.jpg",
-      "firstName": "Nadya",
-      "lastName": "Huseyinova",
-      "subject": "French",
-      "result": "9"
-    },
-    {
       "id": "wwvvvqq",
       "photo": "./assets/image/teachers11.jpg",
       "firstName": "Nadya",

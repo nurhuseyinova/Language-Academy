@@ -25,10 +25,10 @@ async function getAchievementsData() {
                   <td>${student.subject} student</td>
                   <td>${student.result}</td>
                  <td>
-                    <button class="delete" onclick=deleteBtn("${student.id}") >
+                    <button class="delete" onclick=deleteAchieveBtn("${student.id}") >
                       <i class="fa-solid fa-trash"></i>
                     </button>
-                    <button class="edit" onclick=editBtn("${student.id}")>
+                    <button class="edit" onclick=editAchieveBtn("${student.id}")>
                       <i class="fa-solid fa-pen-to-square"></i>
                     </button>
                   </td>
@@ -37,3 +37,8 @@ async function getAchievementsData() {
   });
 }
 getAchievementsData();
+
+async function deleteAchieveBtn(id, btn) {
+  await axios.delete(`${ACHIEVEMENTS_URL}/${id}`);
+  btn.closest("tr").remove();
+}
