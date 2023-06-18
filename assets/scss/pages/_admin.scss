@@ -252,13 +252,17 @@
         .accordionNote {
           .accordion-body {
             h6 {
-              color: $textColor1;
+              color: rgb(34, 33, 33);
+              a {
+                color: blue;
+              }
             }
             h5 {
-              color: gray;
+              color: rgb(41, 40, 40);
             }
             p {
-              color: gray;
+              color: rgb(44, 43, 43);
+              font-size: 20px;
             }
             button {
               color: red;

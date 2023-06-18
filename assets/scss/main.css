@@ -2570,13 +2570,17 @@ header .headerBottum {
   background-color: rgb(9, 80, 138);
 }
 #admin .row .info #message .accordionNote .accordion-body h6 {
-  color: #ffb606;
+  color: rgb(34, 33, 33);
+}
+#admin .row .info #message .accordionNote .accordion-body h6 a {
+  color: blue;
 }
 #admin .row .info #message .accordionNote .accordion-body h5 {
-  color: gray;
+  color: rgb(41, 40, 40);
 }
 #admin .row .info #message .accordionNote .accordion-body p {
-  color: gray;
+  color: rgb(44, 43, 43);
+  font-size: 20px;
 }
 #admin .row .info #message .accordionNote .accordion-body button {
   color: red;

@@ -21,8 +21,8 @@ async function getMessageData() {
         </h2>
         <div id="flush-collapse${info.id}" class="accordion-collapse collapse  accordionNote" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">
-            <h6>Email: ${info.email}</h6>
-            <h5>Subject: ${info.subject}</h5>
+            <h6>Email: <a href="mailto: ${info.email}"> ${info.email}</a> </h6>
+            <h5>Subject: ${info.subject} language</h5>
             <p>Question: ${info.question}</p>
             <button class="delete " onclick=deleteMessageBtn("${info.id}")>
               <i class="fa-solid fa-trash"></i>
@@ -58,7 +58,7 @@ messageForm.addEventListener("submit", async function (e) {
     messageQusetion.value
   ) {
     await axios.post(`${MESSAGE_URL}`, obj);
-    alert("Your question will be answered soon.Thanks You")
+    alert("Your question will be answered soon.Thanks You");
   } else {
     alert("The form is not completed!");
   }
