@@ -31,7 +31,7 @@
       "experience": "14"
     },
     {
-      "photo": "../assets/image/teachers18.jpg ",
+      "photo": "../assets/image/teachers20.jpg ",
       "firstName": "Hayes",
       "lastName": "Skinner",
       "email": "mesah@mailinator.com",
@@ -39,6 +39,16 @@
       "information": "Soluta autem aut nis",
       "experience": "23",
       "id": "hxUjGFE"
+    },
+    {
+      "photo": "../assets/image/teachers12.jpg ",
+      "firstName": "Oliver",
+      "lastName": "Fischer",
+      "email": "mafocywuho@mailinator.com",
+      "subject": "French",
+      "information": "Est est soluta vita",
+      "experience": "7",
+      "id": "rGqbAiB"
     }
   ],
   "achievements": [
@@ -97,6 +107,14 @@
       "result": "10",
       "subject": "German",
       "id": 8
+    },
+    {
+      "photo": "../assets/image/teachers14.jpg ",
+      "firstName": "Ginger",
+      "lastName": "Mcgowan",
+      "result": "8",
+      "subject": "English",
+      "id": 9
     }
   ]
 }

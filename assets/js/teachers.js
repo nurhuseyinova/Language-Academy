@@ -52,7 +52,7 @@ async function deleteBtn(id, btn) {
 teachersForm.addEventListener("submit", async function (e) {
   e.preventDefault();
   let obj = {
-    photo: `./assets/image/${teachersPhoto.value.split("\\")[2]} `,
+    photo: `../assets/image/${teachersPhoto.value.split("\\")[2]} `,
     firstName: teachersFirstName.value,
     lastName: teachersLastName.value,
     email: teachersEmail.value,

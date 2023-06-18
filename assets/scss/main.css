@@ -2583,27 +2583,6 @@ header .headerBottum {
   border: none;
   background-color: transparent;
 }
-#admin .row .info #teachers {
-  display: none;
-}
-#admin .row .info #comment {
-  display: none;
-}
-#admin .row .info #english {
-  display: none;
-}
-#admin .row .info #russian {
-  display: none;
-}
-#admin .row .info #german {
-  display: none;
-}
-#admin .row .info #french {
-  display: none;
-}
-#admin .row .info #message {
-  display: none;
-}
 
 footer {
   background-color: black;
