@@ -64,5 +64,25 @@
       "question": "Eos aliquip voluptat",
       "id": "FkpMRu_"
     }
+  ],
+  "comment": [
+    {
+      "id": "lkglkgtg",
+      "photo": "../assets/image/teachers17.jpg",
+      "firstName": "Nadya",
+      "lastName": "Huseyinova",
+      "subject": "French",
+      "comment": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nam!",
+      "date": "03.03.2004"
+    },
+    {
+      "id": "bngggk",
+      "photo": "../assets/image/teachers17.jpg",
+      "firstName": "Nadya",
+      "lastName": "Yura",
+      "subject": "French",
+      "comment": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nam!",
+      "date": "03.03.2004"
+    }
   ]
 }
