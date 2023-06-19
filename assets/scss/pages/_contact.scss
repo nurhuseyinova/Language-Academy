@@ -76,6 +76,7 @@
 
 #contactPage {
   .contactItem {
+    overflow:hidden;
     background-image: url("../image/course-5-768x512.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -90,7 +91,7 @@
           text-align: center;
           h1 {
             font-weight: bold;
-            text-shadow: 3px 3px 3px $darkBlue;
+            text-shadow: 2px 2px 2px $textColor1
           }
           div {
             a {
@@ -162,11 +163,13 @@
       form {
         display: flex;
         justify-content: center;
+        align-items:center;
         flex-direction: column;
         .formTag {
           border: 1px dashed $mainColor;
           margin-bottom: 10px;
           padding: 7px;
+          outline:#f4f5f9;
         }
         div {
           width: 400px;
@@ -186,7 +189,8 @@
         button {
           color: white;
           background-color: $mainColor;
-          padding: 10px 30px;
+          padding: 10px 0;
+          width: 100%;
           border-radius: 20px;
           transition: all 0.5s linear;
           border: 1px solid $mainColor;
@@ -206,10 +210,12 @@
           div {
             display: flex;
             flex-direction: column;
+            width: 500px;
           }
           .formTag {
             width: 500px;
           }
+         
         }
       }
     }
@@ -219,6 +225,10 @@
         form {
           .formTag {
             width: 290px;
+          }
+          div{
+            width: 290px;
+
           }
         }
       }

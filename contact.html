@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Sacramento&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -112,7 +113,7 @@
       <div class="contactItem">
         <div class="item1">
           <div class="herroBanner">
-            <div class="item1Note">
+            <div data-aos="slide-right" class="item1Note">
               <h1>Contact Us</h1>
               <div>
                 <a href="./index.html"
@@ -336,6 +337,14 @@
     </footer>
     <button class="btn btn-warning goTop" ><i class="fa-solid fa-chevron-up"></i></button>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(
+        {
+          duration:2000,
+        }
+      );
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -352,7 +361,7 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   ></script>
-    <script src="./assets/js/message.js"></script>
+    <script src="./assets/js/messageForm.js"></script>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>

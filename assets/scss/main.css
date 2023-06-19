@@ -2033,6 +2033,7 @@ header .headerBottum {
 }
 
 #contactPage .contactItem {
+  overflow: hidden;
   background-image: url("../image/course-5-768x512.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -2049,7 +2050,7 @@ header .headerBottum {
 }
 #contactPage .contactItem .item1 .herroBanner .item1Note h1 {
   font-weight: bold;
-  text-shadow: 3px 3px 3px #0d1128;
+  text-shadow: 2px 2px 2px #ffb606;
 }
 #contactPage .contactItem .item1 .herroBanner .item1Note div a {
   color: #ffffff;
@@ -2123,12 +2124,14 @@ header .headerBottum {
 #contactPage .item3 .herroBanner form {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 #contactPage .item3 .herroBanner form .formTag {
   border: 1px dashed #ffb606;
   margin-bottom: 10px;
   padding: 7px;
+  outline: #f4f5f9;
 }
 #contactPage .item3 .herroBanner form div {
   width: 400px;
@@ -2148,7 +2151,8 @@ header .headerBottum {
 #contactPage .item3 .herroBanner form button {
   color: white;
   background-color: #ffb606;
-  padding: 10px 30px;
+  padding: 10px 0;
+  width: 100%;
   border-radius: 20px;
   transition: all 0.5s linear;
   border: 1px solid #ffb606;
@@ -2168,6 +2172,7 @@ header .headerBottum {
   #contactPage .item3 .herroBanner form div {
     display: flex;
     flex-direction: column;
+    width: 500px;
   }
   #contactPage .item3 .herroBanner form .formTag {
     width: 500px;
@@ -2175,6 +2180,9 @@ header .headerBottum {
 }
 @media only screen and (max-width: 556px) {
   #contactPage .item3 .herroBanner form .formTag {
+    width: 290px;
+  }
+  #contactPage .item3 .herroBanner form div {
     width: 290px;
   }
 }
