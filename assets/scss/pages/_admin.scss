@@ -62,22 +62,19 @@
           justify-content: center;
           flex-wrap: wrap;
           gap: 20px;
-          h4 {
+          a {
             height: 20vh;
             @include display;
             justify-content: center;
             width: 200px;
             background-color: $mainColor;
             transition: all 0.4s linear;
-            a {
-              color: $dark;
-              transition: all 0.2s linear;
-            }
+            color: $dark;
+            transition: all 0.2s linear;
+
             &:hover {
               transform: translateY(-15px);
-              a {
-                color: $light;
-              }
+              color: $light;
             }
           }
         }

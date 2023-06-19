@@ -2384,7 +2384,7 @@ header .headerBottum {
   flex-wrap: wrap;
   gap: 20px;
 }
-#admin .row .info .mainPage .infoMenu h4 {
+#admin .row .info .mainPage .infoMenu a {
   height: 20vh;
   display: flex;
   align-items: center;
@@ -2393,15 +2393,11 @@ header .headerBottum {
   width: 200px;
   background-color: #ffb606;
   transition: all 0.4s linear;
-}
-#admin .row .info .mainPage .infoMenu h4 a {
   color: #000000;
   transition: all 0.2s linear;
 }
-#admin .row .info .mainPage .infoMenu h4:hover {
+#admin .row .info .mainPage .infoMenu a:hover {
   transform: translateY(-15px);
-}
-#admin .row .info .mainPage .infoMenu h4:hover a {
   color: #ffffff;
 }
 #admin .row .info h1 {
