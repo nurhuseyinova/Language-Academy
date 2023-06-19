@@ -1755,7 +1755,7 @@ header .headerBottum {
 .coursesItem3 .herroBanner .row .col .achievmentCard {
   height: 350px;
   border-radius: 20px;
-  border: 1px solid gray;
+  border: 1px solid transparent;
   position: relative;
   transition: all 0.5s linear;
   overflow: hidden;
@@ -1866,6 +1866,9 @@ header .headerBottum {
   .formItem .herroBanner form .fullName input {
     width: 250px;
   }
+}
+.formItem .herroBanner form option {
+  width: 400px;
 }
 .formItem .herroBanner form input::file-selector-button {
   background-color: #ffb606;

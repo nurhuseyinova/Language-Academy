@@ -65,4 +65,21 @@ window.onclick = function(event) {
 }
 
 
+/////////Comment form modal/////////
+let commentModal = document.querySelector(".commentModal");
+let commentModalBtn = document.querySelector("#commentModalBtn");
+let commentClose = document.querySelector(".commentClose");
+commentModalBtn.onclick = function() {
+    commentModal.style.display = "block";
+}
+commentClose.onclick = function() {
+    commentModal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target ==commentModal) {
+    commentModal.style.display = "none";
+  }
+}
+
+
 

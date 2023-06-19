@@ -67,22 +67,49 @@
   ],
   "comment": [
     {
-      "id": "lkglkgtg",
-      "photo": "../assets/image/teachers17.jpg",
-      "firstName": "Nadya",
-      "lastName": "Huseyinova",
-      "subject": "French",
-      "comment": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nam!",
-      "date": "03.03.2004"
+      "photo": "../assets/image/teacher6.jpg ",
+      "firstName": "Xantha",
+      "lastName": "Lucas",
+      "comment": "Aspernatur temporibu",
+      "subject": "Russian",
+      "date": "6/19/2023",
+      "id": "IOunAc3"
     },
     {
-      "id": "bngggk",
-      "photo": "../assets/image/teachers17.jpg",
-      "firstName": "Nadya",
-      "lastName": "Yura",
-      "subject": "French",
-      "comment": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nam!",
-      "date": "03.03.2004"
+      "photo": "../assets/image/teachers10.jpg ",
+      "firstName": "Quincy",
+      "lastName": "Mcmahon",
+      "comment": "Ut sed quo dolor fac",
+      "subject": "German",
+      "date": "6/19/2023",
+      "id": "w7mJNdt"
+    },
+    {
+      "photo": "../assets/image/teachers15.jpg ",
+      "firstName": "Jack",
+      "lastName": "Lawrence",
+      "comment": "Ut ab ut unde non mi",
+      "subject": "German",
+      "date": "6/19/2023",
+      "id": "mxFV9bo"
+    },
+    {
+      "photo": "../assets/image/teachers16.jpg ",
+      "firstName": "Yen",
+      "lastName": "Hernandez",
+      "comment": "Officiis perspiciati",
+      "subject": "Russian",
+      "date": "6/19/2023",
+      "id": "rwgHLRQ"
+    },
+    {
+      "photo": "../assets/image/teachers20.jpg ",
+      "firstName": "Yeo",
+      "lastName": "Frazier",
+      "comment": "Voluptatem quis cul",
+      "subject": "English",
+      "date": "6/19/2023",
+      "id": "F3QaRef"
     }
   ]
 }
