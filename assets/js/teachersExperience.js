@@ -6,7 +6,6 @@ async function getExperienceData() {
     experienceCard.innerHTML = "";
   let res = await axios(EXPERIENCE_URL);
   let data = await res.data;
-  console.log(data);
   data.forEach((teacher) => {
     experienceCard.innerHTML += `
     <div class="swiper-slide">
