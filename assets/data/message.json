@@ -75,49 +75,94 @@
   ],
   "comment": [
     {
-      "photo": "../assets/image/teacher6.jpg ",
+      "photo": "../assets/image/comment1.jpg ",
       "firstName": "Xantha",
       "lastName": "Lucas",
-      "comment": "Aspernatur temporibu",
+      "comment": "Lorem ipsum dolor sit, amet consectetur adipisicingelit. Reiciendis aut harum possimus aspernatur consequatur laudantium.",
       "subject": "Russian",
       "date": "6/19/2023",
       "id": "IOunAc3"
     },
     {
-      "photo": "../assets/image/teachers10.jpg ",
+      "photo": "../assets/image/comment7.jpg ",
       "firstName": "Quincy",
       "lastName": "Mcmahon",
-      "comment": "Ut sed quo dolor fac",
+      "comment": "Lorem ipsum dolor sit, amet consectetur adipisicingelit. Reiciendis aut harum possimus aspernatur consequatur laudantium.",
       "subject": "German",
       "date": "6/19/2023",
       "id": "w7mJNdt"
     },
     {
-      "photo": "../assets/image/teachers15.jpg ",
+      "photo": "../assets/image/comment3.jpg ",
       "firstName": "Jack",
       "lastName": "Lawrence",
-      "comment": "Ut ab ut unde non mi",
+      "comment": "Lorem ipsum dolor sit, amet consectetur adipisicingelit. Reiciendis aut harum possimus aspernatur consequatur laudantium.",
       "subject": "German",
       "date": "6/19/2023",
       "id": "mxFV9bo"
     },
     {
-      "photo": "../assets/image/teachers16.jpg ",
+      "photo": "../assets/image/comment8.jpg ",
       "firstName": "Yen",
       "lastName": "Hernandez",
-      "comment": "Officiis perspiciati",
+      "comment": "Lorem ipsum dolor sit, amet consectetur adipisicingelit. Reiciendis aut harum possimus aspernatur consequatur laudantium.",
       "subject": "Russian",
       "date": "6/19/2023",
       "id": "rwgHLRQ"
     },
     {
-      "photo": "../assets/image/teachers20.jpg ",
+      "photo": "../assets/image/comment9.jpg ",
       "firstName": "Yeo",
       "lastName": "Frazier",
-      "comment": "Voluptatem quis cul",
+      "comment": "Lorem ipsum dolor sit, amet consectetur adipisicingelit. Reiciendis aut harum possimus aspernatur consequatur laudantium.",
       "subject": "English",
       "date": "6/19/2023",
       "id": "F3QaRef"
+    },
+    {
+      "photo": "../assets/image/comment10.jpg ",
+      "firstName": "Lael",
+      "lastName": "Beard",
+      "comment": "Fugit mollitia adipFugit mollitia adipFugit mollitia adipFugit mollitia adipFugit mollitia adipFugit mollitia adipFugit mollitia adipFugit mollitia adipFugit mollitia adipFugit mollitia adipFugit mollitia adipFugit mollitia adipFugit mollitia adipFugit mollitia adipFugit mollitia adipFugit mollitia adip",
+      "subject": "Russian",
+      "date": "6/20/2023",
+      "id": "yI_0gG0"
+    },
+    {
+      "photo": "../assets/image/comment7.jpg ",
+      "firstName": "Lee",
+      "lastName": "Sanders",
+      "comment": "Perspiciatis sed pr",
+      "subject": "German",
+      "date": "6/20/2023",
+      "id": "vFmTncp"
+    },
+    {
+      "photo": "../assets/image/contactimg1.jpg ",
+      "firstName": "Jeremy",
+      "lastName": "Dorsey",
+      "comment": "Labore unde error id",
+      "subject": "Russian",
+      "date": "6/20/2023",
+      "id": "hzZfY5v"
+    },
+    {
+      "photo": "../assets/image/teacher2.jpg ",
+      "firstName": "Colette",
+      "lastName": "Booth",
+      "comment": "Debitis sequi laudan",
+      "subject": "French",
+      "date": "6/20/2023",
+      "id": "rMVJi_a"
+    },
+    {
+      "photo": "../assets/image/comment7.jpg ",
+      "firstName": "Orson",
+      "lastName": "Blackburn",
+      "comment": "Quo pariatur Doloru",
+      "subject": "French",
+      "date": "6/20/2023",
+      "id": "ptb-arD"
     }
   ]
 }

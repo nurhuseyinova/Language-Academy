@@ -916,7 +916,7 @@ header .headerBottum {
 }
 #galleryPage .galleryItem .item1 .herroBanner .item1Note h1 {
   font-weight: bold;
-  text-shadow: 3px 3px 3px #ffb606;
+  font-size: 50px;
 }
 #galleryPage .galleryItem .item1 .herroBanner .item1Note div a {
   color: #ffffff;
@@ -966,7 +966,7 @@ header .headerBottum {
   padding: 30px 0;
 }
 #galleryPage .galleryItem3 .item3 .item3Note h1 {
-  font-size: 60px;
+  font-size: 50px;
 }
 #galleryPage .galleryItem3 .item3 .herroBanner {
   display: flex;
@@ -1171,7 +1171,7 @@ header .headerBottum {
 }
 .teamPage .teamItem .item1 .item1Note h1 {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 50px;
 }
 .teamPage .teamItem .item1 .item1Note div a {
   color: #ffffff;
@@ -2020,7 +2020,7 @@ header .headerBottum {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   padding-top: 100px;
   left: 0;
   top: 0;
@@ -2147,6 +2147,7 @@ header .headerBottum {
 }
 #contactPage .contactItem .item1 .herroBanner .item1Note h1 {
   font-weight: bold;
+  font-size: 50px;
 }
 #contactPage .contactItem .item1 .herroBanner .item1Note div a {
   color: #ffffff;

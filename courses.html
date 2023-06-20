@@ -509,9 +509,9 @@
         <div class="commentSlider">
           <div class="herroBanner">
             <h1>What Graduates Say?</h1>
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">         
-                <div class="swiper-slide">
+            <div class="swiper mySwiperComment">
+              <div class="swiper-wrapper commentSlide">         
+                <!-- <div class="swiper-slide">
                   <div class="item">
                     <div class="commentNote">
                       <p>
@@ -528,7 +528,7 @@
                       </div>
                     </div>
                   </div>
-                </div>                               
+                </div>                                -->
               </div>
               <div class="swiper-pagination"></div>
             </div>
@@ -644,9 +644,8 @@
       });
     </script>
     <script>
-      let swiper = new Swiper(".mySwiper", {
+      let swiper = new Swiper(".mySwiperComment", {
         grabCursor: true,
-        // centeredSlides: true,
         slidesPerView: "auto",
         initialSlide: 1,
          autoplay:{
@@ -682,6 +681,7 @@
     <script src="./assets/js/frenchForm.js"></script>
     <script src="./assets/js/commentForm.js"></script>
     <script src="./assets/js/corsesAchievement.js"></script>
+    <script src="./assets/js/coursesComment.js"></script>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>
