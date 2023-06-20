@@ -139,7 +139,7 @@ header .headerBottum {
     font-size: 26px;
     position: relative;
     bottom: 10px;
-    font-weight: 500;
+    font-weight: 600;
     font-family: "Sacramento", cursive;
     margin-bottom: 40px;
   }
@@ -153,7 +153,7 @@ header .headerBottum {
     color: #000000;
     font-family: "Montserrat", sans-serif;
     border-bottom: 2px solid transparent;
-    font-weight: 400;
+    font-weight: 600;
   }
   header .show .herroBanner nav ul li a:hover {
     border-color: #ffb606;
@@ -176,6 +176,7 @@ header .headerBottum {
   header .show .herroBanner nav ul .darkModeSignLogin .loginSignup a {
     text-align: center;
     color: #000000;
+    font-weight: 600;
   }
   header .show .herroBanner nav ul .darkModeSignLogin .loginSignup a:hover {
     color: #ffb606;
@@ -823,7 +824,7 @@ header .headerBottum {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  border: 2px solid rgb(165, 165, 235);
+  border: 2px solid rgb(214, 214, 224);
   background-color: #ffffff;
   color: #ffb606;
   width: 70px;

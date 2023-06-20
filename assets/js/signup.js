@@ -15,7 +15,7 @@ signUpForm.addEventListener("submit", function (e) {
     email: signEmail.value,
     password: signPassword.value,
     date: date.toLocaleString(),
-    isAdmin:false
+    isAdmin:false,
   };
     if (user.username && user.email && user.password) {
       users.push(user);

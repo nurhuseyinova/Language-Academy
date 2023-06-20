@@ -83,7 +83,6 @@ teachersForm.addEventListener("submit", async function (e) {
     } else {
       await axios.post(`${TEACHERS_URL}`, obj);
       getTeachersData();
-      console.log(obj);
     }
   }else{
     alert("The form is not completed!")
@@ -102,7 +101,6 @@ async function editBtn(id) {
   teachersSubject.value = data.subject;
   teachersInformation.value = data.information;
   teachersExperience.value = data.experience;
-  console.log(editId);
 
   teachersSubmit.innerHTML = "Edit";
   formHead.innerHTML = "Edit Teachers";
