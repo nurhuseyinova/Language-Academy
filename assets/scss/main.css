@@ -68,7 +68,6 @@ header .headerTop .herroBanner nav .headItem1 .dropdown-menu .dropdown-item {
   background-color: #ffb606;
 }
 header .headerTop .herroBanner nav .headItem1 li a {
-  font-weight: 0;
   text-transform: uppercase;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
@@ -101,13 +100,6 @@ header .headerTop .herroBanner nav .darkModeSignLogin {
        column-gap: 20px;
   font-size: 20px;
   margin-top: 0px;
-}
-header .headerTop .herroBanner nav .darkModeSignLogin .fa-sun {
-  color: rgb(248, 170, 24);
-}
-header .headerTop .herroBanner nav .darkModeSignLogin .fa-moon {
-  display: none;
-  color: rgb(58, 58, 138);
 }
 header .headerTop .herroBanner nav .darkModeSignLogin .loginSignup {
   color: #ffffff;
@@ -147,7 +139,7 @@ header .headerBottum {
     font-size: 26px;
     position: relative;
     bottom: 10px;
-    font-weight: 600;
+    font-weight: 500;
     font-family: "Sacramento", cursive;
     margin-bottom: 40px;
   }
@@ -161,7 +153,7 @@ header .headerBottum {
     color: #000000;
     font-family: "Montserrat", sans-serif;
     border-bottom: 2px solid transparent;
-    font-weight: 600;
+    font-weight: 400;
   }
   header .show .herroBanner nav ul li a:hover {
     border-color: #ffb606;
@@ -172,13 +164,6 @@ header .headerBottum {
     flex-direction: column;
     gap: 10px;
     font-size: 20px;
-  }
-  header .show .herroBanner nav ul .darkModeSignLogin .fa-sun {
-    color: rgb(248, 170, 24);
-  }
-  header .show .herroBanner nav ul .darkModeSignLogin .fa-moon {
-    display: none;
-    color: rgb(58, 58, 138);
   }
   header .show .herroBanner nav ul .darkModeSignLogin .loginSignup {
     display: flex;
@@ -838,7 +823,7 @@ header .headerBottum {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  border: 2px solid #e5e9ec;
+  border: 2px solid rgb(165, 165, 235);
   background-color: #ffffff;
   color: #ffb606;
   width: 70px;
@@ -2571,7 +2556,7 @@ header .headerBottum {
   justify-content: space-between;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
 }
 #admin .row .info .mainPage .infoMenu a {
   height: 20vh;
@@ -2579,7 +2564,7 @@ header .headerBottum {
   align-items: center;
   justify-content: space-between;
   justify-content: center;
-  width: 200px;
+  width: 250px;
   background-color: #ffb606;
   transition: all 0.4s linear;
   color: #000000;

@@ -49,6 +49,26 @@
       "information": "Est est soluta vita",
       "experience": "7",
       "id": "rGqbAiB"
+    },
+    {
+      "photo": "../assets/image/teachers14.jpg ",
+      "firstName": "Eagan",
+      "lastName": "Finch",
+      "email": "jemyf@mailinator.com",
+      "subject": "Russian",
+      "information": "Laboris ut aut excep",
+      "experience": "14",
+      "id": "cXmTDmv"
+    },
+    {
+      "photo": "../assets/image/comment6.jpg ",
+      "firstName": "Daquan",
+      "lastName": "Carpenter",
+      "email": "patokovufi@mailinator.com",
+      "subject": "Russian",
+      "information": "Dolorum architecto n",
+      "experience": "20",
+      "id": "BlZ2g6Q"
     }
   ],
   "achievements": [

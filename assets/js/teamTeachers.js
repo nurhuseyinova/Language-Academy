@@ -1,12 +1,15 @@
 ////Team page teachers section data;
 let TEACHERS_URL = `http://localhost:8000/teachers`;
 let teacherCard = document.querySelector(".teacherCard");
-
+let teacherShowMore = document.querySelector("#teacherShowMore");
+let countTeacher=6
+let teacherCopyData=[]
 async function getTeacherData() {
   teacherCard.innerHTML = "";
   let res = await axios(TEACHERS_URL);
   let data = await res.data;
-  data.forEach((teacher) => {
+  teacherCopyData=data
+  teacherCopyData.slice(0,countTeacher).forEach((teacher) => {
     teacherCard.innerHTML += `
     <div class="col col-12 col-sm-6 col-lg-4 my-5">
     <div class="item">
@@ -28,3 +31,14 @@ async function getTeacherData() {
   });
 }
 getTeacherData();
+
+teacherShowMore.addEventListener("click", function () {
+  countTeacher += 1;
+  if (countTeacher > teacherCopyData.length) {
+    showMore.style.display = "none";
+  } else if (teacherCopyData.length) {
+    getTeacherData(teacherCopyData.slice(0, countTeacher));
+  } else {
+    getTeacherData(teacherCopyData);
+  }
+});
