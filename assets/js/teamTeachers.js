@@ -1,4 +1,4 @@
-////Team page achievment section data;
+////Team page teachers section data;
 let TEACHERS_URL = `http://localhost:8000/teachers`;
 let teacherCard = document.querySelector(".teacherCard");
 

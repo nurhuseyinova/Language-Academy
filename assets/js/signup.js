@@ -15,29 +15,18 @@ signUpForm.addEventListener("submit", function (e) {
     email: signEmail.value,
     password: signPassword.value,
     date: date.toLocaleString(),
+    isAdmin:false
   };
-  let sameUser = users.find(
-    (user) =>
-      user.username === signUsername.value &&
-      user.email === signEmail.value &&
-      user.password === signPassword.value
-  );
-  console.log(sameUser)
-  if (!sameUser) {
     if (user.username && user.email && user.password) {
       users.push(user);
       localStorage.setItem("users", JSON.stringify(users));
-
       (signUsername.value = ""),
         (signEmail.value = ""),
         (signPassword.value = "");
-      alert("Thanks you");
+     window.location="./login.html"
     } else {
       alert("Fill out the form!");
     }
-  } else {
-    alert("This account already alive");
-  }
 });
 
 function disabledEl() {
