@@ -8,15 +8,20 @@ let achievementsPhoto = document.querySelector("#achievementsPhoto");
 let achievementsSubject = document.querySelector("#achievementsSubject");
 let achievementsSubmit = document.querySelector("#achievementsSubmit");
 let achievmentsFormHead = document.querySelector("#achievmentsFormHead");
+let sortBtn = document.querySelector("#sortBtn");
 let achieveEditStatus = false;
 let achieveEditId = null;
 let achieveCopyArr = [];
+let sorted=[]
+let defaultArr=[]
 
 async function getAchievementsData() {
   achievementsData.innerHTML = "";
   let res = await axios(ACHIEVEMENTS_URL);
   let data = await res.data;
-  achieveCopyArr = data;
+  defaultArr=data
+  sorted=data
+  achieveCopyArr = achieveCopyArr.length ? achieveCopyArr : data;
   achieveCopyArr.forEach((student) => {
     achievementsData.innerHTML += `
                 <tr>
@@ -37,6 +42,20 @@ async function getAchievementsData() {
   });
 }
 getAchievementsData();
+
+let asc=true
+sortBtn.addEventListener("click",function(e){
+    asc=!asc
+    if(!asc){
+        sorted=achieveCopyArr.sort((a,b)=>a.result-b.result)
+    sortBtn.innerHTML="Ascending"
+    }
+    else{
+        sorted=achieveCopyArr.sort((a,b)=>b.result-a.result)
+        sortBtn.innerHTML="Descending"
+    }
+    getAchievementsData(achieveCopyArr)
+})
 
 async function deleteAchieveBtn(id, btn) {
   await axios.delete(`${ACHIEVEMENTS_URL}/${id}`);
@@ -72,7 +91,6 @@ achievementsForm.addEventListener("submit", async function (e) {
     } else {
       await axios.post(`${ACHIEVEMENTS_URL}`, obj);
       getAchievementsData();
-      console.log(obj);
     }
   else {
     alert("The form is not completed!");
@@ -93,3 +111,4 @@ async function editAchieveBtn(id) {
   achievementsSubmit.innerHTML = "Edit";
   achievmentsFormHead.innerHTML = "Edit Achievements";
 }
+

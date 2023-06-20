@@ -90,6 +90,12 @@
       input::file-selector-button {
         color:black;
       }
+      #sortBtn{
+        border: none;
+        background-color: $mainColor;
+        color: $light;
+        padding: 10px 70px;
+      }
       h1 {
         color: $textColor1;
         text-align: center;

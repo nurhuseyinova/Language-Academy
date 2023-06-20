@@ -2586,6 +2586,12 @@ header .headerBottum {
 #admin .row .info input::file-selector-button {
   color: black;
 }
+#admin .row .info #sortBtn {
+  border: none;
+  background-color: #ffb606;
+  color: #ffffff;
+  padding: 10px 70px;
+}
 #admin .row .info h1 {
   color: #ffb606;
   text-align: center;
