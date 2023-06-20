@@ -594,133 +594,7 @@
       <div class="herroBanner">
         <h1>What Graduates Say?</h1>
         <div class="swiper mySwiperComment">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-            <div class="item">
-              <div class="commentNote">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis aut harum possimus aspernatur consequatur laudantium.</p>
-              </div>
-              <div class="itemImg">
-                <img src="./assets/image/teachers21.jpg" alt="">
-                <div class="imgNote">
-                  <h3>Name:</h3>
-                  <p>Subject:</p>
-                </div>
-              </div>             
-            </div>            
-          </div>
-            <div class="swiper-slide">
-            <div class="item">
-              <div class="commentNote">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis aut harum possimus aspernatur consequatur laudantium.</p>
-              </div>
-              <div class="itemImg">
-                <img src="./assets/image/teachers21.jpg" alt="">
-                <div class="imgNote">
-                  <h3>Name:</h3>
-                  <p>Subject:</p>
-                </div>
-              </div>             
-            </div>            
-          </div>
-            <div class="swiper-slide">
-            <div class="item">
-              <div class="commentNote">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis aut harum possimus aspernatur consequatur laudantium.</p>
-              </div>
-              <div class="itemImg">
-                <img src="./assets/image/teachers21.jpg" alt="">
-                <div class="imgNote">
-                  <h3>Name:</h3>
-                  <p>Subject:</p>
-                </div>
-              </div>              
-            </div>            
-          </div>
-             <div class="swiper-slide">
-            <div class="item">
-              <div class="commentNote">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis aut harum possimus aspernatur consequatur laudantium.</p>
-              </div>
-              <div class="itemImg">
-                <img src="./assets/image/teachers21.jpg" alt="">
-                <div class="imgNote">
-                  <h3>Name:</h3>
-                  <p>Subject:</p>
-                </div>
-              </div>             
-            </div>            
-          </div>
-            <div class="swiper-slide">
-            <div class="item">
-              <div class="commentNote">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis aut harum possimus aspernatur consequatur laudantium.</p>
-              </div>
-              <div class="itemImg">
-                <img src="./assets/image/teachers21.jpg" alt="">
-                <div class="imgNote">
-                  <h3>Name:</h3>
-                  <p>Subject:</p>
-                </div>
-              </div>         
-            </div>           
-          </div>
-            <div class="swiper-slide">
-            <div class="item">
-              <div class="commentNote">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis aut harum possimus aspernatur consequatur laudantium.</p>
-              </div>
-              <div class="itemImg">
-                <img src="./assets/image/teachers21.jpg" alt="">
-                <div class="imgNote">
-                  <h3>Name:</h3>
-                  <p>Subject:</p>
-                </div>
-              </div>             
-            </div>           
-          </div>
-            <div class="swiper-slide">
-            <div class="item">
-              <div class="commentNote">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis aut harum possimus aspernatur consequatur laudantium.</p>
-              </div>
-              <div class="itemImg">
-                <img src="./assets/image/teachers21.jpg" alt="">
-                <div class="imgNote">
-                  <h3>Name:</h3>
-                  <p>Subject:</p>
-                </div>
-              </div>              
-            </div>           
-          </div>
-            <div class="swiper-slide">
-            <div class="item">
-              <div class="commentNote">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis aut harum possimus aspernatur consequatur laudantium.</p>
-              </div>
-              <div class="itemImg">
-                <img src="./assets/image/teachers21.jpg" alt="">
-                <div class="imgNote">
-                  <h3>Name:</h3>
-                  <p>Subject:</p>
-                </div>
-              </div>
-            </div>           
-          </div>
-            <div class="swiper-slide">
-            <div class="item">
-              <div class="commentNote">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis aut harum possimus aspernatur consequatur laudantium.</p>
-              </div>
-              <div class="itemImg">
-                <img src="./assets/image/teachers21.jpg" alt="">
-                <div class="imgNote">
-                  <h3>Name:</h3>
-                  <p>Subject:</p>
-                </div>
-              </div>
-            </div> 
-          </div>
+          <div class="swiper-wrapper commentSlide">       
         </div>
         <div class="swiper-pagination pagination"></div>
       </div>
@@ -880,10 +754,10 @@
     </script>
      <script>
       let commentSwiper = new Swiper(".mySwiperComment", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        centeredSlides: true,
-        dotsEach:3,
+        grabCursor: true,
+        slidesPerView: "auto",
+        spaceBetween: 10,
+        initialSlide: 1,
         autoplay:{
           delay:1000,
           disableOnInteraction:false,
@@ -912,6 +786,7 @@
     referrerpolicy="no-referrer"
   ></script>
     <script src="./assets/js/teamTeachers.js"></script>
+    <script src="./assets/js/coursesComment.js"></script>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>

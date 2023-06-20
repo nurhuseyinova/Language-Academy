@@ -511,24 +511,6 @@
             <h1>What Graduates Say?</h1>
             <div class="swiper mySwiperComment">
               <div class="swiper-wrapper commentSlide">         
-                <!-- <div class="swiper-slide">
-                  <div class="item">
-                    <div class="commentNote">
-                      <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Reiciendis aut harum possimus aspernatur
-                        consequatur laudantium.
-                      </p>
-                    </div>
-                    <div class="itemImg">
-                      <img src="./assets/image/teachers21.jpg" alt="" />
-                      <div class="imgNote">
-                        <h3>Name:</h3>
-                        <p>Subject:</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>                                -->
               </div>
               <div class="swiper-pagination"></div>
             </div>
@@ -644,7 +626,7 @@
       });
     </script>
     <script>
-      let swiper = new Swiper(".mySwiperComment", {
+      let swiperComment = new Swiper(".mySwiperComment", {
         grabCursor: true,
         slidesPerView: "auto",
         initialSlide: 1,
@@ -655,6 +637,7 @@
          },
         pagination: {
           el: ".swiper-pagination",
+          clickable: true,
         },
       });
     </script>

@@ -188,18 +188,18 @@
     }
   }
   .coursesComment {
-    background-image: url("../image/graduates.jpg");
+    background-image: url("../image/book4.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     .commentSlider {
-      background-color: rgba(19, 45, 68, 0.788);
+      background-color: rgba(95, 76, 37, 0.795);
       padding: 60px 0;
       .herroBanner {
         h1 {
           text-align: center;
-          color: $textColor1;
+          color: $dark;
         }
         .swiper {
           width: 100%;
@@ -227,6 +227,9 @@
                   width: 280px;
                   height: 200px;
                   padding: 5px;
+                  p{
+                    font-size: 15px;
+                  }
                 }
                 .itemImg {
                   @include display;
@@ -241,7 +244,7 @@
                   }
                   .imgNote {
                     padding-inline-start: 0;
-                    color: $textColor1;
+                    color: $dark;
                   }
                 }
               }

@@ -19,7 +19,7 @@ async function getCommentData() {
         <img src=" ${graduate.photo}" alt="" />
         <div class="imgNote">
           <h3> ${graduate.firstName}  ${graduate.lastName}</h3>
-          <p> ${graduate.subject}</p>
+          <p> ${graduate.subject} language</p>
         </div>
       </div>
     </div>
