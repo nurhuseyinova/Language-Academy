@@ -1,12 +1,15 @@
 ////Courses page achievment section data;
 let ACHIEVEMENTS_URL = `http://localhost:8000/achievements`;
 let achieveCardData = document.querySelector(".achieveCardData");
-
+let showMore = document.querySelector("#showMore");
+let count=6
+let achieveCopyData=[]
 async function getAchieveData() {
   achieveCardData.innerHTML = "";
   let res = await axios(ACHIEVEMENTS_URL);
   let data = await res.data;
-  data.forEach((graduate) => {
+  achieveCopyData=data
+  achieveCopyData.slice(0,count).forEach((graduate) => {
     achieveCardData.innerHTML += `
       <div class="col col-12 col-md-6 col-lg-4">
       <div class="achievmentCard"> 
@@ -25,6 +28,17 @@ async function getAchieveData() {
   });
 }
 getAchieveData();
+
+showMore.addEventListener("click", function () {
+  count += 1;
+  if (count > achieveCopyData.length) {
+    showMore.style.display = "none";
+  } else if (achieveCopyData.length) {
+    getAchieveData(achieveCopyData.slice(0, count));
+  } else {
+    getAchieveData(achieveCopyData);
+  }
+});
 
 
 
