@@ -82,7 +82,7 @@
             <i class="fa-regular fa-moon"></i>
             <div class="loginSignup">
               <a href="./login.html">Login</a>
-              <p>|</p>
+              <span>/</span>
               <a href="./signup.html"> Sign up</a>
             </div>
           </div>
@@ -109,7 +109,7 @@
               <i class="fa-regular fa-moon"></i>
               <div class="loginSignup">
                 <a href="./login.html">Login</a>
-                <p>|</p>
+                <span>/</span>
                 <a href="./signup.html"> Sign up</a>
               </div>            
             </div>
@@ -190,7 +190,7 @@
                     Ipsa atque fugit et rem quasi, sapiente aliquid ex fugiat
                     quis molestias.
                   </p>
-                  <a href="#">Read More</a>
+                  <a href="./courses.html">Read More</a>
                 </div>
               </div>
             </div>
@@ -206,7 +206,7 @@
                     Ipsa atque fugit et rem quasi, sapiente aliquid ex fugiat
                     quis molestias.
                   </p>
-                  <a href="#">Read More</a>
+                  <a href="./courses.html">Read More</a>
                 </div>
               </div>
             </div>
@@ -222,7 +222,7 @@
                     Ipsa atque fugit et rem quasi, sapiente aliquid ex fugiat
                     quis molestias.
                   </p>
-                  <a href="#">Read More</a>
+                  <a href="./courses.html">Read More</a>
                 </div>
               </div>
             </div>
@@ -238,7 +238,7 @@
                     Ipsa atque fugit et rem quasi, sapiente aliquid ex fugiat
                     quis molestias.
                   </p>
-                  <a href="#">Read More</a>
+                  <a href="./courses.html">Read More</a>
                 </div>
               </div>
             </div>
@@ -255,8 +255,10 @@
         <div class="row">
           <div class="col col-12 col-md-6 col-lg-4">
             <div class="itemNote">
-              <i class="fa-solid fa-users"></i>
-              <h4>Professional team</h4>
+                <div class="icon">
+                  <i class="fa-solid fa-users"></i>
+                </div>              
+                  <h4>Professional team</h4>
             </div>
             <p>
               Our team consists of young, dynamic, constantly developing
@@ -266,7 +268,9 @@
           </div>
           <div class="col col-12 col-md-6 col-lg-4">
             <div class="itemNote">
-              <i class="fa-solid fa-award"></i>
+              <div class="icon">
+                <i class="fa-solid fa-award"></i>
+              </div>
               <h4>Quality orientation</h4>
             </div>
             <p>
@@ -276,7 +280,9 @@
           </div>
           <div class="col col-12 col-md-6 col-lg-4">
             <div class="itemNote">
-              <i class="fa-solid">7+</i>
+              <div class="icon">                
+                <i class="fa-solid">7+</i>
+              </div>
               <h4>Results</h4>
             </div>
             <p>
@@ -285,7 +291,9 @@
           </div>
           <div class="col col-12 col-md-6 col-lg-4">
             <div class="itemNote">
-              <i class="fa-solid fa-gears"></i>
+              <div class="icon">
+                <i class="fa-solid fa-gears"></i>
+              </div>
               <h4>Variety of our services</h4>
             </div>
             <p>
@@ -295,7 +303,9 @@
           </div>
           <div class="col col-12 col-md-6 col-lg-4">
             <div class="itemNote">
-              <i class="fa-solid fa-clock"></i>
+              <div class="icon">
+                <i class="fa-solid fa-clock"></i>
+              </div>
               <h4>Efficiency</h4>
             </div>
             <p>
@@ -305,7 +315,9 @@
           </div>
           <div class="col col-12 col-md-6 col-lg-4">
             <div class="itemNote">
-              <i class="fa-solid fa-check"></i>
+              <div class="icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
               <h4>Honesty</h4>
             </div>
             <p>We do not lie to our students even if they want to.</p>
@@ -625,7 +637,7 @@
               </div>              
             </div>            
           </div>
-            <div class="swiper-slide">
+             <div class="swiper-slide">
             <div class="item">
               <div class="commentNote">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis aut harum possimus aspernatur consequatur laudantium.</p>
@@ -835,6 +847,7 @@
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: "auto",
+       initialSlide:3,
         coverflowEffect: {
           rotate: 50,
           stretch: 0,
@@ -870,6 +883,7 @@
         slidesPerView: 3,
         spaceBetween: 30,
         centeredSlides: true,
+        dotsEach:3,
         autoplay:{
           delay:1000,
           disableOnInteraction:false,

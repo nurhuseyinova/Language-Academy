@@ -97,8 +97,10 @@ header .headerTop .herroBanner nav .darkModeSignLogin {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
   font-size: 20px;
+  margin-top: 0px;
 }
 header .headerTop .herroBanner nav .darkModeSignLogin .fa-sun {
   color: rgb(248, 170, 24);
@@ -108,21 +110,12 @@ header .headerTop .herroBanner nav .darkModeSignLogin .fa-moon {
   color: rgb(58, 58, 138);
 }
 header .headerTop .herroBanner nav .darkModeSignLogin .loginSignup {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 0;
   color: #ffffff;
 }
-header .headerTop .herroBanner nav .darkModeSignLogin .loginSignup p {
-  font-size: 35px;
+header .headerTop .herroBanner nav .darkModeSignLogin .loginSignup span {
+  color: white !important;
 }
 header .headerTop .herroBanner nav .darkModeSignLogin .loginSignup a {
-  text-align: center;
-  border: 2px solid black;
-  padding: 5px 0;
-  width: 80px;
-  height: 50px;
   color: #ffffff;
 }
 header .headerTop .herroBanner nav .darkModeSignLogin .loginSignup a:hover {
@@ -177,7 +170,7 @@ header .headerBottum {
   header .show .herroBanner nav ul .darkModeSignLogin {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     font-size: 20px;
   }
   header .show .herroBanner nav ul .darkModeSignLogin .fa-sun {
@@ -189,20 +182,14 @@ header .headerBottum {
   }
   header .show .herroBanner nav ul .darkModeSignLogin .loginSignup {
     display: flex;
-    align-items: center;
-    gap: 10px;
     margin-bottom: 0;
     color: #000000;
   }
-  header .show .herroBanner nav ul .darkModeSignLogin .loginSignup p {
-    font-size: 35px;
+  header .show .herroBanner nav ul .darkModeSignLogin .loginSignup span {
+    color: black !important;
   }
   header .show .herroBanner nav ul .darkModeSignLogin .loginSignup a {
     text-align: center;
-    border: 2px solid black;
-    padding: 5px 0;
-    width: 80px;
-    height: 50px;
     color: #000000;
   }
   header .show .herroBanner nav ul .darkModeSignLogin .loginSignup a:hover {
@@ -841,15 +828,18 @@ header .headerBottum {
   gap: 5px;
   color: rgb(46, 46, 48);
 }
-#whywe .herroBanner .row .col .itemNote i {
-  padding-top: 5%;
-  padding-left: 5%;
+#whywe .herroBanner .row .col .itemNote .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   border: 2px solid #e5e9ec;
+  background-color: #ffffff;
+  color: #ffb606;
   width: 70px;
   height: 65px;
-  color: #ffb606;
-  background-color: #ffffff;
+}
+#whywe .herroBanner .row .col .itemNote i {
   font-size: 30px;
 }
 #whywe .herroBanner .row .col p {
@@ -1181,7 +1171,7 @@ header .headerBottum {
 }
 .teamPage .teamItem .item1 .item1Note h1 {
   font-weight: bold;
-  text-shadow: 3px 3px 2px #0d1128;
+  font-size: 40px;
 }
 .teamPage .teamItem .item1 .item1Note div a {
   color: #ffffff;
@@ -1352,6 +1342,7 @@ header .headerBottum {
   font-size: 60px;
 }
 #achieveCount .countItem .herroBanner .row .item .itemNote {
+  width: 100px;
   color: #ffffff;
 }
 #achieveCount .countItem .herroBanner .row .item .itemNote span {
@@ -1419,7 +1410,7 @@ header .headerBottum {
   background-size: cover;
 }
 #blogPage .blogItem .item1 {
-  background-color: rgba(233, 193, 156, 0.384);
+  background-color: rgba(243, 123, 10, 0.212);
   padding: 240px 50px;
 }
 #blogPage .blogItem .item1 .herroBanner .item1Note {
@@ -1429,8 +1420,7 @@ header .headerBottum {
 }
 #blogPage .blogItem .item1 .herroBanner .item1Note h1 {
   font-weight: bold;
-  text-shadow: 4px 4px 3px #ffffff;
-  font-size: 60px;
+  font-size: 70px;
 }
 #blogPage .blogItem .item1 .herroBanner .item1Note div a {
   color: #ffffff;
@@ -1444,6 +1434,7 @@ header .headerBottum {
   width: 100%;
 }
 #blogPage .blogItem2 .item {
+  overflow: hidden;
   width: 50%;
 }
 #blogPage .blogItem2 .item img {
@@ -1451,6 +1442,7 @@ header .headerBottum {
   height: 65vh;
 }
 #blogPage .blogItem2 .info {
+  overflow: hidden;
   width: 50%;
 }
 #blogPage .blogItem2 .info .item2Note {
@@ -1538,7 +1530,7 @@ header .headerBottum {
   font-size: 20px;
 }
 #news .herroBanner .newsItem2 .accordion .accordion-button {
-  background-color: rgb(80, 76, 76);
+  background-color: #ffb606;
 }
 @media only screen and (max-width: 767px) {
   #news .herroBanner {
@@ -1715,7 +1707,7 @@ header .headerBottum {
   }
   #courses .coursesItem2 .coursesSection .item2Note {
     width: 100%;
-    padding: 100px 30px;
+    padding: 60px 30px;
   }
   #courses .coursesItem2 .coursesSection .item2Img {
     width: 100%;
@@ -1727,32 +1719,31 @@ header .headerBottum {
     flex-direction: column-reverse;
   }
 }
-
-.coursesItem3 {
+#courses .coursesItem3 {
   padding: 50px 0;
 }
-.coursesItem3 .herroBanner h1 {
+#courses .coursesItem3 .herroBanner h1 {
   color: #ffb606;
   text-align: center;
   font-size: 40px;
 }
-.coursesItem3 .herroBanner p {
+#courses .coursesItem3 .herroBanner p {
   color: gray;
   font-size: 20px;
   text-align: center;
   margin-bottom: 40px;
 }
-.coursesItem3 .herroBanner .row {
+#courses .coursesItem3 .herroBanner .row {
   display: flex;
   align-items: center;
   justify-content: center;
   --bs-gutter-x: 0rem;
 }
-.coursesItem3 .herroBanner .row .col {
+#courses .coursesItem3 .herroBanner .row .col {
   width: 350px;
   padding: 10px;
 }
-.coursesItem3 .herroBanner .row .col .achievmentCard {
+#courses .coursesItem3 .herroBanner .row .col .achievmentCard {
   height: 350px;
   border-radius: 20px;
   border: 1px solid transparent;
@@ -1760,7 +1751,7 @@ header .headerBottum {
   transition: all 0.5s linear;
   overflow: hidden;
 }
-.coursesItem3 .herroBanner .row .col .achievmentCard .logo {
+#courses .coursesItem3 .herroBanner .row .col .achievmentCard .logo {
   color: white;
   background-color: #ffb606;
   padding: 7px 10px;
@@ -1774,29 +1765,133 @@ header .headerBottum {
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.coursesItem3 .herroBanner .row .col .achievmentCard img {
+#courses .coursesItem3 .herroBanner .row .col .achievmentCard img {
   width: 100%;
   height: 100%;
   border-radius: 20px;
   z-index: 4;
   transition: all 0.5s linear;
 }
-.coursesItem3 .herroBanner .row .col .achievmentCard .cardNote {
+#courses .coursesItem3 .herroBanner .row .col .achievmentCard .cardNote {
   position: absolute;
   padding: 10px 20px 0px;
   bottom: 5px;
   color: #ffffff;
 }
-.coursesItem3 .herroBanner .row .col .achievmentCard .cardNote .note {
+#courses .coursesItem3 .herroBanner .row .col .achievmentCard .cardNote .note {
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   padding: 2px 5px;
 }
-.coursesItem3 .herroBanner .row .col .achievmentCard .cardNote .note1 {
+#courses .coursesItem3 .herroBanner .row .col .achievmentCard .cardNote .note1 {
   background-color: #ffb606;
 }
-.coursesItem3 .herroBanner .row .col .achievmentCard:hover img {
+#courses .coursesItem3 .herroBanner .row .col .achievmentCard:hover img {
   transform: scale(1.2);
+}
+#courses .coursesComment {
+  background-image: url("../image/graduates.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+#courses .coursesComment .commentSlider {
+  background-color: rgba(19, 45, 68, 0.788);
+  padding: 60px 0;
+}
+#courses .coursesComment .commentSlider .herroBanner h1 {
+  text-align: center;
+  color: #ffb606;
+}
+#courses .coursesComment .commentSlider .herroBanner .swiper {
+  width: 100%;
+  padding: 50px 0;
+}
+#courses .coursesComment .commentSlider .herroBanner .swiper .swiper-wrapper {
+  display: flex;
+  gap: 20px;
+}
+#courses .coursesComment .commentSlider .herroBanner .swiper .swiper-wrapper .swiper-slide {
+  background-color: transparent;
+  background-position: center;
+  background-size: cover;
+  width: 280px;
+  height: 350px;
+}
+#courses .coursesComment .commentSlider .herroBanner .swiper .swiper-wrapper .swiper-slide .item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+#courses .coursesComment .commentSlider .herroBanner .swiper .swiper-wrapper .swiper-slide .item .commentNote {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  background-color: #ffb606;
+  color: #ffffff;
+  border-radius: 10px;
+  width: 280px;
+  height: 200px;
+  padding: 5px;
+}
+#courses .coursesComment .commentSlider .herroBanner .swiper .swiper-wrapper .swiper-slide .item .itemImg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: start;
+  gap: 20px;
+}
+#courses .coursesComment .commentSlider .herroBanner .swiper .swiper-wrapper .swiper-slide .item .itemImg img {
+  display: block;
+  width: 90px;
+  height: 90px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+#courses .coursesComment .commentSlider .herroBanner .swiper .swiper-wrapper .swiper-slide .item .itemImg .imgNote {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  color: #ffb606;
+}
+#courses .coursesComment button {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  background: #ffb606;
+  color: #ffffff;
+  padding: 10px 30px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition: 400ms linear all;
+  outline: none;
+}
+#courses .coursesComment button:hover {
+  background: transparent;
+  color: #ffb606;
+}
+#courses .coursesComment button:before, #courses .coursesComment button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #ffb606;
+  transition: 400ms linear all;
+}
+#courses .coursesComment button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+#courses .coursesComment button:hover:before, #courses .coursesComment button:hover:after {
+  width: 100%;
+  transition: 400ms linear all;
 }
 
 .formItem {
@@ -1866,9 +1961,6 @@ header .headerBottum {
   .formItem .herroBanner form .fullName input {
     width: 250px;
   }
-}
-.formItem .herroBanner form option {
-  width: 400px;
 }
 .formItem .herroBanner form input::file-selector-button {
   background-color: #ffb606;
@@ -1961,6 +2053,11 @@ header .headerBottum {
   text-decoration: none;
   cursor: pointer;
 }
+@media only screen and (max-width: 556px) {
+  .modal .modal-content {
+    width: 90%;
+  }
+}
 
 #contact {
   background-image: url("../image/book3.jpg");
@@ -2050,7 +2147,6 @@ header .headerBottum {
 }
 #contactPage .contactItem .item1 .herroBanner .item1Note h1 {
   font-weight: bold;
-  text-shadow: 2px 2px 2px #ffb606;
 }
 #contactPage .contactItem .item1 .herroBanner .item1Note div a {
   color: #ffffff;
@@ -2087,10 +2183,10 @@ header .headerBottum {
 #contactPage .item2 .herroBanner .row .col .item2Note:hover {
   transform: translateY(-15px);
   background-color: #da853d;
-  color: #f8e6c6;
+  color: #ffffff;
 }
 #contactPage .item2 .herroBanner .row .col .item2Note:hover a {
-  color: #f8e6c6;
+  color: #ffffff;
 }
 @media only screen and (max-width: 992px) {
   #contactPage .item2 .herroBanner .row .col .item2Note {
@@ -2145,6 +2241,9 @@ header .headerBottum {
 #contactPage .item3 .herroBanner form select {
   width: 400px;
 }
+#contactPage .item3 .herroBanner form select option {
+  width: 200px;
+}
 #contactPage .item3 .herroBanner form textarea {
   width: 400px;
 }
@@ -2191,7 +2290,7 @@ header .headerBottum {
 }
 
 .signUp {
-  background-image: url("../image/signbg2.jpg");
+  background-image: url("../image/signbg3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2257,7 +2356,7 @@ header .headerBottum {
 }
 
 .login {
-  background-image: url("../image/signbg2.jpg");
+  background-image: url("../image/signbg3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2602,18 +2701,18 @@ footer .herroBanner .footerTop {
   padding: 120px 0;
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid #da853d;
+  border-bottom: 2px solid rgb(221, 137, 10);
   row-gap: 5vh;
 }
 footer .herroBanner .footerTop .logo {
-  color: rgb(6, 6, 141);
+  color: #ffffff;
   font-size: 40px;
   font-family: "Sacramento", cursive;
 }
 footer .herroBanner .footerTop .logo span {
   position: relative;
   left: 15px;
-  color: #da853d;
+  color: rgb(221, 137, 10);
 }
 footer .herroBanner .footerTop .topItem2 {
   display: flex;
@@ -2625,19 +2724,19 @@ footer .herroBanner .footerTop .topItem2 ul {
           padding-inline-start: 0;
 }
 footer .herroBanner .footerTop .topItem2 ul h4 {
-  color: #da853d;
+  color: rgb(221, 137, 10);
 }
 footer .herroBanner .footerTop .topItem2 ul li a {
   display: flex;
   gap: 10px;
   font-size: 20px;
-  color: #da853d;
+  color: rgb(221, 137, 10);
 }
 footer .herroBanner .footerTop .topItem2 ul li a:hover {
   color: #ffffff;
 }
 footer .herroBanner .footerTop .topItem2 ul li a i {
-  color: rgb(1, 1, 138);
+  color: rgb(221, 137, 10);
   font-size: 22px;
 }
 footer .herroBanner .footerTop .topItem1 {
@@ -2646,11 +2745,11 @@ footer .herroBanner .footerTop .topItem1 {
   gap: 25px;
 }
 footer .herroBanner .footerTop .topItem1 ul h4 {
-  color: #da853d;
+  color: rgb(221, 137, 10);
 }
 footer .herroBanner .footerTop .topItem1 ul li a {
   font-size: 20px;
-  color: #da853d;
+  color: rgb(221, 137, 10);
 }
 footer .herroBanner .footerTop .topItem1 ul li a:hover {
   color: #ffffff;
@@ -2673,6 +2772,11 @@ footer .herroBanner .footerTop .topItem1 ul li a:hover {
     text-align: center;
   }
 }
+@media only screen and (max-width: 767px) {
+  footer .herroBanner .footerTop {
+    padding: 70px 0;
+  }
+}
 footer .herroBanner .footerBottum {
   display: flex;
   align-items: center;
@@ -2682,7 +2786,7 @@ footer .herroBanner .footerBottum {
           padding-inline-start: 0;
 }
 footer .herroBanner .footerBottum p {
-  color: #da853d;
+  color: rgb(221, 137, 10);
   font-size: 20px;
 }
 @media only screen and (max-width: 556px) {
@@ -2700,7 +2804,7 @@ footer .herroBanner .footerBottum ul {
 }
 footer .herroBanner .footerBottum ul li a {
   font-size: 25px;
-  color: #da853d;
+  color: rgb(221, 137, 10);
 }
 footer .herroBanner .footerBottum ul li a:hover {
   color: #ffffff;

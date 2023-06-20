@@ -16,13 +16,14 @@ signUpForm.addEventListener("submit", function (e) {
     password: signPassword.value,
     date: date.toLocaleString(),
   };
-  let sameUser = users.filter(
+  let sameUser = users.find(
     (user) =>
-      user.username !== signUsername.value ||
-      user.email !== signEmail.value ||
-      user.password !== signPassword.value
+      user.username === signUsername.value &&
+      user.email === signEmail.value &&
+      user.password === signPassword.value
   );
-  if (sameUser) {
+  console.log(sameUser)
+  if (!sameUser) {
     if (user.username && user.email && user.password) {
       users.push(user);
       localStorage.setItem("users", JSON.stringify(users));
@@ -30,7 +31,7 @@ signUpForm.addEventListener("submit", function (e) {
       (signUsername.value = ""),
         (signEmail.value = ""),
         (signPassword.value = "");
-      alert("Your are already users,Thanks you");
+      alert("Thanks you");
     } else {
       alert("Fill out the form!");
     }

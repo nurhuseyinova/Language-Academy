@@ -92,97 +92,201 @@
         }
       }
     }
-  
-  @media only screen and (max-width: 992px) {
-    .coursesSection {
-      flex-direction: column;
-      .item2Note {
-        width: 100%;
-        padding: 100px 30px;
+
+    @media only screen and (max-width: 992px) {
+      .coursesSection {
+        flex-direction: column;
+        .item2Note {
+          width: 100%;
+          padding: 60px 30px;
+        }
+        .item2Img {
+          width: 100%;
+        }
       }
-      .item2Img {
-        width: 100%;
+      .coursesSection2 {
+        flex-direction: column-reverse;
       }
-    }
-    .coursesSection2 {
-      flex-direction: column-reverse;
-    }
-    .coursesSection4 {
-      flex-direction: column-reverse;
+      .coursesSection4 {
+        flex-direction: column-reverse;
+      }
     }
   }
-}}
 
-.coursesItem3 {
-  padding: 50px 0;
-  .herroBanner {
-    h1 {
-      color: $textColor1;
-      text-align: center;
-      font-size: 40px;
-    }
-    p {
-      color: gray;
-      font-size: 20px;
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    .row {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      --bs-gutter-x: 0rem;
-      .col {
-        width: 350px;
-        padding: 10px;
-        .achievmentCard {
-          height: 350px;
-          border-radius: 20px;
-          border: 1px solid transparent;
-          position: relative;
-          transition: all 0.5s linear;
-          overflow: hidden;
-          .logo {
-            color: white;
-            background-color: $textColor1;
-            padding: 7px 10px;
-            width: 45px;
-            font-family: "Dancing Script", cursive;
-            rotate: (90deg);
-            position: absolute;
-            left: 270px;
-            bottom: 280px;
-            z-index: 6;
-            border-top-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-          }
-          img {
-            width: 100%;
-            height: 100%;
+  .coursesItem3 {
+    padding: 50px 0;
+    .herroBanner {
+      h1 {
+        color: $textColor1;
+        text-align: center;
+        font-size: 40px;
+      }
+      p {
+        color: gray;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        --bs-gutter-x: 0rem;
+        .col {
+          width: 350px;
+          padding: 10px;
+          .achievmentCard {
+            height: 350px;
             border-radius: 20px;
-            z-index: 4;
+            border: 1px solid transparent;
+            position: relative;
             transition: all 0.5s linear;
-          }
-          .cardNote {
-            position: absolute;
-            padding: 10px 20px 0px;
-            bottom: 5px;
-            color: $light;
-            .note {
-              border-top-right-radius: 10px;
-              border-bottom-left-radius: 10px;
-              padding: 2px 5px;
-            }
-            .note1 {
+            overflow: hidden;
+            .logo {
+              color: white;
               background-color: $textColor1;
+              padding: 7px 10px;
+              width: 45px;
+              font-family: "Dancing Script", cursive;
+              rotate: (90deg);
+              position: absolute;
+              left: 270px;
+              bottom: 280px;
+              z-index: 6;
+              border-top-left-radius: 10px;
+              border-bottom-right-radius: 10px;
             }
-          }
-          &:hover {
             img {
-              transform: scale(1.2);
+              width: 100%;
+              height: 100%;
+              border-radius: 20px;
+              z-index: 4;
+              transition: all 0.5s linear;
+            }
+            .cardNote {
+              position: absolute;
+              padding: 10px 20px 0px;
+              bottom: 5px;
+              color: $light;
+              .note {
+                border-top-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+                padding: 2px 5px;
+              }
+              .note1 {
+                background-color: $textColor1;
+              }
+            }
+            &:hover {
+              img {
+                transform: scale(1.2);
+              }
             }
           }
         }
+      }
+    }
+  }
+  .coursesComment {
+    background-image: url("../image/graduates.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    .commentSlider {
+      background-color: rgba(19, 45, 68, 0.788);
+      padding: 60px 0;
+      .herroBanner {
+        h1 {
+          text-align: center;
+          color: $textColor1;
+        }
+        .swiper {
+          width: 100%;
+          padding: 50px 0;
+          .swiper-wrapper {
+            display: flex;
+            gap: 20px;
+            .swiper-slide {
+              background-color: transparent;
+              background-position: center;
+              background-size: cover;
+              width: 280px;
+              height: 350px;
+              .item {
+                display: flex;
+                flex-direction: column;
+                row-gap: 30px;
+                .commentNote {
+                  text-align: center;
+                  @include display;
+                  justify-content: center;
+                  background-color: $textColor1;
+                  color: $light;
+                  border-radius: 10px;
+                  width: 280px;
+                  height: 200px;
+                  padding: 5px;
+                }
+                .itemImg {
+                  @include display;
+                  justify-content: start;
+                  gap: 20px;
+                  img {
+                    display: block;
+                    width: 90px;
+                    height: 90px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                  }
+                  .imgNote {
+                    padding-inline-start: 0;
+                    color: $textColor1;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      
+    }
+    button {
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      background: $mainColor;
+      color: $light;
+      padding: 10px 30px;
+      border: none;
+      position: relative;
+      cursor: pointer;
+      transition: 400ms linear all;
+      outline: none;
+      &:hover {
+        background: transparent;
+        color: $mainColor;
+      }
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 2px;
+        width: 0;
+        background: $mainColor;
+        transition: 400ms linear all;
+      }
+      &:after {
+        right: inherit;
+        top: inherit;
+        left: 0;
+        bottom: 0;
+      }
+      &:hover:before,
+      &:hover:after {
+        width: 100%;
+        transition: 400ms linear all;
       }
     }
   }
@@ -225,27 +329,19 @@
           text-transform: capitalize;
           width: 250px;
         }
-  @media only screen and (max-width: 767px) {
-    flex-direction:column;
-    width: 400px;
-    input{
-    width: 400px;
-
-    }
-  }
-  @media only screen and (max-width: 556px) {
-    width: 250px;
-    input{
-    width: 250px;
-
-    }
-  }
-      }
-      option{
-        width: 400px;
-  @media only screen and (max-width: 556px) {
-    
-  }
+        @media only screen and (max-width: 767px) {
+          flex-direction: column;
+          width: 400px;
+          input {
+            width: 400px;
+          }
+        }
+        @media only screen and (max-width: 556px) {
+          width: 250px;
+          input {
+            width: 250px;
+          }
+        }
       }
       input::file-selector-button {
         background-color: $textColor1;
@@ -343,6 +439,9 @@
         text-decoration: none;
         cursor: pointer;
       }
+    }
+    @media only screen and (max-width: 556px) {
+      width: 90%;
     }
   }
 }

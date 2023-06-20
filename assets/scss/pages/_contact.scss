@@ -91,7 +91,6 @@
           text-align: center;
           h1 {
             font-weight: bold;
-            text-shadow: 2px 2px 2px $textColor1
           }
           div {
             a {
@@ -129,9 +128,9 @@
             &:hover {
               transform: translateY(-15px);
               background-color: $bg-orange;
-              color: $lightCoral;
+              color: $light;
               a {
-                color: $lightCoral;
+                color: $light;
               }
             }
             @media only screen and (max-width: 992px) {
@@ -182,6 +181,9 @@
         }
         select {
           width: 400px;
+          option{
+            width:200px
+          }
         }
         textarea {
           width: 400px;

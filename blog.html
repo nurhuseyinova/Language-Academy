@@ -57,9 +57,7 @@
                         >
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#"
-                          >Our Achievements</a
-                        >
+                        <a class="dropdown-item" href="#">Our Achievements</a>
                       </li>
                       <li>
                         <a class="dropdown-item" href="./galery.html"
@@ -77,12 +75,14 @@
             </ul>
             <i class="fa-solid fa-bars"></i>
             <div class="darkModeSignLogin">
-              <i class="fa-regular fa-sun"></i>
-              <i class="fa-regular fa-moon"></i>
+              <div class="darkMode">
+                <i class="fa-regular fa-sun"></i>
+                <i class="fa-regular fa-moon"></i>
+              </div>
               <div class="loginSignup">
                 <a href="./login.html">Login</a>
-                <p>|</p>
-                <a href="./signup.html"> Sign up</a>
+                <span>/</span>
+                <a href="./signup.html">Sign up</a>
               </div>
             </div>
           </nav>
@@ -99,11 +99,13 @@
               <li><a href="./courses.html">Courses</a></li>
               <li><a href="./contact.html">Contact Us</a></li>
               <div class="darkModeSignLogin">
-                <i class="fa-regular fa-sun"></i>
-                <i class="fa-regular fa-moon"></i>
+                <div class="darkMode">
+                  <i class="fa-regular fa-sun"></i>
+                  <i class="fa-regular fa-moon"></i>
+                </div>
                 <div class="loginSignup">
                   <a href="./login.html">Login</a>
-                  <p>|</p>
+                  <span>/</span>
                   <a href="./signup.html"> Sign up</a>
                 </div>
               </div>
@@ -150,7 +152,7 @@
       <div class="blogItem2 product2">
         <div class="info">
           <div data-aos="slide-right" class="item2Note">
-            <div  class="line"></div>
+            <div class="line"></div>
             <h1>Lorem, ipsum dolor.</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fuga
@@ -166,7 +168,11 @@
       </div>
       <div class="blogItem2">
         <div class="item">
-          <img data-aos="slide-right" src="./assets/image/courses-14.jpg" alt="" />
+          <img
+            data-aos="slide-right"
+            src="./assets/image/courses-14.jpg"
+            alt=""
+          />
         </div>
         <div class="info">
           <div data-aos="slide-left" class="item2Note">
@@ -377,7 +383,9 @@
         </div>
       </div>
     </footer>
-    <button class="btn btn-warning goTop" ><i class="fa-solid fa-chevron-up"></i></button>
+    <button class="btn btn-warning goTop">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
@@ -386,6 +394,7 @@
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: "auto",
+        initialSlide: 3,
         coverflowEffect: {
           rotate: 50,
           stretch: 0,
@@ -398,14 +407,12 @@
         },
       });
     </script>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-        AOS.init(
-          {
-            duration:2000,
-          }
-        );
-      </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+      });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

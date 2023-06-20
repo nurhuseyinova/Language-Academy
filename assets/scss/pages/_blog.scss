@@ -58,7 +58,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     .item1 {
-      background-color: rgba(233, 193, 156, 0.384);
+      background-color: rgba(243, 123, 10, 0.212);
       padding: 240px 50px;
       .herroBanner {
         .item1Note {
@@ -67,8 +67,7 @@
           text-align: center;
           h1 {
             font-weight: bold;
-            text-shadow: 4px 4px 3px $light;
-            font-size: 60px;
+            font-size: 70px;
           }
           div {
             a {
@@ -80,11 +79,12 @@
     }
   }
   .blogItem2 {
-    overflow:hidden;
+    overflow: hidden;
     @include display;
     justify-content: center;
     width: 100%;
     .item {
+      overflow: hidden;
       width: 50%;
       img {
         width: 100%;
@@ -92,6 +92,7 @@
       }
     }
     .info {
+      overflow: hidden;
       width: 50%;
       .item2Note {
         color: gray;

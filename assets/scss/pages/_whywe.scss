@@ -1,3 +1,4 @@
+/////////Home page why we section///////
 #whywe {
   background-color: #f3f3f3;
   padding: 60px 0;
@@ -25,15 +26,18 @@
           align-items: center;
           gap: 5px;
           color: rgb(46, 46, 48);
-          i {
-            padding-top: 5%;
-            padding-left: 5%;
+          .icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border-radius: 50%;
             border: 2px solid $lightBlue;
+            background-color: $light;
+            color: $textColor1;
             width: 70px;
             height: 65px;
-            color: $textColor1;
-            background-color: $light;
+          }
+          i {
             font-size: 30px;
           }
         }
