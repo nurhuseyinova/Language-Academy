@@ -279,12 +279,12 @@
     }
     .aboutItem2 {
       .item2Section {
-        padding: 40px 0 70px;
+        padding: 40px 0 ;
         display: flex;
         align-items: center;
         .item2Note {
           color: gray;
-          padding: 10px;
+          padding: 20px 10px 0px;
           h1 {
             color: $textColor1;
           }
@@ -343,11 +343,11 @@
     }
     .aboutItem3 {
       .item3Section {
-        padding: 40px 0 70px;
+        padding: 40px 0;
         display: flex;
         align-items: center;
         .item3Note {
-          padding: 10px;
+          padding: 20px 10px 10px;
           color: gray;
           h1 {
             color: $textColor1;
@@ -406,7 +406,7 @@
     }
     .aboutItem4 {
       width: 100%;
-      padding: 70px 0;
+      padding: 70px 0 60px;
       .item4Section {
         width: 100%;
         display: flex;
@@ -453,6 +453,9 @@
             display: none;
           }
         }
+      }
+      @media only screen and (max-width: 992px) {
+       padding:40px 0 ;
       }
     }
   }

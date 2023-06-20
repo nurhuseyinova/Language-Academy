@@ -19,7 +19,7 @@ async function getTeacherData() {
         <p>
         ${teacher.information.slice(0,50)}...
         </p>
-        <a href="#">Read More</a>
+        <a href="./detail.html?id=${teacher.id}">Read More</a>
       </div>
     </div>
   </div> 

@@ -1,0 +1,68 @@
+#detail {
+  .detailHead {
+    background-image: url("../image/book2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 220px 0 150px;
+    .headNote {
+      font-family: "Montserrat", sans-serif;
+      color: $light;
+      text-align: center;
+      h1 {
+        font-weight: bold;
+        font-size: 40px;
+      }
+      div {
+        a {
+          color: $light;
+        }
+      }
+    }
+  }
+  .herroBanner {
+    overflow: hidden;
+    .detailInformation {
+      padding: 50px 0;
+      @include display;
+      width: 100%;
+      .detailImg {
+        width: 50%;
+        img {
+          width: 70%;
+          height: 60vh;
+        }
+      }
+      .detailNote {
+        padding: 10px 10px 10px 0;
+        width: 50%;
+        color: $textColor1;
+      }
+      @media only screen and (max-width: 767px) {
+        flex-direction: column;
+        .detailImg {
+          @include display;
+          justify-content: center;
+          width: 100%;
+          margin-bottom: 20px;
+          img {
+            width: 75%;
+          }
+        }
+        .detailNote {
+          width: 75%;
+        }
+      }
+      @media only screen and (max-width: 556px) {
+        .detailImg {
+          img {
+            width: 100%;
+          }
+        }
+        .detailNote {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

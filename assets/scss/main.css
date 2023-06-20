@@ -527,13 +527,13 @@ header .headerBottum {
   }
 }
 #aboutUsPage .herroBanner .aboutItem2 .item2Section {
-  padding: 40px 0 70px;
+  padding: 40px 0;
   display: flex;
   align-items: center;
 }
 #aboutUsPage .herroBanner .aboutItem2 .item2Section .item2Note {
   color: gray;
-  padding: 10px;
+  padding: 20px 10px 0px;
 }
 #aboutUsPage .herroBanner .aboutItem2 .item2Section .item2Note h1 {
   color: #ffb606;
@@ -588,12 +588,12 @@ header .headerBottum {
   }
 }
 #aboutUsPage .herroBanner .aboutItem3 .item3Section {
-  padding: 40px 0 70px;
+  padding: 40px 0;
   display: flex;
   align-items: center;
 }
 #aboutUsPage .herroBanner .aboutItem3 .item3Section .item3Note {
-  padding: 10px;
+  padding: 20px 10px 10px;
   color: gray;
 }
 #aboutUsPage .herroBanner .aboutItem3 .item3Section .item3Note h1 {
@@ -650,7 +650,7 @@ header .headerBottum {
 }
 #aboutUsPage .herroBanner .aboutItem4 {
   width: 100%;
-  padding: 70px 0;
+  padding: 70px 0 60px;
 }
 #aboutUsPage .herroBanner .aboutItem4 .item4Section {
   width: 100%;
@@ -701,6 +701,11 @@ header .headerBottum {
 @media only screen and (max-width: 992px) {
   #aboutUsPage .herroBanner .aboutItem4 .item4Section .item4Img2 {
     display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #aboutUsPage .herroBanner .aboutItem4 {
+    padding: 40px 0;
   }
 }
 
@@ -2294,6 +2299,75 @@ header .headerBottum {
   height: 90vh;
 }
 
+#detail .detailHead {
+  background-image: url("../image/book2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 220px 0 150px;
+}
+#detail .detailHead .headNote {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+#detail .detailHead .headNote h1 {
+  font-weight: bold;
+  font-size: 40px;
+}
+#detail .detailHead .headNote div a {
+  color: #ffffff;
+}
+#detail .herroBanner {
+  overflow: hidden;
+}
+#detail .herroBanner .detailInformation {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#detail .herroBanner .detailInformation .detailImg {
+  width: 50%;
+}
+#detail .herroBanner .detailInformation .detailImg img {
+  width: 70%;
+  height: 60vh;
+}
+#detail .herroBanner .detailInformation .detailNote {
+  padding: 10px 10px 10px 0;
+  width: 50%;
+  color: #ffb606;
+}
+@media only screen and (max-width: 767px) {
+  #detail .herroBanner .detailInformation {
+    flex-direction: column;
+  }
+  #detail .herroBanner .detailInformation .detailImg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #detail .herroBanner .detailInformation .detailImg img {
+    width: 75%;
+  }
+  #detail .herroBanner .detailInformation .detailNote {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 556px) {
+  #detail .herroBanner .detailInformation .detailImg img {
+    width: 100%;
+  }
+  #detail .herroBanner .detailInformation .detailNote {
+    width: 100%;
+  }
+}
+
 .signUp {
   background-image: url("../image/signbg3.jpg");
   background-position: center;
@@ -2350,7 +2424,7 @@ header .headerBottum {
 }
 @media only screen and (max-width: 556px) {
   .signUp {
-    padding: 120px 0px 0px;
+    padding: 90px 0px 0px;
   }
   .signUp form {
     width: 100%;
@@ -2417,7 +2491,7 @@ header .headerBottum {
 }
 @media only screen and (max-width: 556px) {
   .login {
-    padding: 100px 0px 0px;
+    padding: 90px 0px 0px;
   }
   .login form {
     width: 100%;

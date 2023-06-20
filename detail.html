@@ -15,6 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Sacramento&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
@@ -97,146 +101,28 @@
                   <a href="./login.html">Login</a>
                   <span>/</span>
                   <a href="./signup.html"> Sign up</a>
-                </div>    
+                </div>
               </div>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-
-    <div id="contactPage">
-      <div class="contactItem">
-        <div class="item1">
-          <div class="herroBanner">
-            <div data-aos="fade-right" class="item1Note">
-              <h1>Contact Us</h1>
-              <div>
-                <a href="./index.html"
-                  >Home <i class="fa-solid fa-chevron-right"></i
-                ></a>
-                <a href="./contact.html"
-                  >Contact <i class="fa-solid fa-chevron-right"></i
-                ></a>
-              </div>
-            </div>
+    <div id="detail">
+      <div class="detailHead">
+        <div data-aos="fade-right" class="headNote">
+          <h1>Teacher Information</h1>
+          <div>
+            <a href="./index.html"
+              >Home <i class="fa-solid fa-chevron-right"></i
+            ></a>
           </div>
         </div>
       </div>
-      <div class="item2">
-        <div class="herroBanner">
-          <div class="row">
-            <div class="col col-12 col-sm-6 col-md-6 col-lg-3">
-              <div class="item2Note">
-                <h4>Address</h4>
-                <p>198 West 21th Street, Suite 721 Ganja 10016</p>
-              </div>
-            </div>
-            <div class="col col-12 col-sm-6 col-md-6 col-lg-3">
-              <div class="item2Note">
-                <h4>Contact Number</h4>
-                <a href="tel:+994 077 777 77 77">+994 077 777 77 77</a>
-              </div>
-            </div>
-            <div class="col col-12 col-sm-6 col-md-6 col-lg-3">
-              <div class="item2Note">
-                <h4>Email Address</h4>
-                <a href="mailto:languageacademy@123.az"
-                  >languageacademy@123.az</a
-                >
-              </div>
-            </div>
-            <div class="col col-12 col-sm-6 col-md-6 col-lg-3">
-              <div class="item2Note">
-                <h4>Website</h4>
-                <a href="">languageacademy.com</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item3">
-        <div class="herroBanner">
-          <div class="note">
-            <h3>
-              do you have a Question? <br />
-              <span>write to us!</span>
-            </h3>
-          </div>
-          <form action="" id="messageForm">
-            <div>
-              <input
-                class="formTag"
-                id="messageFirstName"
-                type="text"
-                placeholder="First Name"
-              />
-              <input
-                class="formTag"
-                id="messageLastName"
-                type="text"
-                placeholder="Last Name"
-              />
-            </div>
-            <input
-            class="formTag email"
-            id="messageEmail"
-            type="email"
-            placeholder="Your Email"
-          />
-            <select class="formTag" name="" id="messageSubject">
-              <option value="" disabled>Subject</option>
-              <option value="English">English</option>
-              <option value="Russian">Russian</option>
-              <option value="Grman">German</option>
-              <option value="French">French</option>
-            </select>
-            <textarea
-              class="formTag"
-              name=""
-              id="messageQusetion"
-              cols="30"
-              rows="10"
-              placeholder="Your Message"
-            ></textarea
-            ><br />
-            <button id="messageSubmit" type="submit">Send Message</button>
-          </form>
-        </div>
-      </div>
-      <div class="map">
-        <div class="mapouter">
-          <div class="gmap_canvas">
-            <iframe
-              width="100%"
-              height="100%"
-              id="gmap_canvas"
-              src="https://maps.google.com/maps?q=azerbaycan gence gence dovlet universteti 2ci korpus&t=&z=10&ie=UTF8&iwloc=&output=embed"
-              frameborder="0"
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-            ></iframe
-            ><a href="https://2yu.co">2yu</a><br /><style>
-              .mapouter {
-                position: relative;
-                text-align: right;
-                height: 100%;
-                width: 100%;
-              }</style
-            ><a href="https://embedgooglemap.2yu.co/">html embed google map</a
-            ><style>
-              .gmap_canvas {
-                overflow: hidden;
-                background: none !important;
-                height: 100%;
-                width: 100%;
-              }
-            </style>
-          </div>
-        </div>
+      <div class="herroBanner detailCard">
       </div>
     </div>
+
     <footer>
       <div class="herroBanner">
         <div class="footerTop">
@@ -331,15 +217,14 @@
         </div>
       </div>
     </footer>
-    <button class="btn btn-warning goTop" ><i class="fa-solid fa-chevron-up"></i></button>
-
+    <button class="btn btn-warning goTop">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init(
-        {
-          duration:2000,
-        }
-      );
+      AOS.init({
+        duration: 2000,
+      });
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -357,7 +242,7 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   ></script>
-    <script src="./assets/js/messageForm.js"></script>
+    <script src="./assets/js/detail.js"></script>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>

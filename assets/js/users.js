@@ -25,5 +25,5 @@ function deleteUser(id) {
   users = users.filter((user) => user.id != id);
   localStorage.setItem("users", JSON.stringify(users));
   allUsers();
-  alert("Delete this user?");
+  alert("This user has been logged out");
 }
