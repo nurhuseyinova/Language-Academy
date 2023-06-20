@@ -2575,6 +2575,17 @@ header .headerBottum {
   transform: translateY(-15px);
   color: #ffffff;
 }
+#admin .row .info #search {
+  width: 100%;
+  outline: #f4f5f9;
+  margin-bottom: 10px;
+  padding: 7px;
+  background-color: #ffb606;
+  border: 1px solid black;
+}
+#admin .row .info input::file-selector-button {
+  color: black;
+}
 #admin .row .info h1 {
   color: #ffb606;
   text-align: center;

@@ -79,6 +79,17 @@
           }
         }
       }
+      #search{
+        width:100%;
+        outline:#f4f5f9;
+        margin-bottom: 10px;
+        padding: 7px;
+        background-color: $mainColor;
+        border:1px solid black;
+      }
+      input::file-selector-button {
+        color:black;
+      }
       h1 {
         color: $textColor1;
         text-align: center;

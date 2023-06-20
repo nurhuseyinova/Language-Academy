@@ -10,16 +10,18 @@ let teachersSubject = document.querySelector("#teachersSubject");
 let teachersInformation = document.querySelector("#teachersInformation");
 let teachersSubmit = document.querySelector("#teachersSubmit");
 let formHead = document.querySelector("#formHead");
+let search = document.querySelector("#search");
 let editStatus = false;
 let editId = null;
 let copyArr = [];
-
+let filtered=[]
 async function getTeachersData() {
   teachersData.innerHTML = "";
   let res = await axios(TEACHERS_URL);
   let data = await res.data;
   copyArr = data;
-  copyArr.forEach((teacher) => {
+  filtered = filtered.length || search.value ? filtered : data;
+  filtered.forEach((teacher) => {
     teachersData.innerHTML += `
                 <tr>
                   <td><img src="${teacher.photo}" alt="" /></td>
@@ -105,3 +107,15 @@ async function editBtn(id) {
   teachersSubmit.innerHTML = "Edit";
   formHead.innerHTML = "Edit Teachers";
 }
+
+search.addEventListener("input", function (e) {
+  filtered = copyArr.filter((el) => {
+    return el.firstName
+      .toLocaleLowerCase()
+      .includes(e.target.value.toLocaleLowerCase())||
+      el.lastName
+      .toLocaleLowerCase()
+      .includes(e.target.value.toLocaleLowerCase())
+  });
+  getTeachersData(filtered);
+});
