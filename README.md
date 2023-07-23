@@ -1,5 +1,5 @@
 # $\color{green}{Language-Academy}$
-site prewiew-https://storied-fenglisu-23dfad.netlify.app <br>
+site preview-https://storied-fenglisu-23dfad.netlify.app <br>
 ## $\color{red}{MOCK.API:}$
 $\color{brown}{db.json -port 8000 }$ <br>
 $\color{brown}{mock.json -port 8080 }$ <br>
